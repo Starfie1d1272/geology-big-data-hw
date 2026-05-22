@@ -46,7 +46,8 @@ class Observation:
     entity_id: int
     event_type: int  # 1=FAD, 2=LAD, 其他=marker 子类型
     level: float     # 剖面内层位（米/英尺）
-    weight: float = 1.0
+    weight: float = 1.0   # w1：普通观测=1.0；AGE/ASH marker=同位素年龄下界（Ma）
+    weight2: float = 1.0  # w2：普通观测=1.0；AGE/ASH marker=同位素年龄上界（Ma）
 
 
 @dataclass(frozen=True)
@@ -133,12 +134,14 @@ def parse_loadfile(path: str | Path) -> list[Observation]:
         section_id = int(parts[2])
         level = float(parts[3])
         weight = float(parts[6]) if len(parts) >= 7 else 1.0
+        weight2 = float(parts[7]) if len(parts) >= 8 else weight
         obs.append(Observation(
             section_id=section_id,
             entity_id=entity_id,
             event_type=event_type,
             level=level,
             weight=weight,
+            weight2=weight2,
         ))
     return obs
 
