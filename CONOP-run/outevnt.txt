@@ -1,0 +1,303 @@
+ ANTARCTICA 12x49x22: 01-JUL-10                              
+ __________________________________________
+   
+ _________________________________________________
+ INDIVIDUAL RANGE-END EXTENSIONS IN BEST SEQUENCE
+         TOTALLED ACROSS ALL SECTIONS
+  Event  Type  Extension  Penalty   Sections  Name
+        (extension = unweighted interval penalty)
+    50 - 5     0.00     0.00     1  {[0520]   Obrad93 2a_64.97 AGE {in 1 sections}  (fortran # 10)  (tag: not assigned)                  
+    40 - 2     0.00     0.00     1  {[1044]   Neophylloceras  surya  (Forbes)  1846 LAD {in 1 sections}  (fortran # 92)  (tag: not assign
+    39 - 2     0.00     0.00     1  {[1285]   Hoploscaphites  quiriquiniensis LAD {in 1 sections}  (fortran # 90)  (tag: not assigned)   
+    39 - 1     0.00     0.00     1  {[1285]   Hoploscaphites  quiriquiniensis FAD {in 1 sections}  (fortran # 89)  (tag: not assigned)   
+    21 - 4     0.00     0.00     3  {[0100]   KT iridium/tektites ASH {in 3 sections}  (fortran # 4)  (tag: not assigned)                
+    40 - 1     0.00     0.00     1  {[1044]   Neophylloceras  surya  (Forbes)  1846 FAD {in 1 sections}  (fortran # 91)  (tag: not assign
+    11 - 2    55.25    55.25     6  {[1192]   Pachydiscus  ultimus  Macellari  1986 LAD {in 6 sections}  (fortran # 44)  (tag: not assign
+     3 - 2   116.00   116.00     8  {[1184]   Maorites  densicostatus  alpha  (Killian & Reboul) LAD {in 8 sections}  (fortran # 28)  (ta
+    51 - 5     0.00     0.00     1  {[0521]   Obrad93 2b_65.19 AGE {in 1 sections}  (fortran # 11)  (tag: not assigned)                  
+    22 - 2     4.56     4.56     4  {[1107]   Zelandites  varuna  (Forbes)  1846 LAD {in 4 sections}  (fortran # 58)  (tag: not assigned)
+    17 - 2     0.00     0.00     4  {[1195]   Diplomoceras  cylindraceum  maximum  Olivero & Zin LAD {in 4 sections}  (fortran # 50)  (ta
+     9 - 2   143.00   143.00     8  {[1190]   Grossouvrites  gemmatus  (Hupe)  1854 LAD {in 8 sections}  (fortran # 40)  (tag: not assign
+    37 - 2     0.00     0.00     1  {[1100]   Hypophylloceras  hetonaiense  (Matsumoto)  1942 LAD {in 1 sections}  (fortran # 86)  (tag: 
+    36 - 2     0.00     0.00     1  {[1281]   Kossmaticeras_(N.)  erbeni LAD {in 1 sections}  (fortran # 84)  (tag: not assigned)        
+    12 - 2   462.00   462.00     4  {[1193]   Eutrephoceras  simile  Spath LAD {in 4 sections}  (fortran # 46)  (tag: not assigned)      
+    19 - 2   100.00   100.00     4  {[1196]   Pseudophyllites  loryi  (Killian & Reboul)  1909 LAD {in 4 sections}  (fortran # 54)  (tag:
+    20 - 2   250.00   250.00     5  {[1197]   Kitchinites  laurae  Macellari  1986 LAD {in 5 sections}  (fortran # 56)  (tag: not assigne
+    38 - 2     0.00     0.00     1  {[1293]   Neophylloceras  ramosum  (Meek)  1857 LAD {in 1 sections}  (fortran # 88)  (tag: not assign
+     1 - 2   162.00   162.00     6  {[1051]   Diplomoceras  cylindraceum  (Defrance)  1816 LAD {in 6 sections}  (fortran # 24)  (tag: not
+    48 - 5     0.00     0.00     1  {[0518]   Obrad93 1a_65.35 AGE {in 1 sections}  (fortran # 8)  (tag: not assigned)                   
+    18 - 2    60.00    60.00     4  {[1198]   Anagaudryceras  seymouriense  Macellari  1986 LAD {in 4 sections}  (fortran # 52)  (tag: no
+    23 - 2     0.00     0.00     2  {[1045]   Gaudryceras  kayei  (Forbes)  1846 LAD {in 2 sections}  (fortran # 60)  (tag: not assigned)
+    49 - 5     0.00     0.00     1  {[0519]   Obrad93 1b_65.43 AGE {in 1 sections}  (fortran # 9)  (tag: not assigned)                   
+    52 - 5     0.00     0.00     1  {[0522]   Obrad93 3_66.8 KneeHills AGE {in 1 sections}  (fortran # 12)  (tag: not assigned)          
+     5 - 2   175.00   175.00     5  {[1185]   Maorites  densicostatus  beta  (Killian & Reboul) LAD {in 5 sections}  (fortran # 32)  (tag
+     2 - 2  1365.40  1365.40     7  {[1183]   Kitchinites  darwini  (Steinmann)  1895 LAD {in 7 sections}  (fortran # 26)  (tag: not assi
+    35 - 2     0.00     0.00     1  {[1130]   Eubaculites  lyelli  (d Orbigny)  1847 LAD {in 1 sections}  (fortran # 82)  (tag: not assig
+    41 - 4     0.00     0.00     1  {[0114]   C30n~C29r ASH {in 1 sections}  (fortran # 6)  (tag: not assigned)                          
+    38 - 1     0.00     0.00     1  {[1293]   Neophylloceras  ramosum  (Meek)  1857 FAD {in 1 sections}  (fortran # 87)  (tag: not assign
+    33 - 2     0.00     0.00     1  {[1279]   Eutrephoceras  subplicatum LAD {in 1 sections}  (fortran # 78)  (tag: not assigned)        
+    34 - 2     0.00     0.00     1  {[1280]   Pachydiscus_(P.)  jacquoti  chilensis LAD {in 1 sections}  (fortran # 80)  (tag: not assign
+    32 - 2     0.00     0.00     1  {[1278]   Phylloceras_(H.)  inflatum LAD {in 1 sections}  (fortran # 76)  (tag: not assigned)        
+    37 - 1     0.00     0.00     1  {[1100]   Hypophylloceras  hetonaiense  (Matsumoto)  1942 FAD {in 1 sections}  (fortran # 85)  (tag: 
+    22 - 1   216.27   216.27     4  {[1107]   Zelandites  varuna  (Forbes)  1846 FAD {in 4 sections}  (fortran # 57)  (tag: not assigned)
+     4 - 2     7.00     7.00     4  {[1186]   Maorites  densicostatus  gamma  (Killian & Reboul) LAD {in 4 sections}  (fortran # 30)  (ta
+    10 - 2    20.00    20.00     5  {[1191]   Pachydiscus  riccardi  Macellari  1986 LAD {in 5 sections}  (fortran # 42)  (tag: not assig
+    11 - 1   249.45   249.45     6  {[1192]   Pachydiscus  ultimus  Macellari  1986 FAD {in 6 sections}  (fortran # 43)  (tag: not assign
+    23 - 1     0.00     0.00     2  {[1045]   Gaudryceras  kayei  (Forbes)  1846 FAD {in 2 sections}  (fortran # 59)  (tag: not assigned)
+    15 - 5     0.00     0.00     1  {[0532]   Strontium 65.8 AGE {in 1 sections}  (fortran # 2)  (tag: not assigned)                     
+     4 - 1     0.00     0.00     4  {[1186]   Maorites  densicostatus  gamma  (Killian & Reboul) FAD {in 4 sections}  (fortran # 29)  (ta
+    18 - 1    60.00    60.00     4  {[1198]   Anagaudryceras  seymouriense  Macellari  1986 FAD {in 4 sections}  (fortran # 51)  (tag: no
+     6 - 2   845.00   845.00     6  {[1187]   Maorites  seymourianus  (Killian & Reboul)  1909 LAD {in 6 sections}  (fortran # 34)  (tag:
+    19 - 1   115.00   115.00     4  {[1196]   Pseudophyllites  loryi  (Killian & Reboul)  1909 FAD {in 4 sections}  (fortran # 53)  (tag:
+    17 - 1   305.00   305.00     4  {[1195]   Diplomoceras  cylindraceum  maximum  Olivero & Zin FAD {in 4 sections}  (fortran # 49)  (ta
+    30 - 2     0.00     0.00     1  {[1276]   Anapachydiscus  fresvillensis  quirquinae  Stinnes LAD {in 1 sections}  (fortran # 72)  (ta
+    31 - 2     0.00     0.00     1  {[1277]   Baculites  hunickeni LAD {in 1 sections}  (fortran # 74)  (tag: not assigned)              
+    32 - 1     0.00     0.00     1  {[1278]   Phylloceras_(H.)  inflatum FAD {in 1 sections}  (fortran # 75)  (tag: not assigned)        
+    34 - 1     0.00     0.00     1  {[1280]   Pachydiscus_(P.)  jacquoti  chilensis FAD {in 1 sections}  (fortran # 79)  (tag: not assign
+    36 - 1     0.00     0.00     1  {[1281]   Kossmaticeras_(N.)  erbeni FAD {in 1 sections}  (fortran # 83)  (tag: not assigned)        
+     5 - 1   140.00   140.00     5  {[1185]   Maorites  densicostatus  beta  (Killian & Reboul) FAD {in 5 sections}  (fortran # 31)  (tag
+    20 - 1    80.54    80.54     5  {[1197]   Kitchinites  laurae  Macellari  1986 FAD {in 5 sections}  (fortran # 55)  (tag: not assigne
+    10 - 1    75.00    75.00     5  {[1191]   Pachydiscus  riccardi  Macellari  1986 FAD {in 5 sections}  (fortran # 41)  (tag: not assig
+    31 - 1     0.00     0.00     1  {[1277]   Baculites  hunickeni FAD {in 1 sections}  (fortran # 73)  (tag: not assigned)              
+    30 - 1     0.00     0.00     1  {[1276]   Anapachydiscus  fresvillensis  quirquinae  Stinnes FAD {in 1 sections}  (fortran # 71)  (ta
+    33 - 1     0.00     0.00     1  {[1279]   Eutrephoceras  subplicatum FAD {in 1 sections}  (fortran # 77)  (tag: not assigned)        
+     7 - 2     0.00     0.00     5  {[1188]   Maorites  wedelliensis  Macellari  1986 LAD {in 5 sections}  (fortran # 36)  (tag: not assi
+     3 - 1   710.00   710.00     8  {[1184]   Maorites  densicostatus  alpha  (Killian & Reboul) FAD {in 8 sections}  (fortran # 27)  (ta
+     7 - 1   213.45   213.45     5  {[1188]   Maorites  wedelliensis  Macellari  1986 FAD {in 5 sections}  (fortran # 35)  (tag: not assi
+    12 - 1   415.00   415.00     4  {[1193]   Eutrephoceras  simile  Spath FAD {in 4 sections}  (fortran # 45)  (tag: not assigned)      
+     6 - 1     0.00     0.00     6  {[1187]   Maorites  seymourianus  (Killian & Reboul)  1909 FAD {in 6 sections}  (fortran # 33)  (tag:
+    43 - 2     0.00     0.00     1  {[1369]   Gunnarites  kalika  (Stoliczka)  1865 LAD {in 1 sections}  (fortran # 96)  (tag: not assign
+    43 - 1     0.00     0.00     1  {[1369]   Gunnarites  kalika  (Stoliczka)  1865 FAD {in 1 sections}  (fortran # 95)  (tag: not assign
+    25 - 2     0.00     0.00     1  {[1669]   Dimitobelus  seymouriensis LAD {in 1 sections}  (fortran # 64)  (tag: not assigned)        
+    25 - 1     0.00     0.00     1  {[1669]   Dimitobelus  seymouriensis FAD {in 1 sections}  (fortran # 63)  (tag: not assigned)        
+    16 - 5     0.00     0.00     1  {[0533]   Strontium 67.5 AGE {in 1 sections}  (fortran # 3)  (tag: not assigned)                     
+    53 - 5     0.00     0.00     1  {[0523]   Obrad93 4_69.42 B.clinolo AGE {in 1 sections}  (fortran # 13)  (tag: not assigned)         
+    13 - 2   180.00   180.00     4  {[1194]   Maorites  tuberculatus  Howarth  1958 LAD {in 4 sections}  (fortran # 48)  (tag: not assign
+    14 - 4     0.00     0.00     2  {[0117]   Hasl ASH {in 2 sections}  (fortran # 1)  (tag: not assigned)                               
+     9 - 1   965.00   965.00     8  {[1190]   Grossouvrites  gemmatus  (Hupe)  1854 FAD {in 8 sections}  (fortran # 39)  (tag: not assign
+    24 - 2     0.00     0.00     1  {[1200]   Pachydiscus  ootacodensis  (Stoliczka)  1865 LAD {in 1 sections}  (fortran # 62)  (tag: not
+    24 - 1     0.00     0.00     1  {[1200]   Pachydiscus  ootacodensis  (Stoliczka)  1865 FAD {in 1 sections}  (fortran # 61)  (tag: not
+    26 - 2     0.00     0.00     3  {[1545]   Gunnarites  antarcticus  (Weller) LAD {in 3 sections}  (fortran # 66)  (tag: not assigned) 
+    27 - 2     0.00     0.00     1  {[1546]   Jacobites  crofti LAD {in 1 sections}  (fortran # 68)  (tag: not assigned)                 
+     2 - 1   562.00   562.00     7  {[1183]   Kitchinites  darwini  (Steinmann)  1895 FAD {in 7 sections}  (fortran # 25)  (tag: not assi
+    28 - 5     0.00     0.00     1  {[0531]   Strontium 71.0 +_0.2 AGE {in 1 sections}  (fortran # 5)  (tag: not assigned)               
+    27 - 1     0.00     0.00     1  {[1546]   Jacobites  crofti FAD {in 1 sections}  (fortran # 67)  (tag: not assigned)                 
+     1 - 1   830.00   830.00     6  {[1051]   Diplomoceras  cylindraceum  (Defrance)  1816 FAD {in 6 sections}  (fortran # 23)  (tag: not
+    26 - 1     0.00     0.00     3  {[1545]   Gunnarites  antarcticus  (Weller) FAD {in 3 sections}  (fortran # 65)  (tag: not assigned) 
+    13 - 1   370.00   370.00     4  {[1194]   Maorites  tuberculatus  Howarth  1958 FAD {in 4 sections}  (fortran # 47)  (tag: not assign
+    60 - 2     0.00     0.00     1  {[1059]   Baculites  clinolobatus  Elias  1933 LAD {in 1 sections}  (fortran # 104)  (tag: not assign
+    60 - 1     0.00     0.00     1  {[1059]   Baculites  clinolobatus  Elias  1933 FAD {in 1 sections}  (fortran # 103)  (tag: not assign
+    68 - 2     0.00     0.00     1  {[1062]   Baculites  grandis  Hall & Meek  1855 LAD {in 1 sections}  (fortran # 114)  (tag: not assig
+    66 - 5     0.00     0.00     1  {[0501]   Obrad88 3_70.1 B.grandis AGE {in 1 sections}  (fortran # 21)  (tag: not assigned)          
+    68 - 1     0.00     0.00     1  {[1062]   Baculites  grandis  Hall & Meek  1855 FAD {in 1 sections}  (fortran # 113)  (tag: not assig
+    29 - 2     0.00     0.00     1  {[1275]   Baculites  vincentei LAD {in 1 sections}  (fortran # 70)  (tag: not assigned)              
+    35 - 1     0.00     0.00     1  {[1130]   Eubaculites  lyelli  (d Orbigny)  1847 FAD {in 1 sections}  (fortran # 81)  (tag: not assig
+    29 - 1     0.00     0.00     1  {[1275]   Baculites  vincentei FAD {in 1 sections}  (fortran # 69)  (tag: not assigned)              
+    61 - 2     0.00     0.00     1  {[1249]   Baculites  compressus  Say  1820 LAD {in 1 sections}  (fortran # 106)  (tag: not assigned) 
+    54 - 5     0.00     0.00     1  {[0524]   Obrad93 5_73.35 B.compres AGE {in 1 sections}  (fortran # 14)  (tag: not assigned)         
+    61 - 1     0.00     0.00     1  {[1249]   Baculites  compressus  Say  1820 FAD {in 1 sections}  (fortran # 105)  (tag: not assigned) 
+    62 - 2     0.00     0.00     1  {[1073]   Exiteloceras  jenneyi  (Whitfield)  1877 LAD {in 1 sections}  (fortran # 108)  (tag: not as
+    55 - 5     0.00     0.00     1  {[0525]   Obrad93 6_74.76 E.jenneyi AGE {in 1 sections}  (fortran # 15)  (tag: not assigned)         
+    62 - 1     0.00     0.00     1  {[1073]   Exiteloceras  jenneyi  (Whitfield)  1877 FAD {in 1 sections}  (fortran # 107)  (tag: not as
+    44 - 2     0.00     0.00     1  {[1662]   Kossmaticeras  bhavani LAD {in 1 sections}  (fortran # 98)  (tag: not assigned)            
+    56 - 5     0.00     0.00     1  {[0526]   Obrad93 7_75.37 G.calcara AGE {in 1 sections}  (fortran # 16)  (tag: not assigned)         
+    44 - 1     0.00     0.00     1  {[1662]   Kossmaticeras  bhavani FAD {in 1 sections}  (fortran # 97)  (tag: not assigned)            
+    71 - 2     0.00     0.00     1  {[1077]   Didymoceras  nebrascense  (Meek & Hayden)  1856 LAD {in 1 sections}  (fortran # 120)  (tag:
+    67 - 5     0.00     0.00     1  {[0505]   Obrad88 7_75.5 AGE {in 1 sections}  (fortran # 22)  (tag: not assigned)                    
+    71 - 1     0.00     0.00     1  {[1077]   Didymoceras  nebrascense  (Meek & Hayden)  1856 FAD {in 1 sections}  (fortran # 119)  (tag:
+    63 - 2     0.00     0.00     1  {[1078]   Baculites  scotti  Cobban  1958 LAD {in 1 sections}  (fortran # 110)  (tag: not assigned)  
+    57 - 5     0.00     0.00     1  {[0527]   Obrad93 8_75.89 B.scotti AGE {in 1 sections}  (fortran # 17)  (tag: not assigned)          
+    63 - 1     0.00     0.00     1  {[1078]   Baculites  scotti  Cobban  1958 FAD {in 1 sections}  (fortran # 109)  (tag: not assigned)  
+    45 - 2     0.00     0.00     1  {[1663]   Kossmaticeras  guentheri LAD {in 1 sections}  (fortran # 100)  (tag: not assigned)         
+    45 - 1     0.00     0.00     1  {[1663]   Kossmaticeras  guentheri FAD {in 1 sections}  (fortran # 99)  (tag: not assigned)          
+    70 - 2     0.00     0.00     1  {[1087]   Baculites  mclearni  Landes  1940 LAD {in 1 sections}  (fortran # 118)  (tag: not assigned)
+    70 - 1     0.00     0.00     1  {[1087]   Baculites  mclearni  Landes  1940 FAD {in 1 sections}  (fortran # 117)  (tag: not assigned)
+     8 - 2     0.00     0.00     1  {[1189]   Gunnarites  bhavaniformis  (Killian & Reboul)  190 LAD {in 1 sections}  (fortran # 38)  (ta
+     8 - 1     0.00     0.00     1  {[1189]   Gunnarites  bhavaniformis  (Killian & Reboul)  190 FAD {in 1 sections}  (fortran # 37)  (ta
+    65 - 5     0.00     0.00     1  {[0506]   Obrad88 8a_79.2 AGE {in 1 sections}  (fortran # 20)  (tag: not assigned)                   
+    69 - 2     0.00     0.00     1  {[1088]   Baculites  obtusus  Meek  1876 LAD {in 1 sections}  (fortran # 116)  (tag: not assigned)   
+    69 - 1     0.00     0.00     1  {[1088]   Baculites  obtusus  Meek  1876 FAD {in 1 sections}  (fortran # 115)  (tag: not assigned)   
+    58 - 5     0.00     0.00     1  {[0528]   Obrad93 9_80.54 Ardmore AGE {in 1 sections}  (fortran # 18)  (tag: not assigned)           
+    59 - 4     0.00     0.00     1  {[0102]   Ardmore Bentonite ASH {in 1 sections}  (fortran # 19)  (tag: not assigned)                 
+    64 - 2     0.00     0.00     1  {[1393]   Scaphites_(S.)  hippocrepis  (DeKay)  1828 LAD {in 1 sections}  (fortran # 112)  (tag: not 
+    47 - 5     0.00     0.00     1  {[0529]   Obrad93 10_81.71 S.hippoc AGE {in 1 sections}  (fortran # 7)  (tag: not assigned)          
+    64 - 1     0.00     0.00     1  {[1393]   Scaphites_(S.)  hippocrepis  (DeKay)  1828 FAD {in 1 sections}  (fortran # 111)  (tag: not 
+    46 - 2     0.00     0.00     1  {[1664]   Kossmaticeras  theobaldianus LAD {in 1 sections}  (fortran # 102)  (tag: not assigned)     
+    46 - 1     0.00     0.00     1  {[1664]   Kossmaticeras  theobaldianus FAD {in 1 sections}  (fortran # 101)  (tag: not assigned)     
+    42 - 2     0.00     0.00     1  {[1660]   Neograhamites  taylori  Spath LAD {in 1 sections}  (fortran # 94)  (tag: not assigned)     
+    42 - 1     0.00     0.00     1  {[1660]   Neograhamites  taylori  Spath FAD {in 1 sections}  (fortran # 93)  (tag: not assigned)     
+ ______________________________________________
+ COEXISTENCES -
+ (sensu stricto criteria)
+ next data table, unlabelled = 
+ coex.dat                                                                       
+  
+ Diplomoceras  cylindraceum  (Defrance)  1816 (1) coexists with: 
+   - 1183; 1184; 1186; 1185; 1187; 1188; 1190;
+   - 1191; 1193; 1194; 1198; 1196; 1197; 1045;
+   - 1200; 1545; 1546;
+    (17 coexistence(s)
+ Kitchinites  darwini  (Steinmann)  1895 (2) coexists with: 
+   - 1051; 1184; 1185; 1187; 1188; 1190; 1191;
+   - 1193; 1194; 1195; 1198; 1196; 1197; 1107;
+   - 1045; 1200; 1669; 1545; 1546; 1278; 1279;
+   - 1280; 1130; 1281; 1100; 1293;
+    (26 coexistence(s)
+ Maorites  densicostatus  alpha  (Killian & Reboul) (3) coexists with: 
+   - 1051; 1183; 1186; 1185; 1187; 1188; 1190;
+   - 1191; 1192; 1193; 1195; 1198; 1196; 1197;
+   - 1107; 1045;
+    (16 coexistence(s)
+ Maorites  densicostatus  gamma  (Killian & Reboul) (4) coexists with: 
+   - 1051; 1184; 1185; 1190; 1191; 1192; 1193;
+   - 1198; 1197; 1045;
+    (10 coexistence(s)
+ Maorites  densicostatus  beta  (Killian & Reboul) (5) coexists with: 
+   - 1051; 1183; 1184; 1186; 1190; 1191; 1193;
+   - 1198; 1196; 1197; 1107; 1045; 1276; 1277;
+   - 1278; 1279; 1280; 1130; 1281; 1100; 1293;
+    (21 coexistence(s)
+ Maorites  seymourianus  (Killian & Reboul)  1909 (6) coexists with: 
+   - 1051; 1183; 1184; 1188; 1190; 1191; 1193;
+   - 1195; 1196;
+    (9 coexistence(s)
+ Maorites  wedelliensis  Macellari  1986 (7) coexists with: 
+   - 1051; 1183; 1184; 1187; 1190; 1193;
+    (6 coexistence(s)
+ Gunnarites  bhavaniformis  (Killian & Reboul)  190 (8) coexists with: 
+    (0 coexistence(s)
+ Grossouvrites  gemmatus  (Hupe)  1854 (9) coexists with: 
+   - 1051; 1183; 1184; 1186; 1185; 1187; 1188;
+   - 1191; 1192; 1193; 1194; 1195; 1198; 1196;
+   - 1197; 1107; 1045; 1669; 1276; 1277; 1278;
+   - 1279; 1280; 1130; 1281;
+    (25 coexistence(s)
+ Pachydiscus  riccardi  Macellari  1986 (10) coexists with: 
+   - 1051; 1183; 1184; 1186; 1185; 1187; 1190;
+   - 1192; 1193; 1195; 1198; 1196; 1197; 1045;
+    (14 coexistence(s)
+ Pachydiscus  ultimus  Macellari  1986 (11) coexists with: 
+   - 1184; 1186; 1190; 1191; 1193; 1195; 1198;
+   - 1196; 1197; 1045;
+    (10 coexistence(s)
+ Eutrephoceras  simile  Spath (12) coexists with: 
+   - 1051; 1183; 1184; 1186; 1185; 1187; 1188;
+   - 1190; 1191; 1192; 1195; 1198; 1196; 1197;
+   - 1045;
+    (15 coexistence(s)
+ Maorites  tuberculatus  Howarth  1958 (13) coexists with: 
+   - 1051; 1183; 1190; 1545; 1546;
+    (5 coexistence(s)
+ Diplomoceras  cylindraceum  maximum  Olivero & Zin (17) coexists with: 
+   - 1183; 1184; 1187; 1190; 1191; 1192; 1193;
+   - 1198; 1196; 1197; 1107;
+    (11 coexistence(s)
+ Anagaudryceras  seymouriense  Macellari  1986 (18) coexists with: 
+   - 1051; 1183; 1184; 1186; 1185; 1190; 1191;
+   - 1192; 1193; 1195; 1196; 1197; 1045;
+    (13 coexistence(s)
+ Pseudophyllites  loryi  (Killian & Reboul)  1909 (19) coexists with: 
+   - 1051; 1183; 1184; 1185; 1187; 1190; 1191;
+   - 1192; 1193; 1195; 1198; 1197; 1107; 1045;
+   - 1278; 1279; 1280; 1130; 1281; 1100; 1293;
+    (21 coexistence(s)
+ Kitchinites  laurae  Macellari  1986 (20) coexists with: 
+   - 1051; 1183; 1184; 1186; 1185; 1190; 1191;
+   - 1192; 1193; 1195; 1198; 1196; 1107; 1045;
+    (14 coexistence(s)
+ Zelandites  varuna  (Forbes)  1846 (22) coexists with: 
+   - 1183; 1184; 1185; 1190; 1195; 1196; 1197;
+   - 1045; 1278; 1279; 1280; 1130; 1281; 1100;
+   - 1293;
+    (15 coexistence(s)
+ Gaudryceras  kayei  (Forbes)  1846 (23) coexists with: 
+   - 1051; 1183; 1184; 1186; 1185; 1190; 1191;
+   - 1192; 1193; 1198; 1196; 1197; 1107; 1278;
+   - 1279; 1280; 1130; 1281; 1100; 1293;
+    (20 coexistence(s)
+ Pachydiscus  ootacodensis  (Stoliczka)  1865 (24) coexists with: 
+   - 1051; 1183;
+    (2 coexistence(s)
+ Dimitobelus  seymouriensis (25) coexists with: 
+   - 1183; 1190;
+    (2 coexistence(s)
+ Gunnarites  antarcticus  (Weller) (26) coexists with: 
+   - 1051; 1183; 1194; 1546;
+    (4 coexistence(s)
+ Jacobites  crofti (27) coexists with: 
+   - 1051; 1183; 1194; 1545;
+    (4 coexistence(s)
+ Baculites  vincentei (29) coexists with: 
+   - 1130;
+    (1 coexistence(s)
+ Anapachydiscus  fresvillensis  quirquinae  Stinnes (30) coexists with: 
+   - 1185; 1190; 1277; 1278; 1279; 1280; 1130;
+   - 1281;
+    (8 coexistence(s)
+ Baculites  hunickeni (31) coexists with: 
+   - 1185; 1190; 1276; 1278; 1279; 1280; 1130;
+   - 1281;
+    (8 coexistence(s)
+ Phylloceras_(H.)  inflatum (32) coexists with: 
+   - 1183; 1185; 1190; 1196; 1107; 1045; 1276;
+   - 1277; 1279; 1280; 1130; 1281; 1100;
+    (13 coexistence(s)
+ Eutrephoceras  subplicatum (33) coexists with: 
+   - 1183; 1185; 1190; 1196; 1107; 1045; 1276;
+   - 1277; 1278; 1280; 1130; 1281; 1100;
+    (13 coexistence(s)
+ Pachydiscus_(P.)  jacquoti  chilensis (34) coexists with: 
+   - 1183; 1185; 1190; 1196; 1107; 1045; 1276;
+   - 1277; 1278; 1279; 1130; 1281; 1100;
+    (13 coexistence(s)
+ Eubaculites  lyelli  (d Orbigny)  1847 (35) coexists with: 
+   - 1183; 1185; 1190; 1196; 1107; 1045; 1275;
+   - 1276; 1277; 1278; 1279; 1280; 1281; 1100;
+   - 1293;
+    (15 coexistence(s)
+ Kossmaticeras_(N.)  erbeni (36) coexists with: 
+   - 1183; 1185; 1190; 1196; 1107; 1045; 1276;
+   - 1277; 1278; 1279; 1280; 1130; 1100; 1293;
+    (14 coexistence(s)
+ Hypophylloceras  hetonaiense  (Matsumoto)  1942 (37) coexists with: 
+   - 1183; 1185; 1196; 1107; 1045; 1278; 1279;
+   - 1280; 1130; 1281; 1293;
+    (11 coexistence(s)
+ Neophylloceras  ramosum  (Meek)  1857 (38) coexists with: 
+   - 1183; 1185; 1196; 1107; 1045; 1130; 1281;
+   - 1100;
+    (8 coexistence(s)
+ Hoploscaphites  quiriquiniensis (39) coexists with: 
+   - 1044;
+    (1 coexistence(s)
+ Neophylloceras  surya  (Forbes)  1846 (40) coexists with: 
+   - 1285;
+    (1 coexistence(s)
+ Neograhamites  taylori  Spath (42) coexists with: 
+    (0 coexistence(s)
+ Gunnarites  kalika  (Stoliczka)  1865 (43) coexists with: 
+    (0 coexistence(s)
+ Kossmaticeras  bhavani (44) coexists with: 
+    (0 coexistence(s)
+ Kossmaticeras  guentheri (45) coexists with: 
+    (0 coexistence(s)
+ Kossmaticeras  theobaldianus (46) coexists with: 
+    (0 coexistence(s)
+ Baculites  clinolobatus  Elias  1933 (60) coexists with: 
+    (0 coexistence(s)
+ Baculites  compressus  Say  1820 (61) coexists with: 
+    (0 coexistence(s)
+ Exiteloceras  jenneyi  (Whitfield)  1877 (62) coexists with: 
+    (0 coexistence(s)
+ Baculites  scotti  Cobban  1958 (63) coexists with: 
+    (0 coexistence(s)
+ Scaphites_(S.)  hippocrepis  (DeKay)  1828 (64) coexists with: 
+    (0 coexistence(s)
+ Baculites  grandis  Hall & Meek  1855 (68) coexists with: 
+    (0 coexistence(s)
+ Baculites  obtusus  Meek  1876 (69) coexists with: 
+    (0 coexistence(s)
+ Baculites  mclearni  Landes  1940 (70) coexists with: 
+    (0 coexistence(s)
+ Didymoceras  nebrascense  (Meek & Hayden)  1856 (71) coexists with: 
+    (0 coexistence(s)

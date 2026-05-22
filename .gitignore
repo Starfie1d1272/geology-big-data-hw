@@ -4,3 +4,5 @@ node_modules/
 __pycache__/
 .ipynb_checkpoints/
 
+# 课堂课件，不推送
+slides/
