@@ -6,3 +6,6 @@ __pycache__/
 
 # 课堂课件，不推送
 slides/
+
+# OMC 内部状态
+.omc/
