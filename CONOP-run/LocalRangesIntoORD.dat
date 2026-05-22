@@ -7,39 +7,39 @@
    <+--- or ---+> found at section base or top only;  |===| composite range
    levels: lowest to highest | Local Range Icon | heights: lowest to highest | section
  ----------------------------------------------------------------------
+ Scaphites_(S.)  hippocrepis  (DeKay)  1828  [1393]
+     1 to    3 I===I (  1000.000 to   1016.807) ....Ordinal Composite  (ORD)
+     1 to    3 <++++ (  1000.000 to   1016.807) ....Obradovich Time 93/7  (O97)
+                 1  sections 
+   
  Neograhamites  taylori  Spath  [1660]
-     1 to    2 I===I (  1000.000 to   1008.403) ....Ordinal Composite  (ORD)
-     1 to    2 <+--- (  1000.000 to   1008.403) ....Chilean Composite  (Xch)
+     4 to    5 I===I (  1025.210 to   1033.613) ....Ordinal Composite  (ORD)
+     4 to    5 <+--- (  1025.210 to   1033.613) ....Chilean Composite  (Xch)
                  1  sections 
    
  Kossmaticeras  theobaldianus  [1664]
-     3 to    4 I===I (  1016.807 to   1025.210) ....Ordinal Composite  (ORD)
-     3 to    4 --+-- (  1016.807 to   1025.210) ....Chilean Composite  (Xch)
-                 1  sections 
-   
- Scaphites_(S.)  hippocrepis  (DeKay)  1828  [1393]
-     5 to    7 I===I (  1033.613 to   1050.420) ....Ordinal Composite  (ORD)
-     5 to    7 <++++ (  1033.613 to   1050.420) ....Obradovich Time 93/7  (O97)
-                 1  sections 
-   
- Baculites  obtusus  Meek  1876  [1088]
-    10 to   11 I===I (  1075.630 to   1084.033) ....Ordinal Composite  (ORD)
-    10 to   11 +++++ (  1075.630 to   1084.033) ....Obradovich Time 93/7  (O97)
-                 1  sections 
-   
- Gunnarites  bhavaniformis  (Killian & Reboul)  190  [1189]
-    13 to   14 I===I (  1100.840 to   1109.243) ....Ordinal Composite  (ORD)
-    13 to   14 <+--- (  1100.840 to   1109.243) ....Seymour Island A  (SyA)
-                 1  sections 
-   
- Baculites  mclearni  Landes  1940  [1087]
-    15 to   16 I===I (  1117.647 to   1126.050) ....Ordinal Composite  (ORD)
-    15 to   16 +++++ (  1117.647 to   1126.050) ....Obradovich Time 93/7  (O97)
+     8 to    9 I===I (  1058.823 to   1067.227) ....Ordinal Composite  (ORD)
+     8 to    9 --+-- (  1058.823 to   1067.227) ....Chilean Composite  (Xch)
                  1  sections 
    
  Kossmaticeras  guentheri  [1663]
+    10 to   11 I===I (  1075.630 to   1084.033) ....Ordinal Composite  (ORD)
+    10 to   11 --+-- (  1075.630 to   1084.033) ....Chilean Composite  (Xch)
+                 1  sections 
+   
+ Baculites  obtusus  Meek  1876  [1088]
+    12 to   13 I===I (  1092.437 to   1100.840) ....Ordinal Composite  (ORD)
+    12 to   13 +++++ (  1092.437 to   1100.840) ....Obradovich Time 93/7  (O97)
+                 1  sections 
+   
+ Kossmaticeras  bhavani  [1662]
+    14 to   15 I===I (  1109.243 to   1117.647) ....Ordinal Composite  (ORD)
+    14 to   15 --+-- (  1109.243 to   1117.647) ....Chilean Composite  (Xch)
+                 1  sections 
+   
+ Baculites  mclearni  Landes  1940  [1087]
     17 to   18 I===I (  1134.453 to   1142.857) ....Ordinal Composite  (ORD)
-    17 to   18 --+-- (  1134.453 to   1142.857) ....Chilean Composite  (Xch)
+    17 to   18 +++++ (  1134.453 to   1142.857) ....Obradovich Time 93/7  (O97)
                  1  sections 
    
  Baculites  scotti  Cobban  1958  [1078]
@@ -52,14 +52,14 @@
     22 to   24 +++++ (  1176.470 to   1193.276) ....Obradovich Time 93/7  (O97)
                  1  sections 
    
- Kossmaticeras  bhavani  [1662]
-    25 to   27 I===I (  1201.680 to   1218.486) ....Ordinal Composite  (ORD)
-    25 to   27 --+-- (  1201.680 to   1218.486) ....Chilean Composite  (Xch)
+ Exiteloceras  jenneyi  (Whitfield)  1877  [1073]
+    26 to   28 I===I (  1210.083 to   1226.890) ....Ordinal Composite  (ORD)
+    26 to   28 +++++ (  1210.083 to   1226.890) ....Obradovich Time 93/7  (O97)
                  1  sections 
    
- Exiteloceras  jenneyi  (Whitfield)  1877  [1073]
-    28 to   30 I===I (  1226.890 to   1243.696) ....Ordinal Composite  (ORD)
-    28 to   30 +++++ (  1226.890 to   1243.696) ....Obradovich Time 93/7  (O97)
+ Gunnarites  bhavaniformis  (Killian & Reboul)  190  [1189]
+    29 to   30 I===I (  1235.293 to   1243.696) ....Ordinal Composite  (ORD)
+    29 to   30 <+--- (  1235.293 to   1243.696) ....Seymour Island A  (SyA)
                  1  sections 
    
  Baculites  compressus  Say  1820  [1249]
@@ -67,32 +67,32 @@
     31 to   33 +++++ (  1252.100 to   1268.906) ....Obradovich Time 93/7  (O97)
                  1  sections 
    
- Baculites  vincentei  [1275]
-    34 to   36 I===I (  1277.310 to   1294.116) ....Ordinal Composite  (ORD)
-    34 to   36 <++++ (  1277.310 to   1294.116) ....Quiriquina Island  (Qrq)
-                 1  sections 
-   
- Eubaculites  lyelli  (d Orbigny)  1847  [1130]
-    35 to   94 I===I (  1285.713 to   1781.509) ....Ordinal Composite  (ORD)
-    35 to   94 +++++ (  1285.713 to   1781.509) ....Quiriquina Island  (Qrq)
-                 1  sections 
-   
  Baculites  grandis  Hall & Meek  1855  [1062]
-    37 to   39 I===I (  1302.520 to   1319.326) ....Ordinal Composite  (ORD)
-    37 to   39 +++++ (  1302.520 to   1319.326) ....Obradovich Time 93/7  (O97)
+    34 to   36 I===I (  1277.310 to   1294.116) ....Ordinal Composite  (ORD)
+    34 to   36 +++++ (  1277.310 to   1294.116) ....Obradovich Time 93/7  (O97)
                  1  sections 
    
  Baculites  clinolobatus  Elias  1933  [1059]
-    40 to   41 I===I (  1327.730 to   1336.133) ....Ordinal Composite  (ORD)
-    40 to   41 +++++ (  1327.730 to   1336.133) ....Obradovich Time 93/7  (O97)
+    37 to   38 I===I (  1302.520 to   1310.923) ....Ordinal Composite  (ORD)
+    37 to   38 +++++ (  1302.520 to   1310.923) ....Obradovich Time 93/7  (O97)
+                 1  sections 
+   
+ Baculites  vincentei  [1275]
+    39 to   41 I===I (  1319.326 to   1336.133) ....Ordinal Composite  (ORD)
+    39 to   41 <++++ (  1319.326 to   1336.133) ....Quiriquina Island  (Qrq)
+                 1  sections 
+   
+ Eubaculites  lyelli  (d Orbigny)  1847  [1130]
+    40 to   96 I===I (  1327.730 to   1798.316) ....Ordinal Composite  (ORD)
+    40 to   96 +++++ (  1327.730 to   1798.316) ....Quiriquina Island  (Qrq)
                  1  sections 
    
  Maorites  tuberculatus  Howarth  1958  [1194]
-    42 to   54 I===I (  1344.536 to   1445.376) ....Ordinal Composite  (ORD)
-    42 to   54 +++++ (  1344.536 to   1445.376) ....Seymour Island A  (SyA)
-    42 to   54 <++++ (  1344.536 to   1445.376) ....Seymour Island F  (SyF)
-    42 to   54 <++++ (  1344.536 to   1445.376) ....Seymour Island Z com  (SyZ)
-    42 to   54 ++++> (  1344.536 to   1445.376) ....Snow Hill Island  (Snw)
+    42 to   58 I===I (  1344.536 to   1478.989) ....Ordinal Composite  (ORD)
+    42 to   58 +++++ (  1344.536 to   1478.989) ....Seymour Island A  (SyA)
+    42 to   58 <++++ (  1344.536 to   1478.989) ....Seymour Island F  (SyF)
+    42 to   58 <++++ (  1344.536 to   1478.989) ....Seymour Island Z com  (SyZ)
+    42 to   58 ++++> (  1344.536 to   1478.989) ....Snow Hill Island  (Snw)
                  4  sections 
    
  Gunnarites  antarcticus  (Weller)  [1545]
@@ -103,227 +103,227 @@
                  3  sections 
    
  Diplomoceras  cylindraceum  (Defrance)  1816  [1051]
-    44 to  102 I===I (  1361.343 to   1848.735) ....Ordinal Composite  (ORD)
-    44 to  102 +++++ (  1361.343 to   1848.735) ....Seymour Island A  (SyA)
-    44 to  102 +++++ (  1361.343 to   1848.735) ....Seymour Island C  (SyC)
-    44 to   84 <++++ (  1361.343 to   1697.476) ....Seymour Island D  (SyD)
-    64 to  102 +++++ (  1529.409 to   1848.735) ....Seymour Island F  (SyF)
-    44 to  102 ++++> (  1361.343 to   1848.735) ....Snow Hill Island  (Snw)
-    44 to  102 +++++ (  1361.343 to   1848.735) ....Cape Lamb  (Lmb)
+    44 to  106 I===I (  1361.343 to   1882.349) ....Ordinal Composite  (ORD)
+    44 to  106 +++++ (  1361.343 to   1882.349) ....Seymour Island A  (SyA)
+    44 to  106 +++++ (  1361.343 to   1882.349) ....Seymour Island C  (SyC)
+    44 to  100 <++++ (  1361.343 to   1831.929) ....Seymour Island D  (SyD)
+    65 to  106 +++++ (  1537.813 to   1882.349) ....Seymour Island F  (SyF)
+    44 to  106 ++++> (  1361.343 to   1882.349) ....Snow Hill Island  (Snw)
+    44 to  106 +++++ (  1361.343 to   1882.349) ....Cape Lamb  (Lmb)
                  6  sections 
    
- Jacobites  crofti  [1546]
-    45 to   48 I===I (  1369.746 to   1394.956) ....Ordinal Composite  (ORD)
-    45 to   48 <++++ (  1369.746 to   1394.956) ....Snow Hill Island  (Snw)
-                 1  sections 
-   
  Kitchinites  darwini  (Steinmann)  1895  [1183]
-    47 to   95 I===I (  1386.553 to   1789.912) ....Ordinal Composite  (ORD)
-    61 to   95 +++++ (  1504.199 to   1789.912) ....Seymour Island A  (SyA)
-    47 to   65 <+--- (  1386.553 to   1537.813) ....Seymour Island C  (SyC)
-    47 to   62 +++++ (  1386.553 to   1512.603) ....Seymour Island D  (SyD)
-    62 to   69 +++++ (  1512.603 to   1571.426) ....Seymour Island F  (SyF)
-    47 to   95 +++++ (  1386.553 to   1789.912) ....Seymour Island Z com  (SyZ)
-    47 to   52 <++++ (  1386.553 to   1428.569) ....Snow Hill Island  (Snw)
-    78 to   95 +++++ (  1647.056 to   1789.912) ....Quiriquina Island  (Qrq)
+    45 to   93 I===I (  1369.746 to   1773.106) ....Ordinal Composite  (ORD)
+    62 to   93 +++++ (  1512.603 to   1773.106) ....Seymour Island A  (SyA)
+    45 to   66 <+--- (  1369.746 to   1546.216) ....Seymour Island C  (SyC)
+    45 to   63 +++++ (  1369.746 to   1521.006) ....Seymour Island D  (SyD)
+    63 to   68 +++++ (  1521.006 to   1563.023) ....Seymour Island F  (SyF)
+    45 to   93 +++++ (  1369.746 to   1773.106) ....Seymour Island Z com  (SyZ)
+    45 to   56 <++++ (  1369.746 to   1462.183) ....Snow Hill Island  (Snw)
+    79 to   93 +++++ (  1655.459 to   1773.106) ....Quiriquina Island  (Qrq)
                  7  sections 
    
- Pachydiscus  ootacodensis  (Stoliczka)  1865  [1200]
-    50 to   51 I===I (  1411.763 to   1420.166) ....Ordinal Composite  (ORD)
-    50 to   51 --+-- (  1411.763 to   1420.166) ....Seymour Island D  (SyD)
-                 1  sections 
-   
- Grossouvrites  gemmatus  (Hupe)  1854  [1190]
-    52 to  109 I===I (  1428.569 to   1907.559) ....Ordinal Composite  (ORD)
-    62 to   95 +++++ (  1512.603 to   1789.912) ....Seymour Island A  (SyA)
-    69 to  109 +++++ (  1571.426 to   1907.559) ....Seymour Island C  (SyC)
-    52 to  109 +++++ (  1428.569 to   1907.559) ....Seymour Island D  (SyD)
-    62 to  109 ++++> (  1512.603 to   1907.559) ....Seymour Island F  (SyF)
-    52 to  109 <++++ (  1428.569 to   1907.559) ....Seymour Island C2  (Sy2)
-    52 to  109 ++++> (  1428.569 to   1907.559) ....Seymour Island Z com  (SyZ)
-    52 to  109 ++++> (  1428.569 to   1907.559) ....Snow Hill Island  (Snw)
-    52 to   76 +++++ (  1428.569 to   1630.249) ....Quiriquina Island  (Qrq)
-                 8  sections 
-   
- Dimitobelus  seymouriensis  [1669]
-    57 to   58 I===I (  1470.586 to   1478.989) ....Ordinal Composite  (ORD)
-    57 to   58 --+-- (  1470.586 to   1478.989) ....Seymour Island Z com  (SyZ)
+ Jacobites  crofti  [1546]
+    46 to   47 I===I (  1378.150 to   1386.553) ....Ordinal Composite  (ORD)
+    46 to   47 <++++ (  1378.150 to   1386.553) ....Snow Hill Island  (Snw)
                  1  sections 
    
  Gunnarites  kalika  (Stoliczka)  1865  [1369]
-    59 to   60 I===I (  1487.393 to   1495.796) ....Ordinal Composite  (ORD)
-    59 to   60 --+-- (  1487.393 to   1495.796) ....Chilean Composite  (Xch)
+    50 to   52 I===I (  1411.763 to   1428.569) ....Ordinal Composite  (ORD)
+    50 to   52 --+-- (  1411.763 to   1428.569) ....Chilean Composite  (Xch)
+                 1  sections 
+   
+ Pachydiscus  ootacodensis  (Stoliczka)  1865  [1200]
+    54 to   55 I===I (  1445.376 to   1453.779) ....Ordinal Composite  (ORD)
+    54 to   55 --+-- (  1445.376 to   1453.779) ....Seymour Island D  (SyD)
+                 1  sections 
+   
+ Grossouvrites  gemmatus  (Hupe)  1854  [1190]
+    56 to  110 I===I (  1462.183 to   1915.962) ....Ordinal Composite  (ORD)
+    63 to   93 +++++ (  1521.006 to   1773.106) ....Seymour Island A  (SyA)
+    68 to  110 +++++ (  1563.023 to   1915.962) ....Seymour Island C  (SyC)
+    56 to  110 +++++ (  1462.183 to   1915.962) ....Seymour Island D  (SyD)
+    63 to  110 ++++> (  1521.006 to   1915.962) ....Seymour Island F  (SyF)
+    56 to  110 <++++ (  1462.183 to   1915.962) ....Seymour Island C2  (Sy2)
+    56 to  110 ++++> (  1462.183 to   1915.962) ....Seymour Island Z com  (SyZ)
+    56 to  110 ++++> (  1462.183 to   1915.962) ....Snow Hill Island  (Snw)
+    56 to   78 +++++ (  1462.183 to   1647.056) ....Quiriquina Island  (Qrq)
+                 8  sections 
+   
+ Dimitobelus  seymouriensis  [1669]
+    60 to   61 I===I (  1495.796 to   1504.199) ....Ordinal Composite  (ORD)
+    60 to   61 --+-- (  1495.796 to   1504.199) ....Seymour Island Z com  (SyZ)
                  1  sections 
    
  Maorites  seymourianus  (Killian & Reboul)  1909  [1187]
-    61 to   79 I===I (  1504.199 to   1655.459) ....Ordinal Composite  (ORD)
-    61 to   79 +++++ (  1504.199 to   1655.459) ....Seymour Island A  (SyA)
-    61 to   65 <+--- (  1504.199 to   1537.813) ....Seymour Island C  (SyC)
-    61 to   65 +++++ (  1504.199 to   1537.813) ....Seymour Island D  (SyD)
-    61 to   69 +++++ (  1504.199 to   1571.426) ....Seymour Island F  (SyF)
-    61 to   79 +++++ (  1504.199 to   1655.459) ....Seymour Island Z com  (SyZ)
-    61 to   79 ---+> (  1504.199 to   1655.459) ....Snow Hill Island  (Snw)
+    62 to   81 I===I (  1512.603 to   1672.266) ....Ordinal Composite  (ORD)
+    62 to   81 +++++ (  1512.603 to   1672.266) ....Seymour Island A  (SyA)
+    62 to   66 <+--- (  1512.603 to   1546.216) ....Seymour Island C  (SyC)
+    62 to   66 +++++ (  1512.603 to   1546.216) ....Seymour Island D  (SyD)
+    62 to   68 +++++ (  1512.603 to   1563.023) ....Seymour Island F  (SyF)
+    62 to   81 +++++ (  1512.603 to   1672.266) ....Seymour Island Z com  (SyZ)
+    62 to   81 ---+> (  1512.603 to   1672.266) ....Snow Hill Island  (Snw)
                  6  sections 
    
  Eutrephoceras  simile  Spath  [1193]
-    62 to  106 I===I (  1512.603 to   1882.349) ....Ordinal Composite  (ORD)
-    62 to   65 +++++ (  1512.603 to   1537.813) ....Seymour Island A  (SyA)
-   106 to  106 --+-- (  1882.349 to   1882.349) ....Seymour Island C  (SyC)
-    62 to  106 ++++> (  1512.603 to   1882.349) ....Seymour Island D  (SyD)
-    62 to  106 +++++ (  1512.603 to   1882.349) ....Seymour Island F  (SyF)
+    63 to  109 I===I (  1521.006 to   1907.559) ....Ordinal Composite  (ORD)
+    63 to   66 +++++ (  1521.006 to   1546.216) ....Seymour Island A  (SyA)
+   109 to  109 --+-- (  1907.559 to   1907.559) ....Seymour Island C  (SyC)
+    63 to  109 ++++> (  1521.006 to   1907.559) ....Seymour Island D  (SyD)
+    63 to  109 +++++ (  1521.006 to   1907.559) ....Seymour Island F  (SyF)
                  4  sections 
    
  Maorites  wedelliensis  Macellari  1986  [1188]
-    63 to   65 I===I (  1521.006 to   1537.813) ....Ordinal Composite  (ORD)
-    63 to   65 --+-- (  1521.006 to   1537.813) ....Seymour Island A  (SyA)
-    63 to   65 <+--- (  1521.006 to   1537.813) ....Seymour Island C  (SyC)
-    63 to   65 --+-- (  1521.006 to   1537.813) ....Seymour Island D  (SyD)
-    63 to   65 +++++ (  1521.006 to   1537.813) ....Seymour Island F  (SyF)
-    65 to   65 --+-- (  1537.813 to   1537.813) ....Seymour Island Z com  (SyZ)
+    64 to   66 I===I (  1529.409 to   1546.216) ....Ordinal Composite  (ORD)
+    64 to   66 --+-- (  1529.409 to   1546.216) ....Seymour Island A  (SyA)
+    64 to   66 <+--- (  1529.409 to   1546.216) ....Seymour Island C  (SyC)
+    64 to   66 --+-- (  1529.409 to   1546.216) ....Seymour Island D  (SyD)
+    64 to   66 +++++ (  1529.409 to   1546.216) ....Seymour Island F  (SyF)
+    66 to   66 --+-- (  1546.216 to   1546.216) ....Seymour Island Z com  (SyZ)
                  5  sections 
    
  Maorites  densicostatus  alpha  (Killian & Reboul)  [1184]
-    64 to  113 I===I (  1529.409 to   1941.172) ....Ordinal Composite  (ORD)
-    64 to   95 +++++ (  1529.409 to   1789.912) ....Seymour Island A  (SyA)
-    64 to  113 +++++ (  1529.409 to   1941.172) ....Seymour Island C  (SyC)
+    65 to  113 I===I (  1537.813 to   1941.172) ....Ordinal Composite  (ORD)
+    65 to   93 +++++ (  1537.813 to   1773.106) ....Seymour Island A  (SyA)
+    65 to  113 +++++ (  1537.813 to   1941.172) ....Seymour Island C  (SyC)
     71 to  113 ++++> (  1588.233 to   1941.172) ....Seymour Island D  (SyD)
-    69 to  106 +++++ (  1571.426 to   1882.349) ....Seymour Island F  (SyF)
-    64 to  113 <++++ (  1529.409 to   1941.172) ....Seymour Filo Negro  (Fln)
-    64 to  109 <++++ (  1529.409 to   1907.559) ....Seymour Island C2  (Sy2)
-    64 to  113 ++++> (  1529.409 to   1941.172) ....Seymour Island Z com  (SyZ)
-    64 to  113 ---+> (  1529.409 to   1941.172) ....Chilean Composite  (Xch)
+    68 to  109 +++++ (  1563.023 to   1907.559) ....Seymour Island F  (SyF)
+    65 to  113 <++++ (  1537.813 to   1941.172) ....Seymour Filo Negro  (Fln)
+    65 to  110 <++++ (  1537.813 to   1915.962) ....Seymour Island C2  (Sy2)
+    65 to  113 ++++> (  1537.813 to   1941.172) ....Seymour Island Z com  (SyZ)
+    65 to  113 ---+> (  1537.813 to   1941.172) ....Chilean Composite  (Xch)
                  8  sections 
    
- Eutrephoceras  subplicatum  [1279]
-    66 to   91 I===I (  1546.216 to   1756.299) ....Ordinal Composite  (ORD)
-    66 to   91 +++++ (  1546.216 to   1756.299) ....Quiriquina Island  (Qrq)
-                 1  sections 
-   
- Anapachydiscus  fresvillensis  quirquinae  Stinnes  [1276]
+ Baculites  hunickeni  [1277]
     67 to   76 I===I (  1554.619 to   1630.249) ....Ordinal Composite  (ORD)
     67 to   76 +++++ (  1554.619 to   1630.249) ....Quiriquina Island  (Qrq)
                  1  sections 
    
- Baculites  hunickeni  [1277]
-    68 to   75 I===I (  1563.023 to   1621.846) ....Ordinal Composite  (ORD)
-    68 to   75 +++++ (  1563.023 to   1621.846) ....Quiriquina Island  (Qrq)
-                 1  sections 
-   
  Pachydiscus  riccardi  Macellari  1986  [1191]
-    69 to   85 I===I (  1571.426 to   1705.879) ....Ordinal Composite  (ORD)
-    69 to   85 --+-- (  1571.426 to   1705.879) ....Seymour Island A  (SyA)
-    69 to   85 +++++ (  1571.426 to   1705.879) ....Seymour Island C  (SyC)
-    81 to   85 +++++ (  1672.266 to   1705.879) ....Seymour Island D  (SyD)
-    69 to   85 +++++ (  1571.426 to   1705.879) ....Seymour Island F  (SyF)
-    69 to   85 +++++ (  1571.426 to   1705.879) ....Seymour Island Z com  (SyZ)
+    68 to  101 I===I (  1563.023 to   1840.332) ....Ordinal Composite  (ORD)
+    68 to   93 --+-- (  1563.023 to   1773.106) ....Seymour Island A  (SyA)
+    68 to  101 +++++ (  1563.023 to   1840.332) ....Seymour Island C  (SyC)
+    83 to  101 +++++ (  1689.072 to   1840.332) ....Seymour Island D  (SyD)
+    68 to  101 +++++ (  1563.023 to   1840.332) ....Seymour Island F  (SyF)
+    68 to  101 +++++ (  1563.023 to   1840.332) ....Seymour Island Z com  (SyZ)
                  5  sections 
    
+ Eutrephoceras  subplicatum  [1279]
+    69 to   89 I===I (  1571.426 to   1739.492) ....Ordinal Composite  (ORD)
+    69 to   89 +++++ (  1571.426 to   1739.492) ....Quiriquina Island  (Qrq)
+                 1  sections 
+   
  Kitchinites  laurae  Macellari  1986  [1197]
-    70 to  104 I===I (  1579.829 to   1865.542) ....Ordinal Composite  (ORD)
-    70 to   80 +++++ (  1579.829 to   1663.862) ....Seymour Island C  (SyC)
-    70 to  104 ++++> (  1579.829 to   1865.542) ....Seymour Island D  (SyD)
-    70 to   96 +++++ (  1579.829 to   1798.316) ....Seymour Island F  (SyF)
-    70 to  104 <++++ (  1579.829 to   1865.542) ....Seymour Island C2  (Sy2)
-    80 to  104 +++++ (  1663.862 to   1865.542) ....Seymour Island Z com  (SyZ)
+    70 to  108 I===I (  1579.829 to   1899.155) ....Ordinal Composite  (ORD)
+    70 to   82 +++++ (  1579.829 to   1680.669) ....Seymour Island C  (SyC)
+    70 to  108 ++++> (  1579.829 to   1899.155) ....Seymour Island D  (SyD)
+    70 to  101 +++++ (  1579.829 to   1840.332) ....Seymour Island F  (SyF)
+    70 to  108 <++++ (  1579.829 to   1899.155) ....Seymour Island C2  (Sy2)
+    82 to  108 +++++ (  1680.669 to   1899.155) ....Seymour Island Z com  (SyZ)
                  5  sections 
    
  Maorites  densicostatus  beta  (Killian & Reboul)  [1185]
-    71 to   96 I===I (  1588.233 to   1798.316) ....Ordinal Composite  (ORD)
-    71 to   96 +++++ (  1588.233 to   1798.316) ....Seymour Island A  (SyA)
-    71 to   81 --+-- (  1588.233 to   1672.266) ....Seymour Island C  (SyC)
-    81 to   83 +++++ (  1672.266 to   1689.072) ....Seymour Island D  (SyD)
-    71 to   96 +++++ (  1588.233 to   1798.316) ....Seymour Island F  (SyF)
-    71 to   96 +++++ (  1588.233 to   1798.316) ....Quiriquina Island  (Qrq)
+    71 to   94 I===I (  1588.233 to   1781.509) ....Ordinal Composite  (ORD)
+    71 to   94 +++++ (  1588.233 to   1781.509) ....Seymour Island A  (SyA)
+    83 to   94 --+-- (  1689.072 to   1781.509) ....Seymour Island C  (SyC)
+    83 to   94 +++++ (  1689.072 to   1781.509) ....Seymour Island D  (SyD)
+    71 to   94 +++++ (  1588.233 to   1781.509) ....Seymour Island F  (SyF)
+    71 to   94 +++++ (  1588.233 to   1781.509) ....Quiriquina Island  (Qrq)
                  5  sections 
    
  Kossmaticeras_(N.)  erbeni  [1281]
-    72 to  107 I===I (  1596.636 to   1890.752) ....Ordinal Composite  (ORD)
-    72 to  107 +++++ (  1596.636 to   1890.752) ....Quiriquina Island  (Qrq)
+    72 to   98 I===I (  1596.636 to   1815.122) ....Ordinal Composite  (ORD)
+    72 to   98 +++++ (  1596.636 to   1815.122) ....Quiriquina Island  (Qrq)
+                 1  sections 
+   
+ Anapachydiscus  fresvillensis  quirquinae  Stinnes  [1276]
+    73 to   78 I===I (  1605.039 to   1647.056) ....Ordinal Composite  (ORD)
+    73 to   78 +++++ (  1605.039 to   1647.056) ....Quiriquina Island  (Qrq)
                  1  sections 
    
  Pachydiscus_(P.)  jacquoti  chilensis  [1280]
-    73 to   90 I===I (  1605.039 to   1747.896) ....Ordinal Composite  (ORD)
-    73 to   90 +++++ (  1605.039 to   1747.896) ....Quiriquina Island  (Qrq)
+    74 to   88 I===I (  1613.443 to   1731.089) ....Ordinal Composite  (ORD)
+    74 to   88 +++++ (  1613.443 to   1731.089) ....Quiriquina Island  (Qrq)
                  1  sections 
    
  Phylloceras_(H.)  inflatum  [1278]
-    74 to   89 I===I (  1613.443 to   1739.492) ....Ordinal Composite  (ORD)
-    74 to   89 +++++ (  1613.443 to   1739.492) ....Quiriquina Island  (Qrq)
+    75 to   87 I===I (  1621.846 to   1722.686) ....Ordinal Composite  (ORD)
+    75 to   87 +++++ (  1621.846 to   1722.686) ....Quiriquina Island  (Qrq)
                  1  sections 
    
- Diplomoceras  cylindraceum  maximum  Olivero & Zin  [1195]
-    77 to  110 I===I (  1638.652 to   1915.962) ....Ordinal Composite  (ORD)
-   102 to  110 +++++ (  1848.735 to   1915.962) ....Seymour Island C  (SyC)
-    86 to  110 ++++> (  1714.282 to   1915.962) ....Seymour Island D  (SyD)
-    77 to  110 <++++ (  1638.652 to   1915.962) ....Seymour Island C2  (Sy2)
-    77 to  110 ++++> (  1638.652 to   1915.962) ....Seymour Island Z com  (SyZ)
+ Pseudophyllites  loryi  (Killian & Reboul)  1909  [1196]
+    79 to  104 I===I (  1655.459 to   1865.542) ....Ordinal Composite  (ORD)
+   100 to  104 --+-- (  1831.929 to   1865.542) ....Seymour Island C  (SyC)
+    79 to  101 +++++ (  1655.459 to   1840.332) ....Seymour Island F  (SyF)
+    79 to  104 ++++> (  1655.459 to   1865.542) ....Seymour Island Z com  (SyZ)
+    79 to  104 +++++ (  1655.459 to   1865.542) ....Quiriquina Island  (Qrq)
                  4  sections 
    
- Pseudophyllites  loryi  (Killian & Reboul)  1909  [1196]
-    78 to  105 I===I (  1647.056 to   1873.945) ....Ordinal Composite  (ORD)
-    84 to  100 --+-- (  1697.476 to   1831.929) ....Seymour Island C  (SyC)
-    78 to   96 +++++ (  1647.056 to   1798.316) ....Seymour Island F  (SyF)
-    78 to  105 ++++> (  1647.056 to   1873.945) ....Seymour Island Z com  (SyZ)
-    78 to  105 +++++ (  1647.056 to   1873.945) ....Quiriquina Island  (Qrq)
+ Diplomoceras  cylindraceum  maximum  Olivero & Zin  [1195]
+    80 to  111 I===I (  1663.862 to   1924.365) ....Ordinal Composite  (ORD)
+   106 to  111 +++++ (  1882.349 to   1924.365) ....Seymour Island C  (SyC)
+   102 to  111 ++++> (  1848.735 to   1924.365) ....Seymour Island D  (SyD)
+    80 to  111 <++++ (  1663.862 to   1924.365) ....Seymour Island C2  (Sy2)
+    80 to  111 ++++> (  1663.862 to   1924.365) ....Seymour Island Z com  (SyZ)
                  4  sections 
    
  Anagaudryceras  seymouriense  Macellari  1986  [1198]
-    80 to  100 I===I (  1663.862 to   1831.929) ....Ordinal Composite  (ORD)
-    80 to   81 +++++ (  1663.862 to   1672.266) ....Seymour Island C  (SyC)
-    80 to   85 +++++ (  1663.862 to   1705.879) ....Seymour Island D  (SyD)
-   100 to  100 --+-- (  1831.929 to   1831.929) ....Seymour Island F  (SyF)
-    80 to  100 +++++ (  1663.862 to   1831.929) ....Seymour Island Z com  (SyZ)
+    82 to  103 I===I (  1680.669 to   1857.139) ....Ordinal Composite  (ORD)
+    82 to  103 +++++ (  1680.669 to   1857.139) ....Seymour Island C  (SyC)
+    82 to  101 +++++ (  1680.669 to   1840.332) ....Seymour Island D  (SyD)
+   103 to  103 --+-- (  1857.139 to   1857.139) ....Seymour Island F  (SyF)
+    82 to  103 +++++ (  1680.669 to   1857.139) ....Seymour Island Z com  (SyZ)
                  4  sections 
    
  Maorites  densicostatus  gamma  (Killian & Reboul)  [1186]
-    81 to   86 I===I (  1672.266 to   1714.282) ....Ordinal Composite  (ORD)
-    81 to   86 --+-- (  1672.266 to   1714.282) ....Seymour Island A  (SyA)
-    81 to   81 --+-- (  1672.266 to   1672.266) ....Seymour Island C  (SyC)
-    81 to   86 +++++ (  1672.266 to   1714.282) ....Seymour Island D  (SyD)
-    81 to   86 --+-- (  1672.266 to   1714.282) ....Seymour Island F  (SyF)
+    83 to  102 I===I (  1689.072 to   1848.735) ....Ordinal Composite  (ORD)
+    83 to   93 --+-- (  1689.072 to   1773.106) ....Seymour Island A  (SyA)
+    83 to  102 --+-- (  1689.072 to   1848.735) ....Seymour Island C  (SyC)
+    83 to  102 +++++ (  1689.072 to   1848.735) ....Seymour Island D  (SyD)
+   102 to  102 --+-- (  1848.735 to   1848.735) ....Seymour Island F  (SyF)
+                 4  sections 
+   
+ Zelandites  varuna  (Forbes)  1846  [1107]
+    84 to  112 I===I (  1697.476 to   1932.769) ....Ordinal Composite  (ORD)
+   112 to  112 --+-- (  1932.769 to   1932.769) ....Seymour Island C  (SyC)
+   108 to  112 ---+> (  1899.155 to   1932.769) ....Seymour Island D  (SyD)
+   103 to  112 +++++ (  1857.139 to   1932.769) ....Seymour Island Z com  (SyZ)
+    84 to  112 +++++ (  1697.476 to   1932.769) ....Quiriquina Island  (Qrq)
                  4  sections 
    
  Gaudryceras  kayei  (Forbes)  1846  [1045]
-    83 to   99 I===I (  1689.072 to   1823.526) ....Ordinal Composite  (ORD)
-    83 to   99 +++++ (  1689.072 to   1823.526) ....Seymour Island D  (SyD)
-    83 to   99 +++++ (  1689.072 to   1823.526) ....Quiriquina Island  (Qrq)
+    85 to  105 I===I (  1705.879 to   1873.945) ....Ordinal Composite  (ORD)
+    85 to  105 +++++ (  1705.879 to   1873.945) ....Seymour Island D  (SyD)
+    85 to  105 +++++ (  1705.879 to   1873.945) ....Quiriquina Island  (Qrq)
                  2  sections 
    
- Pachydiscus  ultimus  Macellari  1986  [1192]
-    84 to  114 I===I (  1697.476 to   1949.575) ....Ordinal Composite  (ORD)
-    96 to  114 ++++> (  1798.316 to   1949.575) ....Seymour Island A  (SyA)
-   102 to  110 +++++ (  1848.735 to   1915.962) ....Seymour Island C  (SyC)
-    84 to  114 +++++ (  1697.476 to   1949.575) ....Seymour Island D  (SyD)
-   100 to  114 ++++> (  1831.929 to   1949.575) ....Seymour Island F  (SyF)
-    84 to  114 <+++> (  1697.476 to   1949.575) ....Seymour Island C2  (Sy2)
-    84 to  104 +++++ (  1697.476 to   1865.542) ....Seymour Island Z com  (SyZ)
-                 6  sections 
-   
- Zelandites  varuna  (Forbes)  1846  [1107]
-    87 to  111 I===I (  1722.686 to   1924.365) ....Ordinal Composite  (ORD)
-   111 to  111 --+-- (  1924.365 to   1924.365) ....Seymour Island C  (SyC)
-   104 to  111 ---+> (  1865.542 to   1924.365) ....Seymour Island D  (SyD)
-   100 to  104 +++++ (  1831.929 to   1865.542) ....Seymour Island Z com  (SyZ)
-    87 to  111 +++++ (  1722.686 to   1924.365) ....Quiriquina Island  (Qrq)
-                 4  sections 
-   
  Hypophylloceras  hetonaiense  (Matsumoto)  1942  [1100]
-    88 to  108 I===I (  1731.089 to   1899.155) ....Ordinal Composite  (ORD)
-    88 to  108 +++++ (  1731.089 to   1899.155) ....Quiriquina Island  (Qrq)
+    86 to   99 I===I (  1714.282 to   1823.526) ....Ordinal Composite  (ORD)
+    86 to   99 +++++ (  1714.282 to   1823.526) ....Quiriquina Island  (Qrq)
                  1  sections 
    
  Neophylloceras  ramosum  (Meek)  1857  [1293]
-    92 to  103 I===I (  1764.702 to   1857.139) ....Ordinal Composite  (ORD)
-    92 to  103 +++++ (  1764.702 to   1857.139) ....Quiriquina Island  (Qrq)
+    90 to   92 I===I (  1747.896 to   1764.702) ....Ordinal Composite  (ORD)
+    90 to   92 +++++ (  1747.896 to   1764.702) ....Quiriquina Island  (Qrq)
+                 1  sections 
+   
+ Pachydiscus  ultimus  Macellari  1986  [1192]
+   100 to  114 I===I (  1831.929 to   1949.575) ....Ordinal Composite  (ORD)
+   100 to  114 ++++> (  1831.929 to   1949.575) ....Seymour Island A  (SyA)
+   106 to  111 +++++ (  1882.349 to   1924.365) ....Seymour Island C  (SyC)
+   100 to  114 +++++ (  1831.929 to   1949.575) ....Seymour Island D  (SyD)
+   103 to  114 ++++> (  1857.139 to   1949.575) ....Seymour Island F  (SyF)
+   100 to  114 <+++> (  1831.929 to   1949.575) ....Seymour Island C2  (Sy2)
+   100 to  114 +++++ (  1831.929 to   1949.575) ....Seymour Island Z com  (SyZ)
+                 6  sections 
+   
+ Hoploscaphites  quiriquiniensis  [1285]
+   116 to  120 I===I (  1966.382 to   1999.995) ....Ordinal Composite  (ORD)
+   116 to  120 ++++> (  1966.382 to   1999.995) ....Quiriquina Island  (Qrq)
                  1  sections 
    
  Neophylloceras  surya  (Forbes)  1846  [1044]
-   115 to  119 I===I (  1957.979 to   1991.592) ....Ordinal Composite  (ORD)
-   115 to  119 ++++> (  1957.979 to   1991.592) ....Quiriquina Island  (Qrq)
-                 1  sections 
-   
- Hoploscaphites  quiriquiniensis  [1285]
-   117 to  118 I===I (  1974.785 to   1983.189) ....Ordinal Composite  (ORD)
-   117 to  118 ++++> (  1974.785 to   1983.189) ....Quiriquina Island  (Qrq)
+   118 to  119 I===I (  1983.189 to   1991.592) ....Ordinal Composite  (ORD)
+   118 to  119 ++++> (  1983.189 to   1991.592) ....Quiriquina Island  (Qrq)
                  1  sections 
    

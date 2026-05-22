@@ -8,323 +8,323 @@
    <+--- or ---+> found at section base or top only;  I===I composite range
    levels: lowest to highest | Local Range Icon | heights: lowest to highest | section
  ----------------------------------------------------------------------
+ Scaphites_(S.)  hippocrepis  (DeKay)  1828  [1393]
+     1 to    1 I===I (  1000.000 to   1000.000) ....ZERO-MEAN STD COMPOSITE  (XST)
+     1 to    1 <++++ (  1000.000 to   1000.000) ....Obradovich Time 93/7  (O97)
+                 1  sections 
+   
  Neograhamites  taylori  Spath  [1660]
      1 to    1 I===I (  1000.000 to   1000.000) ....ZERO-MEAN STD COMPOSITE  (XST)
      1 to    1 <+--- (  1000.000 to   1000.000) ....Chilean Composite  (Xch)
                  1  sections 
    
  Kossmaticeras  theobaldianus  [1664]
-     2 to    2 I===I (  1010.333 to   1010.333) ....ZERO-MEAN STD COMPOSITE  (XST)
-     2 to    2 --+-- (  1010.333 to   1010.333) ....Chilean Composite  (Xch)
-                 1  sections 
-   
- Scaphites_(S.)  hippocrepis  (DeKay)  1828  [1393]
-     2 to    2 I===I (  1010.333 to   1010.333) ....ZERO-MEAN STD COMPOSITE  (XST)
-     2 to    2 <++++ (  1010.333 to   1010.333) ....Obradovich Time 93/7  (O97)
-                 1  sections 
-   
- Baculites  obtusus  Meek  1876  [1088]
-     2 to    2 I===I (  1010.333 to   1010.333) ....ZERO-MEAN STD COMPOSITE  (XST)
-     2 to    2 +++++ (  1010.333 to   1010.333) ....Obradovich Time 93/7  (O97)
-                 1  sections 
-   
- Gunnarites  bhavaniformis  (Killian & Reboul)  190  [1189]
-     2 to    2 I===I (  1010.333 to   1010.333) ....ZERO-MEAN STD COMPOSITE  (XST)
-     2 to    2 <+--- (  1010.333 to   1010.333) ....Seymour Island A  (SyA)
-                 1  sections 
-   
- Baculites  mclearni  Landes  1940  [1087]
-     2 to    2 I===I (  1010.333 to   1010.333) ....ZERO-MEAN STD COMPOSITE  (XST)
-     2 to    2 +++++ (  1010.333 to   1010.333) ....Obradovich Time 93/7  (O97)
+     2 to    2 I===I (  1009.667 to   1009.667) ....ZERO-MEAN STD COMPOSITE  (XST)
+     2 to    2 --+-- (  1009.667 to   1009.667) ....Chilean Composite  (Xch)
                  1  sections 
    
  Kossmaticeras  guentheri  [1663]
-     3 to    3 I===I (  1020.667 to   1020.667) ....ZERO-MEAN STD COMPOSITE  (XST)
-     3 to    3 --+-- (  1020.667 to   1020.667) ....Chilean Composite  (Xch)
+     3 to    3 I===I (  1019.333 to   1019.333) ....ZERO-MEAN STD COMPOSITE  (XST)
+     3 to    3 --+-- (  1019.333 to   1019.333) ....Chilean Composite  (Xch)
                  1  sections 
    
- Baculites  scotti  Cobban  1958  [1078]
-     3 to    3 I===I (  1020.667 to   1020.667) ....ZERO-MEAN STD COMPOSITE  (XST)
-     3 to    3 +++++ (  1020.667 to   1020.667) ....Obradovich Time 93/7  (O97)
-                 1  sections 
-   
- Didymoceras  nebrascense  (Meek & Hayden)  1856  [1077]
-     3 to    3 I===I (  1020.667 to   1020.667) ....ZERO-MEAN STD COMPOSITE  (XST)
-     3 to    3 +++++ (  1020.667 to   1020.667) ....Obradovich Time 93/7  (O97)
+ Baculites  obtusus  Meek  1876  [1088]
+     3 to    3 I===I (  1019.333 to   1019.333) ....ZERO-MEAN STD COMPOSITE  (XST)
+     3 to    3 +++++ (  1019.333 to   1019.333) ....Obradovich Time 93/7  (O97)
                  1  sections 
    
  Kossmaticeras  bhavani  [1662]
-     4 to    4 I===I (  1031.000 to   1031.000) ....ZERO-MEAN STD COMPOSITE  (XST)
-     4 to    4 --+-- (  1031.000 to   1031.000) ....Chilean Composite  (Xch)
+     4 to    4 I===I (  1029.000 to   1029.000) ....ZERO-MEAN STD COMPOSITE  (XST)
+     4 to    4 --+-- (  1029.000 to   1029.000) ....Chilean Composite  (Xch)
+                 1  sections 
+   
+ Baculites  mclearni  Landes  1940  [1087]
+     4 to    4 I===I (  1029.000 to   1029.000) ....ZERO-MEAN STD COMPOSITE  (XST)
+     4 to    4 +++++ (  1029.000 to   1029.000) ....Obradovich Time 93/7  (O97)
+                 1  sections 
+   
+ Baculites  scotti  Cobban  1958  [1078]
+     4 to    4 I===I (  1029.000 to   1029.000) ....ZERO-MEAN STD COMPOSITE  (XST)
+     4 to    4 +++++ (  1029.000 to   1029.000) ....Obradovich Time 93/7  (O97)
+                 1  sections 
+   
+ Didymoceras  nebrascense  (Meek & Hayden)  1856  [1077]
+     4 to    4 I===I (  1029.000 to   1029.000) ....ZERO-MEAN STD COMPOSITE  (XST)
+     4 to    4 +++++ (  1029.000 to   1029.000) ....Obradovich Time 93/7  (O97)
                  1  sections 
    
  Exiteloceras  jenneyi  (Whitfield)  1877  [1073]
-     4 to    4 I===I (  1031.000 to   1031.000) ....ZERO-MEAN STD COMPOSITE  (XST)
-     4 to    4 +++++ (  1031.000 to   1031.000) ....Obradovich Time 93/7  (O97)
+     4 to    4 I===I (  1029.000 to   1029.000) ....ZERO-MEAN STD COMPOSITE  (XST)
+     4 to    4 +++++ (  1029.000 to   1029.000) ....Obradovich Time 93/7  (O97)
+                 1  sections 
+   
+ Gunnarites  bhavaniformis  (Killian & Reboul)  190  [1189]
+     4 to    4 I===I (  1029.000 to   1029.000) ....ZERO-MEAN STD COMPOSITE  (XST)
+     4 to    4 <+--- (  1029.000 to   1029.000) ....Seymour Island A  (SyA)
                  1  sections 
    
  Baculites  compressus  Say  1820  [1249]
-     4 to    4 I===I (  1031.000 to   1031.000) ....ZERO-MEAN STD COMPOSITE  (XST)
-     4 to    4 +++++ (  1031.000 to   1031.000) ....Obradovich Time 93/7  (O97)
-                 1  sections 
-   
- Baculites  vincentei  [1275]
-     4 to    6 I===I (  1031.000 to   1034.733) ....ZERO-MEAN STD COMPOSITE  (XST)
-     4 to    6 <++++ (  1031.000 to   1034.733) ....Quiriquina Island  (Qrq)
-                 1  sections 
-   
- Eubaculites  lyelli  (d Orbigny)  1847  [1130]
-     5 to   43 I===I (  1033.800 to   1100.955) ....ZERO-MEAN STD COMPOSITE  (XST)
-     5 to   43 +++++ (  1033.800 to   1100.955) ....Quiriquina Island  (Qrq)
+     4 to    4 I===I (  1029.000 to   1029.000) ....ZERO-MEAN STD COMPOSITE  (XST)
+     4 to    4 +++++ (  1029.000 to   1029.000) ....Obradovich Time 93/7  (O97)
                  1  sections 
    
  Baculites  grandis  Hall & Meek  1855  [1062]
-     6 to    6 I===I (  1034.733 to   1034.733) ....ZERO-MEAN STD COMPOSITE  (XST)
-     6 to    6 +++++ (  1034.733 to   1034.733) ....Obradovich Time 93/7  (O97)
+     4 to    4 I===I (  1029.000 to   1029.000) ....ZERO-MEAN STD COMPOSITE  (XST)
+     4 to    4 +++++ (  1029.000 to   1029.000) ....Obradovich Time 93/7  (O97)
                  1  sections 
    
  Baculites  clinolobatus  Elias  1933  [1059]
-     6 to    6 I===I (  1034.733 to   1034.733) ....ZERO-MEAN STD COMPOSITE  (XST)
-     6 to    6 +++++ (  1034.733 to   1034.733) ....Obradovich Time 93/7  (O97)
+     4 to    4 I===I (  1029.000 to   1029.000) ....ZERO-MEAN STD COMPOSITE  (XST)
+     4 to    4 +++++ (  1029.000 to   1029.000) ....Obradovich Time 93/7  (O97)
+                 1  sections 
+   
+ Baculites  vincentei  [1275]
+     4 to    6 I===I (  1029.000 to   1032.556) ....ZERO-MEAN STD COMPOSITE  (XST)
+     4 to    6 <++++ (  1029.000 to   1032.556) ....Quiriquina Island  (Qrq)
+                 1  sections 
+   
+ Eubaculites  lyelli  (d Orbigny)  1847  [1130]
+     5 to   41 I===I (  1031.667 to   1096.874) ....ZERO-MEAN STD COMPOSITE  (XST)
+     5 to   41 +++++ (  1031.667 to   1096.874) ....Quiriquina Island  (Qrq)
                  1  sections 
    
  Maorites  tuberculatus  Howarth  1958  [1194]
-     7 to   17 I===I (  1036.067 to   1050.657) ....ZERO-MEAN STD COMPOSITE  (XST)
-     7 to   17 +++++ (  1036.067 to   1050.657) ....Seymour Island A  (SyA)
-     7 to   17 <++++ (  1036.067 to   1050.657) ....Seymour Island F  (SyF)
-     7 to   17 <++++ (  1036.067 to   1050.657) ....Seymour Island Z com  (SyZ)
-     7 to   17 ++++> (  1036.067 to   1050.657) ....Snow Hill Island  (Snw)
+     7 to   18 I===I (  1033.889 to   1050.387) ....ZERO-MEAN STD COMPOSITE  (XST)
+     7 to   18 +++++ (  1033.889 to   1050.387) ....Seymour Island A  (SyA)
+     7 to   18 <++++ (  1033.889 to   1050.387) ....Seymour Island F  (SyF)
+     7 to   18 <++++ (  1033.889 to   1050.387) ....Seymour Island Z com  (SyZ)
+     7 to   18 ++++> (  1033.889 to   1050.387) ....Snow Hill Island  (Snw)
                  4  sections 
    
  Gunnarites  antarcticus  (Weller)  [1545]
-     8 to   13 I===I (  1039.511 to   1046.805) ....ZERO-MEAN STD COMPOSITE  (XST)
-     8 to   13 <++++ (  1039.511 to   1046.805) ....Snow Hill Island  (Snw)
-     8 to   13 <+++> (  1039.511 to   1046.805) ....Cape Lamb  (Lmb)
-     8 to   13 --+-- (  1039.511 to   1046.805) ....Chilean Composite  (Xch)
+     8 to   13 I===I (  1037.111 to   1044.835) ....ZERO-MEAN STD COMPOSITE  (XST)
+     8 to   13 <++++ (  1037.111 to   1044.835) ....Snow Hill Island  (Snw)
+     8 to   13 <+++> (  1037.111 to   1044.835) ....Cape Lamb  (Lmb)
+     8 to   13 --+-- (  1037.111 to   1044.835) ....Chilean Composite  (Xch)
                  3  sections 
    
  Diplomoceras  cylindraceum  (Defrance)  1816  [1051]
-     9 to   46 I===I (  1043.133 to   1104.374) ....ZERO-MEAN STD COMPOSITE  (XST)
-     9 to   46 +++++ (  1043.133 to   1104.374) ....Seymour Island A  (SyA)
-     9 to   46 +++++ (  1043.133 to   1104.374) ....Seymour Island C  (SyC)
-     9 to   37 <++++ (  1043.133 to   1092.026) ....Seymour Island D  (SyD)
-    24 to   46 +++++ (  1061.641 to   1104.374) ....Seymour Island F  (SyF)
-     9 to   46 ++++> (  1043.133 to   1104.374) ....Snow Hill Island  (Snw)
-     9 to   46 +++++ (  1043.133 to   1104.374) ....Cape Lamb  (Lmb)
+     9 to   47 I===I (  1040.786 to   1103.516) ....ZERO-MEAN STD COMPOSITE  (XST)
+     9 to   47 +++++ (  1040.786 to   1103.516) ....Seymour Island A  (SyA)
+     9 to   47 +++++ (  1040.786 to   1103.516) ....Seymour Island C  (SyC)
+     9 to   42 <++++ (  1040.786 to   1099.768) ....Seymour Island D  (SyD)
+    24 to   47 +++++ (  1059.817 to   1103.516) ....Seymour Island F  (SyF)
+     9 to   47 ++++> (  1040.786 to   1103.516) ....Snow Hill Island  (Snw)
+     9 to   47 +++++ (  1040.786 to   1103.516) ....Cape Lamb  (Lmb)
                  6  sections 
    
- Jacobites  crofti  [1546]
-     9 to   12 I===I (  1043.133 to   1046.133) ....ZERO-MEAN STD COMPOSITE  (XST)
-     9 to   12 <++++ (  1043.133 to   1046.133) ....Snow Hill Island  (Snw)
-                 1  sections 
-   
  Kitchinites  darwini  (Steinmann)  1895  [1183]
-    11 to   43 I===I (  1045.861 to   1100.955) ....ZERO-MEAN STD COMPOSITE  (XST)
-    21 to   43 +++++ (  1055.323 to   1100.955) ....Seymour Island A  (SyA)
-    11 to   25 <+--- (  1045.861 to   1065.188) ....Seymour Island C  (SyC)
-    11 to   22 +++++ (  1045.861 to   1058.309) ....Seymour Island D  (SyD)
-    22 to   26 +++++ (  1058.309 to   1080.129) ....Seymour Island F  (SyF)
-    11 to   43 +++++ (  1045.861 to   1100.955) ....Seymour Island Z com  (SyZ)
-    11 to   15 <++++ (  1045.861 to   1047.131) ....Snow Hill Island  (Snw)
-    32 to   43 +++++ (  1084.776 to   1100.955) ....Quiriquina Island  (Qrq)
+    10 to   40 I===I (  1043.280 to   1095.985) ....ZERO-MEAN STD COMPOSITE  (XST)
+    21 to   40 +++++ (  1053.346 to   1095.985) ....Seymour Island A  (SyA)
+    10 to   25 <+--- (  1043.280 to   1063.425) ....Seymour Island C  (SyC)
+    10 to   22 +++++ (  1043.280 to   1056.573) ....Seymour Island D  (SyD)
+    22 to   26 +++++ (  1056.573 to   1078.819) ....Seymour Island F  (SyF)
+    10 to   40 +++++ (  1043.280 to   1095.985) ....Seymour Island Z com  (SyZ)
+    10 to   16 <++++ (  1043.280 to   1046.553) ....Snow Hill Island  (Snw)
+    32 to   40 +++++ (  1083.319 to   1095.985) ....Quiriquina Island  (Qrq)
                  7  sections 
    
- Pachydiscus  ootacodensis  (Stoliczka)  1865  [1200]
-    14 to   14 I===I (  1046.870 to   1046.870) ....ZERO-MEAN STD COMPOSITE  (XST)
-    14 to   14 --+-- (  1046.870 to   1046.870) ....Seymour Island D  (SyD)
-                 1  sections 
-   
- Grossouvrites  gemmatus  (Hupe)  1854  [1190]
-    15 to   50 I===I (  1047.131 to   1107.089) ....ZERO-MEAN STD COMPOSITE  (XST)
-    22 to   43 +++++ (  1058.309 to   1100.955) ....Seymour Island A  (SyA)
-    26 to   50 +++++ (  1080.129 to   1107.089) ....Seymour Island C  (SyC)
-    15 to   50 +++++ (  1047.131 to   1107.089) ....Seymour Island D  (SyD)
-    22 to   50 ++++> (  1058.309 to   1107.089) ....Seymour Island F  (SyF)
-    15 to   50 <++++ (  1047.131 to   1107.089) ....Seymour Island C2  (Sy2)
-    15 to   50 ++++> (  1047.131 to   1107.089) ....Seymour Island Z com  (SyZ)
-    15 to   50 ++++> (  1047.131 to   1107.089) ....Snow Hill Island  (Snw)
-    15 to   31 +++++ (  1047.131 to   1084.465) ....Quiriquina Island  (Qrq)
-                 8  sections 
-   
- Dimitobelus  seymouriensis  [1669]
-    19 to   19 I===I (  1052.775 to   1052.775) ....ZERO-MEAN STD COMPOSITE  (XST)
-    19 to   19 --+-- (  1052.775 to   1052.775) ....Seymour Island Z com  (SyZ)
+ Jacobites  crofti  [1546]
+    10 to   11 I===I (  1043.280 to   1043.746) ....ZERO-MEAN STD COMPOSITE  (XST)
+    10 to   11 <++++ (  1043.280 to   1043.746) ....Snow Hill Island  (Snw)
                  1  sections 
    
  Gunnarites  kalika  (Stoliczka)  1865  [1369]
-    20 to   20 I===I (  1054.497 to   1054.497) ....ZERO-MEAN STD COMPOSITE  (XST)
-    20 to   20 --+-- (  1054.497 to   1054.497) ....Chilean Composite  (Xch)
+    14 to   14 I===I (  1046.216 to   1046.216) ....ZERO-MEAN STD COMPOSITE  (XST)
+    14 to   14 --+-- (  1046.216 to   1046.216) ....Chilean Composite  (Xch)
+                 1  sections 
+   
+ Pachydiscus  ootacodensis  (Stoliczka)  1865  [1200]
+    15 to   15 I===I (  1046.288 to   1046.288) ....ZERO-MEAN STD COMPOSITE  (XST)
+    15 to   15 --+-- (  1046.288 to   1046.288) ....Seymour Island D  (SyD)
+                 1  sections 
+   
+ Grossouvrites  gemmatus  (Hupe)  1854  [1190]
+    16 to   50 I===I (  1046.553 to   1105.782) ....ZERO-MEAN STD COMPOSITE  (XST)
+    22 to   40 +++++ (  1056.573 to   1095.985) ....Seymour Island A  (SyA)
+    26 to   50 +++++ (  1078.819 to   1105.782) ....Seymour Island C  (SyC)
+    16 to   50 +++++ (  1046.553 to   1105.782) ....Seymour Island D  (SyD)
+    22 to   50 ++++> (  1056.573 to   1105.782) ....Seymour Island F  (SyF)
+    16 to   50 <++++ (  1046.553 to   1105.782) ....Seymour Island C2  (Sy2)
+    16 to   50 ++++> (  1046.553 to   1105.782) ....Seymour Island Z com  (SyZ)
+    16 to   50 ++++> (  1046.553 to   1105.782) ....Snow Hill Island  (Snw)
+    16 to   31 +++++ (  1046.553 to   1083.023) ....Quiriquina Island  (Qrq)
+                 8  sections 
+   
+ Dimitobelus  seymouriensis  [1669]
+    20 to   20 I===I (  1052.517 to   1052.517) ....ZERO-MEAN STD COMPOSITE  (XST)
+    20 to   20 --+-- (  1052.517 to   1052.517) ....Seymour Island Z com  (SyZ)
                  1  sections 
    
  Maorites  seymourianus  (Killian & Reboul)  1909  [1187]
-    21 to   33 I===I (  1055.323 to   1085.234) ....ZERO-MEAN STD COMPOSITE  (XST)
-    21 to   33 +++++ (  1055.323 to   1085.234) ....Seymour Island A  (SyA)
-    21 to   25 <+--- (  1055.323 to   1065.188) ....Seymour Island C  (SyC)
-    21 to   25 +++++ (  1055.323 to   1065.188) ....Seymour Island D  (SyD)
-    21 to   26 +++++ (  1055.323 to   1080.129) ....Seymour Island F  (SyF)
-    21 to   33 +++++ (  1055.323 to   1085.234) ....Seymour Island Z com  (SyZ)
-    21 to   33 ---+> (  1055.323 to   1085.234) ....Snow Hill Island  (Snw)
+    21 to   33 I===I (  1053.346 to   1083.785) ....ZERO-MEAN STD COMPOSITE  (XST)
+    21 to   33 +++++ (  1053.346 to   1083.785) ....Seymour Island A  (SyA)
+    21 to   25 <+--- (  1053.346 to   1063.425) ....Seymour Island C  (SyC)
+    21 to   25 +++++ (  1053.346 to   1063.425) ....Seymour Island D  (SyD)
+    21 to   26 +++++ (  1053.346 to   1078.819) ....Seymour Island F  (SyF)
+    21 to   33 +++++ (  1053.346 to   1083.785) ....Seymour Island Z com  (SyZ)
+    21 to   33 ---+> (  1053.346 to   1083.785) ....Snow Hill Island  (Snw)
                  6  sections 
    
  Eutrephoceras  simile  Spath  [1193]
-    22 to   49 I===I (  1058.309 to   1106.440) ....ZERO-MEAN STD COMPOSITE  (XST)
-    22 to   25 +++++ (  1058.309 to   1065.188) ....Seymour Island A  (SyA)
-    49 to   49 --+-- (  1106.440 to   1106.440) ....Seymour Island C  (SyC)
-    22 to   49 ++++> (  1058.309 to   1106.440) ....Seymour Island D  (SyD)
-    22 to   49 +++++ (  1058.309 to   1106.440) ....Seymour Island F  (SyF)
+    22 to   49 I===I (  1056.573 to   1105.201) ....ZERO-MEAN STD COMPOSITE  (XST)
+    22 to   25 +++++ (  1056.573 to   1063.425) ....Seymour Island A  (SyA)
+    49 to   49 --+-- (  1105.201 to   1105.201) ....Seymour Island C  (SyC)
+    22 to   49 ++++> (  1056.573 to   1105.201) ....Seymour Island D  (SyD)
+    22 to   49 +++++ (  1056.573 to   1105.201) ....Seymour Island F  (SyF)
                  4  sections 
    
  Maorites  wedelliensis  Macellari  1986  [1188]
-    23 to   25 I===I (  1059.180 to   1065.188) ....ZERO-MEAN STD COMPOSITE  (XST)
-    23 to   25 --+-- (  1059.180 to   1065.188) ....Seymour Island A  (SyA)
-    23 to   25 <+--- (  1059.180 to   1065.188) ....Seymour Island C  (SyC)
-    23 to   25 --+-- (  1059.180 to   1065.188) ....Seymour Island D  (SyD)
-    23 to   25 +++++ (  1059.180 to   1065.188) ....Seymour Island F  (SyF)
-    25 to   25 --+-- (  1065.188 to   1065.188) ....Seymour Island Z com  (SyZ)
+    23 to   25 I===I (  1057.457 to   1063.425) ....ZERO-MEAN STD COMPOSITE  (XST)
+    23 to   25 --+-- (  1057.457 to   1063.425) ....Seymour Island A  (SyA)
+    23 to   25 <+--- (  1057.457 to   1063.425) ....Seymour Island C  (SyC)
+    23 to   25 --+-- (  1057.457 to   1063.425) ....Seymour Island D  (SyD)
+    23 to   25 +++++ (  1057.457 to   1063.425) ....Seymour Island F  (SyF)
+    25 to   25 --+-- (  1063.425 to   1063.425) ....Seymour Island Z com  (SyZ)
                  5  sections 
    
  Maorites  densicostatus  alpha  (Killian & Reboul)  [1184]
-    24 to   53 I===I (  1061.641 to   1108.907) ....ZERO-MEAN STD COMPOSITE  (XST)
-    24 to   43 +++++ (  1061.641 to   1100.955) ....Seymour Island A  (SyA)
-    24 to   53 +++++ (  1061.641 to   1108.907) ....Seymour Island C  (SyC)
-    28 to   53 ++++> (  1081.042 to   1108.907) ....Seymour Island D  (SyD)
-    26 to   49 +++++ (  1080.129 to   1106.440) ....Seymour Island F  (SyF)
-    24 to   53 <++++ (  1061.641 to   1108.907) ....Seymour Filo Negro  (Fln)
-    24 to   50 <++++ (  1061.641 to   1107.089) ....Seymour Island C2  (Sy2)
-    24 to   53 ++++> (  1061.641 to   1108.907) ....Seymour Island Z com  (SyZ)
-    24 to   53 ---+> (  1061.641 to   1108.907) ....Chilean Composite  (Xch)
+    24 to   53 I===I (  1059.817 to   1107.400) ....ZERO-MEAN STD COMPOSITE  (XST)
+    24 to   40 +++++ (  1059.817 to   1095.985) ....Seymour Island A  (SyA)
+    24 to   53 +++++ (  1059.817 to   1107.400) ....Seymour Island C  (SyC)
+    28 to   53 ++++> (  1079.764 to   1107.400) ....Seymour Island D  (SyD)
+    26 to   49 +++++ (  1078.819 to   1105.201) ....Seymour Island F  (SyF)
+    24 to   53 <++++ (  1059.817 to   1107.400) ....Seymour Filo Negro  (Fln)
+    24 to   50 <++++ (  1059.817 to   1105.782) ....Seymour Island C2  (Sy2)
+    24 to   53 ++++> (  1059.817 to   1107.400) ....Seymour Island Z com  (SyZ)
+    24 to   53 ---+> (  1059.817 to   1107.400) ....Chilean Composite  (Xch)
                  8  sections 
    
- Eutrephoceras  subplicatum  [1279]
-    25 to   41 I===I (  1065.188 to   1093.488) ....ZERO-MEAN STD COMPOSITE  (XST)
-    25 to   41 +++++ (  1065.188 to   1093.488) ....Quiriquina Island  (Qrq)
-                 1  sections 
-   
- Anapachydiscus  fresvillensis  quirquinae  Stinnes  [1276]
-    25 to   31 I===I (  1065.188 to   1084.465) ....ZERO-MEAN STD COMPOSITE  (XST)
-    25 to   31 +++++ (  1065.188 to   1084.465) ....Quiriquina Island  (Qrq)
-                 1  sections 
-   
  Baculites  hunickeni  [1277]
-    25 to   31 I===I (  1065.188 to   1084.465) ....ZERO-MEAN STD COMPOSITE  (XST)
-    25 to   31 +++++ (  1065.188 to   1084.465) ....Quiriquina Island  (Qrq)
+    25 to   31 I===I (  1063.425 to   1083.023) ....ZERO-MEAN STD COMPOSITE  (XST)
+    25 to   31 +++++ (  1063.425 to   1083.023) ....Quiriquina Island  (Qrq)
                  1  sections 
    
  Pachydiscus  riccardi  Macellari  1986  [1191]
-    26 to   38 I===I (  1080.129 to   1092.177) ....ZERO-MEAN STD COMPOSITE  (XST)
-    26 to   38 --+-- (  1080.129 to   1092.177) ....Seymour Island A  (SyA)
-    26 to   38 +++++ (  1080.129 to   1092.177) ....Seymour Island C  (SyC)
-    35 to   38 +++++ (  1088.684 to   1092.177) ....Seymour Island D  (SyD)
-    26 to   38 +++++ (  1080.129 to   1092.177) ....Seymour Island F  (SyF)
-    26 to   38 +++++ (  1080.129 to   1092.177) ....Seymour Island Z com  (SyZ)
+    26 to   43 I===I (  1078.819 to   1099.934) ....ZERO-MEAN STD COMPOSITE  (XST)
+    26 to   40 --+-- (  1078.819 to   1095.985) ....Seymour Island A  (SyA)
+    26 to   43 +++++ (  1078.819 to   1099.934) ....Seymour Island C  (SyC)
+    35 to   43 +++++ (  1085.893 to   1099.934) ....Seymour Island D  (SyD)
+    26 to   43 +++++ (  1078.819 to   1099.934) ....Seymour Island F  (SyF)
+    26 to   43 +++++ (  1078.819 to   1099.934) ....Seymour Island Z com  (SyZ)
                  5  sections 
    
+ Eutrephoceras  subplicatum  [1279]
+    26 to   38 I===I (  1078.819 to   1088.874) ....ZERO-MEAN STD COMPOSITE  (XST)
+    26 to   38 +++++ (  1078.819 to   1088.874) ....Quiriquina Island  (Qrq)
+                 1  sections 
+   
  Kitchinites  laurae  Macellari  1986  [1197]
-    27 to   47 I===I (  1080.595 to   1105.881) ....ZERO-MEAN STD COMPOSITE  (XST)
-    27 to   34 +++++ (  1080.595 to   1086.537) ....Seymour Island C  (SyC)
-    27 to   47 ++++> (  1080.595 to   1105.881) ....Seymour Island D  (SyD)
-    27 to   44 +++++ (  1080.595 to   1101.844) ....Seymour Island F  (SyF)
-    27 to   47 <++++ (  1080.595 to   1105.881) ....Seymour Island C2  (Sy2)
-    34 to   47 +++++ (  1086.537 to   1105.881) ....Seymour Island Z com  (SyZ)
+    27 to   48 I===I (  1079.293 to   1104.620) ....ZERO-MEAN STD COMPOSITE  (XST)
+    27 to   34 +++++ (  1079.293 to   1085.032) ....Seymour Island C  (SyC)
+    27 to   48 ++++> (  1079.293 to   1104.620) ....Seymour Island D  (SyD)
+    27 to   43 +++++ (  1079.293 to   1099.934) ....Seymour Island F  (SyF)
+    27 to   48 <++++ (  1079.293 to   1104.620) ....Seymour Island C2  (Sy2)
+    34 to   48 +++++ (  1085.032 to   1104.620) ....Seymour Island Z com  (SyZ)
                  5  sections 
    
  Maorites  densicostatus  beta  (Killian & Reboul)  [1185]
-    28 to   44 I===I (  1081.042 to   1101.844) ....ZERO-MEAN STD COMPOSITE  (XST)
-    28 to   44 +++++ (  1081.042 to   1101.844) ....Seymour Island A  (SyA)
-    28 to   35 --+-- (  1081.042 to   1088.684) ....Seymour Island C  (SyC)
-    35 to   36 +++++ (  1088.684 to   1090.119) ....Seymour Island D  (SyD)
-    28 to   44 +++++ (  1081.042 to   1101.844) ....Seymour Island F  (SyF)
-    28 to   44 +++++ (  1081.042 to   1101.844) ....Quiriquina Island  (Qrq)
+    28 to   41 I===I (  1079.764 to   1096.874) ....ZERO-MEAN STD COMPOSITE  (XST)
+    28 to   41 +++++ (  1079.764 to   1096.874) ....Seymour Island A  (SyA)
+    35 to   41 --+-- (  1085.893 to   1096.874) ....Seymour Island C  (SyC)
+    35 to   41 +++++ (  1085.893 to   1096.874) ....Seymour Island D  (SyD)
+    28 to   41 +++++ (  1079.764 to   1096.874) ....Seymour Island F  (SyF)
+    28 to   41 +++++ (  1079.764 to   1096.874) ....Quiriquina Island  (Qrq)
                  5  sections 
    
  Kossmaticeras_(N.)  erbeni  [1281]
-    28 to   49 I===I (  1081.042 to   1106.440) ....ZERO-MEAN STD COMPOSITE  (XST)
-    28 to   49 +++++ (  1081.042 to   1106.440) ....Quiriquina Island  (Qrq)
+    28 to   41 I===I (  1079.764 to   1096.874) ....ZERO-MEAN STD COMPOSITE  (XST)
+    28 to   41 +++++ (  1079.764 to   1096.874) ....Quiriquina Island  (Qrq)
+                 1  sections 
+   
+ Anapachydiscus  fresvillensis  quirquinae  Stinnes  [1276]
+    28 to   31 I===I (  1079.764 to   1083.023) ....ZERO-MEAN STD COMPOSITE  (XST)
+    28 to   31 +++++ (  1079.764 to   1083.023) ....Quiriquina Island  (Qrq)
                  1  sections 
    
  Pachydiscus_(P.)  jacquoti  chilensis  [1280]
-    29 to   41 I===I (  1081.354 to   1093.488) ....ZERO-MEAN STD COMPOSITE  (XST)
-    29 to   41 +++++ (  1081.354 to   1093.488) ....Quiriquina Island  (Qrq)
+    29 to   38 I===I (  1080.060 to   1088.874) ....ZERO-MEAN STD COMPOSITE  (XST)
+    29 to   38 +++++ (  1080.060 to   1088.874) ....Quiriquina Island  (Qrq)
                  1  sections 
    
  Phylloceras_(H.)  inflatum  [1278]
-    30 to   40 I===I (  1082.909 to   1093.177) ....ZERO-MEAN STD COMPOSITE  (XST)
-    30 to   40 +++++ (  1082.909 to   1093.177) ....Quiriquina Island  (Qrq)
+    30 to   37 I===I (  1081.541 to   1088.577) ....ZERO-MEAN STD COMPOSITE  (XST)
+    30 to   37 +++++ (  1081.541 to   1088.577) ....Quiriquina Island  (Qrq)
                  1  sections 
    
- Diplomoceras  cylindraceum  maximum  Olivero & Zin  [1195]
-    31 to   51 I===I (  1084.465 to   1108.034) ....ZERO-MEAN STD COMPOSITE  (XST)
-    46 to   51 +++++ (  1104.374 to   1108.034) ....Seymour Island C  (SyC)
-    39 to   51 ++++> (  1092.555 to   1108.034) ....Seymour Island D  (SyD)
-    31 to   51 <++++ (  1084.465 to   1108.034) ....Seymour Island C2  (Sy2)
-    31 to   51 ++++> (  1084.465 to   1108.034) ....Seymour Island Z com  (SyZ)
+ Pseudophyllites  loryi  (Killian & Reboul)  1909  [1196]
+    32 to   46 I===I (  1083.319 to   1103.284) ....ZERO-MEAN STD COMPOSITE  (XST)
+    42 to   46 --+-- (  1099.768 to   1103.284) ....Seymour Island C  (SyC)
+    32 to   43 +++++ (  1083.319 to   1099.934) ....Seymour Island F  (SyF)
+    32 to   46 ++++> (  1083.319 to   1103.284) ....Seymour Island Z com  (SyZ)
+    32 to   46 +++++ (  1083.319 to   1103.284) ....Quiriquina Island  (Qrq)
                  4  sections 
    
- Pseudophyllites  loryi  (Killian & Reboul)  1909  [1196]
-    32 to   48 I===I (  1084.776 to   1105.882) ....ZERO-MEAN STD COMPOSITE  (XST)
-    37 to   45 --+-- (  1092.026 to   1104.188) ....Seymour Island C  (SyC)
-    32 to   44 +++++ (  1084.776 to   1101.844) ....Seymour Island F  (SyF)
-    32 to   48 ++++> (  1084.776 to   1105.882) ....Seymour Island Z com  (SyZ)
-    32 to   48 +++++ (  1084.776 to   1105.882) ....Quiriquina Island  (Qrq)
+ Diplomoceras  cylindraceum  maximum  Olivero & Zin  [1195]
+    32 to   51 I===I (  1083.319 to   1106.384) ....ZERO-MEAN STD COMPOSITE  (XST)
+    47 to   51 +++++ (  1103.516 to   1106.384) ....Seymour Island C  (SyC)
+    44 to   51 ++++> (  1100.426 to   1106.384) ....Seymour Island D  (SyD)
+    32 to   51 <++++ (  1083.319 to   1106.384) ....Seymour Island C2  (Sy2)
+    32 to   51 ++++> (  1083.319 to   1106.384) ....Seymour Island Z com  (SyZ)
                  4  sections 
    
  Anagaudryceras  seymouriense  Macellari  1986  [1198]
-    34 to   45 I===I (  1086.537 to   1104.188) ....ZERO-MEAN STD COMPOSITE  (XST)
-    34 to   35 +++++ (  1086.537 to   1088.684) ....Seymour Island C  (SyC)
-    34 to   38 +++++ (  1086.537 to   1092.177) ....Seymour Island D  (SyD)
-    45 to   45 --+-- (  1104.188 to   1104.188) ....Seymour Island F  (SyF)
-    34 to   45 +++++ (  1086.537 to   1104.188) ....Seymour Island Z com  (SyZ)
+    34 to   45 I===I (  1085.032 to   1102.809) ....ZERO-MEAN STD COMPOSITE  (XST)
+    34 to   45 +++++ (  1085.032 to   1102.809) ....Seymour Island C  (SyC)
+    34 to   43 +++++ (  1085.032 to   1099.934) ....Seymour Island D  (SyD)
+    45 to   45 --+-- (  1102.809 to   1102.809) ....Seymour Island F  (SyF)
+    34 to   45 +++++ (  1085.032 to   1102.809) ....Seymour Island Z com  (SyZ)
                  4  sections 
    
  Maorites  densicostatus  gamma  (Killian & Reboul)  [1186]
-    35 to   39 I===I (  1088.684 to   1092.555) ....ZERO-MEAN STD COMPOSITE  (XST)
-    35 to   39 --+-- (  1088.684 to   1092.555) ....Seymour Island A  (SyA)
-    35 to   35 --+-- (  1088.684 to   1088.684) ....Seymour Island C  (SyC)
-    35 to   39 +++++ (  1088.684 to   1092.555) ....Seymour Island D  (SyD)
-    35 to   39 --+-- (  1088.684 to   1092.555) ....Seymour Island F  (SyF)
+    35 to   44 I===I (  1085.893 to   1100.426) ....ZERO-MEAN STD COMPOSITE  (XST)
+    35 to   40 --+-- (  1085.893 to   1095.985) ....Seymour Island A  (SyA)
+    35 to   44 --+-- (  1085.893 to   1100.426) ....Seymour Island C  (SyC)
+    35 to   44 +++++ (  1085.893 to   1100.426) ....Seymour Island D  (SyD)
+    44 to   44 --+-- (  1100.426 to   1100.426) ....Seymour Island F  (SyF)
+                 4  sections 
+   
+ Zelandites  varuna  (Forbes)  1846  [1107]
+    36 to   52 I===I (  1087.985 to   1106.761) ....ZERO-MEAN STD COMPOSITE  (XST)
+    52 to   52 --+-- (  1106.761 to   1106.761) ....Seymour Island C  (SyC)
+    48 to   52 ---+> (  1104.620 to   1106.761) ....Seymour Island D  (SyD)
+    45 to   52 +++++ (  1102.809 to   1106.761) ....Seymour Island Z com  (SyZ)
+    36 to   52 +++++ (  1087.985 to   1106.761) ....Quiriquina Island  (Qrq)
                  4  sections 
    
  Gaudryceras  kayei  (Forbes)  1846  [1045]
-    36 to   44 I===I (  1090.119 to   1101.844) ....ZERO-MEAN STD COMPOSITE  (XST)
-    36 to   44 +++++ (  1090.119 to   1101.844) ....Seymour Island D  (SyD)
-    36 to   44 +++++ (  1090.119 to   1101.844) ....Quiriquina Island  (Qrq)
+    36 to   46 I===I (  1087.985 to   1103.284) ....ZERO-MEAN STD COMPOSITE  (XST)
+    36 to   46 +++++ (  1087.985 to   1103.284) ....Seymour Island D  (SyD)
+    36 to   46 +++++ (  1087.985 to   1103.284) ....Quiriquina Island  (Qrq)
                  2  sections 
    
- Pachydiscus  ultimus  Macellari  1986  [1192]
-    37 to   54 I===I (  1092.026 to   1110.053) ....ZERO-MEAN STD COMPOSITE  (XST)
-    44 to   54 ++++> (  1101.844 to   1110.053) ....Seymour Island A  (SyA)
-    46 to   51 +++++ (  1104.374 to   1108.034) ....Seymour Island C  (SyC)
-    37 to   54 +++++ (  1092.026 to   1110.053) ....Seymour Island D  (SyD)
-    45 to   54 ++++> (  1104.188 to   1110.053) ....Seymour Island F  (SyF)
-    37 to   54 <+++> (  1092.026 to   1110.053) ....Seymour Island C2  (Sy2)
-    37 to   47 +++++ (  1092.026 to   1105.881) ....Seymour Island Z com  (SyZ)
-                 6  sections 
-   
- Zelandites  varuna  (Forbes)  1846  [1107]
-    39 to   52 I===I (  1092.555 to   1108.397) ....ZERO-MEAN STD COMPOSITE  (XST)
-    52 to   52 --+-- (  1108.397 to   1108.397) ....Seymour Island C  (SyC)
-    47 to   52 ---+> (  1105.881 to   1108.397) ....Seymour Island D  (SyD)
-    45 to   47 +++++ (  1104.188 to   1105.881) ....Seymour Island Z com  (SyZ)
-    39 to   52 +++++ (  1092.555 to   1108.397) ....Quiriquina Island  (Qrq)
-                 4  sections 
-   
  Hypophylloceras  hetonaiense  (Matsumoto)  1942  [1100]
-    39 to   49 I===I (  1092.555 to   1106.440) ....ZERO-MEAN STD COMPOSITE  (XST)
-    39 to   49 +++++ (  1092.555 to   1106.440) ....Quiriquina Island  (Qrq)
+    36 to   41 I===I (  1087.985 to   1096.874) ....ZERO-MEAN STD COMPOSITE  (XST)
+    36 to   41 +++++ (  1087.985 to   1096.874) ....Quiriquina Island  (Qrq)
                  1  sections 
    
  Neophylloceras  ramosum  (Meek)  1857  [1293]
-    41 to   46 I===I (  1093.488 to   1104.374) ....ZERO-MEAN STD COMPOSITE  (XST)
-    41 to   46 +++++ (  1093.488 to   1104.374) ....Quiriquina Island  (Qrq)
+    38 to   40 I===I (  1088.874 to   1095.985) ....ZERO-MEAN STD COMPOSITE  (XST)
+    38 to   40 +++++ (  1088.874 to   1095.985) ....Quiriquina Island  (Qrq)
+                 1  sections 
+   
+ Pachydiscus  ultimus  Macellari  1986  [1192]
+    42 to   54 I===I (  1099.768 to   1108.396) ....ZERO-MEAN STD COMPOSITE  (XST)
+    42 to   54 ++++> (  1099.768 to   1108.396) ....Seymour Island A  (SyA)
+    47 to   51 +++++ (  1103.516 to   1106.384) ....Seymour Island C  (SyC)
+    42 to   54 +++++ (  1099.768 to   1108.396) ....Seymour Island D  (SyD)
+    45 to   54 ++++> (  1102.809 to   1108.396) ....Seymour Island F  (SyF)
+    42 to   54 <+++> (  1099.768 to   1108.396) ....Seymour Island C2  (Sy2)
+    42 to   54 +++++ (  1099.768 to   1108.396) ....Seymour Island Z com  (SyZ)
+                 6  sections 
+   
+ Hoploscaphites  quiriquiniensis  [1285]
+    54 to   56 I===I (  1108.396 to   1112.643) ....ZERO-MEAN STD COMPOSITE  (XST)
+    54 to   56 ++++> (  1108.396 to   1112.643) ....Quiriquina Island  (Qrq)
                  1  sections 
    
  Neophylloceras  surya  (Forbes)  1846  [1044]
-    54 to   56 I===I (  1110.053 to   1114.354) ....ZERO-MEAN STD COMPOSITE  (XST)
-    54 to   56 ++++> (  1110.053 to   1114.354) ....Quiriquina Island  (Qrq)
-                 1  sections 
-   
- Hoploscaphites  quiriquiniensis  [1285]
-    55 to   56 I===I (  1110.621 to   1114.354) ....ZERO-MEAN STD COMPOSITE  (XST)
-    55 to   56 ++++> (  1110.621 to   1114.354) ....Quiriquina Island  (Qrq)
+    55 to   56 I===I (  1109.088 to   1112.643) ....ZERO-MEAN STD COMPOSITE  (XST)
+    55 to   56 ++++> (  1109.088 to   1112.643) ....Quiriquina Island  (Qrq)
                  1  sections 
    
