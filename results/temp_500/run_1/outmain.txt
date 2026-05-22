@@ -1,0 +1,1602 @@
+ ANTARCTICA 12x49x22: 01-JUL-10                              
+ __________________________________________
+            Number of sections:           12
+                Number of taxa:           49
+    Number of Mid-range events:            0
+     Number of unpaired events:           22
+        Total number of events:          120
+ 
+ OPTIMIZED ON Level PENALTY
+ to minimize levels within range extensions
+  with teasing factor
+ RUN TIME (min) = .600
+ _____________________________
+  THE BEST WEIGHTED PENALTIES:
+  Level penalties: 
+ Section  Net-Penalty     (Section Statistics   )
+  1 {SyA  } 45.00 levels  (1095.00 meters with 20 event levels at mean spacing of 57.63 +/- 71.69) 
+                         (1 unshared range end(s) at section limit)
+                         (1 complete unshared taxon range(s) at section limit)
+                         (29 events;     penalty per event: 1.55)
+                         (rescaled range in best sequence: 73 events)
+  2 {SyC  } 59.00 levels  (430.30 meters with 14 event levels at mean spacing of 33.10 +/- 52.56) 
+                         (33 events;     penalty per event: 1.79)
+                         (rescaled range in best sequence: 49 events)
+  3 {SyD  } 40.00 levels  (640.00 meters with 19 event levels at mean spacing of 35.56 +/- 39.47) 
+                         (34 events;     penalty per event: 1.18)
+                         (rescaled range in best sequence: 64 events)
+  4 {SyF  } 46.00 levels  (745.00 meters with 19 event levels at mean spacing of 41.39 +/- 47.49) 
+                         (30 events;     penalty per event: 1.53)
+                         (rescaled range in best sequence: 68 events)
+  5 {Fln  } .00 levels  (9.40 meters with 3 event levels at mean spacing of 4.70 +/- 1.30) 
+                         (3 events;     penalty per event: .00)
+                         (rescaled range in best sequence: 6 events)
+  6 {Sy2  } .00 levels  (32.00 meters with 5 event levels at mean spacing of 8.00 +/- 3.67) 
+                         (10 events;     penalty per event: .00)
+                         (rescaled range in best sequence: 7 events)
+  7 {SyZ  } 15.00 levels  (709.95 meters with 20 event levels at mean spacing of 37.37 +/- 46.14) 
+                         (28 events;     penalty per event: .54)
+                         (rescaled range in best sequence: 65 events)
+  8 {Snw  } 4.00 levels  (290.00 meters with 6 event levels at mean spacing of 58.00 +/- 22.93) 
+                         (1 unshared range end(s) at section limit)
+                         (15 events;     penalty per event: .27)
+                         (rescaled range in best sequence: 6 events)
+  9 {Lmb  } 1.00 levels  (200.00 meters with 5 event levels at mean spacing of 50.00 +/- 39.96) 
+                         (5 events;     penalty per event: .20)
+                         (rescaled range in best sequence: 6 events)
+  10 {Qrq  } 9.00 levels  (45.00 meters with 12 event levels at mean spacing of 4.09 +/- 4.74) 
+                         (3 unshared range end(s) at section limit)
+                         (37 events;     penalty per event: .24)
+                         (rescaled range in best sequence: 80 events)
+  11 {Xch  } .00 levels  (6.00 meters with 7 event levels at mean spacing of 1.00 +/- .00) 
+                         (1 unshared range end(s) at section limit)
+                         (1 complete unshared taxon range(s) at section limit)
+                         (14 events;     penalty per event: .00)
+                         (rescaled range in best sequence: 44 events)
+  12 {O97  } .00 levels  (16.93 meters with 33 event levels at mean spacing of .53 +/- .84) 
+                         (1 unshared range end(s) at section limit)
+                         (35 events;     penalty per event: .00)
+                         (rescaled range in best sequence: 91 events)
+       
+ Ordinal penalties for comparison
+ using solution optimized as above:
+  1 {SyA  } 53 pairs of 406 possible pairs in 20 section levels i.e. .1305
+  2 {SyC  } 98 pairs of 528 possible pairs in 14 section levels i.e. .1856
+  3 {SyD  } 59 pairs of 561 possible pairs in 19 section levels i.e. .1052
+  4 {SyF  } 58 pairs of 435 possible pairs in 19 section levels i.e. .1333
+  5 {Fln  } 0 pairs of 3 possible pairs in 3 section levels i.e. .0000
+  6 {Sy2  } 0 pairs of 45 possible pairs in 5 section levels i.e. .0000
+  7 {SyZ  } 20 pairs of 378 possible pairs in 20 section levels i.e. .0529
+  8 {Snw  } 9 pairs of 105 possible pairs in 6 section levels i.e. .0857
+  9 {Lmb  } 1 pairs of 10 possible pairs in 5 section levels i.e. .1000
+  10 {Qrq  } 28 pairs of 666 possible pairs in 12 section levels i.e. .0420
+  11 {Xch  } 0 pairs of 91 possible pairs in 7 section levels i.e. .0000
+  12 {O97  } 0 pairs of 595 possible pairs in 33 section levels i.e. .0000
+       
+  ___________________________________
+
+ TOTAL PENALTY FOR BEST SEQUENCE:   220.0400
+   includes teasing term
+
+ SECONDARY PENALTY FOR BEST SEQUENCE:  1.0400
+  
+ ALL PENALTIES FIT TO BEST SEQUENCE
+
+    Initial Penalty:   1206.8300 meters
+   Interval Penalty:   9093.4697 meters
+      Level Penalty:   219.0000 levels
+   Eventual Penalty:   325.0000 events
+    Ordinal Penalty:   326.0000 pairs
+    Spatial Penalty:   1051.0000 levels
+     Rascal Penalty:   114.9881
+      Royal Penalty:   104.0000
+   Momental Penalty:   41.4333
+     Sequel Penalty:   880.0000
+   Negative Penalty:   .0000
+    Teasing Penalty:   104.0000 ranks
+     Teasing factor:   .0100
+  Shrinking Penalty:   535.0000 ranks
+   Shrinking factor:   .0000
+  Squeezing Penalty:   728.0000 ranks
+   Squeezing factor:   .0000
+  Smoothing Penalty:   788.6523 meters
+   Smoothing factor:   .0000
+   Net Section Span:   91.5000
+   
+ _________________________________________________
+ STANDARDIZED MEASURES OF QUALITY OF SOLUTION
+            Number of different events:          120
+            Number of exclusive events:           80
+                    Number of sections:           12
+  Sections with exclusive event at end:            2
+   Number of local events to be placed:         1440
+       Number of observed local events:          273
+      i.e. number of lines in loadfile:          273
+     Number of extensible local events:          220
+  (i.e. observed away from section end)
+    Number of penalizable local events:          220
+  (and carrying non-zero weight factor)
+ Number of contradictable local events:          193
+ (i.e. observed in at least 2 sections)
+     Number of improvable local events:          140
+   (i.e. extensible and contradictable)
+       Number of extended local events:           73
+      Number of penalized local events:           73
+         Number of proven coexistences:          193
+      Number of combinations of 2 taxa:         1176
+        Number of observed FA\LA pairs:          593
+ Penalized fraction of improvable events:     0.332
+ (if greater than 1.0, solution is NOT optimal)
+   
+  Total Thickness (all sections):    4219.581    
+ Number of Levels (all sections):          163
+           Average Level Spacing:    27.94424    
+  
+ ____________________________________
+ PENALTY USED TO OPTIMIZE SEQUENCE -
+  (with weights and secondaries)
+           per observed event: .80601
+     per contradictable event: 1.14010
+        per penalizable event: 1.00018
+         per extensible event: 1.00018
+           per extended event: 3.01425
+    
+    
+          MAXIMUM Range Extension:    1425.000    
+     
+  OPTIMAL  NET  EXTENSIONS  -  
+  (no secondary penalties)
+      Measured in DISTANCE:    9093.470    
+           per observed event: 33.30941
+     per contradictable event: 47.11642
+        per penalizable event: 41.33395
+         per extensible event: 41.33395
+           per extended event: 124.56808
+  Net Extension  /Total Thickness:    2.155065    
+     
+     
+        Measured in LEVELS:    219.0000    
+           per observed event: .80220
+     per contradictable event: 1.13472
+        per penalizable event: .99545
+         per extensible event: .99545
+           per extended event: 3.00000
+   Extension Levels/Total Levels:    1.343558    
+     
+     
+        Measured in EVENTS:    325.0000    
+           per observed event: 1.19048
+     per contradictable event: 1.68394
+        per penalizable event: 1.47727
+         per extensible event: 1.47727
+           per extended event: 4.45205
+ ______________________________________________
+  THE RUN PARAMETERS
+    
+  The initial solution - 
+       random sequence  
+  Annealing Schedule - 
+   Initial temperature: 500.0000000
+            10% cooled: 148.7767334
+            30% cooled: 13.17240810
+            50% cooled: 1.16625965
+            70% cooled: .103258386
+            90% cooled: .009142300
+     Final temperature: .002720323
+         Cooling ratio: .980
+         Cooling steps: 600
+       Trials per step: 300
+          Total trials: 180000
+      Smoothing Factor: .000
+      Squeezing Factor: .000
+      Shrinking Factor: .000
+        Teasing Factor: .010
+  Neighborhood size -    
+  big neighborhood: one random event moved
+                    to random new position
+    
+  Observed (sensu stricto) co-existences enforced
+ ______________________________________________
+   THE BEST PERMUTATION FOUND IS:
+   Event:Type   RANK and % above base (rank 1)
+        % permits comparison of different sequences
+ 39:2  120 (100.00%)  {[1285]   Hoploscaphites  quiriquiniensis LAD {in 1 sections}  (fortran # 90)  (tag: not assigned)   
+ 40:2  119 (99.17%)  {[1044]   Neophylloceras  surya  (Forbes)  1846 LAD {in 1 sections}  (fortran # 92)  (tag: not assign
+ 39:1  118 (98.33%)  {[1285]   Hoploscaphites  quiriquiniensis FAD {in 1 sections}  (fortran # 89)  (tag: not assigned)   
+ 21:4  117 (97.50%)  {[0100]   KT iridium/tektites ASH {in 3 sections}  (fortran # 4)  (tag: not assigned)                
+ 40:1  116 (96.67%)  {[1044]   Neophylloceras  surya  (Forbes)  1846 FAD {in 1 sections}  (fortran # 91)  (tag: not assign
+ 22:2  115 (95.83%)  {[1107]   Zelandites  varuna  (Forbes)  1846 LAD {in 4 sections}  (fortran # 58)  (tag: not assigned)
+ 11:2  114 (95.00%)  {[1192]   Pachydiscus  ultimus  Macellari  1986 LAD {in 6 sections}  (fortran # 44)  (tag: not assign
+ 17:2  113 (94.17%)  {[1195]   Diplomoceras  cylindraceum  maximum  Olivero & Zin LAD {in 4 sections}  (fortran # 50)  (ta
+ 3:2  112 (93.33%)  {[1184]   Maorites  densicostatus  alpha  (Killian & Reboul) LAD {in 8 sections}  (fortran # 28)  (ta
+ 9:2  111 (92.50%)  {[1190]   Grossouvrites  gemmatus  (Hupe)  1854 LAD {in 8 sections}  (fortran # 40)  (tag: not assign
+ 12:2  110 (91.67%)  {[1193]   Eutrephoceras  simile  Spath LAD {in 4 sections}  (fortran # 46)  (tag: not assigned)      
+ 19:2  109 (90.83%)  {[1196]   Pseudophyllites  loryi  (Killian & Reboul)  1909 LAD {in 4 sections}  (fortran # 54)  (tag:
+ 20:2  108 (90.00%)  {[1197]   Kitchinites  laurae  Macellari  1986 LAD {in 5 sections}  (fortran # 56)  (tag: not assigne
+ 1:2  107 (89.17%)  {[1051]   Diplomoceras  cylindraceum  (Defrance)  1816 LAD {in 6 sections}  (fortran # 24)  (tag: not
+ 18:2  106 (88.33%)  {[1198]   Anagaudryceras  seymouriense  Macellari  1986 LAD {in 4 sections}  (fortran # 52)  (tag: no
+ 23:2  105 (87.50%)  {[1045]   Gaudryceras  kayei  (Forbes)  1846 LAD {in 2 sections}  (fortran # 60)  (tag: not assigned)
+ 4:2  104 (86.67%)  {[1186]   Maorites  densicostatus  gamma  (Killian & Reboul) LAD {in 4 sections}  (fortran # 30)  (ta
+ 10:2  103 (85.83%)  {[1191]   Pachydiscus  riccardi  Macellari  1986 LAD {in 5 sections}  (fortran # 42)  (tag: not assig
+ 11:1  102 (85.00%)  {[1192]   Pachydiscus  ultimus  Macellari  1986 FAD {in 6 sections}  (fortran # 43)  (tag: not assign
+ 36:2  101 (84.17%)  {[1281]   Kossmaticeras_(N.)  erbeni LAD {in 1 sections}  (fortran # 84)  (tag: not assigned)        
+ 35:2  100 (83.33%)  {[1130]   Eubaculites  lyelli  (d Orbigny)  1847 LAD {in 1 sections}  (fortran # 82)  (tag: not assig
+ 37:2  99 (82.50%)  {[1100]   Hypophylloceras  hetonaiense  (Matsumoto)  1942 LAD {in 1 sections}  (fortran # 86)  (tag: 
+ 5:2  98 (81.67%)  {[1185]   Maorites  densicostatus  beta  (Killian & Reboul) LAD {in 5 sections}  (fortran # 32)  (tag
+ 2:2  97 (80.83%)  {[1183]   Kitchinites  darwini  (Steinmann)  1895 LAD {in 7 sections}  (fortran # 26)  (tag: not assi
+ 38:2  96 (80.00%)  {[1293]   Neophylloceras  ramosum  (Meek)  1857 LAD {in 1 sections}  (fortran # 88)  (tag: not assign
+ 41:4  95 (79.17%)  {[0114]   C30n~C29r ASH {in 1 sections}  (fortran # 6)  (tag: not assigned)                          
+ 38:1  94 (78.33%)  {[1293]   Neophylloceras  ramosum  (Meek)  1857 FAD {in 1 sections}  (fortran # 87)  (tag: not assign
+ 33:2  93 (77.50%)  {[1279]   Eutrephoceras  subplicatum LAD {in 1 sections}  (fortran # 78)  (tag: not assigned)        
+ 50:5  92 (76.67%)  {[0520]   Obrad93 2a_64.97 AGE {in 1 sections}  (fortran # 10)  (tag: not assigned)                  
+ 34:2  91 (75.83%)  {[1280]   Pachydiscus_(P.)  jacquoti  chilensis LAD {in 1 sections}  (fortran # 80)  (tag: not assign
+ 32:2  90 (75.00%)  {[1278]   Phylloceras_(H.)  inflatum LAD {in 1 sections}  (fortran # 76)  (tag: not assigned)        
+ 37:1  89 (74.17%)  {[1100]   Hypophylloceras  hetonaiense  (Matsumoto)  1942 FAD {in 1 sections}  (fortran # 85)  (tag: 
+ 51:5  88 (73.33%)  {[0521]   Obrad93 2b_65.19 AGE {in 1 sections}  (fortran # 11)  (tag: not assigned)                  
+ 23:1  87 (72.50%)  {[1045]   Gaudryceras  kayei  (Forbes)  1846 FAD {in 2 sections}  (fortran # 59)  (tag: not assigned)
+ 22:1  86 (71.67%)  {[1107]   Zelandites  varuna  (Forbes)  1846 FAD {in 4 sections}  (fortran # 57)  (tag: not assigned)
+ 4:1  85 (70.83%)  {[1186]   Maorites  densicostatus  gamma  (Killian & Reboul) FAD {in 4 sections}  (fortran # 29)  (ta
+ 18:1  84 (70.00%)  {[1198]   Anagaudryceras  seymouriense  Macellari  1986 FAD {in 4 sections}  (fortran # 51)  (tag: no
+ 6:2  83 (69.17%)  {[1187]   Maorites  seymourianus  (Killian & Reboul)  1909 LAD {in 6 sections}  (fortran # 34)  (tag:
+ 17:1  82 (68.33%)  {[1195]   Diplomoceras  cylindraceum  maximum  Olivero & Zin FAD {in 4 sections}  (fortran # 49)  (ta
+ 19:1  81 (67.50%)  {[1196]   Pseudophyllites  loryi  (Killian & Reboul)  1909 FAD {in 4 sections}  (fortran # 53)  (tag:
+ 31:2  80 (66.67%)  {[1277]   Baculites  hunickeni LAD {in 1 sections}  (fortran # 74)  (tag: not assigned)              
+ 30:2  79 (65.83%)  {[1276]   Anapachydiscus  fresvillensis  quirquinae  Stinnes LAD {in 1 sections}  (fortran # 72)  (ta
+ 48:5  78 (65.00%)  {[0518]   Obrad93 1a_65.35 AGE {in 1 sections}  (fortran # 8)  (tag: not assigned)                   
+ 32:1  77 (64.17%)  {[1278]   Phylloceras_(H.)  inflatum FAD {in 1 sections}  (fortran # 75)  (tag: not assigned)        
+ 34:1  76 (63.33%)  {[1280]   Pachydiscus_(P.)  jacquoti  chilensis FAD {in 1 sections}  (fortran # 79)  (tag: not assign
+ 15:5  75 (62.50%)  {[0532]   Strontium 65.8 AGE {in 1 sections}  (fortran # 2)  (tag: not assigned)                     
+ 5:1  74 (61.67%)  {[1185]   Maorites  densicostatus  beta  (Killian & Reboul) FAD {in 5 sections}  (fortran # 31)  (tag
+ 20:1  73 (60.83%)  {[1197]   Kitchinites  laurae  Macellari  1986 FAD {in 5 sections}  (fortran # 55)  (tag: not assigne
+ 31:1  72 (60.00%)  {[1277]   Baculites  hunickeni FAD {in 1 sections}  (fortran # 73)  (tag: not assigned)              
+ 49:5  71 (59.17%)  {[0519]   Obrad93 1b_65.43 AGE {in 1 sections}  (fortran # 9)  (tag: not assigned)                   
+ 30:1  70 (58.33%)  {[1276]   Anapachydiscus  fresvillensis  quirquinae  Stinnes FAD {in 1 sections}  (fortran # 71)  (ta
+ 10:1  69 (57.50%)  {[1191]   Pachydiscus  riccardi  Macellari  1986 FAD {in 5 sections}  (fortran # 41)  (tag: not assig
+ 36:1  68 (56.67%)  {[1281]   Kossmaticeras_(N.)  erbeni FAD {in 1 sections}  (fortran # 83)  (tag: not assigned)        
+ 33:1  67 (55.83%)  {[1279]   Eutrephoceras  subplicatum FAD {in 1 sections}  (fortran # 77)  (tag: not assigned)        
+ 7:2  66 (55.00%)  {[1188]   Maorites  wedelliensis  Macellari  1986 LAD {in 5 sections}  (fortran # 36)  (tag: not assi
+ 7:1  65 (54.17%)  {[1188]   Maorites  wedelliensis  Macellari  1986 FAD {in 5 sections}  (fortran # 35)  (tag: not assi
+ 52:5  64 (53.33%)  {[0522]   Obrad93 3_66.8 KneeHills AGE {in 1 sections}  (fortran # 12)  (tag: not assigned)          
+ 3:1  63 (52.50%)  {[1184]   Maorites  densicostatus  alpha  (Killian & Reboul) FAD {in 8 sections}  (fortran # 27)  (ta
+ 12:1  62 (51.67%)  {[1193]   Eutrephoceras  simile  Spath FAD {in 4 sections}  (fortran # 45)  (tag: not assigned)      
+ 6:1  61 (50.83%)  {[1187]   Maorites  seymourianus  (Killian & Reboul)  1909 FAD {in 6 sections}  (fortran # 33)  (tag:
+ 25:2  60 (50.00%)  {[1669]   Dimitobelus  seymouriensis LAD {in 1 sections}  (fortran # 64)  (tag: not assigned)        
+ 16:5  59 (49.17%)  {[0533]   Strontium 67.5 AGE {in 1 sections}  (fortran # 3)  (tag: not assigned)                     
+ 25:1  58 (48.33%)  {[1669]   Dimitobelus  seymouriensis FAD {in 1 sections}  (fortran # 63)  (tag: not assigned)        
+ 43:2  57 (47.50%)  {[1369]   Gunnarites  kalika  (Stoliczka)  1865 LAD {in 1 sections}  (fortran # 96)  (tag: not assign
+ 53:5  56 (46.67%)  {[0523]   Obrad93 4_69.42 B.clinolo AGE {in 1 sections}  (fortran # 13)  (tag: not assigned)         
+ 43:1  55 (45.83%)  {[1369]   Gunnarites  kalika  (Stoliczka)  1865 FAD {in 1 sections}  (fortran # 95)  (tag: not assign
+ 24:2  54 (45.00%)  {[1200]   Pachydiscus  ootacodensis  (Stoliczka)  1865 LAD {in 1 sections}  (fortran # 62)  (tag: not
+ 24:1  53 (44.17%)  {[1200]   Pachydiscus  ootacodensis  (Stoliczka)  1865 FAD {in 1 sections}  (fortran # 61)  (tag: not
+ 13:2  52 (43.33%)  {[1194]   Maorites  tuberculatus  Howarth  1958 LAD {in 4 sections}  (fortran # 48)  (tag: not assign
+ 14:4  51 (42.50%)  {[0117]   Hasl ASH {in 2 sections}  (fortran # 1)  (tag: not assigned)                               
+ 9:1  50 (41.67%)  {[1190]   Grossouvrites  gemmatus  (Hupe)  1854 FAD {in 8 sections}  (fortran # 39)  (tag: not assign
+ 26:2  49 (40.83%)  {[1545]   Gunnarites  antarcticus  (Weller) LAD {in 3 sections}  (fortran # 66)  (tag: not assigned) 
+ 28:5  48 (40.00%)  {[0531]   Strontium 71.0 +_0.2 AGE {in 1 sections}  (fortran # 5)  (tag: not assigned)               
+ 27:2  47 (39.17%)  {[1546]   Jacobites  crofti LAD {in 1 sections}  (fortran # 68)  (tag: not assigned)                 
+ 27:1  46 (38.33%)  {[1546]   Jacobites  crofti FAD {in 1 sections}  (fortran # 67)  (tag: not assigned)                 
+ 2:1  45 (37.50%)  {[1183]   Kitchinites  darwini  (Steinmann)  1895 FAD {in 7 sections}  (fortran # 25)  (tag: not assi
+ 1:1  44 (36.67%)  {[1051]   Diplomoceras  cylindraceum  (Defrance)  1816 FAD {in 6 sections}  (fortran # 23)  (tag: not
+ 26:1  43 (35.83%)  {[1545]   Gunnarites  antarcticus  (Weller) FAD {in 3 sections}  (fortran # 65)  (tag: not assigned) 
+ 13:1  42 (35.00%)  {[1194]   Maorites  tuberculatus  Howarth  1958 FAD {in 4 sections}  (fortran # 47)  (tag: not assign
+ 29:2  41 (34.17%)  {[1275]   Baculites  vincentei LAD {in 1 sections}  (fortran # 70)  (tag: not assigned)              
+ 35:1  40 (33.33%)  {[1130]   Eubaculites  lyelli  (d Orbigny)  1847 FAD {in 1 sections}  (fortran # 81)  (tag: not assig
+ 29:1  39 (32.50%)  {[1275]   Baculites  vincentei FAD {in 1 sections}  (fortran # 69)  (tag: not assigned)              
+ 60:2  38 (31.67%)  {[1059]   Baculites  clinolobatus  Elias  1933 LAD {in 1 sections}  (fortran # 104)  (tag: not assign
+ 60:1  37 (30.83%)  {[1059]   Baculites  clinolobatus  Elias  1933 FAD {in 1 sections}  (fortran # 103)  (tag: not assign
+ 8:2  36 (30.00%)  {[1189]   Gunnarites  bhavaniformis  (Killian & Reboul)  190 LAD {in 1 sections}  (fortran # 38)  (ta
+ 8:1  35 (29.17%)  {[1189]   Gunnarites  bhavaniformis  (Killian & Reboul)  190 FAD {in 1 sections}  (fortran # 37)  (ta
+ 44:2  34 (28.33%)  {[1662]   Kossmaticeras  bhavani LAD {in 1 sections}  (fortran # 98)  (tag: not assigned)            
+ 44:1  33 (27.50%)  {[1662]   Kossmaticeras  bhavani FAD {in 1 sections}  (fortran # 97)  (tag: not assigned)            
+ 68:2  32 (26.67%)  {[1062]   Baculites  grandis  Hall & Meek  1855 LAD {in 1 sections}  (fortran # 114)  (tag: not assig
+ 66:5  31 (25.83%)  {[0501]   Obrad88 3_70.1 B.grandis AGE {in 1 sections}  (fortran # 21)  (tag: not assigned)          
+ 68:1  30 (25.00%)  {[1062]   Baculites  grandis  Hall & Meek  1855 FAD {in 1 sections}  (fortran # 113)  (tag: not assig
+ 61:2  29 (24.17%)  {[1249]   Baculites  compressus  Say  1820 LAD {in 1 sections}  (fortran # 106)  (tag: not assigned) 
+ 54:5  28 (23.33%)  {[0524]   Obrad93 5_73.35 B.compres AGE {in 1 sections}  (fortran # 14)  (tag: not assigned)         
+ 61:1  27 (22.50%)  {[1249]   Baculites  compressus  Say  1820 FAD {in 1 sections}  (fortran # 105)  (tag: not assigned) 
+ 45:2  26 (21.67%)  {[1663]   Kossmaticeras  guentheri LAD {in 1 sections}  (fortran # 100)  (tag: not assigned)         
+ 45:1  25 (20.83%)  {[1663]   Kossmaticeras  guentheri FAD {in 1 sections}  (fortran # 99)  (tag: not assigned)          
+ 62:2  24 (20.00%)  {[1073]   Exiteloceras  jenneyi  (Whitfield)  1877 LAD {in 1 sections}  (fortran # 108)  (tag: not as
+ 55:5  23 (19.17%)  {[0525]   Obrad93 6_74.76 E.jenneyi AGE {in 1 sections}  (fortran # 15)  (tag: not assigned)         
+ 62:1  22 (18.33%)  {[1073]   Exiteloceras  jenneyi  (Whitfield)  1877 FAD {in 1 sections}  (fortran # 107)  (tag: not as
+ 46:2  21 (17.50%)  {[1664]   Kossmaticeras  theobaldianus LAD {in 1 sections}  (fortran # 102)  (tag: not assigned)     
+ 46:1  20 (16.67%)  {[1664]   Kossmaticeras  theobaldianus FAD {in 1 sections}  (fortran # 101)  (tag: not assigned)     
+ 56:5  19 (15.83%)  {[0526]   Obrad93 7_75.37 G.calcara AGE {in 1 sections}  (fortran # 16)  (tag: not assigned)         
+ 71:2  18 (15.00%)  {[1077]   Didymoceras  nebrascense  (Meek & Hayden)  1856 LAD {in 1 sections}  (fortran # 120)  (tag:
+ 67:5  17 (14.17%)  {[0505]   Obrad88 7_75.5 AGE {in 1 sections}  (fortran # 22)  (tag: not assigned)                    
+ 71:1  16 (13.33%)  {[1077]   Didymoceras  nebrascense  (Meek & Hayden)  1856 FAD {in 1 sections}  (fortran # 119)  (tag:
+ 63:2  15 (12.50%)  {[1078]   Baculites  scotti  Cobban  1958 LAD {in 1 sections}  (fortran # 110)  (tag: not assigned)  
+ 57:5  14 (11.67%)  {[0527]   Obrad93 8_75.89 B.scotti AGE {in 1 sections}  (fortran # 17)  (tag: not assigned)          
+ 63:1  13 (10.83%)  {[1078]   Baculites  scotti  Cobban  1958 FAD {in 1 sections}  (fortran # 109)  (tag: not assigned)  
+ 70:2  12 (10.00%)  {[1087]   Baculites  mclearni  Landes  1940 LAD {in 1 sections}  (fortran # 118)  (tag: not assigned)
+ 70:1  11 (9.17%)  {[1087]   Baculites  mclearni  Landes  1940 FAD {in 1 sections}  (fortran # 117)  (tag: not assigned)
+ 42:2  10 (8.33%)  {[1660]   Neograhamites  taylori  Spath LAD {in 1 sections}  (fortran # 94)  (tag: not assigned)     
+ 65:5  9 (7.50%)  {[0506]   Obrad88 8a_79.2 AGE {in 1 sections}  (fortran # 20)  (tag: not assigned)                   
+ 42:1  8 (6.67%)  {[1660]   Neograhamites  taylori  Spath FAD {in 1 sections}  (fortran # 93)  (tag: not assigned)     
+ 69:2  7 (5.83%)  {[1088]   Baculites  obtusus  Meek  1876 LAD {in 1 sections}  (fortran # 116)  (tag: not assigned)   
+ 69:1  6 (5.00%)  {[1088]   Baculites  obtusus  Meek  1876 FAD {in 1 sections}  (fortran # 115)  (tag: not assigned)   
+ 58:5  5 (4.17%)  {[0528]   Obrad93 9_80.54 Ardmore AGE {in 1 sections}  (fortran # 18)  (tag: not assigned)           
+ 59:4  4 (3.33%)  {[0102]   Ardmore Bentonite ASH {in 1 sections}  (fortran # 19)  (tag: not assigned)                 
+ 64:2  3 (2.50%)  {[1393]   Scaphites_(S.)  hippocrepis  (DeKay)  1828 LAD {in 1 sections}  (fortran # 112)  (tag: not 
+ 47:5  2 (1.67%)  {[0529]   Obrad93 10_81.71 S.hippoc AGE {in 1 sections}  (fortran # 7)  (tag: not assigned)          
+ 64:1  1 (.83%)  {[1393]   Scaphites_(S.)  hippocrepis  (DeKay)  1828 FAD {in 1 sections}  (fortran # 111)  (tag: not 
+ ______________________________________________
+   THE BEST PERMUTATION FOUND IS:
+   Event:Type   RANK and % above base (rank 1)
+        % permits comparison of different sequences
+   ------ FAD EVENTS ONLY ------
+ 39:1  118 (98.33%)  {[1285]   Hoploscaphites  quiriquiniensis FAD {in 1 sections}  (fortran # 89)  (tag: not assigned)   
+ 40:1  116 (96.67%)  {[1044]   Neophylloceras  surya  (Forbes)  1846 FAD {in 1 sections}  (fortran # 91)  (tag: not assign
+ 11:1  102 (85.00%)  {[1192]   Pachydiscus  ultimus  Macellari  1986 FAD {in 6 sections}  (fortran # 43)  (tag: not assign
+ 38:1  94 (78.33%)  {[1293]   Neophylloceras  ramosum  (Meek)  1857 FAD {in 1 sections}  (fortran # 87)  (tag: not assign
+ 37:1  89 (74.17%)  {[1100]   Hypophylloceras  hetonaiense  (Matsumoto)  1942 FAD {in 1 sections}  (fortran # 85)  (tag: 
+ 23:1  87 (72.50%)  {[1045]   Gaudryceras  kayei  (Forbes)  1846 FAD {in 2 sections}  (fortran # 59)  (tag: not assigned)
+ 22:1  86 (71.67%)  {[1107]   Zelandites  varuna  (Forbes)  1846 FAD {in 4 sections}  (fortran # 57)  (tag: not assigned)
+ 4:1  85 (70.83%)  {[1186]   Maorites  densicostatus  gamma  (Killian & Reboul) FAD {in 4 sections}  (fortran # 29)  (ta
+ 18:1  84 (70.00%)  {[1198]   Anagaudryceras  seymouriense  Macellari  1986 FAD {in 4 sections}  (fortran # 51)  (tag: no
+ 17:1  82 (68.33%)  {[1195]   Diplomoceras  cylindraceum  maximum  Olivero & Zin FAD {in 4 sections}  (fortran # 49)  (ta
+ 19:1  81 (67.50%)  {[1196]   Pseudophyllites  loryi  (Killian & Reboul)  1909 FAD {in 4 sections}  (fortran # 53)  (tag:
+ 32:1  77 (64.17%)  {[1278]   Phylloceras_(H.)  inflatum FAD {in 1 sections}  (fortran # 75)  (tag: not assigned)        
+ 34:1  76 (63.33%)  {[1280]   Pachydiscus_(P.)  jacquoti  chilensis FAD {in 1 sections}  (fortran # 79)  (tag: not assign
+ 5:1  74 (61.67%)  {[1185]   Maorites  densicostatus  beta  (Killian & Reboul) FAD {in 5 sections}  (fortran # 31)  (tag
+ 20:1  73 (60.83%)  {[1197]   Kitchinites  laurae  Macellari  1986 FAD {in 5 sections}  (fortran # 55)  (tag: not assigne
+ 31:1  72 (60.00%)  {[1277]   Baculites  hunickeni FAD {in 1 sections}  (fortran # 73)  (tag: not assigned)              
+ 30:1  70 (58.33%)  {[1276]   Anapachydiscus  fresvillensis  quirquinae  Stinnes FAD {in 1 sections}  (fortran # 71)  (ta
+ 10:1  69 (57.50%)  {[1191]   Pachydiscus  riccardi  Macellari  1986 FAD {in 5 sections}  (fortran # 41)  (tag: not assig
+ 36:1  68 (56.67%)  {[1281]   Kossmaticeras_(N.)  erbeni FAD {in 1 sections}  (fortran # 83)  (tag: not assigned)        
+ 33:1  67 (55.83%)  {[1279]   Eutrephoceras  subplicatum FAD {in 1 sections}  (fortran # 77)  (tag: not assigned)        
+ 7:1  65 (54.17%)  {[1188]   Maorites  wedelliensis  Macellari  1986 FAD {in 5 sections}  (fortran # 35)  (tag: not assi
+ 3:1  63 (52.50%)  {[1184]   Maorites  densicostatus  alpha  (Killian & Reboul) FAD {in 8 sections}  (fortran # 27)  (ta
+ 12:1  62 (51.67%)  {[1193]   Eutrephoceras  simile  Spath FAD {in 4 sections}  (fortran # 45)  (tag: not assigned)      
+ 6:1  61 (50.83%)  {[1187]   Maorites  seymourianus  (Killian & Reboul)  1909 FAD {in 6 sections}  (fortran # 33)  (tag:
+ 25:1  58 (48.33%)  {[1669]   Dimitobelus  seymouriensis FAD {in 1 sections}  (fortran # 63)  (tag: not assigned)        
+ 43:1  55 (45.83%)  {[1369]   Gunnarites  kalika  (Stoliczka)  1865 FAD {in 1 sections}  (fortran # 95)  (tag: not assign
+ 24:1  53 (44.17%)  {[1200]   Pachydiscus  ootacodensis  (Stoliczka)  1865 FAD {in 1 sections}  (fortran # 61)  (tag: not
+ 9:1  50 (41.67%)  {[1190]   Grossouvrites  gemmatus  (Hupe)  1854 FAD {in 8 sections}  (fortran # 39)  (tag: not assign
+ 27:1  46 (38.33%)  {[1546]   Jacobites  crofti FAD {in 1 sections}  (fortran # 67)  (tag: not assigned)                 
+ 2:1  45 (37.50%)  {[1183]   Kitchinites  darwini  (Steinmann)  1895 FAD {in 7 sections}  (fortran # 25)  (tag: not assi
+ 1:1  44 (36.67%)  {[1051]   Diplomoceras  cylindraceum  (Defrance)  1816 FAD {in 6 sections}  (fortran # 23)  (tag: not
+ 26:1  43 (35.83%)  {[1545]   Gunnarites  antarcticus  (Weller) FAD {in 3 sections}  (fortran # 65)  (tag: not assigned) 
+ 13:1  42 (35.00%)  {[1194]   Maorites  tuberculatus  Howarth  1958 FAD {in 4 sections}  (fortran # 47)  (tag: not assign
+ 35:1  40 (33.33%)  {[1130]   Eubaculites  lyelli  (d Orbigny)  1847 FAD {in 1 sections}  (fortran # 81)  (tag: not assig
+ 29:1  39 (32.50%)  {[1275]   Baculites  vincentei FAD {in 1 sections}  (fortran # 69)  (tag: not assigned)              
+ 60:1  37 (30.83%)  {[1059]   Baculites  clinolobatus  Elias  1933 FAD {in 1 sections}  (fortran # 103)  (tag: not assign
+ 8:1  35 (29.17%)  {[1189]   Gunnarites  bhavaniformis  (Killian & Reboul)  190 FAD {in 1 sections}  (fortran # 37)  (ta
+ 44:1  33 (27.50%)  {[1662]   Kossmaticeras  bhavani FAD {in 1 sections}  (fortran # 97)  (tag: not assigned)            
+ 68:1  30 (25.00%)  {[1062]   Baculites  grandis  Hall & Meek  1855 FAD {in 1 sections}  (fortran # 113)  (tag: not assig
+ 61:1  27 (22.50%)  {[1249]   Baculites  compressus  Say  1820 FAD {in 1 sections}  (fortran # 105)  (tag: not assigned) 
+ 45:1  25 (20.83%)  {[1663]   Kossmaticeras  guentheri FAD {in 1 sections}  (fortran # 99)  (tag: not assigned)          
+ 62:1  22 (18.33%)  {[1073]   Exiteloceras  jenneyi  (Whitfield)  1877 FAD {in 1 sections}  (fortran # 107)  (tag: not as
+ 46:1  20 (16.67%)  {[1664]   Kossmaticeras  theobaldianus FAD {in 1 sections}  (fortran # 101)  (tag: not assigned)     
+ 71:1  16 (13.33%)  {[1077]   Didymoceras  nebrascense  (Meek & Hayden)  1856 FAD {in 1 sections}  (fortran # 119)  (tag:
+ 63:1  13 (10.83%)  {[1078]   Baculites  scotti  Cobban  1958 FAD {in 1 sections}  (fortran # 109)  (tag: not assigned)  
+ 70:1  11 (9.17%)  {[1087]   Baculites  mclearni  Landes  1940 FAD {in 1 sections}  (fortran # 117)  (tag: not assigned)
+ 42:1  8 (6.67%)  {[1660]   Neograhamites  taylori  Spath FAD {in 1 sections}  (fortran # 93)  (tag: not assigned)     
+ 69:1  6 (5.00%)  {[1088]   Baculites  obtusus  Meek  1876 FAD {in 1 sections}  (fortran # 115)  (tag: not assigned)   
+ 64:1  1 (.83%)  {[1393]   Scaphites_(S.)  hippocrepis  (DeKay)  1828 FAD {in 1 sections}  (fortran # 111)  (tag: not 
+ ______________________________________________
+   THE BEST PERMUTATION FOUND IS:
+   Event:Type   RANK and % above base (rank 1)
+        % permits comparison of different sequences
+   ------ LAD EVENTS ONLY ------
+ 39:2  120 (100.00%)  {[1285]   Hoploscaphites  quiriquiniensis LAD {in 1 sections}  (fortran # 90)  (tag: not assigned)   
+ 40:2  119 (99.17%)  {[1044]   Neophylloceras  surya  (Forbes)  1846 LAD {in 1 sections}  (fortran # 92)  (tag: not assign
+ 22:2  115 (95.83%)  {[1107]   Zelandites  varuna  (Forbes)  1846 LAD {in 4 sections}  (fortran # 58)  (tag: not assigned)
+ 11:2  114 (95.00%)  {[1192]   Pachydiscus  ultimus  Macellari  1986 LAD {in 6 sections}  (fortran # 44)  (tag: not assign
+ 17:2  113 (94.17%)  {[1195]   Diplomoceras  cylindraceum  maximum  Olivero & Zin LAD {in 4 sections}  (fortran # 50)  (ta
+ 3:2  112 (93.33%)  {[1184]   Maorites  densicostatus  alpha  (Killian & Reboul) LAD {in 8 sections}  (fortran # 28)  (ta
+ 9:2  111 (92.50%)  {[1190]   Grossouvrites  gemmatus  (Hupe)  1854 LAD {in 8 sections}  (fortran # 40)  (tag: not assign
+ 12:2  110 (91.67%)  {[1193]   Eutrephoceras  simile  Spath LAD {in 4 sections}  (fortran # 46)  (tag: not assigned)      
+ 19:2  109 (90.83%)  {[1196]   Pseudophyllites  loryi  (Killian & Reboul)  1909 LAD {in 4 sections}  (fortran # 54)  (tag:
+ 20:2  108 (90.00%)  {[1197]   Kitchinites  laurae  Macellari  1986 LAD {in 5 sections}  (fortran # 56)  (tag: not assigne
+ 1:2  107 (89.17%)  {[1051]   Diplomoceras  cylindraceum  (Defrance)  1816 LAD {in 6 sections}  (fortran # 24)  (tag: not
+ 18:2  106 (88.33%)  {[1198]   Anagaudryceras  seymouriense  Macellari  1986 LAD {in 4 sections}  (fortran # 52)  (tag: no
+ 23:2  105 (87.50%)  {[1045]   Gaudryceras  kayei  (Forbes)  1846 LAD {in 2 sections}  (fortran # 60)  (tag: not assigned)
+ 4:2  104 (86.67%)  {[1186]   Maorites  densicostatus  gamma  (Killian & Reboul) LAD {in 4 sections}  (fortran # 30)  (ta
+ 10:2  103 (85.83%)  {[1191]   Pachydiscus  riccardi  Macellari  1986 LAD {in 5 sections}  (fortran # 42)  (tag: not assig
+ 36:2  101 (84.17%)  {[1281]   Kossmaticeras_(N.)  erbeni LAD {in 1 sections}  (fortran # 84)  (tag: not assigned)        
+ 35:2  100 (83.33%)  {[1130]   Eubaculites  lyelli  (d Orbigny)  1847 LAD {in 1 sections}  (fortran # 82)  (tag: not assig
+ 37:2  99 (82.50%)  {[1100]   Hypophylloceras  hetonaiense  (Matsumoto)  1942 LAD {in 1 sections}  (fortran # 86)  (tag: 
+ 5:2  98 (81.67%)  {[1185]   Maorites  densicostatus  beta  (Killian & Reboul) LAD {in 5 sections}  (fortran # 32)  (tag
+ 2:2  97 (80.83%)  {[1183]   Kitchinites  darwini  (Steinmann)  1895 LAD {in 7 sections}  (fortran # 26)  (tag: not assi
+ 38:2  96 (80.00%)  {[1293]   Neophylloceras  ramosum  (Meek)  1857 LAD {in 1 sections}  (fortran # 88)  (tag: not assign
+ 33:2  93 (77.50%)  {[1279]   Eutrephoceras  subplicatum LAD {in 1 sections}  (fortran # 78)  (tag: not assigned)        
+ 34:2  91 (75.83%)  {[1280]   Pachydiscus_(P.)  jacquoti  chilensis LAD {in 1 sections}  (fortran # 80)  (tag: not assign
+ 32:2  90 (75.00%)  {[1278]   Phylloceras_(H.)  inflatum LAD {in 1 sections}  (fortran # 76)  (tag: not assigned)        
+ 6:2  83 (69.17%)  {[1187]   Maorites  seymourianus  (Killian & Reboul)  1909 LAD {in 6 sections}  (fortran # 34)  (tag:
+ 31:2  80 (66.67%)  {[1277]   Baculites  hunickeni LAD {in 1 sections}  (fortran # 74)  (tag: not assigned)              
+ 30:2  79 (65.83%)  {[1276]   Anapachydiscus  fresvillensis  quirquinae  Stinnes LAD {in 1 sections}  (fortran # 72)  (ta
+ 7:2  66 (55.00%)  {[1188]   Maorites  wedelliensis  Macellari  1986 LAD {in 5 sections}  (fortran # 36)  (tag: not assi
+ 25:2  60 (50.00%)  {[1669]   Dimitobelus  seymouriensis LAD {in 1 sections}  (fortran # 64)  (tag: not assigned)        
+ 43:2  57 (47.50%)  {[1369]   Gunnarites  kalika  (Stoliczka)  1865 LAD {in 1 sections}  (fortran # 96)  (tag: not assign
+ 24:2  54 (45.00%)  {[1200]   Pachydiscus  ootacodensis  (Stoliczka)  1865 LAD {in 1 sections}  (fortran # 62)  (tag: not
+ 13:2  52 (43.33%)  {[1194]   Maorites  tuberculatus  Howarth  1958 LAD {in 4 sections}  (fortran # 48)  (tag: not assign
+ 26:2  49 (40.83%)  {[1545]   Gunnarites  antarcticus  (Weller) LAD {in 3 sections}  (fortran # 66)  (tag: not assigned) 
+ 27:2  47 (39.17%)  {[1546]   Jacobites  crofti LAD {in 1 sections}  (fortran # 68)  (tag: not assigned)                 
+ 29:2  41 (34.17%)  {[1275]   Baculites  vincentei LAD {in 1 sections}  (fortran # 70)  (tag: not assigned)              
+ 60:2  38 (31.67%)  {[1059]   Baculites  clinolobatus  Elias  1933 LAD {in 1 sections}  (fortran # 104)  (tag: not assign
+ 8:2  36 (30.00%)  {[1189]   Gunnarites  bhavaniformis  (Killian & Reboul)  190 LAD {in 1 sections}  (fortran # 38)  (ta
+ 44:2  34 (28.33%)  {[1662]   Kossmaticeras  bhavani LAD {in 1 sections}  (fortran # 98)  (tag: not assigned)            
+ 68:2  32 (26.67%)  {[1062]   Baculites  grandis  Hall & Meek  1855 LAD {in 1 sections}  (fortran # 114)  (tag: not assig
+ 61:2  29 (24.17%)  {[1249]   Baculites  compressus  Say  1820 LAD {in 1 sections}  (fortran # 106)  (tag: not assigned) 
+ 45:2  26 (21.67%)  {[1663]   Kossmaticeras  guentheri LAD {in 1 sections}  (fortran # 100)  (tag: not assigned)         
+ 62:2  24 (20.00%)  {[1073]   Exiteloceras  jenneyi  (Whitfield)  1877 LAD {in 1 sections}  (fortran # 108)  (tag: not as
+ 46:2  21 (17.50%)  {[1664]   Kossmaticeras  theobaldianus LAD {in 1 sections}  (fortran # 102)  (tag: not assigned)     
+ 71:2  18 (15.00%)  {[1077]   Didymoceras  nebrascense  (Meek & Hayden)  1856 LAD {in 1 sections}  (fortran # 120)  (tag:
+ 63:2  15 (12.50%)  {[1078]   Baculites  scotti  Cobban  1958 LAD {in 1 sections}  (fortran # 110)  (tag: not assigned)  
+ 70:2  12 (10.00%)  {[1087]   Baculites  mclearni  Landes  1940 LAD {in 1 sections}  (fortran # 118)  (tag: not assigned)
+ 42:2  10 (8.33%)  {[1660]   Neograhamites  taylori  Spath LAD {in 1 sections}  (fortran # 94)  (tag: not assigned)     
+ 69:2  7 (5.83%)  {[1088]   Baculites  obtusus  Meek  1876 LAD {in 1 sections}  (fortran # 116)  (tag: not assigned)   
+ 64:2  3 (2.50%)  {[1393]   Scaphites_(S.)  hippocrepis  (DeKay)  1828 LAD {in 1 sections}  (fortran # 112)  (tag: not 
+    
+ ______________________________________________
+  INCREMENTAL RANGE EXTENSIONS AS THICKNESSES, 
+  IN BEST SEQUENCE, BY EVENT NUMBER AND SECTION
+  extension = unweighted interval penalty
+   
+ WARNING: optimized on level penalty!  
+ Range extensions measured in levels are tabulated
+ in the next section of this report.  
+   
+
+Event and Extension in Sections  1 -  7
+   (sections:  SyA SyC SyD SyF Fln Sy2 SyZ)
+ xxxx - no extension because not seen in section
+ neg  - penalty chargable on negative evidence
+ this data table, unlabelled, = 
+ delta.dat                                                                      
+  
+ unless optimized on level penalty
+   39  2        [1285]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   40  2        [1044]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   39  1        [1285]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   21  4        [0100]    xxxx       0.00     xxxx      xxxx       0.00     xxxx      xxxx 
+   40  1        [1044]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   22  2        [1107]    xxxx       0.00      0.00     xxxx      xxxx      xxxx       4.56
+   11  2        [1192]     0.00     13.00     30.00      0.00     xxxx       0.00     12.25
+   17  2        [1195]    xxxx      13.00      0.00     xxxx      xxxx       0.00      0.00
+    3  2        [1184]    80.00      0.00      0.00     25.00      0.00      0.00      0.00
+    9  2        [1190]    80.00      0.00     35.00      0.00     xxxx       0.00      0.00
+   12  2        [1193]   422.00      0.00      0.00     40.00     xxxx      xxxx      xxxx 
+   19  2        [1196]    xxxx      10.00     xxxx      90.00     xxxx      xxxx       0.00
+   20  2        [1197]    xxxx     110.00      0.00    140.00     xxxx       0.00      0.00
+    1  2        [1051]    20.00      0.00     35.00      0.00     xxxx      xxxx      xxxx 
+   18  2        [1198]    xxxx      35.00     25.00      0.00     xxxx      xxxx       0.00
+   23  2        [1045]    xxxx      xxxx       0.00     xxxx      xxxx      xxxx      xxxx 
+    4  2        [1186]    80.00      7.00      0.00      0.00     xxxx      xxxx      xxxx 
+   10  2        [1191]    80.00      0.00      0.00     15.00     xxxx      xxxx       0.00
+   11  1        [1192]    40.00     10.00      0.00     65.00     xxxx       0.00     59.45
+   36  2        [1281]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   35  2        [1130]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   37  2        [1100]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+    5  2        [1185]     0.00      0.00      0.00      0.00     xxxx      xxxx      xxxx 
+    2  2        [1183]   185.00    300.00    235.00    315.00     xxxx      xxxx       0.00
+   38  2        [1293]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   41  4        [0114]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   38  1        [1293]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   33  2        [1279]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   50  5        [0520]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   34  2        [1280]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   32  2        [1278]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   37  1        [1100]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   51  5        [0521]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   23  1        [1045]    xxxx      xxxx      20.00     xxxx      xxxx      xxxx      xxxx 
+   22  1        [1107]    xxxx     128.00    130.00     xxxx      xxxx      xxxx     158.67
+    4  1        [1186]     0.00     73.00      0.00      5.00     xxxx      xxxx      xxxx 
+   18  1        [1198]    xxxx       0.00      0.00     65.00     xxxx      xxxx       0.00
+    6  2        [1187]   285.00    290.00    115.00    155.00     xxxx      xxxx       0.00
+   17  1        [1195]    xxxx     100.00    205.00     xxxx      xxxx       0.00      0.00
+   19  1        [1196]    xxxx      90.00     xxxx      25.00     xxxx      xxxx       0.00
+   31  2        [1277]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   30  2        [1276]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   48  5        [0518]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   32  1        [1278]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   34  1        [1280]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   15  5        [0532]     0.00     xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+    5  1        [1185]    30.00     10.00    100.00      0.00     xxxx      xxxx      xxxx 
+   20  1        [1197]    xxxx       0.00      0.00      0.00     xxxx       0.00     80.54
+   31  1        [1277]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   49  5        [0519]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   30  1        [1276]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   10  1        [1191]     0.00      0.00     75.00      0.00     xxxx      xxxx       0.00
+   36  1        [1281]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   33  1        [1279]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+    7  2        [1188]     0.00      0.00      0.00      0.00     xxxx      xxxx       0.00
+    7  1        [1188]     0.00      0.00      0.00      0.00     xxxx      xxxx       0.00
+   52  5        [0522]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+    3  1        [1184]   115.00    210.00    115.00    320.00      0.00      0.00      0.00
+   12  1        [1193]     0.00    415.00      0.00      0.00     xxxx      xxxx      xxxx 
+    6  1        [1187]     0.00      0.00      0.00      0.00     xxxx      xxxx       0.00
+   25  2        [1669]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx       0.00
+   16  5        [0533]     0.00     xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   25  1        [1669]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx       0.00
+   43  2        [1369]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   53  5        [0523]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   43  1        [1369]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   24  2        [1200]    xxxx      xxxx       0.00     xxxx      xxxx      xxxx      xxxx 
+   24  1        [1200]    xxxx      xxxx       0.00     xxxx      xxxx      xxxx      xxxx 
+   13  2        [1194]     0.00     xxxx      xxxx     180.00     xxxx      xxxx       0.00
+   14  4        [0117]     0.00     xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+    9  1        [1190]   535.00    270.00    130.00     30.00     xxxx       0.00      0.00
+   26  2        [1545]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   28  5        [0531]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   27  2        [1546]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   27  1        [1546]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+    2  1        [1183]   520.00      0.00      0.00     30.00     xxxx      xxxx       0.00
+    1  1        [1051]   300.00    250.00      0.00    220.00     xxxx      xxxx      xxxx 
+   26  1        [1545]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   13  1        [1194]   310.00     xxxx      xxxx       0.00     xxxx      xxxx       0.00
+   29  2        [1275]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   35  1        [1130]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   29  1        [1275]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   60  2        [1059]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   60  1        [1059]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+    8  2        [1189]     0.00     xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+    8  1        [1189]     0.00     xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   44  2        [1662]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   44  1        [1662]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   68  2        [1062]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   66  5        [0501]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   68  1        [1062]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   61  2        [1249]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   54  5        [0524]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   61  1        [1249]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   45  2        [1663]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   45  1        [1663]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   62  2        [1073]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   55  5        [0525]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   62  1        [1073]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   46  2        [1664]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   46  1        [1664]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   56  5        [0526]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   71  2        [1077]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   67  5        [0505]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   71  1        [1077]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   63  2        [1078]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   57  5        [0527]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   63  1        [1078]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   70  2        [1087]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   70  1        [1087]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   42  2        [1660]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   65  5        [0506]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   42  1        [1660]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   69  2        [1088]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   69  1        [1088]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   58  5        [0528]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   59  4        [0102]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   64  2        [1393]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   47  5        [0529]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+   64  1        [1393]    xxxx      xxxx      xxxx      xxxx      xxxx      xxxx      xxxx 
+
+Event and Extension in Sections  8 - 12
+   (sections:  Snw Lmb Qrq Xch O97)
+ xxxx - no extension because not seen in section
+ neg  - penalty chargable on negative evidence
+ this data table, unlabelled, = 
+ delta.dat                                                                      
+  
+ unless optimized on level penalty
+   39  2        [1285]    xxxx      xxxx       0.00     xxxx      xxxx 
+   40  2        [1044]    xxxx      xxxx       0.00     xxxx      xxxx 
+   39  1        [1285]    xxxx      xxxx       0.00     xxxx      xxxx 
+   21  4        [0100]    xxxx      xxxx      xxxx      xxxx       0.00
+   40  1        [1044]    xxxx      xxxx       0.00     xxxx      xxxx 
+   22  2        [1107]    xxxx      xxxx       0.00     xxxx      xxxx 
+   11  2        [1192]    xxxx      xxxx      xxxx      xxxx      xxxx 
+   17  2        [1195]    xxxx      xxxx      xxxx      xxxx      xxxx 
+    3  2        [1184]    xxxx      xxxx      xxxx       0.00     xxxx 
+    9  2        [1190]     0.00     xxxx      28.00     xxxx      xxxx 
+   12  2        [1193]    xxxx      xxxx      xxxx      xxxx      xxxx 
+   19  2        [1196]    xxxx      xxxx       0.00     xxxx      xxxx 
+   20  2        [1197]    xxxx      xxxx      xxxx      xxxx      xxxx 
+    1  2        [1051]     0.00    107.00     xxxx      xxxx      xxxx 
+   18  2        [1198]    xxxx      xxxx      xxxx      xxxx      xxxx 
+   23  2        [1045]    xxxx      xxxx       0.00     xxxx      xxxx 
+    4  2        [1186]    xxxx      xxxx      xxxx      xxxx      xxxx 
+   10  2        [1191]    xxxx      xxxx      xxxx      xxxx      xxxx 
+   11  1        [1192]    xxxx      xxxx      xxxx      xxxx      xxxx 
+   36  2        [1281]    xxxx      xxxx       0.00     xxxx      xxxx 
+   35  2        [1130]    xxxx      xxxx       0.00     xxxx      xxxx 
+   37  2        [1100]    xxxx      xxxx       0.00     xxxx      xxxx 
+    5  2        [1185]    xxxx      xxxx       0.00     xxxx      xxxx 
+    2  2        [1183]   125.00     xxxx       0.00     xxxx      xxxx 
+   38  2        [1293]    xxxx      xxxx       0.00     xxxx      xxxx 
+   41  4        [0114]    xxxx      xxxx       0.00     xxxx      xxxx 
+   38  1        [1293]    xxxx      xxxx       0.00     xxxx      xxxx 
+   33  2        [1279]    xxxx      xxxx       0.00     xxxx      xxxx 
+   50  5        [0520]    xxxx      xxxx      xxxx      xxxx       0.00
+   34  2        [1280]    xxxx      xxxx       0.00     xxxx      xxxx 
+   32  2        [1278]    xxxx      xxxx       0.00     xxxx      xxxx 
+   37  1        [1100]    xxxx      xxxx       0.00     xxxx      xxxx 
+   51  5        [0521]    xxxx      xxxx      xxxx      xxxx       0.00
+   23  1        [1045]    xxxx      xxxx       0.00     xxxx      xxxx 
+   22  1        [1107]    xxxx      xxxx       0.00     xxxx      xxxx 
+    4  1        [1186]    xxxx      xxxx      xxxx      xxxx      xxxx 
+   18  1        [1198]    xxxx      xxxx      xxxx      xxxx      xxxx 
+    6  2        [1187]     0.00     xxxx      xxxx      xxxx      xxxx 
+   17  1        [1195]    xxxx      xxxx      xxxx      xxxx      xxxx 
+   19  1        [1196]    xxxx      xxxx       0.00     xxxx      xxxx 
+   31  2        [1277]    xxxx      xxxx       0.00     xxxx      xxxx 
+   30  2        [1276]    xxxx      xxxx       0.00     xxxx      xxxx 
+   48  5        [0518]    xxxx      xxxx      xxxx      xxxx       0.00
+   32  1        [1278]    xxxx      xxxx       0.00     xxxx      xxxx 
+   34  1        [1280]    xxxx      xxxx       0.00     xxxx      xxxx 
+   15  5        [0532]    xxxx      xxxx      xxxx      xxxx      xxxx 
+    5  1        [1185]    xxxx      xxxx       0.00     xxxx      xxxx 
+   20  1        [1197]    xxxx      xxxx      xxxx      xxxx      xxxx 
+   31  1        [1277]    xxxx      xxxx       0.00     xxxx      xxxx 
+   49  5        [0519]    xxxx      xxxx      xxxx      xxxx       0.00
+   30  1        [1276]    xxxx      xxxx       0.00     xxxx      xxxx 
+   10  1        [1191]    xxxx      xxxx      xxxx      xxxx      xxxx 
+   36  1        [1281]    xxxx      xxxx       0.00     xxxx      xxxx 
+   33  1        [1279]    xxxx      xxxx       0.00     xxxx      xxxx 
+    7  2        [1188]    xxxx      xxxx      xxxx      xxxx      xxxx 
+    7  1        [1188]    xxxx      xxxx      xxxx      xxxx      xxxx 
+   52  5        [0522]    xxxx      xxxx      xxxx      xxxx       0.00
+    3  1        [1184]    xxxx      xxxx      xxxx       0.00     xxxx 
+   12  1        [1193]    xxxx      xxxx      xxxx      xxxx      xxxx 
+    6  1        [1187]     0.00     xxxx      xxxx      xxxx      xxxx 
+   25  2        [1669]    xxxx      xxxx      xxxx      xxxx      xxxx 
+   16  5        [0533]    xxxx      xxxx      xxxx      xxxx      xxxx 
+   25  1        [1669]    xxxx      xxxx      xxxx      xxxx      xxxx 
+   43  2        [1369]    xxxx      xxxx      xxxx       0.00     xxxx 
+   53  5        [0523]    xxxx      xxxx      xxxx      xxxx       0.00
+   43  1        [1369]    xxxx      xxxx      xxxx       0.00     xxxx 
+   24  2        [1200]    xxxx      xxxx      xxxx      xxxx      xxxx 
+   24  1        [1200]    xxxx      xxxx      xxxx      xxxx      xxxx 
+   13  2        [1194]     0.00     xxxx      xxxx      xxxx      xxxx 
+   14  4        [0117]     0.00     xxxx      xxxx      xxxx      xxxx 
+    9  1        [1190]     0.00     xxxx       0.00     xxxx      xxxx 
+   26  2        [1545]     0.00      0.00     xxxx       0.00     xxxx 
+   28  5        [0531]    xxxx       0.00     xxxx      xxxx      xxxx 
+   27  2        [1546]     0.00     xxxx      xxxx      xxxx      xxxx 
+   27  1        [1546]     0.00     xxxx      xxxx      xxxx      xxxx 
+    2  1        [1183]     0.00     xxxx      12.00     xxxx      xxxx 
+    1  1        [1051]    60.00      0.00     xxxx      xxxx      xxxx 
+   26  1        [1545]     0.00      0.00     xxxx       0.00     xxxx 
+   13  1        [1194]    60.00     xxxx      xxxx      xxxx      xxxx 
+   29  2        [1275]    xxxx      xxxx       0.00     xxxx      xxxx 
+   35  1        [1130]    xxxx      xxxx       0.00     xxxx      xxxx 
+   29  1        [1275]    xxxx      xxxx       0.00     xxxx      xxxx 
+   60  2        [1059]    xxxx      xxxx      xxxx      xxxx       0.00
+   60  1        [1059]    xxxx      xxxx      xxxx      xxxx       0.00
+    8  2        [1189]    xxxx      xxxx      xxxx      xxxx      xxxx 
+    8  1        [1189]    xxxx      xxxx      xxxx      xxxx      xxxx 
+   44  2        [1662]    xxxx      xxxx      xxxx       0.00     xxxx 
+   44  1        [1662]    xxxx      xxxx      xxxx       0.00     xxxx 
+   68  2        [1062]    xxxx      xxxx      xxxx      xxxx       0.00
+   66  5        [0501]    xxxx      xxxx      xxxx      xxxx       0.00
+   68  1        [1062]    xxxx      xxxx      xxxx      xxxx       0.00
+   61  2        [1249]    xxxx      xxxx      xxxx      xxxx       0.00
+   54  5        [0524]    xxxx      xxxx      xxxx      xxxx       0.00
+   61  1        [1249]    xxxx      xxxx      xxxx      xxxx       0.00
+   45  2        [1663]    xxxx      xxxx      xxxx       0.00     xxxx 
+   45  1        [1663]    xxxx      xxxx      xxxx       0.00     xxxx 
+   62  2        [1073]    xxxx      xxxx      xxxx      xxxx       0.00
+   55  5        [0525]    xxxx      xxxx      xxxx      xxxx       0.00
+   62  1        [1073]    xxxx      xxxx      xxxx      xxxx       0.00
+   46  2        [1664]    xxxx      xxxx      xxxx       0.00     xxxx 
+   46  1        [1664]    xxxx      xxxx      xxxx       0.00     xxxx 
+   56  5        [0526]    xxxx      xxxx      xxxx      xxxx       0.00
+   71  2        [1077]    xxxx      xxxx      xxxx      xxxx       0.00
+   67  5        [0505]    xxxx      xxxx      xxxx      xxxx       0.00
+   71  1        [1077]    xxxx      xxxx      xxxx      xxxx       0.00
+   63  2        [1078]    xxxx      xxxx      xxxx      xxxx       0.00
+   57  5        [0527]    xxxx      xxxx      xxxx      xxxx       0.00
+   63  1        [1078]    xxxx      xxxx      xxxx      xxxx       0.00
+   70  2        [1087]    xxxx      xxxx      xxxx      xxxx       0.00
+   70  1        [1087]    xxxx      xxxx      xxxx      xxxx       0.00
+   42  2        [1660]    xxxx      xxxx      xxxx       0.00     xxxx 
+   65  5        [0506]    xxxx      xxxx      xxxx      xxxx       0.00
+   42  1        [1660]    xxxx      xxxx      xxxx       0.00     xxxx 
+   69  2        [1088]    xxxx      xxxx      xxxx      xxxx       0.00
+   69  1        [1088]    xxxx      xxxx      xxxx      xxxx       0.00
+   58  5        [0528]    xxxx      xxxx      xxxx      xxxx       0.00
+   59  4        [0102]    xxxx      xxxx      xxxx      xxxx       0.00
+   64  2        [1393]    xxxx      xxxx      xxxx      xxxx       0.00
+   47  5        [0529]    xxxx      xxxx      xxxx      xxxx       0.00
+   64  1        [1393]    xxxx      xxxx      xxxx      xxxx       0.00
+    
+ _________________________________________________
+  INCREMENTAL RANGE EXTENSION MEASURED BY LEVELS, 
+  IN BEST SEQUENCE, BY EVENT NUMBER AND SECTION
+  extension = unweighted level penalty
+
+Event and Extension in Sections  1 -  7
+   (sections:  SyA SyC SyD SyF Fln Sy2 SyZ)
+ xxx - no extension because not seen in section
+ neg  - penalty chargable on negative evidence
+ if optimized on level penalty
+ this data table, unlabelled, = 
+ delta.dat                                                                      
+  
+    
+   39  2        [1285]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   40  2        [1044]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   39  1        [1285]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   21  4        [0100]      xxx           0     xxx       xxx           0     xxx       xxx  
+   40  1        [1044]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   22  2        [1107]      xxx           0         0     xxx       xxx       xxx           2
+   11  2        [1192]          0         1         1         0     xxx           0         4
+   17  2        [1195]      xxx           1         0     xxx       xxx           0         0
+    3  2        [1184]          3         0         0         1         0         0         0
+    9  2        [1190]          3         0         2         0     xxx           0         0
+   12  2        [1193]          8         0         0         1     xxx       xxx       xxx  
+   19  2        [1196]      xxx           1     xxx           5     xxx       xxx           0
+   20  2        [1197]      xxx           6         0         7     xxx           0         0
+    1  2        [1051]          1         0         2         0     xxx       xxx       xxx  
+   18  2        [1198]      xxx           2         1         0     xxx       xxx           0
+   23  2        [1045]      xxx       xxx           0     xxx       xxx       xxx       xxx  
+    4  2        [1186]          3         1         0         0     xxx       xxx       xxx  
+   10  2        [1191]          3         0         0         1     xxx       xxx           0
+   11  1        [1192]          1         1         0         3     xxx           0         1
+   36  2        [1281]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   35  2        [1130]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   37  2        [1100]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+    5  2        [1185]          0         0         0         0     xxx       xxx       xxx  
+    2  2        [1183]          1         6         7         8     xxx       xxx           0
+   38  2        [1293]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   41  4        [0114]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   38  1        [1293]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   33  2        [1279]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   50  5        [0520]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   34  2        [1280]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   32  2        [1278]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   37  1        [1100]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   51  5        [0521]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   23  1        [1045]      xxx       xxx           1     xxx       xxx       xxx       xxx  
+   22  1        [1107]      xxx           6         7     xxx       xxx       xxx           5
+    4  1        [1186]          0         2         0         1     xxx       xxx       xxx  
+   18  1        [1198]      xxx           0         0         3     xxx       xxx           0
+    6  2        [1187]          3         5         2         2     xxx       xxx           0
+   17  1        [1195]      xxx           5         8     xxx       xxx           0         0
+   19  1        [1196]      xxx           4     xxx           2     xxx       xxx           0
+   31  2        [1277]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   30  2        [1276]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   48  5        [0518]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   32  1        [1278]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   34  1        [1280]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   15  5        [0532]          0     xxx       xxx       xxx       xxx       xxx       xxx  
+    5  1        [1185]          1         1         3         0     xxx       xxx       xxx  
+   20  1        [1197]      xxx           0         0         0     xxx           0         3
+   31  1        [1277]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   49  5        [0519]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   30  1        [1276]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   10  1        [1191]          0         0         3         0     xxx       xxx           0
+   36  1        [1281]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   33  1        [1279]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+    7  2        [1188]          0         0         0         0     xxx       xxx           0
+    7  1        [1188]          0         0         0         0     xxx       xxx           0
+   52  5        [0522]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+    3  1        [1184]          2         1         2         4         0         0         0
+   12  1        [1193]          0        11         0         0     xxx       xxx       xxx  
+    6  1        [1187]          0         0         0         0     xxx       xxx           0
+   25  2        [1669]      xxx       xxx       xxx       xxx       xxx       xxx           0
+   16  5        [0533]          0     xxx       xxx       xxx       xxx       xxx       xxx  
+   25  1        [1669]      xxx       xxx       xxx       xxx       xxx       xxx           0
+   43  2        [1369]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   53  5        [0523]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   43  1        [1369]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   24  2        [1200]      xxx       xxx           0     xxx       xxx       xxx       xxx  
+   24  1        [1200]      xxx       xxx           0     xxx       xxx       xxx       xxx  
+   13  2        [1194]          0     xxx       xxx           1     xxx       xxx           0
+   14  4        [0117]          0     xxx       xxx       xxx       xxx       xxx       xxx  
+    9  1        [1190]          7         3         1         1     xxx           0         0
+   26  2        [1545]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   28  5        [0531]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   27  2        [1546]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   27  1        [1546]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+    2  1        [1183]          6         0         0         1     xxx       xxx           0
+    1  1        [1051]          1         2         0         5     xxx       xxx       xxx  
+   26  1        [1545]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   13  1        [1194]          2     xxx       xxx           0     xxx       xxx           0
+   29  2        [1275]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   35  1        [1130]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   29  1        [1275]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   60  2        [1059]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   60  1        [1059]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+    8  2        [1189]          0     xxx       xxx       xxx       xxx       xxx       xxx  
+    8  1        [1189]          0     xxx       xxx       xxx       xxx       xxx       xxx  
+   44  2        [1662]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   44  1        [1662]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   68  2        [1062]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   66  5        [0501]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   68  1        [1062]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   61  2        [1249]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   54  5        [0524]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   61  1        [1249]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   45  2        [1663]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   45  1        [1663]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   62  2        [1073]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   55  5        [0525]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   62  1        [1073]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   46  2        [1664]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   46  1        [1664]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   56  5        [0526]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   71  2        [1077]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   67  5        [0505]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   71  1        [1077]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   63  2        [1078]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   57  5        [0527]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   63  1        [1078]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   70  2        [1087]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   70  1        [1087]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   42  2        [1660]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   65  5        [0506]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   42  1        [1660]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   69  2        [1088]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   69  1        [1088]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   58  5        [0528]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   59  4        [0102]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   64  2        [1393]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   47  5        [0529]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+   64  1        [1393]      xxx       xxx       xxx       xxx       xxx       xxx       xxx  
+
+Event and Extension in Sections  8 - 12
+   (sections:  Snw Lmb Qrq Xch O97)
+ xxx - no extension because not seen in section
+ neg  - penalty chargable on negative evidence
+ if optimized on level penalty
+ this data table, unlabelled, = 
+ delta.dat                                                                      
+  
+    
+   39  2        [1285]      xxx       xxx           0     xxx       xxx  
+   40  2        [1044]      xxx       xxx           0     xxx       xxx  
+   39  1        [1285]      xxx       xxx           0     xxx       xxx  
+   21  4        [0100]      xxx       xxx       xxx       xxx           0
+   40  1        [1044]      xxx       xxx           0     xxx       xxx  
+   22  2        [1107]      xxx       xxx           0     xxx       xxx  
+   11  2        [1192]      xxx       xxx       xxx       xxx       xxx  
+   17  2        [1195]      xxx       xxx       xxx       xxx       xxx  
+    3  2        [1184]      xxx       xxx       xxx           0     xxx  
+    9  2        [1190]          0     xxx           5     xxx       xxx  
+   12  2        [1193]      xxx       xxx       xxx       xxx       xxx  
+   19  2        [1196]      xxx       xxx           0     xxx       xxx  
+   20  2        [1197]      xxx       xxx       xxx       xxx       xxx  
+    1  2        [1051]          0         1     xxx       xxx       xxx  
+   18  2        [1198]      xxx       xxx       xxx       xxx       xxx  
+   23  2        [1045]      xxx       xxx           0     xxx       xxx  
+    4  2        [1186]      xxx       xxx       xxx       xxx       xxx  
+   10  2        [1191]      xxx       xxx       xxx       xxx       xxx  
+   11  1        [1192]      xxx       xxx       xxx       xxx       xxx  
+   36  2        [1281]      xxx       xxx           0     xxx       xxx  
+   35  2        [1130]      xxx       xxx           0     xxx       xxx  
+   37  2        [1100]      xxx       xxx           0     xxx       xxx  
+    5  2        [1185]      xxx       xxx           0     xxx       xxx  
+    2  2        [1183]          2     xxx           0     xxx       xxx  
+   38  2        [1293]      xxx       xxx           0     xxx       xxx  
+   41  4        [0114]      xxx       xxx           0     xxx       xxx  
+   38  1        [1293]      xxx       xxx           0     xxx       xxx  
+   33  2        [1279]      xxx       xxx           0     xxx       xxx  
+   50  5        [0520]      xxx       xxx       xxx       xxx           0
+   34  2        [1280]      xxx       xxx           0     xxx       xxx  
+   32  2        [1278]      xxx       xxx           0     xxx       xxx  
+   37  1        [1100]      xxx       xxx           0     xxx       xxx  
+   51  5        [0521]      xxx       xxx       xxx       xxx           0
+   23  1        [1045]      xxx       xxx           0     xxx       xxx  
+   22  1        [1107]      xxx       xxx           0     xxx       xxx  
+    4  1        [1186]      xxx       xxx       xxx       xxx       xxx  
+   18  1        [1198]      xxx       xxx       xxx       xxx       xxx  
+    6  2        [1187]          0     xxx       xxx       xxx       xxx  
+   17  1        [1195]      xxx       xxx       xxx       xxx       xxx  
+   19  1        [1196]      xxx       xxx           0     xxx       xxx  
+   31  2        [1277]      xxx       xxx           0     xxx       xxx  
+   30  2        [1276]      xxx       xxx           0     xxx       xxx  
+   48  5        [0518]      xxx       xxx       xxx       xxx           0
+   32  1        [1278]      xxx       xxx           0     xxx       xxx  
+   34  1        [1280]      xxx       xxx           0     xxx       xxx  
+   15  5        [0532]      xxx       xxx       xxx       xxx       xxx  
+    5  1        [1185]      xxx       xxx           0     xxx       xxx  
+   20  1        [1197]      xxx       xxx       xxx       xxx       xxx  
+   31  1        [1277]      xxx       xxx           0     xxx       xxx  
+   49  5        [0519]      xxx       xxx       xxx       xxx           0
+   30  1        [1276]      xxx       xxx           0     xxx       xxx  
+   10  1        [1191]      xxx       xxx       xxx       xxx       xxx  
+   36  1        [1281]      xxx       xxx           0     xxx       xxx  
+   33  1        [1279]      xxx       xxx           0     xxx       xxx  
+    7  2        [1188]      xxx       xxx       xxx       xxx       xxx  
+    7  1        [1188]      xxx       xxx       xxx       xxx       xxx  
+   52  5        [0522]      xxx       xxx       xxx       xxx           0
+    3  1        [1184]      xxx       xxx       xxx           0     xxx  
+   12  1        [1193]      xxx       xxx       xxx       xxx       xxx  
+    6  1        [1187]          0     xxx       xxx       xxx       xxx  
+   25  2        [1669]      xxx       xxx       xxx       xxx       xxx  
+   16  5        [0533]      xxx       xxx       xxx       xxx       xxx  
+   25  1        [1669]      xxx       xxx       xxx       xxx       xxx  
+   43  2        [1369]      xxx       xxx       xxx           0     xxx  
+   53  5        [0523]      xxx       xxx       xxx       xxx           0
+   43  1        [1369]      xxx       xxx       xxx           0     xxx  
+   24  2        [1200]      xxx       xxx       xxx       xxx       xxx  
+   24  1        [1200]      xxx       xxx       xxx       xxx       xxx  
+   13  2        [1194]          0     xxx       xxx       xxx       xxx  
+   14  4        [0117]          0     xxx       xxx       xxx       xxx  
+    9  1        [1190]          0     xxx           0     xxx       xxx  
+   26  2        [1545]          0         0     xxx           0     xxx  
+   28  5        [0531]      xxx           0     xxx       xxx       xxx  
+   27  2        [1546]          0     xxx       xxx       xxx       xxx  
+   27  1        [1546]          0     xxx       xxx       xxx       xxx  
+    2  1        [1183]          0     xxx           4     xxx       xxx  
+    1  1        [1051]          1         0     xxx       xxx       xxx  
+   26  1        [1545]          0         0     xxx           0     xxx  
+   13  1        [1194]          1     xxx       xxx       xxx       xxx  
+   29  2        [1275]      xxx       xxx           0     xxx       xxx  
+   35  1        [1130]      xxx       xxx           0     xxx       xxx  
+   29  1        [1275]      xxx       xxx           0     xxx       xxx  
+   60  2        [1059]      xxx       xxx       xxx       xxx           0
+   60  1        [1059]      xxx       xxx       xxx       xxx           0
+    8  2        [1189]      xxx       xxx       xxx       xxx       xxx  
+    8  1        [1189]      xxx       xxx       xxx       xxx       xxx  
+   44  2        [1662]      xxx       xxx       xxx           0     xxx  
+   44  1        [1662]      xxx       xxx       xxx           0     xxx  
+   68  2        [1062]      xxx       xxx       xxx       xxx           0
+   66  5        [0501]      xxx       xxx       xxx       xxx           0
+   68  1        [1062]      xxx       xxx       xxx       xxx           0
+   61  2        [1249]      xxx       xxx       xxx       xxx           0
+   54  5        [0524]      xxx       xxx       xxx       xxx           0
+   61  1        [1249]      xxx       xxx       xxx       xxx           0
+   45  2        [1663]      xxx       xxx       xxx           0     xxx  
+   45  1        [1663]      xxx       xxx       xxx           0     xxx  
+   62  2        [1073]      xxx       xxx       xxx       xxx           0
+   55  5        [0525]      xxx       xxx       xxx       xxx           0
+   62  1        [1073]      xxx       xxx       xxx       xxx           0
+   46  2        [1664]      xxx       xxx       xxx           0     xxx  
+   46  1        [1664]      xxx       xxx       xxx           0     xxx  
+   56  5        [0526]      xxx       xxx       xxx       xxx           0
+   71  2        [1077]      xxx       xxx       xxx       xxx           0
+   67  5        [0505]      xxx       xxx       xxx       xxx           0
+   71  1        [1077]      xxx       xxx       xxx       xxx           0
+   63  2        [1078]      xxx       xxx       xxx       xxx           0
+   57  5        [0527]      xxx       xxx       xxx       xxx           0
+   63  1        [1078]      xxx       xxx       xxx       xxx           0
+   70  2        [1087]      xxx       xxx       xxx       xxx           0
+   70  1        [1087]      xxx       xxx       xxx       xxx           0
+   42  2        [1660]      xxx       xxx       xxx           0     xxx  
+   65  5        [0506]      xxx       xxx       xxx       xxx           0
+   42  1        [1660]      xxx       xxx       xxx           0     xxx  
+   69  2        [1088]      xxx       xxx       xxx       xxx           0
+   69  1        [1088]      xxx       xxx       xxx       xxx           0
+   58  5        [0528]      xxx       xxx       xxx       xxx           0
+   59  4        [0102]      xxx       xxx       xxx       xxx           0
+   64  2        [1393]      xxx       xxx       xxx       xxx           0
+   47  5        [0529]      xxx       xxx       xxx       xxx           0
+   64  1        [1393]      xxx       xxx       xxx       xxx           0
+ _____________________________________________
+   THE LINE OF CORRELATION
+    without any moving average
+       
+ Event and Placed Levels in Sections  1 -  7
+     (sections:  SyA SyC SyD SyF Fln Sy2 SyZ)
+   
+ next data table, unlabelled, = 
+ albet.dat                                                                      
+  
+   39  2      [1285]  1135.00    230.30    895.00    785.00      9.40    252.00   1054.34
+   40  2      [1044]  1135.00    230.30    895.00    785.00      9.40    252.00   1054.34
+   39  1      [1285]  1135.00    230.30    895.00    785.00      9.40    252.00   1054.34
+   21  4      [0100]  1135.00    230.30    895.00    785.00      9.40    252.00   1054.34
+   40  1      [1044]  1135.00    228.00    895.00    785.00      6.00    252.00   1054.34
+   22  2      [1107]  1135.00    228.00    895.00    785.00      6.00    252.00   1054.34
+   11  2      [1192]  1135.00    228.00    895.00    785.00      6.00    252.00   1054.34
+   17  2      [1195]  1080.00    228.00    895.00    785.00      6.00    246.00   1054.34
+    3  2      [1184]  1080.00    228.00    895.00    785.00      6.00    235.00   1054.34
+    9  2      [1190]  1080.00    215.00    895.00    785.00      0.00    235.00   1054.34
+   12  2      [1193]  1080.00    215.00    895.00    760.00      0.00    232.00   1054.34
+   19  2      [1196]  1080.00    190.00    895.00    760.00      0.00    232.00   1054.34
+   20  2      [1197]  1080.00    190.00    895.00    760.00      0.00    232.00   1054.24
+    1  2      [1051]  1080.00    190.00    855.00    760.00      0.00    220.00   1020.61
+   18  2      [1198]  1080.00    180.00    855.00    760.00      0.00    220.00   1020.61
+   23  2      [1045]  1080.00    180.00    855.00    700.00      0.00    220.00    915.30
+    4  2      [1186]  1080.00    180.00    855.00    700.00      0.00    220.00    915.30
+   10  2      [1191]  1080.00    180.00    830.00    695.00      0.00    220.00    915.30
+   11  1      [1192]  1080.00    180.00    820.00    695.00      0.00    220.00    915.30
+   36  2      [1281]  1080.00    100.00    765.00    695.00      0.00    220.00    884.90
+   35  2      [1130]  1080.00    100.00    765.00    695.00      0.00    220.00    884.90
+   37  2      [1100]  1080.00    100.00    765.00    695.00      0.00    220.00    884.90
+    5  2      [1185]  1080.00    100.00    765.00    695.00      0.00    220.00    884.90
+    2  2      [1183]  1000.00    100.00    765.00    695.00      0.00    220.00    884.90
+   38  2      [1293]  1000.00    100.00    765.00    695.00      0.00    220.00    884.90
+   41  4      [0114]  1000.00    100.00    765.00    695.00      0.00    220.00    884.90
+   38  1      [1293]  1000.00    100.00    765.00    695.00      0.00    220.00    884.90
+   33  2      [1279]  1000.00    100.00    765.00    695.00      0.00    220.00    884.90
+   50  5      [0520]  1000.00    100.00    765.00    695.00      0.00    220.00    884.90
+   34  2      [1280]  1000.00    100.00    765.00    695.00      0.00    220.00    884.90
+   32  2      [1278]  1000.00    100.00    765.00    695.00      0.00    220.00    884.90
+   37  1      [1100]  1000.00    100.00    765.00    695.00      0.00    220.00    884.90
+   51  5      [0521]  1000.00    100.00    765.00    695.00      0.00    220.00    884.90
+   23  1      [1045]  1000.00    100.00    765.00    695.00      0.00    220.00    884.90
+   22  1      [1107]  1000.00    100.00    765.00    695.00      0.00    220.00    884.90
+    4  1      [1186]  1000.00    100.00    690.00    695.00      0.00    220.00    825.14
+   18  1      [1198]  1000.00     90.00    650.00    695.00      0.00    220.00    825.14
+    6  2      [1187]  1000.00     90.00    650.00    615.00      0.00    220.00    821.71
+   17  1      [1195]  1000.00     90.00    650.00    615.00      0.00    220.00    788.62
+   19  1      [1196]  1000.00     90.00    650.00    615.00      0.00    220.00    788.62
+   31  2      [1277]  1000.00     90.00    650.00    615.00      0.00    220.00    788.62
+   30  2      [1276]  1000.00     90.00    650.00    615.00      0.00    220.00    788.62
+   48  5      [0518]  1000.00     90.00    650.00    615.00      0.00    220.00    788.62
+   32  1      [1278]  1000.00     90.00    650.00    615.00      0.00    220.00    788.62
+   34  1      [1280]  1000.00     90.00    650.00    615.00      0.00    220.00    788.62
+   15  5      [0532]  1000.00     90.00    650.00    615.00      0.00    220.00    788.62
+    5  1      [1185]  1000.00     90.00    650.00    615.00      0.00    220.00    788.62
+   20  1      [1197]  1000.00     70.00    645.00    615.00      0.00    220.00    788.62
+   31  1      [1277]  1000.00     70.00    645.00    610.00      0.00    220.00    760.29
+   49  5      [0519]  1000.00     70.00    645.00    610.00      0.00    220.00    760.29
+   30  1      [1276]  1000.00     70.00    645.00    610.00      0.00    220.00    760.29
+   10  1      [1191]  1000.00     70.00    645.00    610.00      0.00    220.00    760.29
+   36  1      [1281]   680.00   -200.00    535.00    340.00      0.00    220.00    708.53
+   33  1      [1279]   680.00   -200.00    535.00    340.00      0.00    220.00    708.53
+    7  2      [1188]   680.00   -200.00    535.00    340.00      0.00    220.00    708.53
+    7  1      [1188]   680.00   -200.00    535.00    290.00      0.00    220.00    708.53
+   52  5      [0522]   680.00   -200.00    535.00    290.00      0.00    220.00    495.08
+    3  1      [1184]   680.00   -200.00    535.00    290.00      0.00    220.00    495.08
+   12  1      [1193]   635.00   -200.00    530.00    270.00      0.00    220.00    495.08
+    6  1      [1187]   610.00   -200.00    380.00    240.00      0.00    220.00    495.08
+   25  2      [1669]   550.00   -200.00    380.00    240.00      0.00    220.00    483.56
+   16  5      [0533]   550.00   -200.00    380.00    240.00      0.00    220.00    483.56
+   25  1      [1669]   425.00   -200.00    380.00    240.00      0.00    220.00    483.56
+   43  2      [1369]   425.00   -200.00    380.00    240.00      0.00    220.00    430.94
+   53  5      [0523]   425.00   -200.00    380.00    240.00      0.00    220.00    430.94
+   43  1      [1369]   425.00   -200.00    380.00    240.00      0.00    220.00    430.94
+   24  2      [1200]   425.00   -200.00    380.00    240.00      0.00    220.00    430.94
+   24  1      [1200]   425.00   -200.00    380.00    240.00      0.00    220.00    430.94
+   13  2      [1194]   425.00   -200.00    380.00    240.00      0.00    220.00    430.94
+   14  4      [0117]   100.00   -200.00    380.00    240.00      0.00    220.00    430.94
+    9  1      [1190]   100.00   -200.00    380.00    240.00      0.00    220.00    430.94
+   26  2      [1545]   100.00   -200.00    375.00    240.00      0.00    220.00    408.97
+   28  5      [0531]   100.00   -200.00    375.00    240.00      0.00    220.00    408.97
+   27  2      [1546]   100.00   -200.00    375.00    240.00      0.00    220.00    408.97
+   27  1      [1546]   100.00   -200.00    375.00    240.00      0.00    220.00    408.97
+    2  1      [1183]   100.00   -200.00    375.00    240.00      0.00    220.00    408.97
+    1  1      [1051]   100.00   -200.00    255.00    240.00      0.00    220.00    344.39
+   26  1      [1545]   100.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   13  1      [1194]   100.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   29  2      [1275]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   35  1      [1130]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   29  1      [1275]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   60  2      [1059]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   60  1      [1059]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+    8  2      [1189]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+    8  1      [1189]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   44  2      [1662]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   44  1      [1662]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   68  2      [1062]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   66  5      [0501]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   68  1      [1062]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   61  2      [1249]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   54  5      [0524]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   61  1      [1249]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   45  2      [1663]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   45  1      [1663]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   62  2      [1073]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   55  5      [0525]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   62  1      [1073]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   46  2      [1664]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   46  1      [1664]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   56  5      [0526]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   71  2      [1077]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   67  5      [0505]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   71  1      [1077]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   63  2      [1078]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   57  5      [0527]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   63  1      [1078]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   70  2      [1087]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   70  1      [1087]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   42  2      [1660]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   65  5      [0506]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   42  1      [1660]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   69  2      [1088]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   69  1      [1088]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   58  5      [0528]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   59  4      [0102]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   64  2      [1393]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   47  5      [0529]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+   64  1      [1393]    40.00   -200.00    255.00     40.00      0.00    220.00    344.39
+ _____________________________________________
+   THE LINE OF CORRELATION
+ [1393] moving average
+       
+ Event and Placed Levels in Sections  8 - 12
+     (sections:  Snw Lmb Qrq Xch O97)
+   
+ next data table, unlabelled, = 
+ albet.dat                                                                      
+  
+   39  2      [1285]  -100.00    287.00     46.00      7.00    -64.97
+   40  2      [1044]  -100.00    287.00     46.00      7.00    -64.97
+   39  1      [1285]  -100.00    287.00     44.00      7.00    -64.97
+   21  4      [0100]  -100.00    287.00     44.00      7.00    -64.97
+   40  1      [1044]  -100.00    287.00     44.00      7.00    -64.97
+   22  2      [1107]  -100.00    287.00     44.00      7.00    -64.97
+   11  2      [1192]  -100.00    287.00     44.00      7.00    -64.97
+   17  2      [1195]  -100.00    287.00     44.00      7.00    -64.97
+    3  2      [1184]  -100.00    287.00     44.00      7.00    -64.97
+    9  2      [1190]  -100.00    287.00     44.00      7.00    -64.97
+   12  2      [1193]  -100.00    287.00     44.00      7.00    -64.97
+   19  2      [1196]  -100.00    287.00     44.00      7.00    -64.97
+   20  2      [1197]  -100.00    287.00     44.00      7.00    -64.97
+    1  2      [1051]  -100.00    287.00     44.00      7.00    -64.97
+   18  2      [1198]  -100.00    287.00     44.00      7.00    -64.97
+   23  2      [1045]  -100.00    287.00     44.00      7.00    -64.97
+    4  2      [1186]  -100.00    287.00     44.00      7.00    -64.97
+   10  2      [1191]  -100.00    287.00     44.00      7.00    -64.97
+   11  1      [1192]  -100.00    287.00     44.00      7.00    -64.97
+   36  2      [1281]  -100.00    287.00     44.00      7.00    -64.97
+   35  2      [1130]  -100.00    287.00     44.00      7.00    -64.97
+   37  2      [1100]  -100.00    287.00     44.00      7.00    -64.97
+    5  2      [1185]  -100.00    287.00     44.00      7.00    -64.97
+    2  2      [1183]  -100.00    287.00     44.00      7.00    -64.97
+   38  2      [1293]  -100.00    287.00     44.00      7.00    -64.97
+   41  4      [0114]  -100.00    287.00     38.00      7.00    -64.97
+   38  1      [1293]  -100.00    287.00     20.00      7.00    -64.97
+   33  2      [1279]  -100.00    287.00     20.00      7.00    -64.97
+   50  5      [0520]  -100.00    287.00     20.00      7.00    -64.97
+   34  2      [1280]  -100.00    287.00     20.00      7.00    -65.19
+   32  2      [1278]  -100.00    287.00     19.00      7.00    -65.19
+   37  1      [1100]  -100.00    287.00     17.00      7.00    -65.19
+   51  5      [0521]  -100.00    287.00     17.00      7.00    -65.19
+   23  1      [1045]  -100.00    287.00     17.00      7.00    -65.35
+   22  1      [1107]  -100.00    287.00     17.00      7.00    -65.35
+    4  1      [1186]  -100.00    287.00     17.00      7.00    -65.35
+   18  1      [1198]  -100.00    287.00     17.00      7.00    -65.35
+    6  2      [1187]  -100.00    287.00     17.00      7.00    -65.35
+   17  1      [1195]  -100.00    287.00     17.00      7.00    -65.35
+   19  1      [1196]  -100.00    287.00     17.00      7.00    -65.35
+   31  2      [1277]  -100.00    287.00     16.00      7.00    -65.35
+   30  2      [1276]  -100.00    287.00     16.00      7.00    -65.35
+   48  5      [0518]  -100.00    287.00     11.00      7.00    -65.35
+   32  1      [1278]  -100.00    287.00     11.00      7.00    -65.43
+   34  1      [1280]  -100.00    287.00      6.00      7.00    -65.43
+   15  5      [0532]  -100.00    287.00      5.00      7.00    -65.43
+    5  1      [1185]  -100.00    287.00      5.00      7.00    -65.43
+   20  1      [1197]  -100.00    287.00      5.00      7.00    -65.43
+   31  1      [1277]  -100.00    287.00      5.00      7.00    -65.43
+   49  5      [0519]  -100.00    287.00      5.00      7.00    -65.43
+   30  1      [1276]  -100.00    287.00      5.00      7.00    -66.80
+   10  1      [1191]  -100.00    287.00      5.00      7.00    -66.80
+   36  1      [1281]  -100.00    287.00      5.00      7.00    -66.80
+   33  1      [1279]  -100.00    287.00      5.00      7.00    -66.80
+    7  2      [1188]  -100.00    287.00      5.00      7.00    -66.80
+    7  1      [1188]  -100.00    287.00      5.00      7.00    -66.80
+   52  5      [0522]  -100.00    287.00      5.00      7.00    -66.80
+    3  1      [1184]  -100.00    287.00      5.00      7.00    -69.42
+   12  1      [1193]  -100.00    287.00      5.00      6.00    -69.42
+    6  1      [1187]  -100.00    287.00      5.00      6.00    -69.42
+   25  2      [1669]  -100.00    287.00      5.00      6.00    -69.42
+   16  5      [0533]  -100.00    287.00      5.00      6.00    -69.42
+   25  1      [1669]  -100.00    287.00      5.00      6.00    -69.42
+   43  2      [1369]  -100.00    287.00      5.00      6.00    -69.42
+   53  5      [0523]  -100.00    287.00      5.00      6.00    -69.42
+   43  1      [1369]  -100.00    287.00      5.00      6.00    -69.60
+   24  2      [1200]  -100.00    287.00      5.00      5.00    -69.60
+   24  1      [1200]  -100.00    287.00      5.00      5.00    -69.60
+   13  2      [1194]  -100.00    287.00      5.00      5.00    -69.60
+   14  4      [0117]  -135.00    287.00      5.00      5.00    -69.60
+    9  1      [1190]  -225.00    287.00      5.00      5.00    -69.60
+   26  2      [1545]  -225.00    287.00      5.00      5.00    -69.60
+   28  5      [0531]  -300.00    168.00      5.00      5.00    -69.60
+   27  2      [1546]  -300.00    100.00      5.00      5.00    -69.60
+   27  1      [1546]  -390.00    100.00      5.00      5.00    -69.60
+    2  1      [1183]  -390.00    100.00      5.00      5.00    -69.60
+    1  1      [1051]  -390.00    100.00      5.00      5.00    -69.60
+   26  1      [1545]  -390.00     87.00      5.00      5.00    -69.60
+   13  1      [1194]  -390.00     87.00      5.00      4.00    -69.60
+   29  2      [1275]  -390.00     87.00      5.00      4.00    -69.60
+   35  1      [1130]  -390.00     87.00      4.00      4.00    -69.60
+   29  1      [1275]  -390.00     87.00      1.00      4.00    -69.60
+   60  2      [1059]  -390.00     87.00      1.00      4.00    -69.60
+   60  1      [1059]  -390.00     87.00      1.00      4.00    -69.80
+    8  2      [1189]  -390.00     87.00      1.00      4.00    -70.00
+    8  1      [1189]  -390.00     87.00      1.00      4.00    -70.00
+   44  2      [1662]  -390.00     87.00      1.00      4.00    -70.00
+   44  1      [1662]  -390.00     87.00      1.00      4.00    -70.00
+   68  2      [1062]  -390.00     87.00      1.00      3.00    -70.00
+   66  5      [0501]  -390.00     87.00      1.00      3.00    -70.10
+   68  1      [1062]  -390.00     87.00      1.00      3.00    -70.20
+   61  2      [1249]  -390.00     87.00      1.00      3.00    -73.30
+   54  5      [0524]  -390.00     87.00      1.00      3.00    -73.35
+   61  1      [1249]  -390.00     87.00      1.00      3.00    -73.40
+   45  2      [1663]  -390.00     87.00      1.00      3.00    -74.50
+   45  1      [1663]  -390.00     87.00      1.00      3.00    -74.50
+   62  2      [1073]  -390.00     87.00      1.00      2.00    -74.50
+   55  5      [0525]  -390.00     87.00      1.00      2.00    -74.76
+   62  1      [1073]  -390.00     87.00      1.00      2.00    -74.90
+   46  2      [1664]  -390.00     87.00      1.00      2.00    -75.37
+   46  1      [1664]  -390.00     87.00      1.00      2.00    -75.37
+   56  5      [0526]  -390.00     87.00      1.00      1.00    -75.37
+   71  2      [1077]  -390.00     87.00      1.00      1.00    -75.40
+   67  5      [0505]  -390.00     87.00      1.00      1.00    -75.50
+   71  1      [1077]  -390.00     87.00      1.00      1.00    -75.60
+   63  2      [1078]  -390.00     87.00      1.00      1.00    -75.80
+   57  5      [0527]  -390.00     87.00      1.00      1.00    -75.89
+   63  1      [1078]  -390.00     87.00      1.00      1.00    -76.00
+   70  2      [1087]  -390.00     87.00      1.00      1.00    -79.00
+   70  1      [1087]  -390.00     87.00      1.00      1.00    -79.10
+   42  2      [1660]  -390.00     87.00      1.00      1.00    -79.20
+   65  5      [0506]  -390.00     87.00      1.00      1.00    -79.20
+   42  1      [1660]  -390.00     87.00      1.00      1.00    -79.40
+   69  2      [1088]  -390.00     87.00      1.00      1.00    -79.40
+   69  1      [1088]  -390.00     87.00      1.00      1.00    -79.50
+   58  5      [0528]  -390.00     87.00      1.00      1.00    -80.54
+   59  4      [0102]  -390.00     87.00      1.00      1.00    -80.54
+   64  2      [1393]  -390.00     87.00      1.00      1.00    -81.50
+   47  5      [0529]  -390.00     87.00      1.00      1.00    -81.71
+   64  1      [1393]  -390.00     87.00      1.00      1.00    -81.90
+ _____________________________________________
+
+ OBSERVED HORIZONS:
+ Event and Observed Level in Sections  1 -  7
+   (sections:  SyA SyC SyD SyF Fln Sy2 SyZ)
+ next data table, unlabelled = 
+ ab.dat                                                                         
+  
+   39  2      [1285]  none      none      none      none      none      none      none   
+   40  2      [1044]  none      none      none      none      none      none      none   
+   39  1      [1285]  none      none      none      none      none      none      none   
+   21  4      [0100]  none       230.30   none      none         9.40   none      none   
+   40  1      [1044]  none      none      none      none      none      none      none   
+   22  2      [1107]  none       228.00    895.00   none      none      none      1049.78
+   11  2      [1192]  1135.00    215.00    865.00    785.00   none       252.00   1042.09
+   17  2      [1195]  none       215.00    895.00   none      none       246.00   1054.34
+    3  2      [1184]  1000.00    228.00    895.00    760.00      6.00    235.00   1054.34
+    9  2      [1190]  1000.00    215.00    860.00    785.00   none       235.00   1054.34
+   12  2      [1193]   658.00    215.00    895.00    720.00   none      none      none   
+   19  2      [1196]  none       180.00   none       670.00   none      none      1054.34
+   20  2      [1197]  none        80.00    895.00    620.00   none       232.00   1054.24
+    1  2      [1051]  1060.00    190.00    820.00    760.00   none      none      none   
+   18  2      [1198]  none       145.00    830.00    760.00   none      none      1020.61
+   23  2      [1045]  none      none       855.00   none      none      none      none   
+    4  2      [1186]  1000.00    173.00    855.00    700.00   none      none      none   
+   10  2      [1191]  1000.00    180.00    830.00    680.00   none      none       915.30
+   11  1      [1192]  1120.00    190.00    820.00    760.00   none       220.00    974.75
+   36  2      [1281]  none      none      none      none      none      none      none   
+   35  2      [1130]  none      none      none      none      none      none      none   
+   37  2      [1100]  none      none      none      none      none      none      none   
+    5  2      [1185]  1080.00    100.00    765.00    695.00   none      none      none   
+    2  2      [1183]   815.00   -200.00    530.00    380.00   none      none       884.90
+   38  2      [1293]  none      none      none      none      none      none      none   
+   41  4      [0114]  none      none      none      none      none      none      none   
+   38  1      [1293]  none      none      none      none      none      none      none   
+   33  2      [1279]  none      none      none      none      none      none      none   
+   50  5      [0520]  none      none      none      none      none      none      none   
+   34  2      [1280]  none      none      none      none      none      none      none   
+   32  2      [1278]  none      none      none      none      none      none      none   
+   37  1      [1100]  none      none      none      none      none      none      none   
+   51  5      [0521]  none      none      none      none      none      none      none   
+   23  1      [1045]  none      none       785.00   none      none      none      none   
+   22  1      [1107]  none       228.00    895.00   none      none      none      1043.57
+    4  1      [1186]  1000.00    173.00    690.00    700.00   none      none      none   
+   18  1      [1198]  none        90.00    650.00    760.00   none      none       825.14
+    6  2      [1187]   715.00   -200.00    535.00    460.00   none      none       821.71
+   17  1      [1195]  none       190.00    855.00   none      none       220.00    788.62
+   19  1      [1196]  none       180.00   none       640.00   none      none       788.62
+   31  2      [1277]  none      none      none      none      none      none      none   
+   30  2      [1276]  none      none      none      none      none      none      none   
+   48  5      [0518]  none      none      none      none      none      none      none   
+   32  1      [1278]  none      none      none      none      none      none      none   
+   34  1      [1280]  none      none      none      none      none      none      none   
+   15  5      [0532]  1000.00   none      none      none      none      none      none   
+    5  1      [1185]  1030.00    100.00    750.00    615.00   none      none      none   
+   20  1      [1197]  none        70.00    645.00    615.00   none       220.00    869.16
+   31  1      [1277]  none      none      none      none      none      none      none   
+   49  5      [0519]  none      none      none      none      none      none      none   
+   30  1      [1276]  none      none      none      none      none      none      none   
+   10  1      [1191]  1000.00     70.00    720.00    610.00   none      none       760.29
+   36  1      [1281]  none      none      none      none      none      none      none   
+   33  1      [1279]  none      none      none      none      none      none      none   
+    7  2      [1188]   680.00   -200.00    535.00    340.00   none      none       708.53
+    7  1      [1188]   680.00   -200.00    535.00    290.00   none      none       708.53
+   52  5      [0522]  none      none      none      none      none      none      none   
+    3  1      [1184]   795.00     10.00    650.00    610.00      0.00    220.00    495.08
+   12  1      [1193]   635.00    215.00    530.00    270.00   none      none      none   
+    6  1      [1187]   610.00   -200.00    380.00    240.00   none      none       495.08
+   25  2      [1669]  none      none      none      none      none      none       483.56
+   16  5      [0533]   550.00   none      none      none      none      none      none   
+   25  1      [1669]  none      none      none      none      none      none       483.56
+   43  2      [1369]  none      none      none      none      none      none      none   
+   53  5      [0523]  none      none      none      none      none      none      none   
+   43  1      [1369]  none      none      none      none      none      none      none   
+   24  2      [1200]  none      none       380.00   none      none      none      none   
+   24  1      [1200]  none      none       380.00   none      none      none      none   
+   13  2      [1194]   425.00   none      none        60.00   none      none       430.94
+   14  4      [0117]   100.00   none      none      none      none      none      none   
+    9  1      [1190]   635.00     70.00    510.00    270.00   none       220.00    430.94
+   26  2      [1545]  none      none      none      none      none      none      none   
+   28  5      [0531]  none      none      none      none      none      none      none   
+   27  2      [1546]  none      none      none      none      none      none      none   
+   27  1      [1546]  none      none      none      none      none      none      none   
+    2  1      [1183]   620.00   -200.00    375.00    270.00   none      none       408.97
+    1  1      [1051]   400.00     50.00    255.00    460.00   none      none      none   
+   26  1      [1545]  none      none      none      none      none      none      none   
+   13  1      [1194]   410.00   none      none        40.00   none      none       344.39
+   29  2      [1275]  none      none      none      none      none      none      none   
+   35  1      [1130]  none      none      none      none      none      none      none   
+   29  1      [1275]  none      none      none      none      none      none      none   
+   60  2      [1059]  none      none      none      none      none      none      none   
+   60  1      [1059]  none      none      none      none      none      none      none   
+    8  2      [1189]    40.00   none      none      none      none      none      none   
+    8  1      [1189]    40.00   none      none      none      none      none      none   
+   44  2      [1662]  none      none      none      none      none      none      none   
+   44  1      [1662]  none      none      none      none      none      none      none   
+   68  2      [1062]  none      none      none      none      none      none      none   
+   66  5      [0501]  none      none      none      none      none      none      none   
+   68  1      [1062]  none      none      none      none      none      none      none   
+   61  2      [1249]  none      none      none      none      none      none      none   
+   54  5      [0524]  none      none      none      none      none      none      none   
+   61  1      [1249]  none      none      none      none      none      none      none   
+   45  2      [1663]  none      none      none      none      none      none      none   
+   45  1      [1663]  none      none      none      none      none      none      none   
+   62  2      [1073]  none      none      none      none      none      none      none   
+   55  5      [0525]  none      none      none      none      none      none      none   
+   62  1      [1073]  none      none      none      none      none      none      none   
+   46  2      [1664]  none      none      none      none      none      none      none   
+   46  1      [1664]  none      none      none      none      none      none      none   
+   56  5      [0526]  none      none      none      none      none      none      none   
+   71  2      [1077]  none      none      none      none      none      none      none   
+   67  5      [0505]  none      none      none      none      none      none      none   
+   71  1      [1077]  none      none      none      none      none      none      none   
+   63  2      [1078]  none      none      none      none      none      none      none   
+   57  5      [0527]  none      none      none      none      none      none      none   
+   63  1      [1078]  none      none      none      none      none      none      none   
+   70  2      [1087]  none      none      none      none      none      none      none   
+   70  1      [1087]  none      none      none      none      none      none      none   
+   42  2      [1660]  none      none      none      none      none      none      none   
+   65  5      [0506]  none      none      none      none      none      none      none   
+   42  1      [1660]  none      none      none      none      none      none      none   
+   69  2      [1088]  none      none      none      none      none      none      none   
+   69  1      [1088]  none      none      none      none      none      none      none   
+   58  5      [0528]  none      none      none      none      none      none      none   
+   59  4      [0102]  none      none      none      none      none      none      none   
+   64  2      [1393]  none      none      none      none      none      none      none   
+   47  5      [0529]  none      none      none      none      none      none      none   
+   64  1      [1393]  none      none      none      none      none      none      none   
+ _____________________________________________
+
+ OBSERVED HORIZONS:
+ Event and Observed Level in Sections  8 - 12
+   (sections:  Snw Lmb Qrq Xch O97)
+ next data table, unlabelled = 
+ ab.dat                                                                         
+  
+   39  2      [1285]  none      none        46.00   none      none   
+   40  2      [1044]  none      none        46.00   none      none   
+   39  1      [1285]  none      none        44.00   none      none   
+   21  4      [0100]  none      none      none      none       -64.97
+   40  1      [1044]  none      none        44.00   none      none   
+   22  2      [1107]  none      none        44.00   none      none   
+   11  2      [1192]  none      none      none      none      none   
+   17  2      [1195]  none      none      none      none      none   
+    3  2      [1184]  none      none      none         7.00   none   
+    9  2      [1190]  -100.00   none        16.00   none      none   
+   12  2      [1193]  none      none      none      none      none   
+   19  2      [1196]  none      none        44.00   none      none   
+   20  2      [1197]  none      none      none      none      none   
+    1  2      [1051]  -100.00    180.00   none      none      none   
+   18  2      [1198]  none      none      none      none      none   
+   23  2      [1045]  none      none        44.00   none      none   
+    4  2      [1186]  none      none      none      none      none   
+   10  2      [1191]  none      none      none      none      none   
+   11  1      [1192]  none      none      none      none      none   
+   36  2      [1281]  none      none        44.00   none      none   
+   35  2      [1130]  none      none        44.00   none      none   
+   37  2      [1100]  none      none        44.00   none      none   
+    5  2      [1185]  none      none        44.00   none      none   
+    2  2      [1183]  -225.00   none        44.00   none      none   
+   38  2      [1293]  none      none        44.00   none      none   
+   41  4      [0114]  none      none        38.00   none      none   
+   38  1      [1293]  none      none        20.00   none      none   
+   33  2      [1279]  none      none        20.00   none      none   
+   50  5      [0520]  none      none      none      none       -64.97
+   34  2      [1280]  none      none        20.00   none      none   
+   32  2      [1278]  none      none        19.00   none      none   
+   37  1      [1100]  none      none        17.00   none      none   
+   51  5      [0521]  none      none      none      none       -65.19
+   23  1      [1045]  none      none        17.00   none      none   
+   22  1      [1107]  none      none        17.00   none      none   
+    4  1      [1186]  none      none      none      none      none   
+   18  1      [1198]  none      none      none      none      none   
+    6  2      [1187]  -100.00   none      none      none      none   
+   17  1      [1195]  none      none      none      none      none   
+   19  1      [1196]  none      none        17.00   none      none   
+   31  2      [1277]  none      none        16.00   none      none   
+   30  2      [1276]  none      none        16.00   none      none   
+   48  5      [0518]  none      none      none      none       -65.35
+   32  1      [1278]  none      none        11.00   none      none   
+   34  1      [1280]  none      none         6.00   none      none   
+   15  5      [0532]  none      none      none      none      none   
+    5  1      [1185]  none      none         5.00   none      none   
+   20  1      [1197]  none      none      none      none      none   
+   31  1      [1277]  none      none         5.00   none      none   
+   49  5      [0519]  none      none      none      none       -65.43
+   30  1      [1276]  none      none         5.00   none      none   
+   10  1      [1191]  none      none      none      none      none   
+   36  1      [1281]  none      none         5.00   none      none   
+   33  1      [1279]  none      none         5.00   none      none   
+    7  2      [1188]  none      none      none      none      none   
+    7  1      [1188]  none      none      none      none      none   
+   52  5      [0522]  none      none      none      none       -66.80
+    3  1      [1184]  none      none      none         7.00   none   
+   12  1      [1193]  none      none      none      none      none   
+    6  1      [1187]  -100.00   none      none      none      none   
+   25  2      [1669]  none      none      none      none      none   
+   16  5      [0533]  none      none      none      none      none   
+   25  1      [1669]  none      none      none      none      none   
+   43  2      [1369]  none      none      none         6.00   none   
+   53  5      [0523]  none      none      none      none       -69.42
+   43  1      [1369]  none      none      none         6.00   none   
+   24  2      [1200]  none      none      none      none      none   
+   24  1      [1200]  none      none      none      none      none   
+   13  2      [1194]  -100.00   none      none      none      none   
+   14  4      [0117]  -135.00   none      none      none      none   
+    9  1      [1190]  -225.00   none         5.00   none      none   
+   26  2      [1545]  -225.00    287.00   none         5.00   none   
+   28  5      [0531]  none       168.00   none      none      none   
+   27  2      [1546]  -300.00   none      none      none      none   
+   27  1      [1546]  -390.00   none      none      none      none   
+    2  1      [1183]  -390.00   none        17.00   none      none   
+    1  1      [1051]  -330.00    100.00   none      none      none   
+   26  1      [1545]  -390.00     87.00   none         5.00   none   
+   13  1      [1194]  -330.00   none      none      none      none   
+   29  2      [1275]  none      none         5.00   none      none   
+   35  1      [1130]  none      none         4.00   none      none   
+   29  1      [1275]  none      none         1.00   none      none   
+   60  2      [1059]  none      none      none      none       -69.60
+   60  1      [1059]  none      none      none      none       -69.80
+    8  2      [1189]  none      none      none      none      none   
+    8  1      [1189]  none      none      none      none      none   
+   44  2      [1662]  none      none      none         4.00   none   
+   44  1      [1662]  none      none      none         4.00   none   
+   68  2      [1062]  none      none      none      none       -70.00
+   66  5      [0501]  none      none      none      none       -70.10
+   68  1      [1062]  none      none      none      none       -70.20
+   61  2      [1249]  none      none      none      none       -73.30
+   54  5      [0524]  none      none      none      none       -73.35
+   61  1      [1249]  none      none      none      none       -73.40
+   45  2      [1663]  none      none      none         3.00   none   
+   45  1      [1663]  none      none      none         3.00   none   
+   62  2      [1073]  none      none      none      none       -74.50
+   55  5      [0525]  none      none      none      none       -74.76
+   62  1      [1073]  none      none      none      none       -74.90
+   46  2      [1664]  none      none      none         2.00   none   
+   46  1      [1664]  none      none      none         2.00   none   
+   56  5      [0526]  none      none      none      none       -75.37
+   71  2      [1077]  none      none      none      none       -75.40
+   67  5      [0505]  none      none      none      none       -75.50
+   71  1      [1077]  none      none      none      none       -75.60
+   63  2      [1078]  none      none      none      none       -75.80
+   57  5      [0527]  none      none      none      none       -75.89
+   63  1      [1078]  none      none      none      none       -76.00
+   70  2      [1087]  none      none      none      none       -79.00
+   70  1      [1087]  none      none      none      none       -79.10
+   42  2      [1660]  none      none      none         1.00   none   
+   65  5      [0506]  none      none      none      none       -79.20
+   42  1      [1660]  none      none      none         1.00   none   
+   69  2      [1088]  none      none      none      none       -79.40
+   69  1      [1088]  none      none      none      none       -79.50
+   58  5      [0528]  none      none      none      none       -80.54
+   59  4      [0102]  none      none      none      none       -80.54
+   64  2      [1393]  none      none      none      none       -81.50
+   47  5      [0529]  none      none      none      none       -81.71
+   64  1      [1393]  none      none      none      none       -81.90
+ ______________________________________________
+  ZERO-MEAN STD COMPOSITE SECTION
+  Event  Type  Space-Below  Level-Placed  Sections    Name
+     64     1     0.0000  1000.0000     0  {[1393]   Scaphites_(S.)  hippocrepis  (DeKay)  1828 FAD  (fortran # 111)  (tag: not assigned)       
+     47     5     0.0000  1000.0000     0  {[0529]   Obrad93 10_81.71 S.hippoc AGE  (fortran # 7)  (tag: not assigned)                          
+     64     2     0.0000  1000.0000     0  {[1393]   Scaphites_(S.)  hippocrepis  (DeKay)  1828 LAD  (fortran # 112)  (tag: not assigned)       
+     59     4     0.0000  1000.0000     0  {[0102]   Ardmore Bentonite ASH  (fortran # 19)  (tag: not assigned)                                 
+     58     5     0.0000  1000.0000     0  {[0528]   Obrad93 9_80.54 Ardmore AGE  (fortran # 18)  (tag: not assigned)                           
+     69     1     0.0000  1000.0000     0  {[1088]   Baculites  obtusus  Meek  1876 FAD  (fortran # 115)  (tag: not assigned)                   
+     69     2     0.0000  1000.0000     0  {[1088]   Baculites  obtusus  Meek  1876 LAD  (fortran # 116)  (tag: not assigned)                   
+     42     1     0.0000  1000.0000     0  {[1660]   Neograhamites  taylori  Spath FAD  (fortran # 93)  (tag: not assigned)                     
+     65     5     0.0000  1000.0000     0  {[0506]   Obrad88 8a_79.2 AGE  (fortran # 20)  (tag: not assigned)                                   
+     42     2     0.0000  1000.0000     0  {[1660]   Neograhamites  taylori  Spath LAD  (fortran # 94)  (tag: not assigned)                     
+     70     1     0.0000  1000.0000     0  {[1087]   Baculites  mclearni  Landes  1940 FAD  (fortran # 117)  (tag: not assigned)                
+     70     2     0.0000  1000.0000     0  {[1087]   Baculites  mclearni  Landes  1940 LAD  (fortran # 118)  (tag: not assigned)                
+     63     1     0.0000  1000.0000     0  {[1078]   Baculites  scotti  Cobban  1958 FAD  (fortran # 109)  (tag: not assigned)                  
+     57     5     0.0000  1000.0000     0  {[0527]   Obrad93 8_75.89 B.scotti AGE  (fortran # 17)  (tag: not assigned)                          
+     63     2     0.0000  1000.0000     0  {[1078]   Baculites  scotti  Cobban  1958 LAD  (fortran # 110)  (tag: not assigned)                  
+     71     1     0.0000  1000.0000     0  {[1077]   Didymoceras  nebrascense  (Meek & Hayden)  1856 FAD  (fortran # 119)  (tag: not assigned)  
+     67     5     0.0000  1000.0000     0  {[0505]   Obrad88 7_75.5 AGE  (fortran # 22)  (tag: not assigned)                                    
+     71     2     0.0000  1000.0000     0  {[1077]   Didymoceras  nebrascense  (Meek & Hayden)  1856 LAD  (fortran # 120)  (tag: not assigned)  
+     56     5     0.0000  1000.0000     0  {[0526]   Obrad93 7_75.37 G.calcara AGE  (fortran # 16)  (tag: not assigned)                         
+     46     1     7.3333  1007.3333     1  {[1664]   Kossmaticeras  theobaldianus FAD  (fortran # 101)  (tag: not assigned)                     
+     46     2     0.0000  1007.3333     1  {[1664]   Kossmaticeras  theobaldianus LAD  (fortran # 102)  (tag: not assigned)                     
+     62     1     0.0000  1007.3333     1  {[1073]   Exiteloceras  jenneyi  (Whitfield)  1877 FAD  (fortran # 107)  (tag: not assigned)         
+     55     5     0.0000  1007.3333     1  {[0525]   Obrad93 6_74.76 E.jenneyi AGE  (fortran # 15)  (tag: not assigned)                         
+     62     2     0.0000  1007.3333     1  {[1073]   Exiteloceras  jenneyi  (Whitfield)  1877 LAD  (fortran # 108)  (tag: not assigned)         
+     45     1     7.3333  1014.6666     1  {[1663]   Kossmaticeras  guentheri FAD  (fortran # 99)  (tag: not assigned)                          
+     45     2     0.0000  1014.6666     1  {[1663]   Kossmaticeras  guentheri LAD  (fortran # 100)  (tag: not assigned)                         
+     61     1     0.0000  1014.6666     1  {[1249]   Baculites  compressus  Say  1820 FAD  (fortran # 105)  (tag: not assigned)                 
+     54     5     0.0000  1014.6666     1  {[0524]   Obrad93 5_73.35 B.compres AGE  (fortran # 14)  (tag: not assigned)                         
+     61     2     0.0000  1014.6666     1  {[1249]   Baculites  compressus  Say  1820 LAD  (fortran # 106)  (tag: not assigned)                 
+     68     1     0.0000  1014.6666     1  {[1062]   Baculites  grandis  Hall & Meek  1855 FAD  (fortran # 113)  (tag: not assigned)            
+     66     5     0.0000  1014.6666     1  {[0501]   Obrad88 3_70.1 B.grandis AGE  (fortran # 21)  (tag: not assigned)                          
+     68     2     0.0000  1014.6666     1  {[1062]   Baculites  grandis  Hall & Meek  1855 LAD  (fortran # 114)  (tag: not assigned)            
+     44     1     7.3333  1021.9999     1  {[1662]   Kossmaticeras  bhavani FAD  (fortran # 97)  (tag: not assigned)                            
+     44     2     0.0000  1021.9999     1  {[1662]   Kossmaticeras  bhavani LAD  (fortran # 98)  (tag: not assigned)                            
+      8     1     0.0000  1021.9999     1  {[1189]   Gunnarites  bhavaniformis  (Killian & Reboul)  190 FAD  (fortran # 37)  (tag: not assigned)
+      8     2     0.0000  1021.9999     1  {[1189]   Gunnarites  bhavaniformis  (Killian & Reboul)  190 LAD  (fortran # 38)  (tag: not assigned)
+     60     1     0.0000  1021.9999     1  {[1059]   Baculites  clinolobatus  Elias  1933 FAD  (fortran # 103)  (tag: not assigned)             
+     60     2     0.0000  1021.9999     1  {[1059]   Baculites  clinolobatus  Elias  1933 LAD  (fortran # 104)  (tag: not assigned)             
+     29     1     0.0000  1021.9999     1  {[1275]   Baculites  vincentei FAD  (fortran # 69)  (tag: not assigned)                              
+     35     1     2.6667  1024.6666     2  {[1130]   Eubaculites  lyelli  (d Orbigny)  1847 FAD  (fortran # 81)  (tag: not assigned)            
+     29     2     0.8889  1025.5555     2  {[1275]   Baculites  vincentei LAD  (fortran # 70)  (tag: not assigned)                              
+     13     1     1.3333  1026.8889     3  {[1194]   Maorites  tuberculatus  Howarth  1958 FAD  (fortran # 47)  (tag: not assigned)             
+     26     1     2.4444  1029.3334     3  {[1545]   Gunnarites  antarcticus  (Weller) FAD  (fortran # 65)  (tag: not assigned)                 
+      1     1     3.7290  1033.0624     5  {[1051]   Diplomoceras  cylindraceum  (Defrance)  1816 FAD  (fortran # 23)  (tag: not assigned)      
+      2     1     2.5590  1035.6213     7  {[1183]   Kitchinites  darwini  (Steinmann)  1895 FAD  (fortran # 25)  (tag: not assigned)           
+     27     1     0.0000  1035.6213     7  {[1546]   Jacobites  crofti FAD  (fortran # 67)  (tag: not assigned)                                 
+     27     2     0.2328  1035.8541     8  {[1546]   Jacobites  crofti LAD  (fortran # 68)  (tag: not assigned)                                 
+     28     5     0.2550  1036.1091     8  {[0531]   Strontium 71.0 +_0.2 AGE  (fortran # 5)  (tag: not assigned)                               
+     26     2     0.6402  1036.7494     8  {[1545]   Gunnarites  antarcticus  (Weller) LAD  (fortran # 66)  (tag: not assigned)                 
+      9     1     0.3588  1037.1082     7  {[1190]   Grossouvrites  gemmatus  (Hupe)  1854 FAD  (fortran # 39)  (tag: not assigned)             
+     14     4     0.2660  1037.3741     7  {[0117]   Hasl ASH  (fortran # 1)  (tag: not assigned)                                               
+     13     2     3.1987  1040.5729     7  {[1194]   Maorites  tuberculatus  Howarth  1958 LAD  (fortran # 48)  (tag: not assigned)             
+     24     1     0.0000  1040.5729     6  {[1200]   Pachydiscus  ootacodensis  (Stoliczka)  1865 FAD  (fortran # 61)  (tag: not assigned)      
+     24     2     0.0000  1040.5729     6  {[1200]   Pachydiscus  ootacodensis  (Stoliczka)  1865 LAD  (fortran # 62)  (tag: not assigned)      
+     43     1     1.2222  1041.7950     6  {[1369]   Gunnarites  kalika  (Stoliczka)  1865 FAD  (fortran # 95)  (tag: not assigned)             
+     53     5     0.0000  1041.7950     6  {[0523]   Obrad93 4_69.42 B.clinolo AGE  (fortran # 13)  (tag: not assigned)                         
+     43     2     0.0000  1041.7950     6  {[1369]   Gunnarites  kalika  (Stoliczka)  1865 LAD  (fortran # 96)  (tag: not assigned)             
+     25     1     0.8029  1042.5980     6  {[1669]   Dimitobelus  seymouriensis FAD  (fortran # 63)  (tag: not assigned)                        
+     16     5     1.3889  1043.9869     6  {[0533]   Strontium 67.5 AGE  (fortran # 3)  (tag: not assigned)                                     
+     25     2     0.0000  1043.9869     6  {[1669]   Dimitobelus  seymouriensis LAD  (fortran # 64)  (tag: not assigned)                        
+      6     1     0.8425  1044.8293     6  {[1187]   Maorites  seymourianus  (Killian & Reboul)  1909 FAD  (fortran # 33)  (tag: not assigned)  
+     12     1     3.2342  1048.0635     6  {[1193]   Eutrephoceras  simile  Spath FAD  (fortran # 45)  (tag: not assigned)                      
+      3     1     2.1098  1050.1733     6  {[1184]   Maorites  densicostatus  alpha  (Killian & Reboul) FAD  (fortran # 27)  (tag: not assigned)
+     52     5     0.0000  1050.1733     5  {[0522]   Obrad93 3_66.8 KneeHills AGE  (fortran # 12)  (tag: not assigned)                          
+      7     1     3.9085  1054.0819     5  {[1188]   Maorites  wedelliensis  Macellari  1986 FAD  (fortran # 35)  (tag: not assigned)           
+      7     2     0.9128  1054.9946     5  {[1188]   Maorites  wedelliensis  Macellari  1986 LAD  (fortran # 36)  (tag: not assigned)           
+     33     1     0.0000  1054.9946     5  {[1279]   Eutrephoceras  subplicatum FAD  (fortran # 77)  (tag: not assigned)                        
+     36     1     0.0000  1054.9946     5  {[1281]   Kossmaticeras_(N.)  erbeni FAD  (fortran # 83)  (tag: not assigned)                        
+     10     1    15.4104  1070.4050     6  {[1191]   Pachydiscus  riccardi  Macellari  1986 FAD  (fortran # 41)  (tag: not assigned)            
+     30     1     0.0000  1070.4050     6  {[1276]   Anapachydiscus  fresvillensis  quirquinae  Stinnes FAD  (fortran # 71)  (tag: not assigned)
+     49     5     0.0000  1070.4050     6  {[0519]   Obrad93 1b_65.43 AGE  (fortran # 9)  (tag: not assigned)                                   
+     31     1     0.0000  1070.4050     6  {[1277]   Baculites  hunickeni FAD  (fortran # 73)  (tag: not assigned)                              
+     20     1     0.5084  1070.9133     6  {[1197]   Kitchinites  laurae  Macellari  1986 FAD  (fortran # 55)  (tag: not assigned)              
+      5     1     0.4629  1071.3762     6  {[1185]   Maorites  densicostatus  beta  (Killian & Reboul) FAD  (fortran # 31)  (tag: not assigned) 
+     15     5     0.0000  1071.3762     6  {[0532]   Strontium 65.8 AGE  (fortran # 2)  (tag: not assigned)                                     
+     34     1     0.2963  1071.6725     6  {[1280]   Pachydiscus_(P.)  jacquoti  chilensis FAD  (fortran # 79)  (tag: not assigned)             
+     32     1     1.4815  1073.1539     6  {[1278]   Phylloceras_(H.)  inflatum FAD  (fortran # 75)  (tag: not assigned)                        
+     48     5     0.0000  1073.1539     6  {[0518]   Obrad93 1a_65.35 AGE  (fortran # 8)  (tag: not assigned)                                   
+     30     2     1.4815  1074.6354     6  {[1276]   Anapachydiscus  fresvillensis  quirquinae  Stinnes LAD  (fortran # 72)  (tag: not assigned)
+     31     2     0.0000  1074.6354     6  {[1277]   Baculites  hunickeni LAD  (fortran # 74)  (tag: not assigned)                              
+     19     1     0.2963  1074.9316     6  {[1196]   Pseudophyllites  loryi  (Killian & Reboul)  1909 FAD  (fortran # 53)  (tag: not assigned)  
+     17     1     0.0000  1074.9316     6  {[1195]   Diplomoceras  cylindraceum  maximum  Olivero & Zin FAD  (fortran # 49)  (tag: not assigned)
+      6     2     0.5049  1075.4365     6  {[1187]   Maorites  seymourianus  (Killian & Reboul)  1909 LAD  (fortran # 34)  (tag: not assigned)  
+     18     1     1.2693  1076.7058     6  {[1198]   Anagaudryceras  seymouriense  Macellari  1986 FAD  (fortran # 51)  (tag: not assigned)     
+      4     1     0.8565  1077.5623     6  {[1186]   Maorites  densicostatus  gamma  (Killian & Reboul) FAD  (fortran # 29)  (tag: not assigned)
+     22     1     2.1619  1079.7241     6  {[1107]   Zelandites  varuna  (Forbes)  1846 FAD  (fortran # 57)  (tag: not assigned)                
+     23     1     0.0000  1079.7241     6  {[1045]   Gaudryceras  kayei  (Forbes)  1846 FAD  (fortran # 59)  (tag: not assigned)                
+     51     5     0.0000  1079.7241     6  {[0521]   Obrad93 2b_65.19 AGE  (fortran # 11)  (tag: not assigned)                                  
+     37     1     0.0000  1079.7241     6  {[1100]   Hypophylloceras  hetonaiense  (Matsumoto)  1942 FAD  (fortran # 85)  (tag: not assigned)   
+     32     2     0.5926  1080.3168     6  {[1278]   Phylloceras_(H.)  inflatum LAD  (fortran # 76)  (tag: not assigned)                        
+     34     2     0.2963  1080.6130     6  {[1280]   Pachydiscus_(P.)  jacquoti  chilensis LAD  (fortran # 80)  (tag: not assigned)             
+     50     5     0.0000  1080.6130     6  {[0520]   Obrad93 2a_64.97 AGE  (fortran # 10)  (tag: not assigned)                                  
+     33     2     0.0000  1080.6130     6  {[1279]   Eutrephoceras  subplicatum LAD  (fortran # 78)  (tag: not assigned)                        
+     38     1     0.0000  1080.6130     6  {[1293]   Neophylloceras  ramosum  (Meek)  1857 FAD  (fortran # 87)  (tag: not assigned)             
+     41     4     5.3333  1085.9464     6  {[0114]   C30n~C29r ASH  (fortran # 6)  (tag: not assigned)                                          
+     38     2     1.7778  1087.7242     6  {[1293]   Neophylloceras  ramosum  (Meek)  1857 LAD  (fortran # 88)  (tag: not assigned)             
+      2     2     0.0000  1087.7242     6  {[1183]   Kitchinites  darwini  (Steinmann)  1895 LAD  (fortran # 26)  (tag: not assigned)           
+      5     2     0.8889  1088.6132     6  {[1185]   Maorites  densicostatus  beta  (Killian & Reboul) LAD  (fortran # 32)  (tag: not assigned) 
+     37     2     0.0000  1088.6132     6  {[1100]   Hypophylloceras  hetonaiense  (Matsumoto)  1942 LAD  (fortran # 86)  (tag: not assigned)   
+     35     2     0.0000  1088.6132     6  {[1130]   Eubaculites  lyelli  (d Orbigny)  1847 LAD  (fortran # 82)  (tag: not assigned)            
+     36     2     0.0000  1088.6132     6  {[1281]   Kossmaticeras_(N.)  erbeni LAD  (fortran # 84)  (tag: not assigned)                        
+     11     1     2.8989  1091.5121     6  {[1192]   Pachydiscus  ultimus  Macellari  1986 FAD  (fortran # 43)  (tag: not assigned)             
+     10     2     0.1667  1091.6787     6  {[1191]   Pachydiscus  riccardi  Macellari  1986 LAD  (fortran # 42)  (tag: not assigned)            
+      4     2     0.4927  1092.1714     6  {[1186]   Maorites  densicostatus  gamma  (Killian & Reboul) LAD  (fortran # 30)  (tag: not assigned)
+     23     2     0.0000  1092.1714     6  {[1045]   Gaudryceras  kayei  (Forbes)  1846 LAD  (fortran # 60)  (tag: not assigned)                
+     18     2     2.5197  1094.6910     6  {[1198]   Anagaudryceras  seymouriense  Macellari  1986 LAD  (fortran # 52)  (tag: not assigned)     
+      1     2     0.1898  1094.8809     6  {[1051]   Diplomoceras  cylindraceum  (Defrance)  1816 LAD  (fortran # 24)  (tag: not assigned)      
+     20     2     1.3863  1096.2671     7  {[1197]   Kitchinites  laurae  Macellari  1986 LAD  (fortran # 56)  (tag: not assigned)              
+     19     2     0.0015  1096.2686     6  {[1196]   Pseudophyllites  loryi  (Killian & Reboul)  1909 LAD  (fortran # 54)  (tag: not assigned)  
+     12     2     0.5694  1096.8379     5  {[1193]   Eutrephoceras  simile  Spath LAD  (fortran # 46)  (tag: not assigned)                      
+      9     2     0.5876  1097.4255     5  {[1190]   Grossouvrites  gemmatus  (Hupe)  1854 LAD  (fortran # 40)  (tag: not assigned)             
+      3     2     1.0620  1098.4875     5  {[1184]   Maorites  densicostatus  alpha  (Killian & Reboul) LAD  (fortran # 28)  (tag: not assigned)
+     17     2     0.4812  1098.9688     5  {[1195]   Diplomoceras  cylindraceum  maximum  Olivero & Zin LAD  (fortran # 50)  (tag: not assigned)
+     11     2     0.9958  1099.9646     5  {[1192]   Pachydiscus  ultimus  Macellari  1986 LAD  (fortran # 44)  (tag: not assigned)             
+     22     2     0.0000  1099.9646     3  {[1107]   Zelandites  varuna  (Forbes)  1846 LAD  (fortran # 58)  (tag: not assigned)                
+     40     1     0.0000  1099.9646     3  {[1044]   Neophylloceras  surya  (Forbes)  1846 FAD  (fortran # 91)  (tag: not assigned)             
+     21     4     0.8107  1100.7753     3  {[0100]   KT iridium/tektites ASH  (fortran # 4)  (tag: not assigned)                                
+     39     1     0.0000  1100.7753     1  {[1285]   Hoploscaphites  quiriquiniensis FAD  (fortran # 89)  (tag: not assigned)                   
+     40     2     3.5556  1104.3308     1  {[1044]   Neophylloceras  surya  (Forbes)  1846 LAD  (fortran # 92)  (tag: not assigned)             
+     39     2     0.0000  1104.3308     0  {[1285]   Hoploscaphites  quiriquiniensis LAD  (fortran # 90)  (tag: not assigned)                   

@@ -8,51 +8,54 @@
    
  [intervening unseen events merely totalled]
    
-          [6]
+          [5]
    11 - 2    1135.000  1135.000     0.000     0.000      0  {1192     LAD {Pachydiscus  ultimus  Macellari  1986                  
+          [1]
     3 - 2    1000.000  1080.000    80.000    80.000      3  {1184     LAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
-          [2]
-    9 - 2    1000.000  1080.000    80.000    80.000      3  {1190     LAD {Grossouvrites  gemmatus  (Hupe)  1854                  
+          [1]
    12 - 2     658.000  1080.000   422.000   422.000      8  {1193     LAD {Eutrephoceras  simile  Spath                           
-          [2]
+          [1]
+    9 - 2    1000.000  1080.000    80.000    80.000      3  {1190     LAD {Grossouvrites  gemmatus  (Hupe)  1854                  
+          [3]
     1 - 2    1060.000  1080.000    20.000    20.000      1  {1051     LAD {Diplomoceras  cylindraceum  (Defrance)  1816           
-          [3]
-    4 - 2    1000.000  1080.000    80.000    80.000      3  {1186     LAD {Maorites  densicostatus  gamma  (Killian & Reboul)     
-   10 - 2    1000.000  1080.000    80.000    80.000      3  {1191     LAD {Pachydiscus  riccardi  Macellari  1986                 
-   11 - 1    1120.000  1080.000    40.000    40.000      1  {1192     FAD {Pachydiscus  ultimus  Macellari  1986                  
-          [5]
-    5 - 2    1080.000  1080.000     0.000     0.000      0  {1185     LAD {Maorites  densicostatus  beta  (Killian & Reboul)      
-    2 - 2     815.000  1000.000   185.000   185.000      1  {1183     LAD {Kitchinites  darwini  (Steinmann)  1895                
-          [9]
-    4 - 1    1000.000  1000.000     0.000     0.000      0  {1186     FAD {Maorites  densicostatus  gamma  (Killian & Reboul)     
-          [1]
-    6 - 2     715.000  1000.000   285.000   285.000      3  {1187     LAD {Maorites  seymourianus  (Killian & Reboul)  1909       
-          [3]
-   15 - 5    1000.000  1000.000     0.000     0.000      0  {0532     AGE {Strontium 65.8                                         
-          [5]
-    5 - 1    1030.000  1000.000    30.000    30.000      1  {1185     FAD {Maorites  densicostatus  beta  (Killian & Reboul)      
           [2]
-   10 - 1    1000.000  1000.000     0.000     0.000      0  {1191     FAD {Pachydiscus  riccardi  Macellari  1986                 
+    5 - 2    1080.000  1080.000     0.000     0.000      0  {1185     LAD {Maorites  densicostatus  beta  (Killian & Reboul)      
+    4 - 2    1000.000  1000.000     0.000     0.000      0  {1186     LAD {Maorites  densicostatus  gamma  (Killian & Reboul)     
+          [6]
+   10 - 2    1000.000  1000.000     0.000     0.000      0  {1191     LAD {Pachydiscus  riccardi  Macellari  1986                 
+   11 - 1    1120.000  1000.000   120.000   120.000      4  {1192     FAD {Pachydiscus  ultimus  Macellari  1986                  
+    2 - 2     815.000  1000.000   185.000   185.000      1  {1183     LAD {Kitchinites  darwini  (Steinmann)  1895                
           [1]
+   15 - 5    1000.000  1000.000     0.000     0.000      0  {0532     AGE {Strontium 65.8                                         
+          [7]
+    6 - 2     715.000  1000.000   285.000   285.000      3  {1187     LAD {Maorites  seymourianus  (Killian & Reboul)  1909       
+          [8]
+    4 - 1    1000.000  1000.000     0.000     0.000      0  {1186     FAD {Maorites  densicostatus  gamma  (Killian & Reboul)     
+          [2]
+    5 - 1    1030.000  1000.000    30.000    30.000      1  {1185     FAD {Maorites  densicostatus  beta  (Killian & Reboul)      
+          [4]
+   10 - 1    1000.000  1000.000     0.000     0.000      0  {1191     FAD {Pachydiscus  riccardi  Macellari  1986                 
     7 - 2     680.000   680.000     0.000     0.000      0  {1188     LAD {Maorites  wedelliensis  Macellari  1986                
-    3 - 1     795.000   680.000   115.000   115.000      2  {1184     FAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
     7 - 1     680.000   680.000     0.000     0.000      0  {1188     FAD {Maorites  wedelliensis  Macellari  1986                
+    3 - 1     795.000   680.000   115.000   115.000      2  {1184     FAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
    12 - 1     635.000   635.000     0.000     0.000      0  {1193     FAD {Eutrephoceras  simile  Spath                           
     6 - 1     610.000   610.000     0.000     0.000      0  {1187     FAD {Maorites  seymourianus  (Killian & Reboul)  1909       
-          [2]
+          [1]
    16 - 5     550.000   550.000     0.000     0.000      0  {0533     AGE {Strontium 67.5                                         
+          [24]
    13 - 2     425.000   425.000     0.000     0.000      0  {1194     LAD {Maorites  tuberculatus  Howarth  1958                  
+          [1]
    14 - 4     100.000   100.000     0.000     0.000      0  {0117     ASH {Hasl                                                   
     9 - 1     635.000   100.000   535.000   535.000      7  {1190     FAD {Grossouvrites  gemmatus  (Hupe)  1854                  
-          [10]
+          [1]
+    8 - 2      40.000   100.000    60.000    60.000      1  {1189     LAD {Gunnarites  bhavaniformis  (Killian & Reboul)  190     
+          [2]
     2 - 1     620.000   100.000   520.000   520.000      6  {1183     FAD {Kitchinites  darwini  (Steinmann)  1895                
     1 - 1     400.000   100.000   300.000   300.000      1  {1051     FAD {Diplomoceras  cylindraceum  (Defrance)  1816           
-          [1]
+          [3]
    13 - 1     410.000   100.000   310.000   310.000      2  {1194     FAD {Maorites  tuberculatus  Howarth  1958                  
-          [11]
-    8 - 2      40.000    40.000     0.000     0.000      0  {1189     LAD {Gunnarites  bhavaniformis  (Killian & Reboul)  190     
+          [18]
     8 - 1      40.000    40.000     0.000     0.000      0  {1189     FAD {Gunnarites  bhavaniformis  (Killian & Reboul)  190     
-          [28]
    
  __________________________________________
  Seymour Island C SECTION -           2
@@ -61,51 +64,56 @@
    
  [intervening unseen events merely totalled]
    
-          [3]
+          [1]
    21 - 4     230.300   230.300     0.000     0.000      0  {0100     ASH {KT iridium/tektites                                    
-          [2]
-   11 - 2     215.000   228.000    13.000    13.000      1  {1192     LAD {Pachydiscus  ultimus  Macellari  1986                  
-    3 - 2     228.000   228.000     0.000     0.000      0  {1184     LAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
+          [1]
    22 - 2     228.000   228.000     0.000     0.000      0  {1107     LAD {Zelandites  varuna  (Forbes)  1846                     
+          [1]
+   11 - 2     215.000   228.000    13.000    13.000      1  {1192     LAD {Pachydiscus  ultimus  Macellari  1986                  
+          [1]
+    3 - 2     228.000   228.000     0.000     0.000      0  {1184     LAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
+          [1]
+   12 - 2     215.000   215.000     0.000     0.000      0  {1193     LAD {Eutrephoceras  simile  Spath                           
    17 - 2     215.000   215.000     0.000     0.000      0  {1195     LAD {Diplomoceras  cylindraceum  maximum  Olivero & Zin     
     9 - 2     215.000   215.000     0.000     0.000      0  {1190     LAD {Grossouvrites  gemmatus  (Hupe)  1854                  
-   12 - 2     215.000   215.000     0.000     0.000      0  {1193     LAD {Eutrephoceras  simile  Spath                           
-   20 - 2      80.000   190.000   110.000   110.000      6  {1197     LAD {Kitchinites  laurae  Macellari  1986                   
+   19 - 2     180.000   190.000    10.000    10.000      1  {1196     LAD {Pseudophyllites  loryi  (Killian & Reboul)  1909       
           [1]
+   20 - 2      80.000   190.000   110.000   110.000      6  {1197     LAD {Kitchinites  laurae  Macellari  1986                   
     1 - 2     190.000   190.000     0.000     0.000      0  {1051     LAD {Diplomoceras  cylindraceum  (Defrance)  1816           
           [1]
-   19 - 2     180.000   180.000     0.000     0.000      0  {1196     LAD {Pseudophyllites  loryi  (Killian & Reboul)  1909       
    18 - 2     145.000   180.000    35.000    35.000      2  {1198     LAD {Anagaudryceras  seymouriense  Macellari  1986          
+    5 - 2     100.000   180.000    80.000    80.000      3  {1185     LAD {Maorites  densicostatus  beta  (Killian & Reboul)      
     4 - 2     173.000   180.000     7.000     7.000      1  {1186     LAD {Maorites  densicostatus  gamma  (Killian & Reboul)     
+          [6]
    10 - 2     180.000   180.000     0.000     0.000      0  {1191     LAD {Pachydiscus  riccardi  Macellari  1986                 
    11 - 1     190.000   180.000    10.000    10.000      1  {1192     FAD {Pachydiscus  ultimus  Macellari  1986                  
-          [5]
-    5 - 2     100.000   100.000     0.000     0.000      0  {1185     LAD {Maorites  densicostatus  beta  (Killian & Reboul)      
-    2 - 2    -200.000   100.000   300.000   300.000      6  {1183     LAD {Kitchinites  darwini  (Steinmann)  1895                
+    2 - 2    -200.000   180.000   380.000   380.000      9  {1183     LAD {Kitchinites  darwini  (Steinmann)  1895                
           [8]
-   22 - 1     228.000   100.000   128.000   128.000      6  {1107     FAD {Zelandites  varuna  (Forbes)  1846                     
-    4 - 1     173.000   100.000    73.000    73.000      2  {1186     FAD {Maorites  densicostatus  gamma  (Killian & Reboul)     
+   22 - 1     228.000   180.000    48.000    48.000      3  {1107     FAD {Zelandites  varuna  (Forbes)  1846                     
+    6 - 2    -200.000   180.000   380.000   380.000      9  {1187     LAD {Maorites  seymourianus  (Killian & Reboul)  1909       
+          [1]
+   19 - 1     180.000   180.000     0.000     0.000      0  {1196     FAD {Pseudophyllites  loryi  (Killian & Reboul)  1909       
+          [1]
+   17 - 1     190.000   180.000    10.000    10.000      1  {1195     FAD {Diplomoceras  cylindraceum  maximum  Olivero & Zin     
+          [4]
+    4 - 1     173.000   173.000     0.000     0.000      0  {1186     FAD {Maorites  densicostatus  gamma  (Killian & Reboul)     
+          [1]
    18 - 1      90.000    90.000     0.000     0.000      0  {1198     FAD {Anagaudryceras  seymouriense  Macellari  1986          
-    6 - 2    -200.000    90.000   290.000   290.000      5  {1187     LAD {Maorites  seymourianus  (Killian & Reboul)  1909       
-   17 - 1     190.000    90.000   100.000   100.000      5  {1195     FAD {Diplomoceras  cylindraceum  maximum  Olivero & Zin     
-   19 - 1     180.000    90.000    90.000    90.000      4  {1196     FAD {Pseudophyllites  loryi  (Killian & Reboul)  1909       
-          [7]
     5 - 1     100.000    90.000    10.000    10.000      1  {1185     FAD {Maorites  densicostatus  beta  (Killian & Reboul)      
+          [3]
    20 - 1      70.000    70.000     0.000     0.000      0  {1197     FAD {Kitchinites  laurae  Macellari  1986                   
-          [1]
    10 - 1      70.000    70.000     0.000     0.000      0  {1191     FAD {Pachydiscus  riccardi  Macellari  1986                 
-          [1]
     7 - 2    -200.000  -200.000     0.000     0.000      0  {1188     LAD {Maorites  wedelliensis  Macellari  1986                
-    3 - 1      10.000  -200.000   210.000   210.000      1  {1184     FAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
     7 - 1    -200.000  -200.000     0.000     0.000      0  {1188     FAD {Maorites  wedelliensis  Macellari  1986                
+    3 - 1      10.000  -200.000   210.000   210.000      1  {1184     FAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
    12 - 1     215.000  -200.000   415.000   415.000     11  {1193     FAD {Eutrephoceras  simile  Spath                           
     6 - 1    -200.000  -200.000     0.000     0.000      0  {1187     FAD {Maorites  seymourianus  (Killian & Reboul)  1909       
-          [5]
+          [29]
     9 - 1      70.000  -200.000   270.000   270.000      3  {1190     FAD {Grossouvrites  gemmatus  (Hupe)  1854                  
-          [10]
+          [4]
     2 - 1    -200.000  -200.000     0.000     0.000      0  {1183     FAD {Kitchinites  darwini  (Steinmann)  1895                
     1 - 1      50.000  -200.000   250.000   250.000      2  {1051     FAD {Diplomoceras  cylindraceum  (Defrance)  1816           
-          [43]
+          [23]
    
  __________________________________________
  Seymour Island D SECTION -           3
@@ -114,51 +122,58 @@
    
  [intervening unseen events merely totalled]
    
-          [6]
-   11 - 2     865.000   895.000    30.000    30.000      1  {1192     LAD {Pachydiscus  ultimus  Macellari  1986                  
-    3 - 2     895.000   895.000     0.000     0.000      0  {1184     LAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
+          [3]
    22 - 2     895.000   895.000     0.000     0.000      0  {1107     LAD {Zelandites  varuna  (Forbes)  1846                     
+          [1]
+   11 - 2     865.000   895.000    30.000    30.000      1  {1192     LAD {Pachydiscus  ultimus  Macellari  1986                  
+          [1]
+    3 - 2     895.000   895.000     0.000     0.000      0  {1184     LAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
+          [1]
+   12 - 2     895.000   895.000     0.000     0.000      0  {1193     LAD {Eutrephoceras  simile  Spath                           
    17 - 2     895.000   895.000     0.000     0.000      0  {1195     LAD {Diplomoceras  cylindraceum  maximum  Olivero & Zin     
     9 - 2     860.000   895.000    35.000    35.000      2  {1190     LAD {Grossouvrites  gemmatus  (Hupe)  1854                  
-   12 - 2     895.000   895.000     0.000     0.000      0  {1193     LAD {Eutrephoceras  simile  Spath                           
+          [2]
    20 - 2     895.000   895.000     0.000     0.000      0  {1197     LAD {Kitchinites  laurae  Macellari  1986                   
-          [1]
     1 - 2     820.000   855.000    35.000    35.000      2  {1051     LAD {Diplomoceras  cylindraceum  (Defrance)  1816           
-   23 - 2     855.000   855.000     0.000     0.000      0  {1045     LAD {Gaudryceras  kayei  (Forbes)  1846                     
           [1]
    18 - 2     830.000   855.000    25.000    25.000      1  {1198     LAD {Anagaudryceras  seymouriense  Macellari  1986          
+    5 - 2     765.000   855.000    90.000    90.000      4  {1185     LAD {Maorites  densicostatus  beta  (Killian & Reboul)      
     4 - 2     855.000   855.000     0.000     0.000      0  {1186     LAD {Maorites  densicostatus  gamma  (Killian & Reboul)     
+          [1]
+   23 - 2     855.000   855.000     0.000     0.000      0  {1045     LAD {Gaudryceras  kayei  (Forbes)  1846                     
+          [4]
    10 - 2     830.000   830.000     0.000     0.000      0  {1191     LAD {Pachydiscus  riccardi  Macellari  1986                 
    11 - 1     820.000   820.000     0.000     0.000      0  {1192     FAD {Pachydiscus  ultimus  Macellari  1986                  
-          [5]
-    5 - 2     765.000   765.000     0.000     0.000      0  {1185     LAD {Maorites  densicostatus  beta  (Killian & Reboul)      
-    2 - 2     530.000   765.000   235.000   235.000      7  {1183     LAD {Kitchinites  darwini  (Steinmann)  1895                
-          [7]
-   23 - 1     785.000   765.000    20.000    20.000      1  {1045     FAD {Gaudryceras  kayei  (Forbes)  1846                     
-   22 - 1     895.000   765.000   130.000   130.000      7  {1107     FAD {Zelandites  varuna  (Forbes)  1846                     
-    4 - 1     690.000   690.000     0.000     0.000      0  {1186     FAD {Maorites  densicostatus  gamma  (Killian & Reboul)     
-   18 - 1     650.000   650.000     0.000     0.000      0  {1198     FAD {Anagaudryceras  seymouriense  Macellari  1986          
-    6 - 2     535.000   650.000   115.000   115.000      2  {1187     LAD {Maorites  seymourianus  (Killian & Reboul)  1909       
-   17 - 1     855.000   650.000   205.000   205.000      8  {1195     FAD {Diplomoceras  cylindraceum  maximum  Olivero & Zin     
+    2 - 2     530.000   785.000   255.000   255.000      8  {1183     LAD {Kitchinites  darwini  (Steinmann)  1895                
           [8]
+   22 - 1     895.000   785.000   110.000   110.000      6  {1107     FAD {Zelandites  varuna  (Forbes)  1846                     
+    6 - 2     535.000   785.000   250.000   250.000      7  {1187     LAD {Maorites  seymourianus  (Killian & Reboul)  1909       
+          [2]
+   23 - 1     785.000   785.000     0.000     0.000      0  {1045     FAD {Gaudryceras  kayei  (Forbes)  1846                     
+   17 - 1     855.000   785.000    70.000    70.000      3  {1195     FAD {Diplomoceras  cylindraceum  maximum  Olivero & Zin     
+          [4]
+    4 - 1     690.000   690.000     0.000     0.000      0  {1186     FAD {Maorites  densicostatus  gamma  (Killian & Reboul)     
+          [1]
+   18 - 1     650.000   650.000     0.000     0.000      0  {1198     FAD {Anagaudryceras  seymouriense  Macellari  1986          
     5 - 1     750.000   650.000   100.000   100.000      3  {1185     FAD {Maorites  densicostatus  beta  (Killian & Reboul)      
+          [3]
    20 - 1     645.000   645.000     0.000     0.000      0  {1197     FAD {Kitchinites  laurae  Macellari  1986                   
-          [1]
    10 - 1     720.000   645.000    75.000    75.000      3  {1191     FAD {Pachydiscus  riccardi  Macellari  1986                 
-          [1]
     7 - 2     535.000   535.000     0.000     0.000      0  {1188     LAD {Maorites  wedelliensis  Macellari  1986                
-    3 - 1     650.000   535.000   115.000   115.000      2  {1184     FAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
     7 - 1     535.000   535.000     0.000     0.000      0  {1188     FAD {Maorites  wedelliensis  Macellari  1986                
+    3 - 1     650.000   535.000   115.000   115.000      2  {1184     FAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
    12 - 1     530.000   530.000     0.000     0.000      0  {1193     FAD {Eutrephoceras  simile  Spath                           
     6 - 1     380.000   380.000     0.000     0.000      0  {1187     FAD {Maorites  seymourianus  (Killian & Reboul)  1909       
-          [5]
-    9 - 1     510.000   380.000   130.000   130.000      1  {1190     FAD {Grossouvrites  gemmatus  (Hupe)  1854                  
+          [7]
    24 - 2     380.000   380.000     0.000     0.000      0  {1200     LAD {Pachydiscus  ootacodensis  (Stoliczka)  1865           
+          [16]
    24 - 1     380.000   380.000     0.000     0.000      0  {1200     FAD {Pachydiscus  ootacodensis  (Stoliczka)  1865           
-          [8]
+          [4]
+    9 - 1     510.000   380.000   130.000   130.000      1  {1190     FAD {Grossouvrites  gemmatus  (Hupe)  1854                  
+          [4]
     2 - 1     375.000   375.000     0.000     0.000      0  {1183     FAD {Kitchinites  darwini  (Steinmann)  1895                
     1 - 1     255.000   255.000     0.000     0.000      0  {1051     FAD {Diplomoceras  cylindraceum  (Defrance)  1816           
-          [43]
+          [23]
    
  __________________________________________
  Seymour Island F SECTION -           4
@@ -167,51 +182,53 @@
    
  [intervening unseen events merely totalled]
    
-          [6]
+          [5]
    11 - 2     785.000   785.000     0.000     0.000      0  {1192     LAD {Pachydiscus  ultimus  Macellari  1986                  
-    3 - 2     760.000   785.000    25.000    25.000      1  {1184     LAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
-          [2]
-    9 - 2     785.000   785.000     0.000     0.000      0  {1190     LAD {Grossouvrites  gemmatus  (Hupe)  1854                  
-   12 - 2     720.000   760.000    40.000    40.000      1  {1193     LAD {Eutrephoceras  simile  Spath                           
-   20 - 2     620.000   760.000   140.000   140.000      7  {1197     LAD {Kitchinites  laurae  Macellari  1986                   
           [1]
+    3 - 2     760.000   785.000    25.000    25.000      1  {1184     LAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
+          [1]
+   12 - 2     720.000   785.000    65.000    65.000      2  {1193     LAD {Eutrephoceras  simile  Spath                           
+          [1]
+    9 - 2     785.000   785.000     0.000     0.000      0  {1190     LAD {Grossouvrites  gemmatus  (Hupe)  1854                  
+   19 - 2     670.000   760.000    90.000    90.000      5  {1196     LAD {Pseudophyllites  loryi  (Killian & Reboul)  1909       
+          [1]
+   20 - 2     620.000   760.000   140.000   140.000      7  {1197     LAD {Kitchinites  laurae  Macellari  1986                   
     1 - 2     760.000   760.000     0.000     0.000      0  {1051     LAD {Diplomoceras  cylindraceum  (Defrance)  1816           
           [1]
-   19 - 2     670.000   760.000    90.000    90.000      5  {1196     LAD {Pseudophyllites  loryi  (Killian & Reboul)  1909       
    18 - 2     760.000   760.000     0.000     0.000      0  {1198     LAD {Anagaudryceras  seymouriense  Macellari  1986          
+    5 - 2     695.000   700.000     5.000     5.000      1  {1185     LAD {Maorites  densicostatus  beta  (Killian & Reboul)      
     4 - 2     700.000   700.000     0.000     0.000      0  {1186     LAD {Maorites  densicostatus  gamma  (Killian & Reboul)     
-   10 - 2     680.000   695.000    15.000    15.000      1  {1191     LAD {Pachydiscus  riccardi  Macellari  1986                 
-   11 - 1     760.000   695.000    65.000    65.000      3  {1192     FAD {Pachydiscus  ultimus  Macellari  1986                  
-          [5]
-    5 - 2     695.000   695.000     0.000     0.000      0  {1185     LAD {Maorites  densicostatus  beta  (Killian & Reboul)      
-    2 - 2     380.000   695.000   315.000   315.000      8  {1183     LAD {Kitchinites  darwini  (Steinmann)  1895                
+          [6]
+   10 - 2     680.000   680.000     0.000     0.000      0  {1191     LAD {Pachydiscus  riccardi  Macellari  1986                 
+   11 - 1     760.000   680.000    80.000    80.000      4  {1192     FAD {Pachydiscus  ultimus  Macellari  1986                  
+    2 - 2     380.000   640.000   260.000   260.000      5  {1183     LAD {Kitchinites  darwini  (Steinmann)  1895                
           [9]
-    4 - 1     700.000   695.000     5.000     5.000      1  {1186     FAD {Maorites  densicostatus  gamma  (Killian & Reboul)     
-   18 - 1     760.000   695.000    65.000    65.000      3  {1198     FAD {Anagaudryceras  seymouriense  Macellari  1986          
-    6 - 2     460.000   615.000   155.000   155.000      2  {1187     LAD {Maorites  seymourianus  (Killian & Reboul)  1909       
+    6 - 2     460.000   640.000   180.000   180.000      4  {1187     LAD {Maorites  seymourianus  (Killian & Reboul)  1909       
           [1]
-   19 - 1     640.000   615.000    25.000    25.000      2  {1196     FAD {Pseudophyllites  loryi  (Killian & Reboul)  1909       
-          [7]
+   19 - 1     640.000   640.000     0.000     0.000      0  {1196     FAD {Pseudophyllites  loryi  (Killian & Reboul)  1909       
+          [6]
+    4 - 1     700.000   640.000    60.000    60.000      4  {1186     FAD {Maorites  densicostatus  gamma  (Killian & Reboul)     
+          [1]
+   18 - 1     760.000   640.000   120.000   120.000      6  {1198     FAD {Anagaudryceras  seymouriense  Macellari  1986          
     5 - 1     615.000   615.000     0.000     0.000      0  {1185     FAD {Maorites  densicostatus  beta  (Killian & Reboul)      
+          [3]
    20 - 1     615.000   615.000     0.000     0.000      0  {1197     FAD {Kitchinites  laurae  Macellari  1986                   
-          [1]
    10 - 1     610.000   610.000     0.000     0.000      0  {1191     FAD {Pachydiscus  riccardi  Macellari  1986                 
-          [1]
     7 - 2     340.000   340.000     0.000     0.000      0  {1188     LAD {Maorites  wedelliensis  Macellari  1986                
-    3 - 1     610.000   340.000   270.000   270.000      3  {1184     FAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
     7 - 1     290.000   290.000     0.000     0.000      0  {1188     FAD {Maorites  wedelliensis  Macellari  1986                
+    3 - 1     610.000   290.000   320.000   320.000      4  {1184     FAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
    12 - 1     270.000   270.000     0.000     0.000      0  {1193     FAD {Eutrephoceras  simile  Spath                           
     6 - 1     240.000   240.000     0.000     0.000      0  {1187     FAD {Maorites  seymourianus  (Killian & Reboul)  1909       
-          [3]
+          [26]
    13 - 2      60.000   240.000   180.000   180.000      1  {1194     LAD {Maorites  tuberculatus  Howarth  1958                  
-          [1]
+          [2]
     9 - 1     270.000   240.000    30.000    30.000      1  {1190     FAD {Grossouvrites  gemmatus  (Hupe)  1854                  
-          [10]
+          [4]
     2 - 1     270.000   240.000    30.000    30.000      1  {1183     FAD {Kitchinites  darwini  (Steinmann)  1895                
     1 - 1     460.000   240.000   220.000   220.000      5  {1051     FAD {Diplomoceras  cylindraceum  (Defrance)  1816           
-          [1]
+          [3]
    13 - 1      40.000    40.000     0.000     0.000      0  {1194     FAD {Maorites  tuberculatus  Howarth  1958                  
-          [41]
+          [19]
    
  __________________________________________
  Seymour Filo Negro SECTION -           5
@@ -220,13 +237,13 @@
    
  [intervening unseen events merely totalled]
    
-          [3]
+          [1]
    21 - 4       9.400     9.400     0.000     0.000      0  {0100     ASH {KT iridium/tektites                                    
-          [3]
+          [5]
     3 - 2       6.000     6.000     0.000     0.000      0  {1184     LAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
-          [47]
+          [50]
     3 - 1       0.000     0.000     0.000     0.000      0  {1184     FAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
-          [64]
+          [61]
    
  __________________________________________
  Seymour Island C2 SECTION -           6
@@ -235,25 +252,26 @@
    
  [intervening unseen events merely totalled]
    
-          [6]
+          [5]
    11 - 2     252.000   252.000     0.000     0.000      0  {1192     LAD {Pachydiscus  ultimus  Macellari  1986                  
-    3 - 2     235.000   246.000    11.000    11.000      1  {1184     LAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
           [1]
+    3 - 2     235.000   246.000    11.000    11.000      1  {1184     LAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
+          [2]
    17 - 2     246.000   246.000     0.000     0.000      0  {1195     LAD {Diplomoceras  cylindraceum  maximum  Olivero & Zin     
     9 - 2     235.000   235.000     0.000     0.000      0  {1190     LAD {Grossouvrites  gemmatus  (Hupe)  1854                  
-          [1]
+          [2]
    20 - 2     232.000   232.000     0.000     0.000      0  {1197     LAD {Kitchinites  laurae  Macellari  1986                   
-          [7]
+          [12]
    11 - 1     220.000   220.000     0.000     0.000      0  {1192     FAD {Pachydiscus  ultimus  Macellari  1986                  
-          [19]
+          [14]
    17 - 1     220.000   220.000     0.000     0.000      0  {1195     FAD {Diplomoceras  cylindraceum  maximum  Olivero & Zin     
-          [9]
+          [11]
    20 - 1     220.000   220.000     0.000     0.000      0  {1197     FAD {Kitchinites  laurae  Macellari  1986                   
-          [4]
+          [3]
     3 - 1     220.000   220.000     0.000     0.000      0  {1184     FAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
-          [8]
+          [31]
     9 - 1     220.000   220.000     0.000     0.000      0  {1190     FAD {Grossouvrites  gemmatus  (Hupe)  1854                  
-          [55]
+          [29]
    
  __________________________________________
  Seymour Island Z com SECTION -           7
@@ -262,50 +280,53 @@
    
  [intervening unseen events merely totalled]
    
-          [6]
-   11 - 2    1042.090  1054.340    12.250    12.250      4  {1192     LAD {Pachydiscus  ultimus  Macellari  1986                  
-    3 - 2    1054.340  1054.340     0.000     0.000      0  {1184     LAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
+          [3]
    22 - 2    1049.780  1054.340     4.560     4.560      2  {1107     LAD {Zelandites  varuna  (Forbes)  1846                     
+          [1]
+   11 - 2    1042.090  1054.340    12.250    12.250      4  {1192     LAD {Pachydiscus  ultimus  Macellari  1986                  
+          [1]
+    3 - 2    1054.340  1054.340     0.000     0.000      0  {1184     LAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
+          [2]
    17 - 2    1054.340  1054.340     0.000     0.000      0  {1195     LAD {Diplomoceras  cylindraceum  maximum  Olivero & Zin     
     9 - 2    1054.340  1054.340     0.000     0.000      0  {1190     LAD {Grossouvrites  gemmatus  (Hupe)  1854                  
-          [1]
-   20 - 2    1054.240  1054.340     0.100     0.100      1  {1197     LAD {Kitchinites  laurae  Macellari  1986                   
-          [3]
    19 - 2    1054.340  1054.340     0.000     0.000      0  {1196     LAD {Pseudophyllites  loryi  (Killian & Reboul)  1909       
-   18 - 2    1020.610  1020.610     0.000     0.000      0  {1198     LAD {Anagaudryceras  seymouriense  Macellari  1986          
           [1]
+   20 - 2    1054.240  1054.240     0.000     0.000      0  {1197     LAD {Kitchinites  laurae  Macellari  1986                   
+          [2]
+   18 - 2    1020.610  1020.610     0.000     0.000      0  {1198     LAD {Anagaudryceras  seymouriense  Macellari  1986          
+          [8]
    10 - 2     915.300   915.300     0.000     0.000      0  {1191     LAD {Pachydiscus  riccardi  Macellari  1986                 
    11 - 1     974.750   915.300    59.450    59.450      1  {1192     FAD {Pachydiscus  ultimus  Macellari  1986                  
-          [6]
     2 - 2     884.900   884.900     0.000     0.000      0  {1183     LAD {Kitchinites  darwini  (Steinmann)  1895                
           [8]
    22 - 1    1043.570   884.900   158.670   158.670      5  {1107     FAD {Zelandites  varuna  (Forbes)  1846                     
-          [1]
-   18 - 1     825.140   825.140     0.000     0.000      0  {1198     FAD {Anagaudryceras  seymouriense  Macellari  1986          
     6 - 2     821.710   821.710     0.000     0.000      0  {1187     LAD {Maorites  seymourianus  (Killian & Reboul)  1909       
-   17 - 1     788.620   788.620     0.000     0.000      0  {1195     FAD {Diplomoceras  cylindraceum  maximum  Olivero & Zin     
+          [1]
    19 - 1     788.620   788.620     0.000     0.000      0  {1196     FAD {Pseudophyllites  loryi  (Killian & Reboul)  1909       
-          [8]
+          [1]
+   17 - 1     788.620   788.620     0.000     0.000      0  {1195     FAD {Diplomoceras  cylindraceum  maximum  Olivero & Zin     
+          [6]
+   18 - 1     825.140   788.620    36.520    36.520      2  {1198     FAD {Anagaudryceras  seymouriense  Macellari  1986          
+          [4]
    20 - 1     869.160   788.620    80.540    80.540      3  {1197     FAD {Kitchinites  laurae  Macellari  1986                   
-          [1]
    10 - 1     760.290   760.290     0.000     0.000      0  {1191     FAD {Pachydiscus  riccardi  Macellari  1986                 
-          [1]
     7 - 2     708.530   708.530     0.000     0.000      0  {1188     LAD {Maorites  wedelliensis  Macellari  1986                
+    7 - 1     708.530   708.530     0.000     0.000      0  {1188     FAD {Maorites  wedelliensis  Macellari  1986                
     3 - 1     495.080   495.080     0.000     0.000      0  {1184     FAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
-    7 - 1     708.530   495.080   213.450   213.450      1  {1188     FAD {Maorites  wedelliensis  Macellari  1986                
           [1]
     6 - 1     495.080   495.080     0.000     0.000      0  {1187     FAD {Maorites  seymourianus  (Killian & Reboul)  1909       
+          [13]
    25 - 2     483.560   483.560     0.000     0.000      0  {1669     LAD {Dimitobelus  seymouriensis                             
+          [11]
    25 - 1     483.560   483.560     0.000     0.000      0  {1669     FAD {Dimitobelus  seymouriensis                             
-          [1]
    13 - 2     430.940   430.940     0.000     0.000      0  {1194     LAD {Maorites  tuberculatus  Howarth  1958                  
-          [1]
-    9 - 1     430.940   430.940     0.000     0.000      0  {1190     FAD {Grossouvrites  gemmatus  (Hupe)  1854                  
-          [10]
-    2 - 1     408.970   408.970     0.000     0.000      0  {1183     FAD {Kitchinites  darwini  (Steinmann)  1895                
           [2]
+    9 - 1     430.940   430.940     0.000     0.000      0  {1190     FAD {Grossouvrites  gemmatus  (Hupe)  1854                  
+          [4]
+    2 - 1     408.970   408.970     0.000     0.000      0  {1183     FAD {Kitchinites  darwini  (Steinmann)  1895                
+          [4]
    13 - 1     344.390   344.390     0.000     0.000      0  {1194     FAD {Maorites  tuberculatus  Howarth  1958                  
-          [41]
+          [19]
    
  __________________________________________
  Snow Hill Island SECTION -           8
@@ -314,30 +335,33 @@
    
  [intervening unseen events merely totalled]
    
-          [10]
+          [8]
+   26 - 2    -225.000  -100.000   125.000   125.000      2  {1545     LAD {Gunnarites  antarcticus  (Weller)                      
+          [2]
     9 - 2    -100.000  -100.000     0.000     0.000      0  {1190     LAD {Grossouvrites  gemmatus  (Hupe)  1854                  
           [3]
     1 - 2    -100.000  -100.000     0.000     0.000      0  {1051     LAD {Diplomoceras  cylindraceum  (Defrance)  1816           
           [12]
     2 - 2    -225.000  -100.000   125.000   125.000      2  {1183     LAD {Kitchinites  darwini  (Steinmann)  1895                
-          [11]
+          [9]
     6 - 2    -100.000  -100.000     0.000     0.000      0  {1187     LAD {Maorites  seymourianus  (Killian & Reboul)  1909       
-          [18]
+          [21]
     6 - 1    -100.000  -100.000     0.000     0.000      0  {1187     FAD {Maorites  seymourianus  (Killian & Reboul)  1909       
-          [3]
+          [26]
    13 - 2    -100.000  -100.000     0.000     0.000      0  {1194     LAD {Maorites  tuberculatus  Howarth  1958                  
+          [1]
    14 - 4    -135.000  -135.000     0.000     0.000      0  {0117     ASH {Hasl                                                   
     9 - 1    -225.000  -225.000     0.000     0.000      0  {1190     FAD {Grossouvrites  gemmatus  (Hupe)  1854                  
-          [6]
-   26 - 2    -225.000  -225.000     0.000     0.000      0  {1545     LAD {Gunnarites  antarcticus  (Weller)                      
-          [1]
+          [2]
    27 - 2    -300.000  -300.000     0.000     0.000      0  {1546     LAD {Jacobites  crofti                                      
-   27 - 1    -390.000  -390.000     0.000     0.000      0  {1546     FAD {Jacobites  crofti                                      
+          [1]
     2 - 1    -390.000  -390.000     0.000     0.000      0  {1183     FAD {Kitchinites  darwini  (Steinmann)  1895                
     1 - 1    -330.000  -390.000    60.000    60.000      1  {1051     FAD {Diplomoceras  cylindraceum  (Defrance)  1816           
-   26 - 1    -390.000  -390.000     0.000     0.000      0  {1545     FAD {Gunnarites  antarcticus  (Weller)                      
+          [2]
+   27 - 1    -390.000  -390.000     0.000     0.000      0  {1546     FAD {Jacobites  crofti                                      
    13 - 1    -330.000  -390.000    60.000    60.000      1  {1194     FAD {Maorites  tuberculatus  Howarth  1958                  
-          [41]
+   26 - 1    -390.000  -390.000     0.000     0.000      0  {1545     FAD {Gunnarites  antarcticus  (Weller)                      
+          [18]
    
  __________________________________________
  Cape Lamb SECTION -           9
@@ -346,15 +370,17 @@
    
  [intervening unseen events merely totalled]
    
-          [14]
-    1 - 2     180.000   287.000   107.000   107.000      1  {1051     LAD {Diplomoceras  cylindraceum  (Defrance)  1816           
-          [56]
+          [8]
    26 - 2     287.000   287.000     0.000     0.000      0  {1545     LAD {Gunnarites  antarcticus  (Weller)                      
+          [6]
+    1 - 2     180.000   180.000     0.000     0.000      0  {1051     LAD {Diplomoceras  cylindraceum  (Defrance)  1816           
+          [59]
    28 - 5     168.000   168.000     0.000     0.000      0  {0531     AGE {Strontium 71.0 +_0.2                                   
-          [3]
+          [20]
     1 - 1     100.000   100.000     0.000     0.000      0  {1051     FAD {Diplomoceras  cylindraceum  (Defrance)  1816           
+          [4]
    26 - 1      87.000    87.000     0.000     0.000      0  {1545     FAD {Gunnarites  antarcticus  (Weller)                      
-          [42]
+          [18]
    
  __________________________________________
  Quiriquina Island SECTION -          10
@@ -363,58 +389,67 @@
    
  [intervening unseen events merely totalled]
    
-   39 - 2      46.000    46.000     0.000     0.000      0  {1285     LAD {Hoploscaphites  quiriquiniensis                        
    40 - 2      46.000    46.000     0.000     0.000      0  {1044     LAD {Neophylloceras  surya  (Forbes)  1846                  
-   40 - 1      44.000    44.000     0.000     0.000      0  {1044     FAD {Neophylloceras  surya  (Forbes)  1846                  
           [1]
-   39 - 1      44.000    44.000     0.000     0.000      0  {1285     FAD {Hoploscaphites  quiriquiniensis                        
-          [3]
+   39 - 2      46.000    46.000     0.000     0.000      0  {1285     LAD {Hoploscaphites  quiriquiniensis                        
    22 - 2      44.000    44.000     0.000     0.000      0  {1107     LAD {Zelandites  varuna  (Forbes)  1846                     
-          [1]
+   40 - 1      44.000    44.000     0.000     0.000      0  {1044     FAD {Neophylloceras  surya  (Forbes)  1846                  
+          [6]
     9 - 2      16.000    44.000    28.000    28.000      5  {1190     LAD {Grossouvrites  gemmatus  (Hupe)  1854                  
-          [4]
-   23 - 2      44.000    44.000     0.000     0.000      0  {1045     LAD {Gaudryceras  kayei  (Forbes)  1846                     
    19 - 2      44.000    44.000     0.000     0.000      0  {1196     LAD {Pseudophyllites  loryi  (Killian & Reboul)  1909       
-          [4]
-   37 - 2      44.000    44.000     0.000     0.000      0  {1100     LAD {Hypophylloceras  hetonaiense  (Matsumoto)  1942        
-   36 - 2      44.000    44.000     0.000     0.000      0  {1281     LAD {Kossmaticeras_(N.)  erbeni                             
+   39 - 1      44.000    44.000     0.000     0.000      0  {1285     FAD {Hoploscaphites  quiriquiniensis                        
+          [2]
+   38 - 2      44.000    44.000     0.000     0.000      0  {1293     LAD {Neophylloceras  ramosum  (Meek)  1857                  
+          [1]
+    5 - 2      44.000    44.000     0.000     0.000      0  {1185     LAD {Maorites  densicostatus  beta  (Killian & Reboul)      
+          [2]
+   23 - 2      44.000    44.000     0.000     0.000      0  {1045     LAD {Gaudryceras  kayei  (Forbes)  1846                     
           [1]
    35 - 2      44.000    44.000     0.000     0.000      0  {1130     LAD {Eubaculites  lyelli  (d Orbigny)  1847                 
           [1]
-    5 - 2      44.000    44.000     0.000     0.000      0  {1185     LAD {Maorites  densicostatus  beta  (Killian & Reboul)      
+   37 - 2      44.000    44.000     0.000     0.000      0  {1100     LAD {Hypophylloceras  hetonaiense  (Matsumoto)  1942        
+          [2]
     2 - 2      44.000    44.000     0.000     0.000      0  {1183     LAD {Kitchinites  darwini  (Steinmann)  1895                
-   38 - 2      44.000    44.000     0.000     0.000      0  {1293     LAD {Neophylloceras  ramosum  (Meek)  1857                  
+   36 - 2      44.000    44.000     0.000     0.000      0  {1281     LAD {Kossmaticeras_(N.)  erbeni                             
+          [1]
    41 - 4      38.000    38.000     0.000     0.000      0  {0114     ASH {C30n~C29r                                              
+   34 - 2      20.000    20.000     0.000     0.000      0  {1280     LAD {Pachydiscus_(P.)  jacquoti  chilensis                  
    38 - 1      20.000    20.000     0.000     0.000      0  {1293     FAD {Neophylloceras  ramosum  (Meek)  1857                  
    33 - 2      20.000    20.000     0.000     0.000      0  {1279     LAD {Eutrephoceras  subplicatum                             
-   34 - 2      20.000    20.000     0.000     0.000      0  {1280     LAD {Pachydiscus_(P.)  jacquoti  chilensis                  
    32 - 2      19.000    19.000     0.000     0.000      0  {1278     LAD {Phylloceras_(H.)  inflatum                             
-   37 - 1      17.000    17.000     0.000     0.000      0  {1100     FAD {Hypophylloceras  hetonaiense  (Matsumoto)  1942        
-   23 - 1      17.000    17.000     0.000     0.000      0  {1045     FAD {Gaudryceras  kayei  (Forbes)  1846                     
+          [1]
    22 - 1      17.000    17.000     0.000     0.000      0  {1107     FAD {Zelandites  varuna  (Forbes)  1846                     
-          [4]
+          [1]
+   37 - 1      17.000    17.000     0.000     0.000      0  {1100     FAD {Hypophylloceras  hetonaiense  (Matsumoto)  1942        
    19 - 1      17.000    17.000     0.000     0.000      0  {1196     FAD {Pseudophyllites  loryi  (Killian & Reboul)  1909       
-   30 - 2      16.000    16.000     0.000     0.000      0  {1276     LAD {Anapachydiscus  fresvillensis  quirquinae  Stinnes     
+   23 - 1      17.000    17.000     0.000     0.000      0  {1045     FAD {Gaudryceras  kayei  (Forbes)  1846                     
           [1]
    31 - 2      16.000    16.000     0.000     0.000      0  {1277     LAD {Baculites  hunickeni                                   
+   30 - 2      16.000    16.000     0.000     0.000      0  {1276     LAD {Anapachydiscus  fresvillensis  quirquinae  Stinnes     
    32 - 1      11.000    11.000     0.000     0.000      0  {1278     FAD {Phylloceras_(H.)  inflatum                             
+          [2]
    34 - 1       6.000     6.000     0.000     0.000      0  {1280     FAD {Pachydiscus_(P.)  jacquoti  chilensis                  
-   30 - 1       5.000     5.000     0.000     0.000      0  {1276     FAD {Anapachydiscus  fresvillensis  quirquinae  Stinnes     
-   36 - 1       5.000     5.000     0.000     0.000      0  {1281     FAD {Kossmaticeras_(N.)  erbeni                             
+          [1]
     5 - 1       5.000     5.000     0.000     0.000      0  {1185     FAD {Maorites  densicostatus  beta  (Killian & Reboul)      
           [1]
    33 - 1       5.000     5.000     0.000     0.000      0  {1279     FAD {Eutrephoceras  subplicatum                             
+          [8]
+   30 - 1       5.000     5.000     0.000     0.000      0  {1276     FAD {Anapachydiscus  fresvillensis  quirquinae  Stinnes     
           [1]
    31 - 1       5.000     5.000     0.000     0.000      0  {1277     FAD {Baculites  hunickeni                                   
+          [15]
+   36 - 1       5.000     5.000     0.000     0.000      0  {1281     FAD {Kossmaticeras_(N.)  erbeni                             
           [10]
     9 - 1       5.000     5.000     0.000     0.000      0  {1190     FAD {Grossouvrites  gemmatus  (Hupe)  1854                  
-          [10]
+          [4]
     2 - 1      17.000     5.000    12.000    12.000      4  {1183     FAD {Kitchinites  darwini  (Steinmann)  1895                
-          [3]
+          [10]
    29 - 2       5.000     5.000     0.000     0.000      0  {1275     LAD {Baculites  vincentei                                   
+          [1]
    35 - 1       4.000     4.000     0.000     0.000      0  {1130     FAD {Eubaculites  lyelli  (d Orbigny)  1847                 
+          [1]
    29 - 1       1.000     1.000     0.000     0.000      0  {1275     FAD {Baculites  vincentei                                   
-          [38]
+          [9]
    
  __________________________________________
  Chilean Composite SECTION -          11
@@ -425,27 +460,30 @@
    
           [7]
     3 - 2       7.000     7.000     0.000     0.000      0  {1184     LAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
-          [47]
-    3 - 1       7.000     7.000     0.000     0.000      0  {1184     FAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
-          [12]
+   26 - 2       5.000     6.000     1.000     1.000      1  {1545     LAD {Gunnarites  antarcticus  (Weller)                      
+          [15]
    43 - 2       6.000     6.000     0.000     0.000      0  {1369     LAD {Gunnarites  kalika  (Stoliczka)  1865                  
-          [1]
+          [11]
    43 - 1       6.000     6.000     0.000     0.000      0  {1369     FAD {Gunnarites  kalika  (Stoliczka)  1865                  
-   26 - 2       5.000     5.000     0.000     0.000      0  {1545     LAD {Gunnarites  antarcticus  (Weller)                      
+          [21]
+    3 - 1       7.000     6.000     1.000     1.000      1  {1184     FAD {Maorites  densicostatus  alpha  (Killian & Reboul)     
           [5]
-   26 - 1       5.000     5.000     0.000     0.000      0  {1545     FAD {Gunnarites  antarcticus  (Weller)                      
-          [27]
+   45 - 2       3.000     4.000     1.000     1.000      1  {1663     LAD {Kossmaticeras  guentheri                               
+          [2]
    44 - 2       4.000     4.000     0.000     0.000      0  {1662     LAD {Kossmaticeras  bhavani                                 
+          [4]
    44 - 1       4.000     4.000     0.000     0.000      0  {1662     FAD {Kossmaticeras  bhavani                                 
-          [2]
-   45 - 2       3.000     3.000     0.000     0.000      0  {1663     LAD {Kossmaticeras  guentheri                               
+          [28]
+   26 - 1       5.000     4.000     1.000     1.000      1  {1545     FAD {Gunnarites  antarcticus  (Weller)                      
    45 - 1       3.000     3.000     0.000     0.000      0  {1663     FAD {Kossmaticeras  guentheri                               
+          [9]
+   42 - 2       1.000     2.000     1.000     1.000      1  {1660     LAD {Neograhamites  taylori  Spath                          
    46 - 2       2.000     2.000     0.000     0.000      0  {1664     LAD {Kossmaticeras  theobaldianus                           
+          [1]
    46 - 1       2.000     2.000     0.000     0.000      0  {1664     FAD {Kossmaticeras  theobaldianus                           
-          [2]
-   42 - 2       1.000     1.000     0.000     0.000      0  {1660     LAD {Neograhamites  taylori  Spath                          
+          [1]
    42 - 1       1.000     1.000     0.000     0.000      0  {1660     FAD {Neograhamites  taylori  Spath                          
-          [3]
+          [2]
    
  __________________________________________
  Obradovich Time 93/7 SECTION -          12
@@ -454,50 +492,62 @@
    
  [intervening unseen events merely totalled]
    
-          [3]
+          [1]
    21 - 4     -64.970   -64.970     0.000     0.000      0  {0100     ASH {KT iridium/tektites                                    
-          [1]
+          [4]
    50 - 5     -64.970   -64.970     0.000     0.000      0  {0520     AGE {Obrad93 2a_64.97                                       
-          [7]
+          [13]
    51 - 5     -65.190   -65.190     0.000     0.000      0  {0521     AGE {Obrad93 2b_65.19                                       
-          [9]
-   48 - 5     -65.350   -65.350     0.000     0.000      0  {0518     AGE {Obrad93 1a_65.35                                       
           [1]
+   48 - 5     -65.350   -65.350     0.000     0.000      0  {0518     AGE {Obrad93 1a_65.35                                       
+          [23]
    49 - 5     -65.430   -65.430     0.000     0.000      0  {0519     AGE {Obrad93 1b_65.43                                       
-          [41]
+          [4]
    52 - 5     -66.800   -66.800     0.000     0.000      0  {0522     AGE {Obrad93 3_66.8 KneeHills                               
           [1]
+   60 - 2     -69.600   -69.420     0.180     0.180      1  {1059     LAD {Baculites  clinolobatus  Elias  1933                   
+          [11]
    53 - 5     -69.420   -69.420     0.000     0.000      0  {0523     AGE {Obrad93 4_69.42 B.clinolo                              
-          [12]
-   60 - 2     -69.600   -69.600     0.000     0.000      0  {1059     LAD {Baculites  clinolobatus  Elias  1933                   
    60 - 1     -69.800   -69.800     0.000     0.000      0  {1059     FAD {Baculites  clinolobatus  Elias  1933                   
+          [2]
    68 - 2     -70.000   -70.000     0.000     0.000      0  {1062     LAD {Baculites  grandis  Hall & Meek  1855                  
    66 - 5     -70.100   -70.100     0.000     0.000      0  {0501     AGE {Obrad88 3_70.1 B.grandis                               
-   68 - 1     -70.200   -70.200     0.000     0.000      0  {1062     FAD {Baculites  grandis  Hall & Meek  1855                  
    61 - 2     -73.300   -73.300     0.000     0.000      0  {1249     LAD {Baculites  compressus  Say  1820                       
-   54 - 5     -73.350   -73.350     0.000     0.000      0  {0524     AGE {Obrad93 5_73.35 B.compres                              
-   61 - 1     -73.400   -73.400     0.000     0.000      0  {1249     FAD {Baculites  compressus  Say  1820                       
+          [1]
+   68 - 1     -70.200   -73.300     3.100     3.100      1  {1062     FAD {Baculites  grandis  Hall & Meek  1855                  
           [2]
+   54 - 5     -73.350   -73.350     0.000     0.000      0  {0524     AGE {Obrad93 5_73.35 B.compres                              
    62 - 2     -74.500   -74.500     0.000     0.000      0  {1073     LAD {Exiteloceras  jenneyi  (Whitfield)  1877               
+   61 - 1     -73.400   -74.500     1.100     1.100      1  {1249     FAD {Baculites  compressus  Say  1820                       
+          [1]
    55 - 5     -74.760   -74.760     0.000     0.000      0  {0525     AGE {Obrad93 6_74.76 E.jenneyi                              
    62 - 1     -74.900   -74.900     0.000     0.000      0  {1073     FAD {Exiteloceras  jenneyi  (Whitfield)  1877               
    56 - 5     -75.370   -75.370     0.000     0.000      0  {0526     AGE {Obrad93 7_75.37 G.calcara                              
    71 - 2     -75.400   -75.400     0.000     0.000      0  {1077     LAD {Didymoceras  nebrascense  (Meek & Hayden)  1856        
    67 - 5     -75.500   -75.500     0.000     0.000      0  {0505     AGE {Obrad88 7_75.5                                         
-   71 - 1     -75.600   -75.600     0.000     0.000      0  {1077     FAD {Didymoceras  nebrascense  (Meek & Hayden)  1856        
+          [3]
    63 - 2     -75.800   -75.800     0.000     0.000      0  {1078     LAD {Baculites  scotti  Cobban  1958                        
+          [2]
    57 - 5     -75.890   -75.890     0.000     0.000      0  {0527     AGE {Obrad93 8_75.89 B.scotti                               
+          [2]
+   71 - 1     -75.600   -75.890     0.290     0.290      2  {1077     FAD {Didymoceras  nebrascense  (Meek & Hayden)  1856        
+          [2]
    63 - 1     -76.000   -76.000     0.000     0.000      0  {1078     FAD {Baculites  scotti  Cobban  1958                        
    70 - 2     -79.000   -79.000     0.000     0.000      0  {1087     LAD {Baculites  mclearni  Landes  1940                      
-   70 - 1     -79.100   -79.100     0.000     0.000      0  {1087     FAD {Baculites  mclearni  Landes  1940                      
-   65 - 5     -79.200   -79.200     0.000     0.000      0  {0506     AGE {Obrad88 8a_79.2                                        
-          [2]
-   69 - 2     -79.400   -79.400     0.000     0.000      0  {1088     LAD {Baculites  obtusus  Meek  1876                         
-   69 - 1     -79.500   -79.500     0.000     0.000      0  {1088     FAD {Baculites  obtusus  Meek  1876                         
           [4]
-   58 - 5     -80.540   -80.540     0.000     0.000      0  {0528     AGE {Obrad93 9_80.54 Ardmore                                
+   65 - 5     -79.200   -79.200     0.000     0.000      0  {0506     AGE {Obrad88 8a_79.2                                        
+   70 - 1     -79.100   -79.200     0.100     0.100      1  {1087     FAD {Baculites  mclearni  Landes  1940                      
+   69 - 2     -79.400   -79.400     0.000     0.000      0  {1088     LAD {Baculites  obtusus  Meek  1876                         
+          [1]
+   69 - 1     -79.500   -79.500     0.000     0.000      0  {1088     FAD {Baculites  obtusus  Meek  1876                         
+          [1]
+   64 - 2     -81.500   -80.540     0.960     0.960      1  {1393     LAD {Scaphites_(S.)  hippocrepis  (DeKay)  1828             
+          [1]
    59 - 4     -80.540   -80.540     0.000     0.000      0  {0102     ASH {Ardmore Bentonite                                      
           [2]
-   64 - 2     -81.500   -81.500     0.000     0.000      0  {1393     LAD {Scaphites_(S.)  hippocrepis  (DeKay)  1828             
+   58 - 5     -80.540   -80.540     0.000     0.000      0  {0528     AGE {Obrad93 9_80.54 Ardmore                                
+          [1]
    47 - 5     -81.710   -81.710     0.000     0.000      0  {0529     AGE {Obrad93 10_81.71 S.hippoc                              
+          [1]
    64 - 1     -81.900   -81.900     0.000     0.000      0  {1393     FAD {Scaphites_(S.)  hippocrepis  (DeKay)  1828             
+          [1]

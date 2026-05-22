@@ -1,0 +1,227 @@
+ _______________________________________
+ ----- PARAMETERS FROM  CONOP9.CFG -----
+  
+ &GETINN
+ PROJECT = ANTARCTICA 12x49x22: 01-JUL-10                              ,
+ SECTIONS        =          12,
+ TAXA    =          49,
+ EVENTS  =          22,
+ MAX_LEVELS      =         100,
+ MAX_LABELS      =          15,
+ LOADFILE        = loadfile.dat                                                                    ,
+ PREPFILE        = prepfile.dis                                                                    ,
+ SECTFILE        = sections.txt                                                                    ,
+ SECTTAGFILE     = OFF.tag                                                                         ,
+ SECTTAGS        = OFF.dat                                                                         ,
+ LABELFILE       = OFF.lbl                                                                         ,
+ EVENTFILE       = events.txt                                                                      ,
+ EVENTTAGFILE    = OFF.tag                                                                         ,
+ EVENTTAGS       = OFF.dat                                                                         ,
+ BESTKNOWN       =  0.0000000E+00
+ /
+ &GETANS
+ PENALTY = LEVEL     ,
+ LETCONTRACT     = OFF  ,
+ WEIGHTING       = ON        ,
+ USENEGATIVE     = OFF  ,
+ FORCECOEX       = SS   ,
+ FORCEFB4L       = ON   ,
+ HOMERANGE       = SL   ,
+ NEARENOUGH      =   5.000000    ,
+ EXCLUSIVES      = NO   ,
+ SMOOTHER        =  0.0000000E+00,
+ SQUEEZER        =  0.0000000E+00,
+ SHRINKER        =  0.0000000E+00,
+ TEASER  =  9.9999998E-03,
+ STACKER = COEX 
+ /
+ &GETRUN
+ SOLVER  = anneal    ,
+ STEPS   =        1200,
+ TRIALS  =         300,
+ STARTEMP        =   250.0000    ,
+ RATIO   =  0.9800000    ,
+ HOODSIZE        = BIG       ,
+ STARTYPE        = RAND      ,
+ STARTSECT       =           1,
+ SHOWMOVIES      = DIV  ,
+ TRAJECTORY      = ALL  ,
+ STARTEVENT      =           0,
+ VIDEOMODE       = SVGA      ,
+ PAUSES  = OFF       ,
+ CURVFILE        = grid.grd                                                                        ,
+ CRV2FILE        = grd2.gr2                                                                        
+ /
+ &GETOUT
+ COLUMNS =           7,
+ UNLOADMAIN      = outmain.txt                                                                     ,
+ FITS_OUT        = ON   ,
+ CNFG_OUT        = ON   ,
+ SEQN_OUT        = ON   ,
+ INCR_OUT        = ON   ,
+ LOC_OUT = ON   ,
+ OBS_OUT = ON   ,
+ COMP_OUT        = ON   ,
+ UNLOADSECT      = outsect.txt                                                                     ,
+ SECT_OUT        = MIN  ,
+ UNLOADEVNT      = outevnt.txt                                                                     ,
+ COEX_OUT        = ON   ,
+ EVNT_OUT        = ON   ,
+ RUNLOGFILE      = runlog.txt                                                                      ,
+ CULLFILE        = cull.txt                                                                        ,
+ SOLNLIST        = OFFsolution.sln                                                                 ,
+ STARTFILE       = soln.dat                                                                        ,
+ STEPFILE        = OFFstepsoln.dat                                                                 ,
+ BESTARTFILE     = bestsoln.dat                                                                    ,
+ COMPOSFILE      = cmpst.dat                                                                       ,
+ COMPOSNMBR      =           1,
+ COMPOSTYPE      = ZST  ,
+ OBSDFILE        = ab.dat                                                                          ,
+ PLCDFILE        = albet.dat                                                                       ,
+ EXTNFILE        = delta.dat                                                                       ,
+ COEXISTFILE     = coex.dat                                                                        ,
+ FAD_LADFILE     = fb4l.dat                                                                        ,
+ ORDERFILE       = ordr.dat                                                                        
+ /
+ ------- END OF INPUT PARAMETERS -------
+ ---------------------------------------
+  
+     
+ ------COEX Matrix Loaded-------------
+ Number of observed coexisting pairs:          193
+    
+ __________________________________
+ Partial Ordering Errors, if found:
+    
+     
+ ------FAD\LAD Matrix Built-------------
+ Number of observed FA\LA pairs:          593
+ ---------------------------------------
+   
+ THE INITIAL PERM IS
+ RANK   SPECIES TYPE
+
+       1     34      1
+       2     29      1
+       3      8      1
+       4     46      1
+       5     69      1
+       6     22      1
+       7     23      1
+       8     30      1
+       9      4      1
+      10     24      1
+      11     17      1
+      12     44      1
+      13     42      1
+      14      6      1
+      15      9      1
+      16      2      1
+      17     11      1
+      18     64      1
+      19     36      1
+      20     33      1
+      21     43      1
+      22     27      1
+      23     19      1
+      24      5      1
+      25     35      1
+      26      1      1
+      27      7      1
+      28     13      1
+      29     45      1
+      30     10      1
+      31     26      1
+      32     63      1
+      33     12      1
+      34     68      1
+      35     37      1
+      36     62      1
+      37     61      1
+      38     70      1
+      39     20      1
+      40     31      1
+      41     40      1
+      42     18      1
+      43     38      1
+      44     25      1
+      45      3      1
+      46     32      1
+      47     71      1
+      48     39      1
+      49     60      1
+      50     47      5
+      51     58      5
+      52     59      4
+      53     65      5
+      54     57      5
+      55     67      5
+      56     56      5
+      57     55      5
+      58     54      5
+      59     14      4
+      60     28      5
+      61     41      4
+      62     66      5
+      63     53      5
+      64     52      5
+      65     16      5
+      66     15      5
+      67     49      5
+      68     48      5
+      69     51      5
+      70     21      4
+      71     50      5
+      72     37      2
+      73     18      2
+      74     35      2
+      75     13      2
+      76      2      2
+      77     39      2
+      78     31      2
+      79     70      2
+      80      1      2
+      81     42      2
+      82      9      2
+      83     22      2
+      84     32      2
+      85     23      2
+      86     27      2
+      87     44      2
+      88     61      2
+      89      3      2
+      90     64      2
+      91     30      2
+      92     38      2
+      93     36      2
+      94     25      2
+      95     24      2
+      96     29      2
+      97     68      2
+      98     20      2
+      99     63      2
+     100      6      2
+     101     12      2
+     102     45      2
+     103     26      2
+     104      5      2
+     105     46      2
+     106     33      2
+     107      4      2
+     108     43      2
+     109     71      2
+     110     62      2
+     111     10      2
+     112     19      2
+     113     40      2
+     114      7      2
+     115     17      2
+     116      8      2
+     117     34      2
+     118     60      2
+     119     11      2
+     120     69      2
+ NEVNT =      120
+
+ Remapping levels for composite:           -9 
+                                                   
