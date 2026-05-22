@@ -44,12 +44,12 @@ echo ----------------------------------------
 echo [%TAG%] RATIO=%NEW_RATIO%  STARTEMP=%NEW_TEMP%  STEPS=%NEW_STEPS%
 echo.
 
-:: 用 PowerShell 替换 cfg 里的参数 - 但用文件路径避免引号问题
-powershell -Command ^"$c = Get-Content '%CONOP_DIR%\conop9.cfg' -Raw; ^
-$c = $c -replace 'RATIO=[0-9.]+', 'RATIO=%NEW_RATIO%'; ^
-$c = $c -replace 'STARTEMP=[0-9.]+', 'STARTEMP=%NEW_TEMP%'; ^
-$c = $c -replace 'STEPS=[0-9]+', 'STEPS=%NEW_STEPS%'; ^
-[System.IO.File]::WriteAllText('%CONOP_DIR%\conop9.cfg', $c)" 2>nul
+:: 修改 RATIO
+powershell -Command "(Get-Content conop9.cfg) -replace 'RATIO=[0-9.]+', 'RATIO=%NEW_RATIO%' | Set-Content conop9.cfg" 2>nul
+:: 修改 STARTEMP
+powershell -Command "(Get-Content conop9.cfg) -replace 'STARTEMP=[0-9.]+', 'STARTEMP=%NEW_TEMP%' | Set-Content conop9.cfg" 2>nul
+:: 修改 STEPS
+powershell -Command "(Get-Content conop9.cfg) -replace 'STEPS=[0-9]+', 'STEPS=%NEW_STEPS%' | Set-Content conop9.cfg" 2>nul
 
 echo 配置已更新，请双击 CONOP64ver8p621.exe 运行
 echo 跑完后关掉窗口，按任意键继续...
