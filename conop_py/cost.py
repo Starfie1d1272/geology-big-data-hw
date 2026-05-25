@@ -10,9 +10,10 @@
 
 实现现状：
     - `ordinal_misfit()` 与 outmain.txt 的 "Ordinal Penalty: 367.0000 pairs" 完全一致；
-    - `level_misfit()`  近似计算（FAD/LAD 双向扩展、horizon 去重）；
-      与 outmain.txt 的 "Level Penalty: 237.0000" 同量级但偏高约 60%。
-      细节差异源于 CONOP9 的最小化重叠 horizon 计数策略未完全公开。
+    - `level_misfit()`  近似计算：只计复合范围 (r_F, r_L) 内的 taxon 事件，
+      排除 AGE 锚点（type=5），ASH 层（type=4）仍参与。
+      总误差约 +43%（340 vs 237），5 个剖面精确匹配；
+      大剖面（sec 1-4）仍偏高，CONOP9 的精确计数策略未完全公开。
     - `weighted_ordinal_misfit()` 新增改进：利用多剖面一致性作为证据权重。
 
 本模块对外默认导出 `ordinal_misfit` 作为 SA 优化目标——它是 CONOP 标准 penalty 之一
@@ -22,7 +23,7 @@ from __future__ import annotations
 
 from collections import defaultdict
 
-from conop_py.io import Observation
+from conop_py.io import Observation, AGE
 
 
 EventKey = tuple[int, int]  # (entity_id, event_type)
@@ -191,25 +192,31 @@ def level_misfit(
     misfit = 0.0
     for (eid, sec_id), types in fad_lad.items():
         levels_in_sec = sec_levels[sec_id]
-        # FAD 向下扩展：找 section 中 level < F_obs 但 model rank > r_F 的层位
+        # 复合序列中 T 的 FAD/LAD 位置（两者都预取，方便两个方向共用）
+        r_F = pos[(eid, 1)]
+        r_L = pos[(eid, 2)]
+
+        # FAD 向下扩展：level < F_obs，且该 horizon 有 taxon 事件落在 T 的复合范围内 (r_F, r_L)
+        # Marker（ASH/AGE）是固定时间标定点，不代表 taxon range，不应触发扩展惩罚
         if 1 in types:
             F_obs = types[1]
-            r_F = pos[(eid, 1)]
             for level, evs_at in levels_in_sec:
                 if level >= F_obs:
                     break
-                # 若该 horizon 有任一 event 的 model_rank > r_F，则需要 leapfrog（每 horizon 算 1 次）
-                if any(pos[ev] > r_F for ev in evs_at):
+                if any(r_F < pos[ev] < r_L for ev in evs_at
+                       if ev in pos and ev[1] != AGE):
                     misfit += 1
-        # LAD 向上扩展：找 section 中 level > L_obs 但 model rank < r_L 的层位
+
+        # LAD 向上扩展：level > L_obs，同理只计 taxon 事件
         if 2 in types:
             L_obs = types[2]
-            r_L = pos[(eid, 2)]
             for level, evs_at in levels_in_sec:
                 if level <= L_obs:
                     continue
-                if any(pos[ev] < r_L for ev in evs_at):
+                if any(r_F < pos[ev] < r_L for ev in evs_at
+                       if ev in pos and ev[1] != AGE):
                     misfit += 1
+
     return misfit
 
 
