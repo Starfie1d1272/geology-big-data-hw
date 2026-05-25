@@ -9,3 +9,6 @@ slides/
 
 # OMC 内部状态
 .omc/
+
+# Skills lock file (global install, not project-specific)
+skills-lock.json
