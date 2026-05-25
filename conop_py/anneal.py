@@ -12,10 +12,9 @@ import math
 import random
 from dataclasses import dataclass, field
 
-from functools import partial
-
 from conop_py.cost import (
-    EventKey, Sequence, build_section_observations, ordinal_misfit,
+    ConopContext, EventKey, Sequence, build_section_observations,
+    ordinal_misfit, level_misfit, eventual_misfit, combined_misfit,
     build_pairwise_support, weighted_ordinal_misfit,
 )
 from conop_py.io import Entity, Observation
@@ -158,7 +157,8 @@ def anneal(
     entities: list[Entity],
     observations: list[Observation],
     cfg: AnnealConfig,
-    misfit_fn=ordinal_misfit,
+    misfit_fn=None,          # fn(ctx: ConopContext) -> float，默认 ordinal_misfit
+    misfit_weights: dict[str, float] | None = None,  # 传给 combined_misfit 的权重
     use_weighted: bool = False,
     use_anchors: bool = True,
     verbose: bool = True,
@@ -166,20 +166,36 @@ def anneal(
     """模拟退火主循环。
 
     Args:
-        use_weighted: 若 True，使用多剖面支持度加权的 Ordinal penalty（忽略 misfit_fn）。
-        use_anchors:  若 True，自动识别 AGE/ASH 锚点，SA 过程中强制维持其绝对年龄顺序。
+        misfit_fn:      接受 ConopContext 的代价函数。若为 None，使用单模式默认值。
+        misfit_weights: 多目标权重 dict，如 {'ordinal': 1.0, 'level': 0.5, 'eventual': 0.3}。
+                        有值时忽略 misfit_fn，使用 combined_misfit。
+        use_weighted:   若 True，Ordinal 组件使用多剖面支持度加权。
+        use_anchors:    若 True，强制维持 AGE/ASH 锚点的绝对年龄顺序。
     """
     rng = random.Random(cfg.seed)
     section_obs = build_section_observations(observations)
 
-    # 确定实际使用的 misfit 函数
-    if use_weighted:
+    # 确定 misfit 函数
+    if misfit_weights:
+        # 多目标模式
+        if verbose:
+            print(f"多目标权重: {misfit_weights}")
+        ps = build_pairwise_support(observations) if use_weighted else None
+        def actual_misfit(ctx: ConopContext) -> float:
+            return combined_misfit(ctx, misfit_weights, ps)
+        mode = f"combined({','.join(f'{k}={v}' for k,v in misfit_weights.items())})"
+    elif misfit_fn is not None:
+        actual_misfit = misfit_fn
+        mode = misfit_fn.__name__
+    elif use_weighted:
         if verbose:
             print("预计算多剖面支持度权重…")
         ps = build_pairwise_support(observations)
-        actual_misfit = partial(weighted_ordinal_misfit, pairwise_support=ps)
+        actual_misfit = lambda ctx: weighted_ordinal_misfit(ctx, ps)
+        mode = "weighted-ordinal"
     else:
-        actual_misfit = misfit_fn
+        actual_misfit = ordinal_misfit
+        mode = "ordinal"
 
     # 锚点设置
     anchor_order: list[EventKey] = []
@@ -193,10 +209,12 @@ def anneal(
     seq = build_initial(entities, observations, rng, anchor_order=anchor_order or None)
     n = len(seq)
 
-    # FORCEFb4L：构建 FAD↔LAD 配对映射
+    # FORCEFb4L
     fad_lad_map = _build_fad_lad_map(entities) if cfg.force_fad_before_lad else {}
 
-    current_fit = actual_misfit(seq, section_obs)
+    # 构建 ConopContext（观测数据部分不变，sequence 变化时只 rebuild pos）
+    base_ctx = ConopContext.build(seq, section_obs)
+    current_fit = actual_misfit(base_ctx)
     best_seq = seq[:]
     best_fit = current_fit
 
@@ -204,14 +222,12 @@ def anneal(
     trajectory: list[TrajectoryPoint] = []
 
     if verbose:
-        mode = "weighted-ordinal" if use_weighted else "ordinal"
         anchor_info = f", {len(anchor_order)} anchors" if anchor_keys else ""
         print(f"初始 misfit = {current_fit:.2f}  (n={n} events, mode={mode}{anchor_info})")
 
     for step in range(cfg.steps):
         accepted = 0
         for _ in range(cfg.trials):
-            # 扰动：抽出一个事件，插到新位置
             i = rng.randrange(n)
             j = rng.randrange(n)
             if i == j:
@@ -219,25 +235,21 @@ def anneal(
             ev = seq.pop(i)
             seq.insert(j, ev)
 
-            # 锚点约束：若移动了锚点且破坏了年龄顺序，直接撤销
             if anchor_keys and ev in anchor_keys:
                 if not _anchor_order_valid(seq, anchor_order, anchor_keys):
-                    seq.pop(j)
-                    seq.insert(i, ev)
+                    seq.pop(j); seq.insert(i, ev)
                     continue
 
-            # FORCEFb4L：FAD 必须在对应 LAD 之前（地质约束）
             if fad_lad_map and ev[0] in fad_lad_map:
                 fad_key, lad_key = fad_lad_map[ev[0]]
-                # 在新序列中找到两者的位置
                 fad_pos = seq.index(fad_key)
                 lad_pos = seq.index(lad_key)
                 if fad_pos >= lad_pos:
-                    seq.pop(j)
-                    seq.insert(i, ev)
+                    seq.pop(j); seq.insert(i, ev)
                     continue
 
-            new_fit = actual_misfit(seq, section_obs)
+            ctx = base_ctx.rebuild_pos(seq)
+            new_fit = actual_misfit(ctx)
             delta = new_fit - current_fit
 
             if delta <= 0 or rng.random() < math.exp(-delta / max(T, 1e-9)):
@@ -247,17 +259,11 @@ def anneal(
                     best_fit = new_fit
                     best_seq = seq[:]
             else:
-                # 撤销
-                seq.pop(j)
-                seq.insert(i, ev)
+                seq.pop(j); seq.insert(i, ev)
 
         point = TrajectoryPoint(
-            cooling_step=step,
-            temperature=T,
-            current_fit=current_fit,
-            best_fit=best_fit,
-            accepted=accepted,
-            proposed=cfg.trials,
+            cooling_step=step, temperature=T, current_fit=current_fit,
+            best_fit=best_fit, accepted=accepted, proposed=cfg.trials,
         )
         trajectory.append(point)
 
@@ -317,6 +323,7 @@ if __name__ == "__main__":
     print(f"配置：STARTEMP={cfg.startemp} RATIO={cfg.ratio} STEPS={cfg.steps} TRIALS={cfg.trials} seed={cfg.seed}")
     print(f"模式：{'加权Ordinal' if args.weighted else 'Ordinal'}  锚点约束：{'关' if args.no_anchors else '开'}")
     res = anneal(entities, obs, cfg,
+                 misfit_fn=ordinal_misfit,
                  use_weighted=args.weighted,
                  use_anchors=not args.no_anchors)
 
