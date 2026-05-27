@@ -16,6 +16,7 @@ from conop_py.cost import (
     ConopContext, EventKey, Sequence, build_section_observations,
     ordinal_misfit, level_misfit, eventual_misfit, combined_misfit,
     build_pairwise_support, weighted_ordinal_misfit,
+    FastOrdinalState,
 )
 from conop_py.io import Entity, Observation
 
@@ -28,6 +29,11 @@ class AnnealConfig:
     trials: int = 300         # 每温度阶段扰动次数
     seed: int | None = None
     force_fad_before_lad: bool = True  # 对应原版 FORCEFb4L='ON'
+    # B8：早停参数
+    early_stop_patience: int = 0   # 连续 N 步 best_fit 无改善则停（0=禁用）
+    early_stop_min_step: int = 50  # 至少跑这么多温度阶段才允许早停
+    # B6 + B7：使用 FastOrdinalState 增量计算（仅 ordinal 模式有效）
+    use_fast_ordinal: bool = True
 
 
 @dataclass
@@ -153,6 +159,114 @@ def build_initial(
     return seq
 
 
+def _anneal_fast_ordinal(
+    seq: Sequence,
+    section_obs: dict[int, list[tuple[float, EventKey]]],
+    cfg: AnnealConfig,
+    rng: random.Random,
+    anchor_order: list[EventKey],
+    anchor_keys: set[EventKey],
+    fad_lad_map: dict[int, tuple[EventKey, EventKey]],
+    verbose: bool,
+) -> AnnealResult:
+    """ordinal-only 快速路径：FastOrdinalState 增量 + 早停。
+
+    与 anneal() 的慢路径相比：
+      - 每步扰动不调 ordinal_misfit() 全量，只重算 |affected sections| 个 section
+      - 用 pos_arr O(1) 查 FAD/LAD 位置，省掉 seq.index()
+      - 早停：连续 patience 个温度阶段 best_fit 无改善则提前退出
+    """
+    state = FastOrdinalState(seq, section_obs)
+    n = state.n
+    pd = state._pos_dict   # 直接引用以省一层属性访问
+    current_fit = state.total
+    best_fit = current_fit
+    best_seq = seq[:]
+
+    def anchor_valid_fast() -> bool:
+        """检查 anchor 在 pos_dict 中的相对顺序是否仍按 anchor_order 升序。"""
+        last = -1
+        for a in anchor_order:
+            p = pd[a]
+            if p <= last:
+                return False
+            last = p
+        return True
+
+    T = cfg.startemp
+    trajectory: list[TrajectoryPoint] = []
+
+    if verbose:
+        anchor_info = f", {len(anchor_order)} anchors" if anchor_keys else ""
+        print(f"初始 misfit = {current_fit:.2f}  (n={n} events, mode=ordinal-fast{anchor_info})")
+
+    stagnation = 0  # 连续 best 无改善的温度阶段数
+
+    for step in range(cfg.steps):
+        accepted = 0
+        improved_this_step = False
+        for _ in range(cfg.trials):
+            i = rng.randrange(n)
+            j = rng.randrange(n)
+            if i == j:
+                continue
+            ev = seq[i]
+            # 同步：维护 seq 列表（anchor / FORCEFb4L 检查需要）和 state
+            seq.pop(i); seq.insert(j, ev)
+            delta, undo = state.trial_move(seq, ev, j, i)
+
+            # 约束检查
+            if anchor_keys and ev in anchor_keys:
+                if not anchor_valid_fast():
+                    seq.pop(j); seq.insert(i, ev)
+                    state.revert(seq, undo)
+                    continue
+            if fad_lad_map and ev[0] in fad_lad_map:
+                fad_key, lad_key = fad_lad_map[ev[0]]
+                if pd[fad_key] >= pd[lad_key]:
+                    seq.pop(j); seq.insert(i, ev)
+                    state.revert(seq, undo)
+                    continue
+
+            # Metropolis 接受准则
+            if delta <= 0 or rng.random() < math.exp(-delta / max(T, 1e-9)):
+                current_fit += delta
+                accepted += 1
+                if current_fit < best_fit:
+                    best_fit = current_fit
+                    best_seq = seq[:]
+                    improved_this_step = True
+            else:
+                seq.pop(j); seq.insert(i, ev)
+                state.revert(seq, undo)
+
+        trajectory.append(TrajectoryPoint(
+            cooling_step=step, temperature=T, current_fit=current_fit,
+            best_fit=best_fit, accepted=accepted, proposed=cfg.trials,
+        ))
+        if verbose and (step % 20 == 0 or step == cfg.steps - 1):
+            print(f"  step {step:3d}/{cfg.steps}  T={T:8.3f}  "
+                  f"cur={current_fit:7.2f}  best={best_fit:7.2f}  "
+                  f"accept={accepted}/{cfg.trials}")
+
+        # B8 早停：连续 patience 步 best 无改善 且 已跑过 min_step → 退出
+        if cfg.early_stop_patience > 0:
+            stagnation = 0 if improved_this_step else stagnation + 1
+            if (step >= cfg.early_stop_min_step
+                    and stagnation >= cfg.early_stop_patience):
+                if verbose:
+                    print(f"  早停于 step {step}: best_fit 连续 {stagnation} 步无改善")
+                break
+
+        T *= cfg.ratio
+        if T < 1e-3:
+            break
+
+    if verbose:
+        print(f"最终 best_fit = {best_fit:.2f}")
+    return AnnealResult(best_sequence=best_seq, best_fit=best_fit, trajectory=trajectory)
+
+
 def anneal(
     entities: list[Entity],
     observations: list[Observation],
@@ -211,6 +325,22 @@ def anneal(
 
     # FORCEFb4L
     fad_lad_map = _build_fad_lad_map(entities) if cfg.force_fad_before_lad else {}
+
+    # ------ B6+B7+B8 快速路径分派：仅 ordinal 模式 ------
+    is_fast_path = (
+        getattr(cfg, "use_fast_ordinal", False)
+        and misfit_weights is None
+        and not use_weighted
+        and (misfit_fn is None or misfit_fn is ordinal_misfit)
+    )
+    if is_fast_path:
+        if verbose:
+            print(f"启用快速路径 (FastOrdinalState 增量 + 早停)")
+        return _anneal_fast_ordinal(
+            seq=seq, section_obs=section_obs, cfg=cfg, rng=rng,
+            anchor_order=anchor_order, anchor_keys=anchor_keys,
+            fad_lad_map=fad_lad_map, verbose=verbose,
+        )
 
     # 构建 ConopContext（观测数据部分不变，sequence 变化时只 rebuild pos）
     base_ctx = ConopContext.build(seq, section_obs)

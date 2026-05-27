@@ -1,0 +1,15 @@
+{
+  "timestamp_utc": "2026-05-26_190029Z",
+  "git_commit": "6da120bec1c1",
+  "n_restarts": 50,
+  "workers": 8,
+  "cfg": {
+    "startemp": 250.0,
+    "ratio": 0.98,
+    "steps": 600,
+    "trials": 300,
+    "early_stop_patience": 80,
+    "use_fast_ordinal": true
+  },
+  "seed_base": 10000
+}

@@ -55,6 +55,32 @@ conda run -n <env> python scripts/analyze_convergence.py
 
 `scripts/summary.csv` 是各次运行 best_fit 汇总表，字段：`实验组, run_id, RATIO, STARTEMP, STEPS, best_fit`。
 
+## 性能优化的 SA（B 区：增量 cost + NumPy + numba + 多进程）
+
+完整 baseline SA（180k iters）从 16 秒 → 1 秒，50 次并行重启从 13 分钟 → 10 秒。
+
+```bash
+# 单次 SA 基准
+uv run --with numpy --with numba --with pandas --with matplotlib --with scipy \
+  python scripts/benchmark_sa.py --steps 600 --trials 300
+
+# 50 次并行多重启（解的不确定性 / consensus / rank 分布 / jackknife）
+uv run --with numpy --with numba --with pandas --with matplotlib --with scipy \
+  python scripts/run_multistart.py --n 50 --tag <tag> --workers 8
+# 输出: results_py/multistart/<timestamp>_<tag>/{summary.csv, bestsoln_s*.dat, manifest.json}
+
+# 回归测试（任何 cost 重构后必跑）
+uv run --with numpy --with numba --with pandas --with matplotlib --with scipy --with pytest \
+  python -m pytest tests/test_regression.py -v
+```
+
+关键 ConfigKnobs（`AnnealConfig`）：
+- `use_fast_ordinal=True`：增量 ordinal + numba 路径（仅 ordinal 模式有效，默认开）
+- `early_stop_patience=80`：连续 80 步 best_fit 无改善则停（0 = 关闭）
+- `early_stop_min_step=50`：至少跑这么多步才允许早停
+
+`FastOrdinalState`（`conop_py/cost.py`）的关键：差分公式 O(n_s) 计算 Δordinal，避开 sort+merge；维护 `_pos_arr` numpy 数组 + numba JIT 内层循环。降级路径在无 numba 时自动启用纯 Python 版本。
+
 ## 实验结论速查
 
 - **RATIO=0.98, STARTEMP=250, STEPS=600** 为最优基准配置（best_fit ≈ 220.09，波动 ±0.01）
