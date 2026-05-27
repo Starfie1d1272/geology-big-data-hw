@@ -1,4 +1,4 @@
-"""B10: 多进程并行多重启 SA。
+"""多进程并行多重启 SA。
 
 用途：跑 N 次独立 SA（不同 seed），输出每次的 bestsoln + best_fit + trajectory，
 供后续 consensus / jackknife / rank-distribution 等不确定性分析使用。

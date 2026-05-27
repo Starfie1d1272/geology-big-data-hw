@@ -79,9 +79,13 @@ $PY -m pytest tests/test_regression.py -v           # 回归测试（9 项）
 
 `multistart` 输出: `results_py/multistart/<timestamp>_<tag>/{summary.csv, bestsoln_s*.dat, manifest.json}`
 
-## 性能优化的 SA（B 区：增量 cost + NumPy + numba + 多进程）
+## 性能基线
 
-完整 baseline SA（180k iters）从 16 秒 → 1 秒，50 次并行重启从 13 分钟 → 10 秒。
+完整 baseline SA（180k iters）≈ 1 秒，50 次并行重启 ≈ 10 秒。
+
+核心优化：`FastOrdinalState` 用差分公式 O(n_s) 算 Δordinal，跳过 sort+merge；
+内层逆序计数走 numba JIT（缺失时自动 fallback 纯 Python）；
+`scripts/run_multistart.py` 用 multiprocessing.Pool 并行多重启。
 
 关键 ConfigKnobs（`AnnealConfig`）：
 - `use_fast_ordinal=True`：增量 ordinal + numba 路径（仅 ordinal 模式有效，默认开）

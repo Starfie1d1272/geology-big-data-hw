@@ -2,16 +2,13 @@
 
 理论依据：Sadler & Cooper (2003) §3.2 —
     - ORDINAL:   错位事件对数（与 CONOP9 outmain.txt 完全一致）
-    - LEVEL:     把观测范围扩展以匹配 composite 所需跨过的 horizon 总数（近似，误差 ~+43%）
-    - EVENTUAL:  composite range 宽度与观测 range 宽度的一致性惩罚（防 range 坍缩）
+    - LEVEL:     把 range 扩展以匹配 composite 所需跨过的 horizon 总数
+                 （当前实现在 bestsoln.dat 上 +43%，源于未公开的计数细节）
+    - EVENTUAL:  与 LEVEL 同源，但每个 horizon 按该 horizon 上的 forcing event 数加权
     - WEIGHTED:  多剖面支持度加权的 Ordinal
 
 所有 misfit 函数共享 ConopContext 预计算结构，避免 SA 迭代中重复构建。
-
-性能优化（B6 + B7 + B9）：
-    - ordinal_section() 单 section 计算，配合 build_event_sections() 实现增量
-    - FastOrdinalState 维护 pos 数组 + 每 section 缓存，O(|affected sections|) 增量更新
-    - numba JIT 加速 _section_count_inversions（可选，自动检测）
+SA 热路径走 FastOrdinalState（增量 ordinal + 可选 numba JIT），见本文件下半部分。
 """
 from __future__ import annotations
 
@@ -407,17 +404,16 @@ def _merge_count(arr: list[int], tmp: list[int], lo: int, hi: int) -> int:
 
 
 # ---------------------------------------------------------------------------
-# B6 + B7：增量 ordinal 代价 + NumPy rank 数组
+# 增量 ordinal cost：SA 热路径专用
 # ---------------------------------------------------------------------------
 # 思路：
 #   1. 维护 pos: np.ndarray[int]，按全局 event index 索引（FastOrdinalState）
 #   2. 预计算 event_sections: 每个 event 所在的 sections
 #   3. 每 section 维护 sec_ordinal 缓存（当前逆序对数）
-#   4. trial_move(eidx, new_pos):
-#        - 只重算 event_sections[eidx] 这几个 section 的 ordinal
-#        - 返回 delta 和 undo handle
+#   4. trial_move：只重算 event_sections[ev] 涉及的 sections 的 ordinal，
+#      用差分公式 O(n_s) 算 Δordinal（不调 sort+merge）
 #      revert(undo) 恢复状态
-#   速度提升：~12 sections 中只重算 1–4 个 → 3-6× ordinal SA 加速
+#   实测：12 sections 中典型只重算 1-4 个，结合 numba JIT 总加速 ~15×
 
 def build_event_sections(
     section_obs: dict[int, list[tuple[float, EventKey]]],
@@ -477,7 +473,7 @@ class FastOrdinalState:
             for lv, ev in evs:
                 self.ev_level[ev][sid] = lv
 
-        # ===== B9: numba 加速所需的 NumPy 数据 =====
+        # numba JIT 内层循环所需的 NumPy 数据结构
         # 全局 event index：观测里出现过的 + model_sequence 里的并集
         all_events = list(model_sequence)
         seen = set(all_events)

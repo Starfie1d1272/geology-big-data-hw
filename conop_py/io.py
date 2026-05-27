@@ -213,7 +213,7 @@ def summarize(data_dir: str | Path, cfg: dict[str, str]) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# F26: Schema 校验 — 数据集换了或损坏时立刻报错，而不是后面 SA 跑出怪结果
+# Schema 校验 — 数据集换了或损坏时立刻报错，而不是后面 SA 跑出怪结果
 # ---------------------------------------------------------------------------
 
 VALID_EVENT_TYPES = {FAD, LAD, ASH, AGE}
@@ -316,7 +316,7 @@ if __name__ == "__main__":
     print(f"配置：{cfg}")
     print(f"统计：{stats}")
 
-    # F26: 校验
+    # 数据集校验
     obs = parse_loadfile(data_dir / "loadfile.dat")
     taxon_ids = infer_taxa_from_observations(obs)
     ents = parse_events(data_dir / "events.txt", taxon_ids=taxon_ids)

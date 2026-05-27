@@ -29,10 +29,10 @@ class AnnealConfig:
     trials: int = 300         # 每温度阶段扰动次数
     seed: int | None = None
     force_fad_before_lad: bool = True  # 对应原版 FORCEFb4L='ON'
-    # B8：早停参数
-    early_stop_patience: int = 0   # 连续 N 步 best_fit 无改善则停（0=禁用）
+    # 早停（连续 patience 个温度阶段 best_fit 无改善则退出，0 = 关闭）
+    early_stop_patience: int = 0
     early_stop_min_step: int = 50  # 至少跑这么多温度阶段才允许早停
-    # B6 + B7：使用 FastOrdinalState 增量计算（仅 ordinal 模式有效）
+    # 走 FastOrdinalState 增量路径（仅 ordinal 模式有效；fallback 慢路径自动保留）
     use_fast_ordinal: bool = True
 
 
@@ -51,24 +51,6 @@ class AnnealResult:
     best_sequence: Sequence
     best_fit: float
     trajectory: list[TrajectoryPoint] = field(default_factory=list)
-
-
-def initial_sequence(entities: list[Entity], rng: random.Random) -> Sequence:
-    """生成满足共存约束的初始序列：FAD 随机入前半段，LAD 随机入后半段，
-    markers 随机插入（可以位于序列任何位置）。"""
-    taxa = [e for e in entities if e.is_taxon]
-    markers = [e for e in entities if not e.is_taxon]
-
-    fads = [(e.id, 1) for e in taxa]
-    lads = [(e.id, 2) for e in taxa]
-    rng.shuffle(fads)
-    rng.shuffle(lads)
-    seq: Sequence = fads + lads
-
-    # markers 按观测的 event_type 插入到随机位置
-    # 注意 markers 在 events.txt 中 entity_id 已分配，event_type 由 outmain 给出
-    # 由于这里没有 obs 信息，markers 默认 event_type=5 (AGE)；运行时由调用方覆盖
-    return seq
 
 
 def build_anchor_order(observations: list[Observation]) -> list[EventKey]:
@@ -249,7 +231,7 @@ def _anneal_fast_ordinal(
                   f"cur={current_fit:7.2f}  best={best_fit:7.2f}  "
                   f"accept={accepted}/{cfg.trials}")
 
-        # B8 早停：连续 patience 步 best 无改善 且 已跑过 min_step → 退出
+        # 早停判定：连续 patience 步 best 无改善 且 已跑过 min_step → 退出
         if cfg.early_stop_patience > 0:
             stagnation = 0 if improved_this_step else stagnation + 1
             if (step >= cfg.early_stop_min_step
@@ -326,7 +308,7 @@ def anneal(
     # FORCEFb4L
     fad_lad_map = _build_fad_lad_map(entities) if cfg.force_fad_before_lad else {}
 
-    # ------ B6+B7+B8 快速路径分派：仅 ordinal 模式 ------
+    # ------ 快速路径分派：FastOrdinalState 增量 + 早停，仅 ordinal 模式 ------
     is_fast_path = (
         getattr(cfg, "use_fast_ordinal", False)
         and misfit_weights is None
