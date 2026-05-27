@@ -229,7 +229,7 @@ def build_parser():
                    help="关闭 AGE/ASH 锚点约束")
     p.set_defaults(fn=cmd_sweep)
 
-    p = sub.add_parser("plot-conv", help="Python 轨迹收敛图 → results_py/convergence.png")
+    p = sub.add_parser("plot-conv", help="Python 轨迹收敛图 → results_py/trajectory/convergence.png")
     p.set_defaults(fn=cmd_plot_conv)
 
     p = sub.add_parser("plot-sweep",

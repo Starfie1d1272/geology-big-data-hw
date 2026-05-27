@@ -53,7 +53,7 @@ conda run -n <env> python scripts/analyze_convergence.py
 
 依赖：`numpy`, `pandas`, `matplotlib`, `scipy`（见 `requirements.txt`）。`torch` 和 `pymupdf` 按需使用。
 
-`scripts/summary.csv` 是各次运行 best_fit 汇总表，字段：`实验组, run_id, RATIO, STARTEMP, STEPS, best_fit`。
+`results/summary.csv` 是各次运行 best_fit 汇总表，字段：`实验组, run_id, RATIO, STARTEMP, STEPS, best_fit`。
 
 ## 统一 CLI（推荐入口）
 

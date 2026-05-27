@@ -9,7 +9,7 @@ CONOP9 outsect.txt 每个 event 一行：
     2. 调用我们的 level_misfit 重写版返回 per-event 贡献
     3. 输出每个 event 的 (truth, ours, diff) 表，按 |diff| 排序
 
-输出：results_py/level_diff.csv
+输出：results_py/level_reverse/level_diff.csv
 """
 from __future__ import annotations
 
@@ -168,7 +168,7 @@ def main():
         print(f"... 还有 {len(rows)-30} 条")
 
     # 落盘
-    out_path = ROOT / "results_py" / "level_diff.csv"
+    out_path = ROOT / "results_py" / "level_reverse" / "level_diff.csv"
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with open(out_path, "w") as f:
         f.write("sec_id,event_id,event_type,truth,ours,diff\n")

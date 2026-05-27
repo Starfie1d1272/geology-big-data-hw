@@ -191,7 +191,7 @@ def main() -> None:
     args = ap.parse_args()
 
     use_anchors = not args.no_anchors
-    orig_rows = load_orig_summary(ROOT / "scripts" / "summary.csv")
+    orig_rows = load_orig_summary(ROOT / "results" / "summary.csv")
 
     # 创建时间戳文件夹
     ts = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H%M%SZ")

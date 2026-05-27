@@ -2,7 +2,7 @@
 """轨迹族图 + 收敛步统计。
 
 输入：results/<tag>/run_*/trajectory.txt（21 × 3 = 63 文件）
-输出：results_py/
+输出：results_py/trajectory/
   - trajectory_family.png  21 条轨迹按参数组着色叠加
   - convergence_stats.csv  每次运行的收敛步统计
 
@@ -98,12 +98,14 @@ def main():
     ax2.set_title("收敛步分布（点=单次, 线=均值）")
     ax2.grid(alpha=0.3)
 
-    png_path = ROOT / "results_py" / "trajectory_family.png"
+    out_dir = ROOT / "results_py" / "trajectory"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    png_path = out_dir / "trajectory_family.png"
     save_plot(fig, png_path)
     print(f"→ {png_path}")
 
     # ── 收敛步统计表 ──
-    csv_path = ROOT / "results_py" / "convergence_stats.csv"
+    csv_path = out_dir / "convergence_stats.csv"
     with open(csv_path, "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=[
             "tag", "run", "best_fit", "n_steps", "converge_step", "converge_ratio"])

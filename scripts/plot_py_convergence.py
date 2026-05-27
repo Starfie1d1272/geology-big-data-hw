@@ -1,11 +1,11 @@
 """Python SA 收敛曲线 + 与原版 CONOP 对比图。
 
 输入：
-    results_py/traj_baseline_s42.csv          # Python 版（conop one --out-traj 生成）
-    results/baseline/run_1/trajectory.txt     # 原版 CONOP（Windows 端跑的）
+    results_py/trajectory/traj_baseline_s42.csv  # Python 版（conop one --out-traj 生成）
+    results/baseline/run_1/trajectory.txt        # 原版 CONOP（Windows 端跑的）
 
 输出：
-    results_py/convergence.png
+    results_py/trajectory/convergence.png
 """
 from __future__ import annotations
 
@@ -24,7 +24,7 @@ from conop_py.plotting import (
 
 def main() -> None:
     setup_chinese_font()
-    py_traj = ROOT / "results_py" / "traj_baseline_s42.csv"
+    py_traj = ROOT / "results_py" / "trajectory" / "traj_baseline_s42.csv"
     orig_traj = ROOT / "results" / "baseline" / "run_1" / "trajectory.txt"
 
     fig, axes = plt.subplots(1, 2, figsize=(13, 5))
@@ -59,7 +59,8 @@ def main() -> None:
     ax2.grid(alpha=0.3)
 
     plt.tight_layout()
-    out = ROOT / "results_py" / "convergence.png"
+    out = ROOT / "results_py" / "trajectory" / "convergence.png"
+    out.parent.mkdir(parents=True, exist_ok=True)
     plt.savefig(out, dpi=120)
     print(f"图片已保存: {out}")
 

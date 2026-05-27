@@ -90,7 +90,9 @@ def main():
     ax2.grid(alpha=0.3)
 
     from conop_py.plotting import save_plot
-    png_path = ROOT / "results_py" / "acceptance_rate.png"
+    out_dir = ROOT / "results_py" / "acceptance_rate"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    png_path = out_dir / "acceptance_rate.png"
     save_plot(fig, png_path)
     print(f"→ {png_path}")
 
