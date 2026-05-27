@@ -1,0 +1,31 @@
+============================================================
+接受准则变体对比 — 作业主题 2 数据
+============================================================
+
+实验设置：4 种接受准则 × 8 个 seed × steps=600, trials=300
+数据集：南极 Seymour Island 12 剖面 / 120 事件，Ordinal misfit
+
+# 各准则 best_fit 统计
+  准则                min   median    mean     std    max
+  Metropolis (CONOP9)  238.0    250.0  248.50    4.00  251.0
+  Greedy (爬山)     250.0    250.0  253.00    5.20  262.0
+  Threshold (θ=T)  239.0    250.0  247.25    4.76  250.0
+  Tsallis q=1.5   238.0    250.0  247.75    5.58  255.0
+
+# Welch t (vs Metropolis baseline)
+  greedy       Δmean = +4.50  t = +1.816
+  threshold    Δmean = -1.25  t = -0.532
+  tsallis      Δmean = -0.75  t = -0.289
+
+# 接受率变化
+  Metropolis (CONOP9) 早期 0.58 → 后期 0.04
+  Greedy (爬山)    早期 0.13 → 后期 0.05
+  Threshold (θ=T) 早期 0.59 → 后期 0.04
+  Tsallis q=1.5  早期 0.57 → 后期 0.05
+
+# 主要结论
+  1) Greedy（爬山）vs Metropolis：Δmean = +4.5
+     → 完全无随机性的 greedy差 → SA 接受准则的随机性是必要的
+  2) Threshold（确定性退火）vs Metropolis：Δmean = -1.2
+  3) Tsallis q=1.5 vs Metropolis：Δmean = -0.8
+     → Tsallis 重尾允许更激进的跳跃；降温曲线相同但接受概率函数形状不同

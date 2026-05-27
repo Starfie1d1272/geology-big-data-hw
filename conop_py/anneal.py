@@ -38,6 +38,13 @@ class AnnealConfig:
     # 共存约束惩罚权重（对应 CONOP FORCECOEX=SS）
     # 设为 0 禁用；越大越严格。数据集有 24 个固有冲突，建议 >= 100
     coex_penalty: float = 0.0
+    # 接受准则：'metropolis'(默认 Sadler/CONOP9) | 'greedy' | 'threshold' | 'tsallis'
+    #   metropolis: ΔE<=0 必接受，否则 exp(-ΔE/T)
+    #   greedy:     只接受 ΔE<=0（爬山法基线，证明 SA 必要性）
+    #   threshold:  ΔE <= θ_k 即接受，θ_k = startemp * ratio^k（确定性退火）
+    #   tsallis:    p = [1 - (1-q)·ΔE/T]^(1/(1-q))，q>1 重尾
+    accept_rule: str = "metropolis"
+    tsallis_q: float = 1.5
 
 
 @dataclass
@@ -55,6 +62,34 @@ class AnnealResult:
     best_sequence: Sequence
     best_fit: float
     trajectory: list[TrajectoryPoint] = field(default_factory=list)
+
+
+def _accept(delta: float, T: float, cfg: AnnealConfig, rng: random.Random) -> bool:
+    """统一接受准则分派。
+
+    metropolis: ΔE<=0 必接受，否则以 exp(-ΔE/T)
+    greedy:     只接受 ΔE<=0（爬山法基线）
+    threshold:  ΔE <= T 即接受（确定性退火，θ_k=T）
+    tsallis:    Tsallis q-接受准则，q>1 时高 ΔE 接受概率比 metropolis 大
+    """
+    if delta <= 0:
+        return True
+    rule = getattr(cfg, "accept_rule", "metropolis")
+    if rule == "greedy":
+        return False
+    if rule == "threshold":
+        return delta <= T
+    if rule == "tsallis":
+        q = getattr(cfg, "tsallis_q", 1.5)
+        if abs(q - 1.0) < 1e-9:
+            return rng.random() < math.exp(-delta / max(T, 1e-9))
+        base = 1.0 - (1.0 - q) * delta / max(T, 1e-9)
+        if base <= 0:
+            return False  # 截断：p=0
+        p = base ** (1.0 / (1.0 - q))
+        return rng.random() < p
+    # metropolis (default)
+    return rng.random() < math.exp(-delta / max(T, 1e-9))
 
 
 def build_anchor_order(observations: list[Observation]) -> list[EventKey]:
@@ -214,8 +249,8 @@ def _anneal_fast_ordinal(
                     state.revert(seq, undo)
                     continue
 
-            # Metropolis 接受准则
-            if delta <= 0 or rng.random() < math.exp(-delta / max(T, 1e-9)):
+            # 接受准则（统一分派：metropolis/greedy/threshold/tsallis）
+            if _accept(delta, T, cfg, rng):
                 current_fit += delta
                 accepted += 1
                 if current_fit < best_fit:
@@ -430,7 +465,7 @@ def anneal(
                 delta = raw_new - raw_current
                 delta_coex = 0
 
-            if delta <= 0 or rng.random() < math.exp(-delta / max(T, 1e-9)):
+            if _accept(delta, T, cfg, rng):
                 raw_current = raw_new
                 tol_coex_current += delta_coex
                 accepted += 1

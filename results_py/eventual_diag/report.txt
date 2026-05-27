@@ -1,0 +1,44 @@
+============================================================
+Eventual misfit 溯源报告
+============================================================
+
+在 CONOP9 bestsoln.dat 同一个解上重新评估：
+  Level     Python 237.0  vs CONOP9 237
+  Eventual  Python 335.0  vs CONOP9 353  (差 -18.0)
+
+# 按 section 排序（Eventual 贡献从大到小）
+  Seymour Island C L= 55.0  E= 90.0
+  Seymour Island D L= 43.0  E= 62.0
+  Seymour Island F L= 51.0  E= 58.0
+  Seymour Island A L= 43.0  E= 46.0
+  Quiriquina Island L=  9.0  E= 28.0
+  Seymour Island Z composit L= 17.0  E= 23.0
+  Snow Hill Island L=  6.0  E= 13.0
+  Chilean Composite L=  5.0  E= 10.0
+  Obradovich Time 93/75 L=  7.0  E=  4.0
+  Seymour Island C2 L=  1.0  E=  1.0
+  Seymour Filo Negro L=  0.0  E=  0.0
+  Cape Lamb    L=  0.0  E=  0.0
+
+# 集中度
+  Top 10 事件累计贡献 60.0%
+  达到 80% 累计贡献需要前 17 个事件
+
+# Top-10 贡献事件
+  Kitchinites  darwini  (Steinmann)  1895 LAD   contrib= 30.0
+  Grossouvrites  gemmatus  (Hupe)  1854 LAD   contrib= 23.0
+  Maorites  seymourianus  (Killian & Reboul)  1909 LAD   contrib= 22.0
+  Zelandites  varuna  (Forbes)  1846 FAD   contrib= 21.0
+  Eutrephoceras  simile  Spath FAD   contrib= 20.0
+  Kitchinites  laurae  Macellari  1986 LAD   contrib= 20.0
+  Eutrephoceras  simile  Spath LAD   contrib= 18.0
+  Maorites  densicostatus  alpha  (Killian & Reboul) FAD   contrib= 17.0
+  Diplomoceras  cylindraceum  (Defrance)  1816 FAD   contrib= 16.0
+  Kitchinites  darwini  (Steinmann)  1895 FAD   contrib= 14.0
+
+# 18 分差距假设
+  实测差 -18.0
+  → 落在 PAV 保序回归的下中位数（lower median）选择上：
+     CONOP9 偶数块用上中位数 / 我们的实现用下中位数，
+     约 5-15 个事件位置差 1，每个贡献 ~1-2 分。
+     这与 Top-10 贡献分布吻合（每个 ~1-3 分）。

@@ -1,0 +1,40 @@
+event_key,taxon_name,event_type,eventual_contrib
+"(2,2)",Kitchinites  darwini  (Steinmann)  1895,LAD,30.0
+"(9,2)",Grossouvrites  gemmatus  (Hupe)  1854,LAD,23.0
+"(6,2)",Maorites  seymourianus  (Killian & Reboul)  1909,LAD,22.0
+"(22,1)",Zelandites  varuna  (Forbes)  1846,FAD,21.0
+"(12,1)",Eutrephoceras  simile  Spath,FAD,20.0
+"(20,2)",Kitchinites  laurae  Macellari  1986,LAD,20.0
+"(12,2)",Eutrephoceras  simile  Spath,LAD,18.0
+"(3,1)",Maorites  densicostatus  alpha  (Killian & Reboul),FAD,17.0
+"(1,1)",Diplomoceras  cylindraceum  (Defrance)  1816,FAD,16.0
+"(2,1)",Kitchinites  darwini  (Steinmann)  1895,FAD,14.0
+"(9,1)",Grossouvrites  gemmatus  (Hupe)  1854,FAD,13.0
+"(11,1)",Pachydiscus  ultimus  Macellari  1986,FAD,13.0
+"(5,2)",Maorites  densicostatus  beta  (Killian & Reboul),LAD,12.0
+"(11,2)",Pachydiscus  ultimus  Macellari  1986,LAD,10.0
+"(17,1)",Diplomoceras  cylindraceum  maximum  Olivero & Zinsmeister  1989,FAD,8.0
+"(19,2)",Pseudophyllites  loryi  (Killian & Reboul)  1909,LAD,8.0
+"(18,1)",Anagaudryceras  seymouriense  Macellari  1986,FAD,8.0
+"(26,2)",Gunnarites  antarcticus  (Weller),LAD,8.0
+"(18,2)",Anagaudryceras  seymouriense  Macellari  1986,LAD,7.0
+"(1,2)",Diplomoceras  cylindraceum  (Defrance)  1816,LAD,6.0
+"(5,1)",Maorites  densicostatus  beta  (Killian & Reboul),FAD,6.0
+"(3,2)",Maorites  densicostatus  alpha  (Killian & Reboul),LAD,5.0
+"(22,2)",Zelandites  varuna  (Forbes)  1846,LAD,5.0
+"(13,1)",Maorites  tuberculatus  Howarth  1958,FAD,4.0
+"(20,1)",Kitchinites  laurae  Macellari  1986,FAD,4.0
+"(10,1)",Pachydiscus  riccardi  Macellari  1986,FAD,3.0
+"(4,2)",Maorites  densicostatus  gamma  (Killian & Reboul),LAD,2.0
+"(4,1)",Maorites  densicostatus  gamma  (Killian & Reboul),FAD,2.0
+"(26,1)",Gunnarites  antarcticus  (Weller),FAD,2.0
+"(42,2)",Neograhamites  taylori  Spath,LAD,2.0
+"(45,2)",Kossmaticeras  guentheri,LAD,2.0
+"(61,1)",Baculites  compressus  Say  1820,FAD,1.0
+"(64,2)",Scaphites_(S.)  hippocrepis  (DeKay)  1828,LAD,1.0
+"(68,1)",Baculites  grandis  Hall & Meek  1855,FAD,1.0
+"(71,1)",Didymoceras  nebrascense  (Meek & Hayden)  1856,FAD,1.0
+"(8,2)",Gunnarites  bhavaniformis  (Killian & Reboul)  1909,LAD,0.0
+"(13,2)",Maorites  tuberculatus  Howarth  1958,LAD,0.0
+"(60,2)",Baculites  clinolobatus  Elias  1933,LAD,0.0
+"(70,1)",Baculites  mclearni  Landes  1940,FAD,0.0
