@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-05-27_032230Z",
+  "tag": "postfix",
+  "mode": "level",
+  "anchors": true,
+  "git_commit": "14672e5",
+  "param_groups": [
+    {
+      "tag": "baseline",
+      "ratio": 0.98,
+      "startemp": 250,
+      "steps": 600
+    },
+    {
+      "tag": "ratio_099",
+      "ratio": 0.99,
+      "startemp": 250,
+      "steps": 600
+    },
+    {
+      "tag": "ratio_095",
+      "ratio": 0.95,
+      "startemp": 250,
+      "steps": 600
+    },
+    {
+      "tag": "temp_500",
+      "ratio": 0.98,
+      "startemp": 500,
+      "steps": 600
+    },
+    {
+      "tag": "temp_100",
+      "ratio": 0.98,
+      "startemp": 100,
+      "steps": 600
+    },
+    {
+      "tag": "steps_1200",
+      "ratio": 0.98,
+      "startemp": 250,
+      "steps": 1200
+    },
+    {
+      "tag": "steps_0300",
+      "ratio": 0.98,
+      "startemp": 250,
+      "steps": 300
+    }
+  ],
+  "seeds": [
+    42,
+    17,
+    99
+  ],
+  "trials": 300
+}
