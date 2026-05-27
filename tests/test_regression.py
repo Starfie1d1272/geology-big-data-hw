@@ -14,7 +14,7 @@ from conop_py.cost import (
     ConopContext, build_section_observations,
     ordinal_misfit, level_misfit, eventual_misfit, coexistence_violations,
 )
-from conop_py.io import parse_loadfile, parse_solution, solution_to_sequence
+from conop_py.io import parse_loadfile, parse_solution, solution_to_sequence, parse_events, infer_taxa_from_observations
 
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "CONOP-run"
@@ -142,6 +142,19 @@ def test_validate_catches_bad_event_type():
     secs = parse_sections(DATA_DIR / "sections.txt")
     errs = validate_dataset(bad, ents, secs, strict=False)
     assert any("event_type" in e for e in errs), f"应报 event_type 错误，实际: {errs}"
+
+
+def test_level_only_sa_reaches_reasonable_level():
+    """Level-only SA + coex_penalty=4 应在 baseline 参数下达到 Level < 250。"""
+    from conop_py.anneal import anneal, AnnealConfig
+    from conop_py.cost import level_misfit
+    obs = parse_loadfile(DATA_DIR / "loadfile.dat")
+    ents = parse_events(DATA_DIR / "events.txt",
+                        taxon_ids=infer_taxa_from_observations(obs))
+    cfg = AnnealConfig(startemp=250, ratio=0.98, steps=200, trials=200,
+                       seed=42, coex_penalty=4, early_stop_patience=0)
+    res = anneal(ents, obs, cfg, misfit_fn=level_misfit, verbose=False)
+    assert res.best_fit < 300, f"Level-only SA failed to converge: Level={res.best_fit}"
 
 
 def test_per_section_ordinal():

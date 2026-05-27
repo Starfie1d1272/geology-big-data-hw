@@ -29,7 +29,7 @@ sys.path.insert(0, str(ROOT))
 from conop_py.io import parse_loadfile, parse_events, infer_taxa_from_observations
 from conop_py.cost import (
     ConopContext, build_section_observations,
-    ordinal_misfit, level_misfit, eventual_misfit, combined_misfit,
+    ordinal_misfit, level_misfit, eventual_misfit,
     build_pairwise_support, weighted_ordinal_misfit,
 )
 from conop_py.anneal import anneal, AnnealConfig
@@ -58,7 +58,7 @@ def load_orig_summary(path: Path) -> list[dict]:
         return list(csv.DictReader(f))
 
 
-def run_sweep(mode: str, use_anchors: bool = True) -> list[dict]:
+def run_sweep(mode: str, use_anchors: bool = True, coex_penalty: float = 0.0) -> list[dict]:
     """运行全部 21 次扫描，返回结果列表。
 
     mode:
@@ -74,13 +74,11 @@ def run_sweep(mode: str, use_anchors: bool = True) -> list[dict]:
     section_obs = build_section_observations(obs)
 
     # 选择 misfit 函数
-    misfit_weights = None
     if mode == "weighted":
         misfit_fn = None
         use_weighted = True
     elif mode == "level":
-        misfit_fn = None
-        misfit_weights = {'ordinal': 3.0, 'level': 1.0, 'eventual': 1.0}
+        misfit_fn = level_misfit
         use_weighted = False
     else:  # ordinal (default)
         misfit_fn = ordinal_misfit
@@ -96,10 +94,10 @@ def run_sweep(mode: str, use_anchors: bool = True) -> list[dict]:
             cfg = AnnealConfig(
                 startemp=startemp, ratio=ratio, steps=steps,
                 trials=TRIALS, seed=seed,
+                coex_penalty=coex_penalty,
             )
             kw = dict(
                 misfit_fn=misfit_fn,
-                misfit_weights=misfit_weights,
                 use_weighted=use_weighted,
                 use_anchors=use_anchors,
                 verbose=False,
@@ -188,6 +186,8 @@ def main() -> None:
     ap.add_argument("--mode", choices=["ordinal", "weighted", "level", "both"], default="ordinal")
     ap.add_argument("--no-anchors", action="store_true", help="关闭 AGE/ASH 锚点约束")
     ap.add_argument("--tag", default="", help="文件夹后缀标签，如 baseline、paper-v1")
+    ap.add_argument("--coex-penalty", type=float, default=4.0,
+                    help="共存约束惩罚权重（仅 level 模式有效，默认 4.0）")
     args = ap.parse_args()
 
     use_anchors = not args.no_anchors
@@ -202,21 +202,21 @@ def main() -> None:
 
     if args.mode in ("ordinal", "both"):
         print("\n── Ordinal 模式扫描 ──")
-        results_ord = run_sweep("ordinal", use_anchors=use_anchors)
+        results_ord = run_sweep("ordinal", use_anchors=use_anchors, coex_penalty=args.coex_penalty)
         save_csv(results_ord, out_dir / "ordinal.csv")
         if orig_rows:
             print_comparison(results_ord, orig_rows, "ordinal")
 
     if args.mode in ("level", "both"):
         print("\n── 多目标模式扫描（ordinal ×3 + level + eventual）──")
-        results_lev = run_sweep("level", use_anchors=use_anchors)
+        results_lev = run_sweep("level", use_anchors=use_anchors, coex_penalty=args.coex_penalty)
         save_csv(results_lev, out_dir / "level.csv")
         if orig_rows:
             print_comparison(results_lev, orig_rows, "level")
 
     if args.mode in ("weighted", "both"):
         print("\n── 加权 Ordinal 模式扫描 ──")
-        results_wt = run_sweep("weighted", use_anchors=use_anchors)
+        results_wt = run_sweep("weighted", use_anchors=use_anchors, coex_penalty=args.coex_penalty)
         save_csv(results_wt, out_dir / "weighted.csv")
         if orig_rows:
             print_comparison(results_wt, orig_rows, "weighted")

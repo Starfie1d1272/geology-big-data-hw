@@ -78,18 +78,28 @@ def cmd_eval(args):
 def cmd_one(args):
     """跑一次 SA，保存 trajectory + bestsoln。"""
     from conop_py.anneal import AnnealConfig, anneal
-    from conop_py.cost import ordinal_misfit
+    from conop_py.cost import ordinal_misfit, level_misfit
 
     obs, ents, _ = _load_data(Path(args.data_dir))
+
+    if args.mode == "level":
+        misfit_fn = level_misfit
+        mode_label = "Level-only"
+    else:
+        misfit_fn = ordinal_misfit
+        mode_label = "Ordinal"
+
     cfg = AnnealConfig(
         startemp=args.startemp, ratio=args.ratio,
         steps=args.steps, trials=args.trials, seed=args.seed,
         early_stop_patience=args.early_stop_patience,
+        coex_penalty=args.coex_penalty,
     )
-    print(f"配置: STARTEMP={cfg.startemp} RATIO={cfg.ratio} "
-          f"STEPS={cfg.steps} TRIALS={cfg.trials} seed={cfg.seed}")
+    print(f"配置: {mode_label}  STARTEMP={cfg.startemp} RATIO={cfg.ratio} "
+          f"STEPS={cfg.steps} TRIALS={cfg.trials} seed={cfg.seed}"
+          + (f"  coex_penalty={cfg.coex_penalty}" if cfg.coex_penalty > 0 else ""))
     t0 = time.perf_counter()
-    res = anneal(ents, obs, cfg, misfit_fn=ordinal_misfit, verbose=args.verbose)
+    res = anneal(ents, obs, cfg, misfit_fn=misfit_fn, verbose=args.verbose)
     el = time.perf_counter() - t0
     print(f"best_fit={res.best_fit:.2f}  steps_run={len(res.trajectory)}  耗时 {el:.2f}s")
 
@@ -179,6 +189,8 @@ def build_parser():
 
     p = sub.add_parser("one", help="单次 SA 运行")
     _add_common(p)
+    p.add_argument("--mode", choices=["ordinal", "level"], default="ordinal")
+    p.add_argument("--coex-penalty", type=float, default=0)
     p.add_argument("--startemp", type=float, default=250.0)
     p.add_argument("--ratio", type=float, default=0.98)
     p.add_argument("--steps", type=int, default=600)

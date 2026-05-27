@@ -19,6 +19,7 @@ from conop_py.cost import (
     FastOrdinalState,
 )
 from conop_py.io import Entity, Observation
+from collections import defaultdict
 
 
 @dataclass
@@ -34,6 +35,9 @@ class AnnealConfig:
     early_stop_min_step: int = 50  # 至少跑这么多温度阶段才允许早停
     # 走 FastOrdinalState 增量路径（仅 ordinal 模式有效；fallback 慢路径自动保留）
     use_fast_ordinal: bool = True
+    # 共存约束惩罚权重（对应 CONOP FORCECOEX=SS）
+    # 设为 0 禁用；越大越严格。数据集有 24 个固有冲突，建议 >= 100
+    coex_penalty: float = 0.0
 
 
 @dataclass
@@ -308,6 +312,29 @@ def anneal(
     # FORCEFb4L
     fad_lad_map = _build_fad_lad_map(entities) if cfg.force_fad_before_lad else {}
 
+    # Coexistence 预计算（只在启用时）
+    taxon_coex: dict[int, dict[int, set[int]]] | None = None
+    if cfg.coex_penalty > 0:
+        taxon_coex = _build_taxon_coex(section_obs)
+
+    def _coex_delta(eid: int, pos: dict) -> int:
+        """taxon eid 在当前状态下涉及的共存违反数。只检查 taxon_coex 中标记的必须共存对。"""
+        if taxon_coex is None:
+            return 0
+        v = 0
+        if (eid, 1) not in pos or (eid, 2) not in pos:
+            return 0
+        fa, la = pos[(eid, 1)], pos[(eid, 2)]
+        for sec_id, per_sec in taxon_coex.items():
+            others = per_sec.get(eid)
+            if not others:
+                continue
+            for oeid in others:
+                fb, lb = pos[(oeid, 1)], pos[(oeid, 2)]
+                if not (fa < lb and fb < la):
+                    v += 1
+        return v
+
     # ------ 快速路径分派：FastOrdinalState 增量 + 早停，仅 ordinal 模式 ------
     is_fast_path = (
         getattr(cfg, "use_fast_ordinal", False)
@@ -326,16 +353,18 @@ def anneal(
 
     # 构建 ConopContext（观测数据部分不变，sequence 变化时只 rebuild pos）
     base_ctx = ConopContext.build(seq, section_obs)
-    current_fit = actual_misfit(base_ctx)
+    raw_current = actual_misfit(base_ctx)          # 纯 misfit（Level / Ordinal / …）
+    tol_coex_current = 0                           # 全局共存违反总数（增量维护）
     best_seq = seq[:]
-    best_fit = current_fit
+    best_fit = raw_current
 
     T = cfg.startemp
     trajectory: list[TrajectoryPoint] = []
 
     if verbose:
         anchor_info = f", {len(anchor_order)} anchors" if anchor_keys else ""
-        print(f"初始 misfit = {current_fit:.2f}  (n={n} events, mode={mode}{anchor_info})")
+        coex_info = f", coex_w={cfg.coex_penalty}" if cfg.coex_penalty > 0 else ""
+        print(f"初始 misfit = {raw_current:.2f}  (n={n} events, mode={mode}{anchor_info}{coex_info})")
 
     for step in range(cfg.steps):
         accepted = 0
@@ -360,29 +389,49 @@ def anneal(
                     seq.pop(j); seq.insert(i, ev)
                     continue
 
+            # 记下移动前的位置字典，后面对比共存变化
+            prev_pos = base_ctx.pos
+
             ctx = base_ctx.rebuild_pos(seq)
-            new_fit = actual_misfit(ctx)
-            delta = new_fit - current_fit
+            raw_new = actual_misfit(ctx)
+
+            # 共存约束（增量式：只算 moved ev 涉及的变化 → 全局差）
+            if cfg.coex_penalty > 0:
+                coex_before = _coex_delta(ev[0], prev_pos)
+                coex_after = _coex_delta(ev[0], ctx.pos)
+                delta_coex = coex_after - coex_before  # 全局共存变化量
+                delta = (raw_new - raw_current) + cfg.coex_penalty * delta_coex
+            else:
+                delta = raw_new - raw_current
+                delta_coex = 0
 
             if delta <= 0 or rng.random() < math.exp(-delta / max(T, 1e-9)):
-                current_fit = new_fit
+                raw_current = raw_new
+                tol_coex_current += delta_coex
                 accepted += 1
-                if new_fit < best_fit:
-                    best_fit = new_fit
+                if raw_new < best_fit:
+                    best_fit = raw_new
                     best_seq = seq[:]
             else:
                 seq.pop(j); seq.insert(i, ev)
 
         point = TrajectoryPoint(
-            cooling_step=step, temperature=T, current_fit=current_fit,
+            cooling_step=step, temperature=T, current_fit=raw_current,
             best_fit=best_fit, accepted=accepted, proposed=cfg.trials,
         )
         trajectory.append(point)
 
         if verbose and (step % 20 == 0 or step == cfg.steps - 1):
-            print(f"  step {step:3d}/{cfg.steps}  T={T:8.3f}  "
-                  f"cur={current_fit:7.2f}  best={best_fit:7.2f}  "
-                  f"accept={accepted}/{cfg.trials}")
+            if cfg.coex_penalty > 0:
+                from conop_py.cost import coexistence_violations
+                coex_real = coexistence_violations(base_ctx.rebuild_pos(seq))
+                print(f"  step {step:3d}/{cfg.steps}  T={T:8.3f}  "
+                      f"cur={raw_current:7.2f}  best={best_fit:7.2f}  "
+                      f"accept={accepted}/{cfg.trials}  coex={coex_real}")
+            else:
+                print(f"  step {step:3d}/{cfg.steps}  T={T:8.3f}  "
+                      f"cur={raw_current:7.2f}  best={best_fit:7.2f}  "
+                      f"accept={accepted}/{cfg.trials}")
 
         T *= cfg.ratio
         if T < 1e-3:
@@ -391,7 +440,51 @@ def anneal(
     if verbose:
         print(f"最终 best_fit = {best_fit:.2f}")
 
+    if verbose and cfg.coex_penalty > 0:
+        from conop_py.cost import coexistence_violations
+        ctx_final = base_ctx.rebuild_pos(best_seq)
+        coex_final = coexistence_violations(ctx_final)
+        print(f"  共存违反: {coex_final} 次（weight={cfg.coex_penalty}）")
+
     return AnnealResult(best_sequence=best_seq, best_fit=best_fit, trajectory=trajectory)
+
+
+# ---------------------------------------------------------------------------
+# 共存辅助
+# ---------------------------------------------------------------------------
+
+
+def _build_taxon_coex(
+    section_obs: dict[int, list[tuple[float, EventKey]]],
+) -> dict[int, dict[int, set[int]]]:
+    """预计算每 section 中必须共存的 taxon 对。
+
+    对每个剖面：taxa A 和 B 在观测中 range 重叠 → 在模型中 range 也必须重叠。
+    返回 {sec_id: {eid: set[other_eid]}}，用于 _coex_delta 快速查表。
+    """
+    out: dict[int, dict[int, set[int]]] = {}
+    for sec_id, evs in section_obs.items():
+        fad: dict[int, float] = {}
+        lad: dict[int, float] = {}
+        for level, (eid, etype) in evs:
+            if etype == 1:
+                fad[eid] = level
+            elif etype == 2:
+                lad[eid] = level
+        taxa_with_both = sorted(set(fad) & set(lad))
+        per_eid: dict[int, set[int]] = defaultdict(set)
+        for i in range(len(taxa_with_both)):
+            a = taxa_with_both[i]
+            for j in range(i + 1, len(taxa_with_both)):
+                b = taxa_with_both[j]
+                # 观测 range 不重叠 → 没有共存要求
+                if lad[a] < fad[b] or lad[b] < fad[a]:
+                    continue
+                per_eid[a].add(b)
+                per_eid[b].add(a)
+        if per_eid:
+            out[sec_id] = dict(per_eid)
+    return out
 
 
 # ---------------------------------------------------------------------------
