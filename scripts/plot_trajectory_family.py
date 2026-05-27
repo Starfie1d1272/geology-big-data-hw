@@ -18,13 +18,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from conop_py.plotting import setup_chinese_font, load_conop_trajectory
-
-
-TAGS = ["baseline", "ratio_099", "ratio_095", "temp_500", "temp_100", "steps_1200", "steps_0300"]
-LABELS = ["baseline\n(0.98/250/600)", "RATIO=0.99", "RATIO=0.95",
-          "TEMP=500", "TEMP=100", "STEPS=1200", "STEPS=300"]
-COLORS = ["#2d6a4f", "#e63946", "#f4a261", "#457b9d", "#a8dadc", "#6a4c93", "#e08b57"]
+from conop_py.plotting import init_plot, save_plot, load_conop_trajectory
+from conop_py.plotting import PARAM_TAGS, PARAM_LABELS, PARAM_COLORS
 
 
 def find_convergence_step(temps, bests, threshold=0.001):
@@ -45,9 +40,7 @@ def find_convergence_step(temps, bests, threshold=0.001):
 
 
 def main():
-    setup_chinese_font()
-    import matplotlib
-    matplotlib.use("Agg")
+    init_plot()
     import matplotlib.pyplot as plt
 
     fig, axes = plt.subplots(1, 2, figsize=(16, 6))
@@ -56,7 +49,7 @@ def main():
     ax = axes[0]
     conv_data = []  # [(tag, run, converge_step, best_fit)]
 
-    for tag_idx, tag in enumerate(TAGS):
+    for tag_idx, tag in enumerate(PARAM_TAGS):
         for run in range(1, 4):
             traj_path = ROOT / "results" / tag / f"run_{run}" / "trajectory.txt"
             if not traj_path.exists():
@@ -67,7 +60,7 @@ def main():
 
             # 归一化到 0-1（各 runs steps 数不同）
             x = [s / max(steps) for s in steps]
-            ax.plot(x, bests, color=COLORS[tag_idx], alpha=0.6, linewidth=0.8)
+            ax.plot(x, bests, color=PARAM_COLORS[tag], alpha=0.6, linewidth=0.8)
 
             conv_step = find_convergence_step(temps, bests)
             final_best = bests[0] if bests else None  # bests[0] = 最终值（反转后第一个）
@@ -80,8 +73,8 @@ def main():
 
     # 图例
     from matplotlib.lines import Line2D
-    legend_handles = [Line2D([0], [0], color=COLORS[i], label=LABELS[i])
-                      for i in range(len(TAGS))]
+    legend_handles = [Line2D([0], [0], color=PARAM_COLORS[t], label=PARAM_LABELS[t])
+                      for t in PARAM_TAGS]
     ax.legend(handles=legend_handles, fontsize=7)
     ax.set_xlabel("Cooling Step (归一化)")
     ax.set_ylabel("Best Fit (Level + Teaser)")
@@ -90,26 +83,24 @@ def main():
 
     # ── 右图：收敛步直方图 ──
     ax2 = axes[1]
-    for tag_idx, tag in enumerate(TAGS):
+    for tag_idx, tag in enumerate(PARAM_TAGS):
         vals = [d["converge_ratio"] for d in conv_data if d["tag"] == tag]
         if not vals:
             continue
-        ax2.scatter([tag_idx] * len(vals), vals, color=COLORS[tag_idx],
+        ax2.scatter([tag_idx] * len(vals), vals, color=PARAM_COLORS[tag],
                     alpha=0.7, s=40, zorder=3)
         mean_val = sum(vals) / len(vals)
         ax2.plot([tag_idx - 0.2, tag_idx + 0.2], [mean_val, mean_val],
-                 color=COLORS[tag_idx], linewidth=2)
-    ax2.set_xticks(range(len(TAGS)))
-    ax2.set_xticklabels(LABELS, fontsize=7)
+                 color=PARAM_COLORS[tag], linewidth=2)
+    ax2.set_xticks(range(len(PARAM_TAGS)))
+    ax2.set_xticklabels([PARAM_LABELS[t] for t in PARAM_TAGS], fontsize=7)
     ax2.set_ylabel("收敛点（占总步数比例）")
     ax2.set_title("收敛步分布（点=单次, 线=均值）")
     ax2.grid(alpha=0.3)
 
-    fig.tight_layout()
     png_path = ROOT / "results_py" / "trajectory_family.png"
-    fig.savefig(png_path, dpi=200)
+    save_plot(fig, png_path)
     print(f"→ {png_path}")
-    plt.close(fig)
 
     # ── 收敛步统计表 ──
     csv_path = ROOT / "results_py" / "convergence_stats.csv"
@@ -123,7 +114,7 @@ def main():
     # 摘要
     print()
     print("── 收敛步统计摘要（均值）──")
-    for tag in TAGS:
+    for tag in PARAM_TAGS:
         vals = [d for d in conv_data if d["tag"] == tag]
         if not vals:
             continue

@@ -103,12 +103,9 @@ def main():
 
     # ── 6. violin 图 ──
     try:
-        import matplotlib
-        matplotlib.use("Agg")
+        from conop_py.plotting import init_plot
         import matplotlib.pyplot as plt
-
-        from conop_py.plotting import setup_chinese_font
-        setup_chinese_font()
+        init_plot()
 
         # 取前 30 个事件（最左侧）和事件标签
         plot_rows = rows  # 全部
@@ -135,11 +132,10 @@ def main():
         ax.set_ylabel("Composite Rank")
         ax.set_title("per-event Rank 分布（50 次多重启）\n绿色=高置信, 红色=高矛盾")
         ax.grid(axis="y", alpha=0.3)
-        fig.tight_layout()
+        from conop_py.plotting import save_plot
         png_path = OUT_DIR / "rank_violin.png"
-        fig.savefig(png_path, dpi=200)
+        save_plot(fig, png_path)
         print(f"→ {png_path}")
-        plt.close(fig)
     except Exception as e:
         print(f"  ⚠ 画图失败 (matplotlib?): {e}")
 

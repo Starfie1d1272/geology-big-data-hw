@@ -55,8 +55,8 @@ def main():
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
-    from conop_py.plotting import setup_chinese_font
-    setup_chinese_font()
+    from conop_py.plotting import init_plot
+    init_plot()
 
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
 
@@ -89,11 +89,10 @@ def main():
     ax2.legend()
     ax2.grid(alpha=0.3)
 
-    fig.tight_layout()
+    from conop_py.plotting import save_plot
     png_path = ROOT / "results_py" / "acceptance_rate.png"
-    fig.savefig(png_path, dpi=200)
+    save_plot(fig, png_path)
     print(f"→ {png_path}")
-    plt.close(fig)
 
 
 if __name__ == "__main__":

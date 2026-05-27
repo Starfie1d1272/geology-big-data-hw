@@ -10,16 +10,15 @@ import numpy as np
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from conop_py.plotting import setup_chinese_font
-setup_chinese_font()
+from conop_py.plotting import init_plot, PARAM_TAGS, PARAM_LABELS
+init_plot()
 
 # ── 读数据 ──────────────────────────────────────────────────
 orig_rows = list(csv.DictReader(open(ROOT / "scripts" / "summary.csv")))
 py_rows = list(csv.DictReader(open(ROOT / "results_py" / "sweep" / "sweep_ordinal.csv")))
 
-tags = ["baseline", "ratio_099", "ratio_095", "temp_500", "temp_100", "steps_1200", "steps_0300"]
-labels = ["baseline\n(0.98/250/600)", "RATIO=0.99", "RATIO=0.95",
-          "TEMP=500", "TEMP=100", "STEPS=1200", "STEPS=300"]
+tags = PARAM_TAGS
+labels = [PARAM_LABELS[t] for t in PARAM_TAGS]
 
 def get_vals(rows, key):
     """提取每组3次运行的均值与范围。"""

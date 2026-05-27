@@ -106,12 +106,9 @@ def main():
     colors = [best_fits.get(s, 250) for s in seeds]
 
     # ── 5. 画图 ──
-    import matplotlib
-    matplotlib.use("Agg")
+    from conop_py.plotting import init_plot
     import matplotlib.pyplot as plt
-
-    from conop_py.plotting import setup_chinese_font
-    setup_chinese_font()
+    init_plot()
 
     fig, ax = plt.subplots(figsize=(8, 6))
     sc = ax.scatter(coords[:, 0], coords[:, 1], c=colors, cmap="RdYlGn_r",
@@ -122,11 +119,10 @@ def main():
     ax.set_title("50 次多重启解的距离投影 (Spearman ρ → MDS)")
     ax.grid(alpha=0.3)
 
-    fig.tight_layout()
+    from conop_py.plotting import save_plot
     png_path = OUT_DIR / "solution_mds.png"
-    fig.savefig(png_path, dpi=200)
+    save_plot(fig, png_path)
     print(f"→ {png_path}")
-    plt.close(fig)
 
     # ── 6. 写坐标 CSV ──
     csv_path = OUT_DIR / "solution_mds.csv"

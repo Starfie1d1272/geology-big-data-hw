@@ -1,4 +1,4 @@
-"""共享绘图工具：中文字体配置 + trajectory 文件解析。
+"""共享绘图工具：中文字体配置 + trajectory 文件解析 + 通用样板。
 
 被 scripts/plot_*.py 复用，避免重复样板。
 """
@@ -8,11 +8,48 @@ import csv
 from pathlib import Path
 
 
+# ── 参数组通用定义（多脚本共享） ──
+PARAM_TAGS = ["baseline", "ratio_099", "ratio_095", "temp_500", "temp_100", "steps_1200", "steps_0300"]
+PARAM_LABELS = {
+    "baseline": "baseline\n(0.98/250/600)",
+    "ratio_099": "RATIO=0.99",
+    "ratio_095": "RATIO=0.95",
+    "temp_500": "TEMP=500",
+    "temp_100": "TEMP=100",
+    "steps_1200": "STEPS=1200",
+    "steps_0300": "STEPS=300",
+}
+PARAM_COLORS = {
+    "baseline": "#2d6a4f",
+    "ratio_099": "#e63946",
+    "ratio_095": "#f4a261",
+    "temp_500": "#457b9d",
+    "temp_100": "#a8dadc",
+    "steps_1200": "#6a4c93",
+    "steps_0300": "#e08b57",
+}
+
+
 def setup_chinese_font() -> None:
     """matplotlib 用中文字体（macOS）。在任何画图脚本开头调一次。"""
     import matplotlib as mpl
     mpl.rcParams["font.family"] = ["PingFang HK", "STHeiti", "Heiti TC", "sans-serif"]
     mpl.rcParams["axes.unicode_minus"] = False
+
+
+def init_plot() -> None:
+    """统一初始化：Agg 后端 + 中文字体。"""
+    import matplotlib
+    matplotlib.use("Agg")
+    setup_chinese_font()
+
+
+def save_plot(fig, path: str | Path, dpi: int = 200) -> None:
+    """统一保存 + 关闭：tight_layout → savefig → close。"""
+    fig.tight_layout()
+    fig.savefig(path, dpi=dpi)
+    from matplotlib import pyplot as plt
+    plt.close(fig)
 
 
 def load_python_trajectory(path: str | Path):
