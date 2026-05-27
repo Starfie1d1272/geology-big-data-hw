@@ -1,0 +1,49 @@
+Jackknife 稳健性检验结果
+基线 Level（完整数据集）: median=243
+方法：依次去掉 12 个剖面之一，每个跑 5 次 Level-only SA
+Δ > +5 = 去掉后变差（该剖面提供关键约束）
+Δ < -5 = 去掉后变好（该剖面是矛盾主要来源）
+
+剖面       名            去掉观测   median      Δ    min    max    Ord  Coex 含义              
+------------------------------------------------------------------------------------------
+2        Seymour Island C       33    138.0 -105.0  130.0  156.0    429    20 🟢 变好            
+10       Quiriquina Island       37    150.0  -93.0  136.0  338.0    365    18 🟢 变好            
+1        Seymour Island A       29    161.0  -82.0  157.0  322.0    442    23 🟢 变好            
+3        Seymour Island D       34    175.0  -68.0  169.0  220.0    565    22 🟢 变好            
+4        Seymour Island F       30    176.0  -67.0  157.0  213.0    475    27 🟢 变好            
+12       Obradovich Time 93/75       35    190.0  -53.0  173.0  247.0    634    14 🟢 变好            
+11       Chilean Composite       14    192.0  -51.0  171.0  248.0    516    18 🟢 变好            
+5        Seymour Filo Negro        3    194.0  -49.0  177.0  294.0    647    22 🟢 变好            
+6        Seymour Island C2       10    209.0  -34.0  176.0  256.0    541    12 🟢 变好            
+7        Seymour Island Z composit       28    214.0  -29.0  193.0  305.0    574    26 🟢 变好            
+9        Cape Lamb        5    221.0  -22.0  187.0  263.0    551    19 🟢 变好            
+8        Snow Hill Island       15    238.0   -5.0  180.0  338.0    567    17 ⚪ 无显著变化         
+------------------------------------------------------------------------------------------
+
+按 Δ 降序（去掉后恶化最严重 → 关键剖面的依据）：
+  sec 8 (Snow Hill Island): Δ=-5.0 ⚪ 无显著变化
+  sec 9 (Cape Lamb): Δ=-22.0 🟢 变好
+  sec 7 (Seymour Island Z composit): Δ=-29.0 🟢 变好
+  sec 6 (Seymour Island C2): Δ=-34.0 🟢 变好
+  sec 5 (Seymour Filo Negro): Δ=-49.0 🟢 变好
+  sec 11 (Chilean Composite): Δ=-51.0 🟢 变好
+  sec 12 (Obradovich Time 93/75): Δ=-53.0 🟢 变好
+  sec 4 (Seymour Island F): Δ=-67.0 🟢 变好
+  sec 3 (Seymour Island D): Δ=-68.0 🟢 变好
+  sec 1 (Seymour Island A): Δ=-82.0 🟢 变好
+  sec 10 (Quiriquina Island): Δ=-93.0 🟢 变好
+  sec 2 (Seymour Island C): Δ=-105.0 🟢 变好
+
+按 Δ 升序（去掉后改善最显著 → 矛盾源）：
+  sec 2 (Seymour Island C): Δ=-105.0 🟢 变好
+  sec 10 (Quiriquina Island): Δ=-93.0 🟢 变好
+  sec 1 (Seymour Island A): Δ=-82.0 🟢 变好
+  sec 3 (Seymour Island D): Δ=-68.0 🟢 变好
+  sec 4 (Seymour Island F): Δ=-67.0 🟢 变好
+  sec 12 (Obradovich Time 93/75): Δ=-53.0 🟢 变好
+  sec 11 (Chilean Composite): Δ=-51.0 🟢 变好
+  sec 5 (Seymour Filo Negro): Δ=-49.0 🟢 变好
+  sec 6 (Seymour Island C2): Δ=-34.0 🟢 变好
+  sec 7 (Seymour Island Z composit): Δ=-29.0 🟢 变好
+  sec 9 (Cape Lamb): Δ=-22.0 🟢 变好
+  sec 8 (Snow Hill Island): Δ=-5.0 ⚪ 无显著变化

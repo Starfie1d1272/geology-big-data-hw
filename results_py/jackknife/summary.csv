@@ -1,0 +1,13 @@
+sec_id,sec_name,n_removed,median_fit,delta,min_fit,max_fit,ordinal,coex,arrow
+1,Seymour Island A,29,161.0,-82.0,157.0,322.0,442,23,🟢 变好
+2,Seymour Island C,33,138.0,-105.0,130.0,156.0,429,20,🟢 变好
+3,Seymour Island D,34,175.0,-68.0,169.0,220.0,565,22,🟢 变好
+4,Seymour Island F,30,176.0,-67.0,157.0,213.0,475,27,🟢 变好
+5,Seymour Filo Negro,3,194.0,-49.0,177.0,294.0,647,22,🟢 变好
+6,Seymour Island C2,10,209.0,-34.0,176.0,256.0,541,12,🟢 变好
+7,Seymour Island Z composit,28,214.0,-29.0,193.0,305.0,574,26,🟢 变好
+8,Snow Hill Island,15,238.0,-5.0,180.0,338.0,567,17,⚪ 无显著变化
+9,Cape Lamb,5,221.0,-22.0,187.0,263.0,551,19,🟢 变好
+10,Quiriquina Island,37,150.0,-93.0,136.0,338.0,365,18,🟢 变好
+11,Chilean Composite,14,192.0,-51.0,171.0,248.0,516,18,🟢 变好
+12,Obradovich Time 93/75,35,190.0,-53.0,173.0,247.0,634,14,🟢 变好
