@@ -66,7 +66,7 @@ uv pip install -r requirements.txt
 PY="uv run --with-requirements requirements.txt python"
 ```
 
-子命令：
+子命令（`conop --help` 查全部）：
 ```bash
 $PY scripts/conop.py validate                       # 数据集 schema 校验
 $PY scripts/conop.py eval CONOP-run/bestsoln.dat    # 评估一个解的 ordinal/level/eventual
@@ -74,6 +74,9 @@ $PY scripts/conop.py one --steps 600 --trials 300 \
     --seed 42 --out-soln /tmp/s.dat --out-traj /tmp/t.csv   # 单次 SA + 落盘
 $PY scripts/conop.py bench --steps 600 --trials 300         # 单次计时基准
 $PY scripts/conop.py multistart --n 50 --tag <tag> --workers 8  # 多进程多重启
+$PY scripts/conop.py sweep --mode ordinal --tag baseline    # 7 组参数 × 3 seed = 21 次扫描
+$PY scripts/conop.py plot-conv                              # 轨迹收敛图
+$PY scripts/conop.py plot-sweep                             # 21 次扫描对比图
 $PY -m pytest tests/test_regression.py -v           # 回归测试（9 项）
 ```
 
@@ -83,9 +86,13 @@ $PY -m pytest tests/test_regression.py -v           # 回归测试（9 项）
 
 完整 baseline SA（180k iters）≈ 1 秒，50 次并行重启 ≈ 10 秒。
 
-核心优化：`FastOrdinalState` 用差分公式 O(n_s) 算 Δordinal，跳过 sort+merge；
-内层逆序计数走 numba JIT（缺失时自动 fallback 纯 Python）；
-`scripts/run_multistart.py` 用 multiprocessing.Pool 并行多重启。
+核心优化在 `conop_py/incremental.py`：
+- `FastOrdinalState` 用差分公式 O(n_s) 算 Δordinal，只重算 ev 涉及的 1-4 个 section
+- 内层逆序计数走 numba JIT（缺失时自动 fallback 纯 Python）
+- `scripts/run_multistart.py` 用 multiprocessing.Pool 并行多重启
+
+`conop_py/cost.py` 只放全量重算版本（参考实现 / 回归基准）；
+`conop_py/plotting.py` 共享中文字体配置 + trajectory 解析。
 
 关键 ConfigKnobs（`AnnealConfig`）：
 - `use_fast_ordinal=True`：增量 ordinal + numba 路径（仅 ordinal 模式有效，默认开）

@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
 """Python版 vs 原版 CONOP 参数扫描对比图。"""
 import csv
+import sys
 from pathlib import Path
 
 import matplotlib.pyplot as plt
-import matplotlib as mpl
 import numpy as np
 
-mpl.rcParams["font.family"] = ["PingFang HK", "STHeiti", "Heiti TC", "sans-serif"]
-mpl.rcParams["axes.unicode_minus"] = False
-
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+
+from conop_py.plotting import setup_chinese_font
+setup_chinese_font()
 
 # ── 读数据 ──────────────────────────────────────────────────
 orig_rows = list(csv.DictReader(open(ROOT / "scripts" / "summary.csv")))

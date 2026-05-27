@@ -118,8 +118,7 @@ def cmd_bench(args):
 
 
 def cmd_multistart(args):
-    """委托到 run_multistart.py（保留所有原 CLI 参数）。"""
-    # 简单做法：把 args 转回 sys.argv 调用其 main()
+    """委托到 run_multistart.py。"""
     sys.argv = ["run_multistart.py",
                 "--n", str(args.n), "--tag", args.tag,
                 "--steps", str(args.steps), "--trials", str(args.trials),
@@ -131,6 +130,30 @@ def cmd_multistart(args):
         sys.argv.append("--save-trajectories")
     import scripts.run_multistart as m
     m.main()
+
+
+def cmd_sweep(args):
+    """委托到 run_py_sweep.py（7 组参数 × 3 seed = 21 次扫描）。"""
+    sys.argv = ["run_py_sweep.py", "--mode", args.mode]
+    if args.tag:
+        sys.argv += ["--tag", args.tag]
+    if args.no_anchors:
+        sys.argv.append("--no-anchors")
+    import scripts.run_py_sweep as m
+    m.main()
+
+
+def cmd_plot_conv(args):
+    """委托到 plot_py_convergence.py（单次轨迹收敛图）。"""
+    import scripts.plot_py_convergence as m
+    m.main()
+
+
+def cmd_plot_sweep(args):
+    """委托到 plot_sweep_comparison.py（21 次扫描对比图）。"""
+    # 该脚本目前是顶层执行（无 main 函数），用 runpy 触发
+    import runpy
+    runpy.run_module("scripts.plot_sweep_comparison", run_name="__main__")
 
 
 # ---------------------------------------------------------------------------
@@ -185,6 +208,21 @@ def build_parser():
     p.add_argument("--seed-base", type=int, default=10000)
     p.add_argument("--save-trajectories", action="store_true")
     p.set_defaults(fn=cmd_multistart)
+
+    p = sub.add_parser("sweep", help="7 组参数 × 3 seed = 21 次扫描")
+    p.add_argument("--mode", choices=["ordinal", "weighted", "level", "both"],
+                   default="ordinal")
+    p.add_argument("--tag", default="", help="文件夹后缀标签")
+    p.add_argument("--no-anchors", action="store_true",
+                   help="关闭 AGE/ASH 锚点约束")
+    p.set_defaults(fn=cmd_sweep)
+
+    p = sub.add_parser("plot-conv", help="Python 轨迹收敛图 → results_py/convergence.png")
+    p.set_defaults(fn=cmd_plot_conv)
+
+    p = sub.add_parser("plot-sweep",
+                       help="21 次扫描对比图 → results_py/sweep/comparison.png")
+    p.set_defaults(fn=cmd_plot_sweep)
 
     return ap
 
