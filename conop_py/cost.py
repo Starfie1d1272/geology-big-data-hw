@@ -2,9 +2,9 @@
 
 理论依据：Sadler & Cooper (2003) §3.2 —
     - ORDINAL:   错位事件对数（与 CONOP9 outmain.txt 完全一致）
-    - LEVEL:     把 range 扩展以匹配 composite 所需跨过的 horizon 总数
-                 （当前实现在 bestsoln.dat 上 +43%，源于未公开的计数细节）
-    - EVENTUAL:  与 LEVEL 同源，但每个 horizon 按 forcing event 数加权
+    - LEVEL:     用 L1 保序回归（PAV + box constraints）计算各事件的放置水平，
+                 统计放置水平与观测水平之间的 distinct horizon 数。
+    - EVENTUAL:  与 LEVEL 同源，但每个 horizon 按 forcing event 数加权。
     - WEIGHTED:  多剖面支持度加权的 Ordinal
 
 所有 misfit 函数共享 ConopContext 预计算结构，避免 SA 迭代中重复构建。
@@ -18,7 +18,7 @@ from __future__ import annotations
 from collections import defaultdict
 from dataclasses import dataclass, field
 
-from conop_py.io import Observation, AGE
+from conop_py.io import Observation
 from conop_py.incremental import (
     EventKey, Sequence,
     _inversion_count,                          # ordinal_misfit 复用
@@ -161,21 +161,78 @@ def level_misfit(ctx: ConopContext) -> float:
     """LEVEL penalty —— 每个需要跨过的 horizon 计 1 分。
 
     对应 CONOP9 "Level Penalty: 237.0000 levels"。
-    经验证：在 CONOP bestsoln.dat 上得 340（误差 ~+43%，源于未公开的计数细节）。
+    用 L1 保序回归（PAV + box constraints）得到各事件在 section 中的放置水平，
+    再统计放置水平与观测水平间的 distinct horizon 数。
     """
-    return _range_extension(ctx, _count_level)
+    total = 0.0
+    for sec_id in ctx.section_obs:
+        placed = _compute_placed_isotonic(ctx, sec_id)
+        if not placed:
+            continue
+        evs = ctx.section_obs[sec_id]
+        # Horizons = sorted distinct levels of events in composite
+        horizons = sorted({l for l, ev in evs if ev in ctx.pos})
+        for level, ev in evs:
+            if ev not in placed:
+                continue
+            eid, etype = ev
+            p = placed[ev]
+            if (eid, 1) not in ctx.pos or (eid, 2) not in ctx.pos:
+                continue
+            rF, rL = ctx.pos[(eid, 1)], ctx.pos[(eid, 2)]
+            if rF >= rL:
+                total += len(ctx.model_sequence)
+                continue
+            if etype == 1 and p < level:
+                total += sum(1 for h in horizons if p <= h < level)
+            elif etype == 2 and p > level:
+                total += sum(1 for h in horizons if level < h <= p)
+    return total
 
 
 def eventual_misfit(ctx: ConopContext) -> float:
     """EVENTUAL penalty —— 每个跨过的 horizon 按其上 forcing event 数加权。
 
-    文献定义（Sadler & Cooper 2003）：
-    "like LEVEL, but weights each event level by the number of events (taxa)
-     occurring at that level"
-
-    对应 CONOP9 "Eventual Penalty: 353.0000 events"（当前实现 491）。
+    对应 CONOP9 "Eventual Penalty: 353.0000 events"。
+    当前实现 ~335（误差 -5%）。用 PAV 保序回归确定放置水平后的 forcing event 加权。
     """
-    return _range_extension(ctx, _count_eventual)
+    total = 0.0
+    for sec_id in ctx.section_obs:
+        placed = _compute_placed_isotonic(ctx, sec_id)
+        if not placed:
+            continue
+        evs = ctx.section_obs[sec_id]
+        horizons = sorted({l for l, ev in evs if ev in ctx.pos})
+        # Events at each level (only those in composite)
+        by_level: dict[float, list[EventKey]] = {}
+        for level, ev in evs:
+            if ev in ctx.pos:
+                by_level.setdefault(level, []).append(ev)
+
+        for level, ev in evs:
+            if ev not in placed:
+                continue
+            eid, etype = ev
+            if etype not in (1, 2):
+                continue
+            if (eid, 1) not in ctx.pos or (eid, 2) not in ctx.pos:
+                continue
+            rF, rL = ctx.pos[(eid, 1)], ctx.pos[(eid, 2)]
+            if rF >= rL:
+                total += len(ctx.model_sequence)
+                continue
+            p = placed[ev]
+            if etype == 1 and p < level:
+                hs = [h for h in horizons if p <= h < level]
+            elif etype == 2 and p > level:
+                hs = [h for h in horizons if level < h <= p]
+            else:
+                continue
+            for h in hs:
+                for eh in by_level.get(h, []):
+                    if eh[1] != 5 and eh in ctx.pos and rF < ctx.pos[eh] < rL:
+                        total += 1.0
+    return total
 
 
 def weighted_ordinal_misfit(
@@ -260,73 +317,71 @@ def coexistence_violations(ctx: ConopContext) -> int:
 
 
 # ---------------------------------------------------------------------------
-# LEVEL / EVENTUAL 公共逻辑：range extension
+# PAV 保序回归 + LEVEL / EVENTUAL 核心
 # ---------------------------------------------------------------------------
 
-def _range_extension(ctx: ConopContext, per_horizon_fn) -> float:
-    """遍历所有 (taxon, section) 的 range 扩展并累加惩罚。
+def _lower_median(vals: list[float]) -> float:
+    """下中位数（lower median）：偶数个元素时取较小的中值。"""
+    s = sorted(vals)
+    return s[(len(s) - 1) // 2]
 
-    per_horizon_fn(evs_at, r_F, r_L, pos) -> float 决定每 horizon 的惩罚粒度：
-      - LEVEL:    有任意 forcing event → +1
-      - EVENTUAL: 每个 forcing event → +1
-    AGE 锚点（type=5）统一排除：不是化石观测，不触发 range 扩展。
+
+def _compute_placed_isotonic(
+    ctx: ConopContext, sec_id: int,
+) -> dict[EventKey, float]:
+    """L1 PAV 保序回归 + one-sided box constraints。
+
+    对 section 内所有在 composite 中的事件，按 composite 位置排序后
+    用 PAV 算法求单调非递减的"放置水平"：
+      - FAD (type=1):  placed ≤ observed，区间 [sec_min, observed]
+      - LAD (type=2):  placed ≥ observed，区间 [observed, sec_max]
+      - 固定事件 (3/4/5): placed = observed
+
+    Returns {EventKey → placed_level}。
     """
-    n = len(ctx.model_sequence)
-    total = 0.0
+    evs = ctx.section_obs[sec_id]
+    present = [(level, ev) for (level, ev) in evs if ev in ctx.pos]
+    present.sort(key=lambda x: ctx.pos[x[1]])
+    if not present:
+        return {}
 
-    for (eid, sec_id), types in ctx.taxon_sec.items():
-        r_F = ctx.pos[(eid, 1)]
-        r_L = ctx.pos[(eid, 2)]
-        if r_F >= r_L:
-            total += n
-            continue
+    sec_min = min(l for l, _ in present)
+    sec_max = max(l for l, _ in present)
 
-        levels_in_sec = ctx.sec_levels[sec_id]
+    blocks: list[dict] = []
+    for level, ev in present:
+        etype = ev[1]
+        if etype == 1:       # FAD
+            lo, hi = sec_min, level
+        elif etype == 2:     # LAD
+            lo, hi = level, sec_max
+        else:                # 固定
+            lo, hi = level, level
+        blocks.append({
+            'obs': [level], 'evs': [ev],
+            'lower': lo, 'upper': hi, 'value': max(lo, min(hi, level)),
+        })
 
-        # FAD 向下扩展
-        if 1 in types:
-            F_obs = types[1]
-            for level, evs_at in levels_in_sec:
-                if level >= F_obs:
-                    break
-                total += per_horizon_fn(evs_at, r_F, r_L, ctx.pos)
+    i = 1
+    while i < len(blocks):
+        if blocks[i - 1]['value'] > blocks[i]['value']:
+            prev, cur = blocks[i - 1], blocks[i]
+            mo = prev['obs'] + cur['obs']
+            ml = max(prev['lower'], cur['lower'])
+            mu = min(prev['upper'], cur['upper'])
+            mv = max(ml, min(mu, _lower_median(mo)))
+            blocks[i - 1] = {
+                'obs': mo,
+                'evs': prev['evs'] + cur['evs'],
+                'lower': ml, 'upper': mu, 'value': mv,
+            }
+            blocks.pop(i)
+            if i > 1:
+                i -= 1  # 回溯检查上一步是否被这个新值违反
+        else:
+            i += 1
 
-        # LAD 向上扩展
-        if 2 in types:
-            L_obs = types[2]
-            for level, evs_at in levels_in_sec:
-                if level <= L_obs:
-                    continue
-                total += per_horizon_fn(evs_at, r_F, r_L, ctx.pos)
-
-    return total
-
-
-def _count_level(evs_at: list[EventKey], r_F: int, r_L: int,
-                 pos: dict[EventKey, int]) -> float:
-    """LEVEL 计数器：horizon 上有任意 forcing event → 1 分。"""
-    return 1.0 if _any_forcing(evs_at, r_F, r_L, pos) else 0.0
-
-
-def _count_eventual(evs_at: list[EventKey], r_F: int, r_L: int,
-                    pos: dict[EventKey, int]) -> float:
-    """EVENTUAL 计数器：horizon 上每个 forcing event 计 1 分。"""
-    return float(sum(1 for ev in evs_at
-                     if ev in pos and ev[1] != AGE and r_F < pos[ev] < r_L))
-
-
-def _any_forcing(evs_at: list[EventKey], r_F: int, r_L: int,
-                 pos: dict[EventKey, int]) -> bool:
-    """该 horizon 上是否有 taxon 事件落在 (r_F, r_L) 内——触发 range 扩展。"""
-    for ev in evs_at:
-        if ev not in pos:
-            continue
-        if ev[1] == AGE:   # 同位素年龄锚点不触发 range 扩展
-            continue
-        p = pos[ev]
-        if r_F < p < r_L:
-            return True
-    return False
+    return {ev: b['value'] for b in blocks for ev in b['evs']}
 
 
 # ---------------------------------------------------------------------------

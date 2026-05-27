@@ -35,15 +35,15 @@ def test_ordinal_matches_conop9():
 
 
 def test_level_current_implementation():
-    """Level 当前实现给 340（CONOP9 真值 237，已知系统偏差 +43%）。"""
+    """Level 已对齐 CONOP9 真值 237（L1 PAV 保序回归 + box constraints）。"""
     ctx = _build_ctx()
-    assert int(level_misfit(ctx)) == 340
+    assert int(level_misfit(ctx)) == 237
 
 
 def test_eventual_current_implementation():
-    """Eventual 当前实现给 491（CONOP9 真值 353）。"""
+    """Eventual 当前实现给 335（CONOP9 真值 353，误差 -5%）。"""
     ctx = _build_ctx()
-    assert int(eventual_misfit(ctx)) == 491
+    assert int(eventual_misfit(ctx)) == 335
 
 
 def test_coexistence_pinned():
