@@ -212,6 +212,101 @@ def summarize(data_dir: str | Path, cfg: dict[str, str]) -> dict:
     }
 
 
+# ---------------------------------------------------------------------------
+# F26: Schema 校验 — 数据集换了或损坏时立刻报错，而不是后面 SA 跑出怪结果
+# ---------------------------------------------------------------------------
+
+VALID_EVENT_TYPES = {FAD, LAD, ASH, AGE}
+
+
+def validate_dataset(
+    observations: list[Observation],
+    entities: list[Entity],
+    sections: list[Section] | None = None,
+    *,
+    strict: bool = True,
+) -> list[str]:
+    """对解析后的数据集做完整性检查。
+
+    返回错误消息列表。strict=True 时遇错抛 ValueError；False 仅返回报告。
+
+    覆盖项：
+      1. event_type ∈ {1,2,4,5}
+      2. observation.entity_id 在 events.txt 中存在
+      3. observation.section_id 在 sections.txt 中存在（如提供）
+      4. taxon（events.txt 标记 is_taxon=True）至少有 1 个 FAD + 1 个 LAD 观测
+      5. AGE marker (type=5) 的 weight (绝对年龄) > 1 Ma
+      6. level 是有限数
+      7. section 内同 (entity_id, event_type) 不出现两次
+    """
+    errors: list[str] = []
+
+    entity_ids = {e.id for e in entities}
+    section_ids = {s.id for s in sections} if sections else None
+    taxa_ids = {e.id for e in entities if e.is_taxon}
+
+    # 1. event_type 合法
+    bad_types = {o.event_type for o in observations} - VALID_EVENT_TYPES
+    if bad_types:
+        errors.append(f"非法 event_type: {sorted(bad_types)} (合法: {sorted(VALID_EVENT_TYPES)})")
+
+    # 2. entity_id 在 events.txt 中
+    obs_ents = {o.entity_id for o in observations}
+    missing_ents = obs_ents - entity_ids
+    if missing_ents:
+        errors.append(f"{len(missing_ents)} 个 entity_id 在 events.txt 中找不到: "
+                      f"{sorted(missing_ents)[:5]}{'...' if len(missing_ents) > 5 else ''}")
+
+    # 3. section_id 已知
+    if section_ids is not None:
+        obs_secs = {o.section_id for o in observations}
+        missing_secs = obs_secs - section_ids
+        if missing_secs:
+            errors.append(f"{len(missing_secs)} 个 section_id 在 sections.txt 中找不到: "
+                          f"{sorted(missing_secs)}")
+
+    # 4. taxon 应有 FAD + LAD
+    has_fad: set[int] = set()
+    has_lad: set[int] = set()
+    for o in observations:
+        if o.event_type == FAD:
+            has_fad.add(o.entity_id)
+        elif o.event_type == LAD:
+            has_lad.add(o.entity_id)
+    missing_fad = taxa_ids - has_fad
+    missing_lad = taxa_ids - has_lad
+    if missing_fad:
+        errors.append(f"{len(missing_fad)} 个 taxon 没有任何 FAD 观测: {sorted(missing_fad)[:5]}")
+    if missing_lad:
+        errors.append(f"{len(missing_lad)} 个 taxon 没有任何 LAD 观测: {sorted(missing_lad)[:5]}")
+
+    # 5. AGE marker 应携带绝对年龄（w1 > 1）
+    for o in observations:
+        if o.event_type == AGE and o.weight <= 1.0:
+            errors.append(f"AGE marker entity={o.entity_id} sec={o.section_id} "
+                          f"weight={o.weight}（应 > 1.0 表示绝对年龄 Ma）")
+
+    # 6. level 有限
+    import math
+    bad_levels = [(o.section_id, o.entity_id) for o in observations
+                  if not math.isfinite(o.level)]
+    if bad_levels:
+        errors.append(f"{len(bad_levels)} 条观测 level 非有限数: {bad_levels[:3]}")
+
+    # 7. 同 section 同 (entity, type) 不重复
+    seen_keys: dict[tuple[int, int, int], int] = {}
+    for o in observations:
+        k = (o.section_id, o.entity_id, o.event_type)
+        seen_keys[k] = seen_keys.get(k, 0) + 1
+    dups = [(k, c) for k, c in seen_keys.items() if c > 1]
+    if dups:
+        errors.append(f"{len(dups)} 个 (section,entity,type) 三元组重复: {dups[:3]}")
+
+    if strict and errors:
+        raise ValueError("数据集校验失败:\n  - " + "\n  - ".join(errors))
+    return errors
+
+
 if __name__ == "__main__":
     import sys
 
@@ -220,3 +315,16 @@ if __name__ == "__main__":
     stats = summarize(data_dir, cfg)
     print(f"配置：{cfg}")
     print(f"统计：{stats}")
+
+    # F26: 校验
+    obs = parse_loadfile(data_dir / "loadfile.dat")
+    taxon_ids = infer_taxa_from_observations(obs)
+    ents = parse_events(data_dir / "events.txt", taxon_ids=taxon_ids)
+    secs = parse_sections(data_dir / "sections.txt")
+    errs = validate_dataset(obs, ents, secs, strict=False)
+    if errs:
+        print(f"\n⚠ 校验发现 {len(errs)} 个问题:")
+        for e in errs:
+            print(f"  - {e}")
+    else:
+        print("\n✓ 数据集校验通过")

@@ -113,6 +113,37 @@ def test_fast_state_random_moves_consistent():
         )
 
 
+def test_validate_real_dataset_passes():
+    """真实 CONOP-run 数据集应通过 schema 校验。"""
+    from conop_py.io import (
+        parse_loadfile, parse_events, parse_sections,
+        infer_taxa_from_observations, validate_dataset,
+    )
+    obs = parse_loadfile(DATA_DIR / "loadfile.dat")
+    ents = parse_events(DATA_DIR / "events.txt",
+                        taxon_ids=infer_taxa_from_observations(obs))
+    secs = parse_sections(DATA_DIR / "sections.txt")
+    errs = validate_dataset(obs, ents, secs, strict=False)
+    assert errs == [], f"应通过校验但发现问题: {errs}"
+
+
+def test_validate_catches_bad_event_type():
+    """注入非法 event_type 应被 validate_dataset 抓到。"""
+    from conop_py.io import (
+        Observation, parse_events, parse_sections,
+        infer_taxa_from_observations, parse_loadfile, validate_dataset,
+    )
+    import dataclasses
+    obs = parse_loadfile(DATA_DIR / "loadfile.dat")
+    # 复制并注入坏数据
+    bad = list(obs) + [dataclasses.replace(obs[0], event_type=99)]
+    ents = parse_events(DATA_DIR / "events.txt",
+                        taxon_ids=infer_taxa_from_observations(obs))
+    secs = parse_sections(DATA_DIR / "sections.txt")
+    errs = validate_dataset(bad, ents, secs, strict=False)
+    assert any("event_type" in e for e in errs), f"应报 event_type 错误，实际: {errs}"
+
+
 def test_per_section_ordinal():
     """逐 section Ordinal 与 outmain.txt 一致。"""
     obs = parse_loadfile(DATA_DIR / "loadfile.dat")

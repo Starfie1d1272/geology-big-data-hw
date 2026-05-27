@@ -55,24 +55,33 @@ conda run -n <env> python scripts/analyze_convergence.py
 
 `scripts/summary.csv` 是各次运行 best_fit 汇总表，字段：`实验组, run_id, RATIO, STARTEMP, STEPS, best_fit`。
 
+## 统一 CLI（推荐入口）
+
+`scripts/conop.py` 把零散脚本聚成子命令。所有命令前先安装依赖：
+
+```bash
+# 一次性安装环境
+uv pip install -r requirements.txt
+# 或每条命令前缀（推荐项目内开发）
+PY="uv run --with-requirements requirements.txt python"
+```
+
+子命令：
+```bash
+$PY scripts/conop.py validate                       # 数据集 schema 校验
+$PY scripts/conop.py eval CONOP-run/bestsoln.dat    # 评估一个解的 ordinal/level/eventual
+$PY scripts/conop.py one --steps 600 --trials 300 \
+    --seed 42 --out-soln /tmp/s.dat --out-traj /tmp/t.csv   # 单次 SA + 落盘
+$PY scripts/conop.py bench --steps 600 --trials 300         # 单次计时基准
+$PY scripts/conop.py multistart --n 50 --tag <tag> --workers 8  # 多进程多重启
+$PY -m pytest tests/test_regression.py -v           # 回归测试（9 项）
+```
+
+`multistart` 输出: `results_py/multistart/<timestamp>_<tag>/{summary.csv, bestsoln_s*.dat, manifest.json}`
+
 ## 性能优化的 SA（B 区：增量 cost + NumPy + numba + 多进程）
 
 完整 baseline SA（180k iters）从 16 秒 → 1 秒，50 次并行重启从 13 分钟 → 10 秒。
-
-```bash
-# 单次 SA 基准
-uv run --with numpy --with numba --with pandas --with matplotlib --with scipy \
-  python scripts/benchmark_sa.py --steps 600 --trials 300
-
-# 50 次并行多重启（解的不确定性 / consensus / rank 分布 / jackknife）
-uv run --with numpy --with numba --with pandas --with matplotlib --with scipy \
-  python scripts/run_multistart.py --n 50 --tag <tag> --workers 8
-# 输出: results_py/multistart/<timestamp>_<tag>/{summary.csv, bestsoln_s*.dat, manifest.json}
-
-# 回归测试（任何 cost 重构后必跑）
-uv run --with numpy --with numba --with pandas --with matplotlib --with scipy --with pytest \
-  python -m pytest tests/test_regression.py -v
-```
 
 关键 ConfigKnobs（`AnnealConfig`）：
 - `use_fast_ordinal=True`：增量 ordinal + numba 路径（仅 ordinal 模式有效，默认开）
