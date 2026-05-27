@@ -355,6 +355,18 @@ def anneal(
     base_ctx = ConopContext.build(seq, section_obs)
     raw_current = actual_misfit(base_ctx)          # 纯 misfit（Level / Ordinal / …）
     tol_coex_current = 0                           # 全局共存违反总数（增量维护）
+
+    # Section 过滤预计算（Level 增量：只重算 move ev 涉及的 2-3 个剖面）
+    from conop_py.cost import _sec_level
+    use_inc_sec = misfit_fn is level_misfit and cfg.coex_penalty > 0
+    if use_inc_sec:
+        event_to_secs: dict[EventKey, set[int]] = {}
+        for sec_id, evs in section_obs.items():
+            for _level, ev in evs:
+                event_to_secs.setdefault(ev, set()).add(sec_id)
+        sec_level_cache: dict[int, float] = {}
+        for sec_id in section_obs:
+            sec_level_cache[sec_id] = _sec_level(base_ctx, sec_id)
     best_seq = seq[:]
     best_fit = raw_current
 
@@ -393,7 +405,20 @@ def anneal(
             prev_pos = base_ctx.pos
 
             ctx = base_ctx.rebuild_pos(seq)
-            raw_new = actual_misfit(ctx)
+
+            # Level 增量：只重算 move ev 涉及的剖面（典型 2-3 个 vs 全 12 个）
+            if use_inc_sec:
+                affected = event_to_secs.get(ev, set(section_obs.keys()))
+                raw_new = raw_current
+                saved_secs: dict[int, float] = {}
+                for s in affected:
+                    old = sec_level_cache[s]
+                    saved_secs[s] = old
+                    new_val = _sec_level(ctx, s)
+                    sec_level_cache[s] = new_val
+                    raw_new += new_val - old
+            else:
+                raw_new = actual_misfit(ctx)
 
             # 共存约束（增量式：只算 moved ev 涉及的变化 → 全局差）
             if cfg.coex_penalty > 0:
@@ -413,6 +438,10 @@ def anneal(
                     best_fit = raw_new
                     best_seq = seq[:]
             else:
+                # 回滚 section 缓存
+                if use_inc_sec:
+                    for s, old_val in saved_secs.items():
+                        sec_level_cache[s] = old_val
                 seq.pop(j); seq.insert(i, ev)
 
         point = TrajectoryPoint(

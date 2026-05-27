@@ -19,6 +19,7 @@ from collections import defaultdict
 from dataclasses import dataclass, field
 
 from conop_py.io import Observation
+from collections import defaultdict
 from conop_py.incremental import (
     EventKey, Sequence,
     _inversion_count,                          # ordinal_misfit 复用
@@ -157,82 +158,99 @@ def ordinal_misfit(ctx: ConopContext) -> float:
     return total
 
 
-def level_misfit(ctx: ConopContext) -> float:
+def _sec_level(ctx: ConopContext, sec_id: int) -> float:
+    """单个剖面的 LEVEL 罚分。
+
+    供 level_misfit 和增量 SA 路径共用。
+    """
+    placed = _compute_placed_isotonic(ctx, sec_id)
+    if not placed:
+        return 0.0
+    evs = ctx.section_obs[sec_id]
+    horizons = sorted({l for l, ev in evs if ev in ctx.pos})
+    total = 0.0
+    for level, ev in evs:
+        if ev not in placed:
+            continue
+        eid, etype = ev
+        p = placed[ev]
+        if (eid, 1) not in ctx.pos or (eid, 2) not in ctx.pos:
+            continue
+        rF, rL = ctx.pos[(eid, 1)], ctx.pos[(eid, 2)]
+        if rF >= rL:
+            total += len(ctx.model_sequence)
+            continue
+        if etype == 1 and p < level:
+            total += sum(1 for h in horizons if p <= h < level)
+        elif etype == 2 and p > level:
+            total += sum(1 for h in horizons if level < h <= p)
+    return total
+
+
+def level_misfit(ctx: ConopContext, sec_ids: set[int] | None = None) -> float:
     """LEVEL penalty —— 每个需要跨过的 horizon 计 1 分。
 
     对应 CONOP9 "Level Penalty: 237.0000 levels"。
     用 L1 保序回归（PAV + box constraints）得到各事件在 section 中的放置水平，
     再统计放置水平与观测水平间的 distinct horizon 数。
+
+    Args:
+        sec_ids: 只计算指定剖面（None = 全部 12 个剖面）。
+                 供 SA 增量路径使用，避免全量重算。
     """
+    targets = sec_ids if sec_ids is not None else ctx.section_obs.keys()
+    return sum(_sec_level(ctx, sec_id) for sec_id in targets)
+
+
+def _sec_eventual(ctx: ConopContext, sec_id: int) -> float:
+    """单个剖面的 EVENTUAL 罚分。"""
+    placed = _compute_placed_isotonic(ctx, sec_id)
+    if not placed:
+        return 0.0
+    evs = ctx.section_obs[sec_id]
+    horizons = sorted({l for l, ev in evs if ev in ctx.pos})
+    by_level: dict[float, list[EventKey]] = {}
+    for level, ev in evs:
+        if ev in ctx.pos:
+            by_level.setdefault(level, []).append(ev)
     total = 0.0
-    for sec_id in ctx.section_obs:
-        placed = _compute_placed_isotonic(ctx, sec_id)
-        if not placed:
+    for level, ev in evs:
+        if ev not in placed:
             continue
-        evs = ctx.section_obs[sec_id]
-        # Horizons = sorted distinct levels of events in composite
-        horizons = sorted({l for l, ev in evs if ev in ctx.pos})
-        for level, ev in evs:
-            if ev not in placed:
-                continue
-            eid, etype = ev
-            p = placed[ev]
-            if (eid, 1) not in ctx.pos or (eid, 2) not in ctx.pos:
-                continue
-            rF, rL = ctx.pos[(eid, 1)], ctx.pos[(eid, 2)]
-            if rF >= rL:
-                total += len(ctx.model_sequence)
-                continue
-            if etype == 1 and p < level:
-                total += sum(1 for h in horizons if p <= h < level)
-            elif etype == 2 and p > level:
-                total += sum(1 for h in horizons if level < h <= p)
+        eid, etype = ev
+        if etype not in (1, 2):
+            continue
+        if (eid, 1) not in ctx.pos or (eid, 2) not in ctx.pos:
+            continue
+        rF, rL = ctx.pos[(eid, 1)], ctx.pos[(eid, 2)]
+        if rF >= rL:
+            total += len(ctx.model_sequence)
+            continue
+        p = placed[ev]
+        if etype == 1 and p < level:
+            hs = [h for h in horizons if p <= h < level]
+        elif etype == 2 and p > level:
+            hs = [h for h in horizons if level < h <= p]
+        else:
+            continue
+        for h in hs:
+            for eh in by_level.get(h, []):
+                if eh[1] != 5 and eh in ctx.pos and rF < ctx.pos[eh] < rL:
+                    total += 1.0
     return total
 
 
-def eventual_misfit(ctx: ConopContext) -> float:
+def eventual_misfit(ctx: ConopContext, sec_ids: set[int] | None = None) -> float:
     """EVENTUAL penalty —— 每个跨过的 horizon 按其上 forcing event 数加权。
 
     对应 CONOP9 "Eventual Penalty: 353.0000 events"。
     当前实现 ~335（误差 -5%）。用 PAV 保序回归确定放置水平后的 forcing event 加权。
-    """
-    total = 0.0
-    for sec_id in ctx.section_obs:
-        placed = _compute_placed_isotonic(ctx, sec_id)
-        if not placed:
-            continue
-        evs = ctx.section_obs[sec_id]
-        horizons = sorted({l for l, ev in evs if ev in ctx.pos})
-        # Events at each level (only those in composite)
-        by_level: dict[float, list[EventKey]] = {}
-        for level, ev in evs:
-            if ev in ctx.pos:
-                by_level.setdefault(level, []).append(ev)
 
-        for level, ev in evs:
-            if ev not in placed:
-                continue
-            eid, etype = ev
-            if etype not in (1, 2):
-                continue
-            if (eid, 1) not in ctx.pos or (eid, 2) not in ctx.pos:
-                continue
-            rF, rL = ctx.pos[(eid, 1)], ctx.pos[(eid, 2)]
-            if rF >= rL:
-                total += len(ctx.model_sequence)
-                continue
-            p = placed[ev]
-            if etype == 1 and p < level:
-                hs = [h for h in horizons if p <= h < level]
-            elif etype == 2 and p > level:
-                hs = [h for h in horizons if level < h <= p]
-            else:
-                continue
-            for h in hs:
-                for eh in by_level.get(h, []):
-                    if eh[1] != 5 and eh in ctx.pos and rF < ctx.pos[eh] < rL:
-                        total += 1.0
-    return total
+    Args:
+        sec_ids: 只计算指定剖面（None = 全部）。
+    """
+    targets = sec_ids if sec_ids is not None else ctx.section_obs.keys()
+    return sum(_sec_eventual(ctx, sec_id) for sec_id in targets)
 
 
 def weighted_ordinal_misfit(
